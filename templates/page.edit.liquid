@@ -1,0 +1,6 @@
+{{ 'bootstrap.css' | asset_url | stylesheet_tag }} 
+{{ 'swiper.css' | asset_url | stylesheet_tag }} 
+  {{ 'swiper.js' | asset_url | script_tag }}
+<div class='page-width'>
+    {{page.content}}
+</div>

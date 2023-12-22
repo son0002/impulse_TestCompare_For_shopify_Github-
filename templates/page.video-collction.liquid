@@ -1,0 +1,265 @@
+{{ 'swiper.css' | asset_url | stylesheet_tag }}
+{{ 'swiper.js' | asset_url | script_tag }}
+<style>
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .video-item p {
+        color: #fff;
+        font-size: 26px;
+        font-family: impact;
+        margin-top: 10px;
+    }
+
+    .youtube {
+        position: relative;
+        padding-top: 56.25%;
+        overflow: hidden;
+        cursor: pointer
+    }
+
+    .youtube img {
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 1
+    }
+
+    .youtube .play-button {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        z-index: 1;
+        opacity: 0.8;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+
+    .youtube .play-button:before {
+        content: "";
+        border-style: solid;
+        border-width: 10px 0 10px 16px;
+        border-color: transparent transparent transparent #fff
+    }
+
+    .youtube .play-button,
+    .youtube img {
+        cursor: pointer
+    }
+
+    .youtube .play-button,
+    .youtube .play-button:before,
+    .youtube iframe,
+    .youtube img {
+        position: absolute
+    }
+
+    .youtube .play-button,
+    .youtube .play-button:before {
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0)
+    }
+
+    .youtube iframe {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0
+    }
+
+    .loading-animation {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        background-color: #202020;
+    }
+
+    .loading-animation .spinner {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        border-top-color: #333;
+        animation: spin 1s ease-in-out infinite;
+    }
+
+    .loading-animation p{
+        color: #fff;
+    }
+
+    .swiper-slide a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .bannerImg {
+        position: relative;
+        width: 100%;
+    }
+
+    .bannerBox .page-title {
+        position: absolute;
+        font-family: Impact;
+        font-size: 55px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        z-index: 2;
+    }
+
+    .navBox {
+        background-image: url('https://cdn.shopify.com/s/files/1/0103/1923/3081/files/97128d96a1a4b8ba1f765bf30134f529_f384ec70-0435-4d70-92e6-d81fe50c6cdb.jpg?v=1685604137');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 80px 0;
+    }
+
+    .navBox .swiper-slide {
+        background-color: #000;
+        text-align: center;
+        padding: 25px 0;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navBox .swiper-slide:hover img,
+    .navBox .swiper-slide:hover b {
+        display: inline-block;
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+
+    .videoBox {
+        padding: 80px 0;
+        background-color: #202020
+    }
+
+    .bannerBox img {
+        width: 100%;
+        display: block;
+    }
+
+    .rte>div {
+        margin: 0;
+    }
+
+    .newsletter-template--14182390562865__164431125102df099b {
+        background-color: #f9f9f9;
+        color: #ffffff;
+        background-image:
+            url(https://i.shgcdn.com/58962a4a-d923-4b1e-a393-d68fd847997c/-/format/auto/-/preview/3000x3000/-/quality/lighter/);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .input-group-field::-webkit-input-placeholder {
+        color: #fff;
+    }
+
+    .input-group-field:-moz-placeholder {
+        color: #fff;
+    }
+
+    .input-group-field:-ms-input-placeholder {
+        color: #fff;
+    }
+
+    .page-title h1 {
+        font-size: 80px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    @media screen and (max-width: 768px) {
+        .newsletter-template--14182390562865__164431125102df099b {
+            background-image:
+                url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/94d53239037849179c79285840325f32_939bd99d-024a-4357-badf-5df8c22c8e0a.jpg?v=1677663059);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navBox {
+            padding: 30px 0 25px 0;
+        }
+
+        .navBox .swiper-slide {
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+        }
+
+        .page-title h1 {
+            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    }
+</style>
+<div class="rte rte--nomargin">
+    {{page.content}}
+</div>
+
+
+
+<div class="newsletter-section newsletter-template--14182390562865__164431125102df099b">
+    <div class="page-width text-center">
+        <div class="theme-block">
+            <p class="h3">KEEP UP WITH WHAT'S HOT</p>
+        </div>
+        <div class="theme-block">
+            <div class="rte">
+                <p>Get recipes, smoking tips and tricks, and exclusive offers delivered straight to your inbox.</p>
+            </div>
+        </div>
+        <div class="theme-block">
+            <form method="post" action="/contact#newsletter-template--14182390562865__164431125102df099b"
+                id="newsletter-template--14182390562865__164431125102df099b" accept-charset="UTF-8"
+                class="contact-form"><input type="hidden" name="form_type" value="customer"
+                    aria-label="form_type"><input type="hidden" name="utf8" value="✓" aria-label="utf8">
+                <label for="Email-template--14182390562865__164431125102df099b" class="hidden-label">Enter your
+                    email</label>
+                <input type="hidden" name="contact[tags]" value="prospect,newsletter" aria-label="contact[tags]">
+                <input type="hidden" name="contact[context]" value="section" aria-label="contact[context]">
+                <div class="input-group newsletter__input-group">
+                    <input type="email" value="" placeholder="Enter your email" name="contact[email]"
+                        id="Email-template--14182390562865__164431125102df099b"
+                        class="input-group-field newsletter__input" autocorrect="off" autocapitalize="off">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn" name="commit">
+                            <span class="form__submit--large">GET MY $10 OFF</span>
+                            <span class="form__submit--small">
+                                <!-- <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 50 15"><path d="M0 9.63V5.38h35V0l15 7.5L35 15V9.63z"/></svg> -->
+                                GET MY $10 OFF
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

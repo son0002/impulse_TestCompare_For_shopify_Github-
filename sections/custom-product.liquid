@@ -1,0 +1,459 @@
+{% style %}
+  .customcontainer .home-banner-product{
+    height:auto;
+   
+  }
+    .custom-border{
+     padding: 10px ;
+    margin: 0;
+    }
+    .custom_ul ,.custom_ul ul{
+      margin:0
+    }
+
+    .customcontainer .product-title h3{
+      font-size:18px;
+    }
+
+    .product_price{
+      font-size:28px;
+      font-weight:bold;
+      color:#bc3d1d;
+      display: inline-flex;
+      align-items: stretch;
+      line-height: 18px;
+      margin: 10px 0 5px 0;
+    }
+
+    .product_com_price{
+      font-size: 14px;
+      font-weight: 500;
+      color: #202020;
+      text-decoration: line-through #bc3d1d;
+      margin-top: 7px;
+      margin-left: 3px;
+    }
+
+    .custom_ul li{
+      list-style: none;
+    }
+
+    .custom_ul li::before{
+    		content: '';
+    		display: inline-block;
+    	    width: 5px;
+    	    height: 5px;
+    	    background: #000;
+    	    border-radius: 50%;
+          margin:0 5px 3px 0;
+    }
+
+    .btns{
+          background-color: #bc3d1d;
+      width: 100%;
+      outline: none;
+      border: none;
+      color: #fff;
+      border-radius:5px;
+      position: relative;
+      overflow: hidden;
+      transition: background .2s ease 0s;
+      z-index: 1;
+    }
+
+    .price_decimals{font-size:14px;margin-top:-3px;}
+
+    .custom_ul .text-sizes{font-size:14px;}
+    .customcontainer .home-banner-product{width:100%;}
+  .custom_mode_btn{
+      display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    }
+     
+
+    .custom_mode_btn a{
+/*       text-decoration: underline; */
+    font-size: 24px;
+    font-family: Impact;
+      	position: relative;
+   
+    }
+       .custom_mode_btn div:nth-child(1) a{
+        
+         margin-right:15px;
+       }
+       .custom_mode_btn a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid;
+        border-bottom-color: #202020;
+        transition: right .5s;
+    }
+       .custom_mode_btn a:hover{
+           color: #bc3d1d;
+       }
+       .custom_mode_btn a:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid;
+        border-bottom-color: #bc3d1d;
+        transition: right .5s;
+    }
+  .customcontainer .swiper-slide{
+    background-color: #fff;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+  }
+
+
+.product-label{
+    position: absolute;
+    top: 0px;
+    background: #bc3d1d;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 10px;
+   
+    font-size:13px;
+}
+    @media screen and (max-width: 768px){
+      .customcontainer .product-title h3{
+        font-size:16px;
+      }
+        .product-label{
+            font-size:12px;
+            padding:5px;
+            top:0;
+            transform: scale(0.8);
+    transform-origin: left top;
+        }
+        .customcontainer .home-banner-product{
+            padding-bottom: 20px;
+          }
+        .custom_mode_btn a{
+            /*       text-decoration: underline; */
+                font-size: 20px;
+                font-family: Impact;
+                      position: relative;
+               
+                }
+
+    .product_com_price{
+        text-decoration: line-through;
+      }
+      .customcontainer .flex-grid__item{
+        flex: 0 1 50%;
+      }
+      .customcontainer .product-title h3{
+        min-height:43px;
+      }
+
+      .custom-width-mc{padding:0 5px;}
+      .custom-border {
+      background-color: #fff;
+
+      border-radius: 5px;
+      margin: 0;
+      padding: 5px 5px 0 5px;
+
+
+  }
+      .custom_ul .text-sizes {
+      font-size: 12px;
+      min-height: 142px;
+  }
+      .bsadas{
+        min-height:95px;
+      }
+    }
+
+
+       @media (max-width: 1430px) and (min-width: 768px){
+      .customcontainer .product-title h3 {
+      font-size: 18px;
+      min-height: 43px;
+  }
+
+    }
+    .home-banner-product .image-wrap{
+        position: relative;
+        aspect-ratio: 16/16;
+        background:#fff;
+    }
+   
+{% endstyle %}
+{%- if section.settings.space_around -%}
+  <div class="index-section">
+{%- endif -%}
+
+<div class="page-width custom-width-mc">
+   <div class='{% if section.settings.space_above %} promo-grid--space-top{% endif %}{% if section.settings.space_below %} promo-grid--space-bottom{% endif %}'>
+  <div class="promo-grid__container customcontainer ">
+   
+    <div class="swiper home-banner-product ">
+      {% if section.settings.heading != blank %}
+  <div class="text-center page-width page-width--narrow">
+    <h2>{{ section.settings.heading | escape }}</h2>
+  </div>
+{% endif %}
+      <div class="swiper-wrapper">
+        {%- for block in section.blocks -%}
+           {%- assign indexs =  forloop.index0  -%}
+          <div class="swiper-slide">
+            <div class="flex-grid__item  flex-grid__item--second flex-grid__item--{{ block.settings.width }} ">
+              {%- assign product = all_products[block.settings.product] -%}
+              <!-- product image -->
+
+              <div class="type-product__images   custom-border" data-aos="row-of-2">
+                {%- unless product.empty? -%}
+                  {%- for image in product.images limit: 1 -%}
+                    <div
+                      class="image-wrap"
+                      {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}>
+                      <a href="{{ product.url }}">
+                        <img
+                          class="lazyload"
+                          data-src="{{ img_url }}"
+                          data-widths="[360, 540, 720, 900, 1080, 1600]"
+                          data-aspectratio="{{ image.aspect_ratio }}"
+                          data-sizes="auto"
+                          alt="{{ image.alt }}"
+                        >
+                        <noscript>
+                          <img class="lazyloaded" src="{{ image | img_url: '600x' }}" alt="{{ image.alt }}">
+                        </noscript>
+                        {% if block.settings.product_label != blank %}
+                        <div class='product-label'>
+                        {{ block.settings.product_label  }}
+                        </div>
+                        {% endif %}
+                      </a>
+                    </div>
+                    <div class="bsadas">
+                      <div class="stamped-reviews text-center">
+                        <span
+                          class="stamped-product-reviews-badge stamped-main-badge"
+                          data-id="{{ product.id }}"
+                        ></span>
+                      </div>
+                      <div class="product-title text-left">
+                        <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
+                      </div>
+                    </div>
+                    {%- if block.settings.textarea != blank -%}
+                      <div>
+                        <ul class="custom_ul">
+                          <div class="rte--block text-sizes">
+                            {{ block.settings.textarea | newline_to_br }}
+                          </div>
+                        </ul>
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.enable_price -%}
+                      
+                      <div class="product-price rte--block">
+                        <p class="product_price">
+                        
+                      
+                          {%- assign price = product.variants.first.price | money -%}
+                           <span class='product_price_done'></span>
+                          {% assign price_str = price | format: '%.2f' %}
+                          {% assign price_decimals = price_str | split: '.' | last %}
+                          <span class="price_decimals">{{ price_decimals }}</span>
+                          <span class="product_com_price">{{ product.variants.first.compare_at_price | money }}</span>
+                        </p>
+                      <script>
+                          var priceString = '{{price}}';
+									var integerPrice = parseInt(priceString.split('.')[0].replace(/[^0-9]/g, ''));
+									
+                        $('.product_price_done').eq('{{ indexs }}').text('$'+integerPrice+'.')
+                      </script>
+                        <p
+                          style="margin:0;"
+                          class="affirm-as-low-as product_infos"
+                          data-page-type="product"
+                          data-amount="{{ product.variants.first.price }}"
+                        ></p>
+                      </div>
+                    {%- endif -%}
+                    <form method="post" action="/cart/add" class="btns">
+                      <input
+                        type="hidden"
+                        name="id"
+                        value="{% if product.available != false %}{{ product.variants.first.id }}{% endif %}"
+                      >
+                      <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1">
+                      <input style='width:100%;outline: none;
+                      border: none;font-weight: 600;'
+                        type="submit"
+                        value="{% if product.available != false %}Add to cart{% else %}Sold Out{% endif %}"
+                        {% if product.available == false %}
+                          disabled="disabled"
+                        {% endif %}
+                        class="{% if product.available == false %}disableds{% endif %}"
+                      >
+                    </form>
+                  {%- endfor -%}
+                {%- else -%}
+                  <div class="type-product__image">
+                    {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                  </div>
+                  <div class="type-product__image">
+                    {{ 'product-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                  </div>
+                {%- endunless -%}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination homeiconswiper-product"></div>
+    </div>
+     </div>
+  </div>
+  <div class='text-center custom_mode_btn'>
+    <div>
+      <a href='/collections/wood-pellet-grills'>
+        All Pellet Grills
+      </a>
+    </div>
+    <div>
+      <a href='/pages/compare'>
+        Compare Grills
+      </a>
+    </div>
+  </div>
+</div>
+{%- if section.settings.space_around -%}
+  </div>
+{%- endif -%}
+{% schema %}
+{
+  "name": "customize products",
+  "blocks": [
+    {
+      "name": "customize products",
+      "type": "zhang",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+            "type": "richtext",
+            "id": "textarea",
+            "label": "Text",
+            "default": "<ol>Include the smaller details of your promotion in text below the title.</ol>"
+          },
+        {
+          "type": "checkbox",
+          "id": "enable_price",
+          "label": "Show price",
+          "default": true
+        },{
+            "type": "text",
+            "id": "product_label",
+            "label": "Show label",
+            "default": "label"
+          },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width",
+          "default": "25",
+          "options": [
+            {
+              "value": "25",
+              "label": "25%"
+            },
+            {
+              "value": "50",
+              "label": "50%"
+            },
+            {
+              "value": "75",
+              "label": "75%"
+            },
+            {
+              "value": "100",
+              "label": "100%"
+            }
+          ]
+        }
+
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Block Heading",
+      "default": "test heading"
+    },
+    {
+        "type": "checkbox",
+        "id": "space_around",
+        "label": "Add spacing above and below",
+        "default": true
+      },
+    {
+        "type": "checkbox",
+        "id": "space_above",
+        "label": "Add top spacing",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "space_below",
+        "label": "Add bottom spacing",
+        "default": true
+      }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "customize products"
+      },
+      "category": {
+        "en": "customize products"
+      }
+    }
+  ]
+}
+{% endschema %}
+<script>
+var swiper = new Swiper('.home-banner-product', {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    pagination: {
+      el: ".homeiconswiper-product",
+      clickable: true,
+    },breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1100: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                }
+            },
+  });
+  $(document).ready(function() {
+    equalizeGridTextHeight('.type-product__images ul');
+    equalizeGridTextHeight('.type-product__images .product-title ')
+  });
+  
+</script>

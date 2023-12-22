@@ -1,0 +1,114 @@
+{% assign css_files = 'product_pages_11002b.css,product_pages_700d4e.css,product_pages_700d3.css,product_pages_200a.css,product_pages_10502b.css,product_pages_450b.css,product_pages_7002c2e.css,product_pages_1000d3e.css' | split: ',' %}
+{% assign js_files = 'swiper.js' | split: ',' %}
+{% assign common_css_files = 'swiper.css' | split: ',' %}
+
+{% for css_file in common_css_files %}
+{{ css_file | asset_url | stylesheet_tag }}
+{% endfor %}
+
+{% for js_file in js_files %}
+{{ js_file | asset_url | script_tag }}
+{% endfor %}
+
+{% case product.url %}
+{% when '/products/multitasker-11002b-wi-fi-pellet-grill' or '/products/multitasker-7052b-with-wi-fi' %}
+{{ css_files[0] | asset_url | stylesheet_tag }}
+
+{% when '/products/zpg-700d4e-pellet-grill' or '/products/700d4e-wifi-exclusive-bundle' %}
+{{ css_files[1] | asset_url | stylesheet_tag }}
+{% for css_file in common_css_files %}
+{{ css_file | asset_url | stylesheet_tag }}
+{% endfor %}
+
+{% when '/products/zpg-700d3-pellet-grill' or '/products/flagship-700d3-bundle' %}
+{{ css_files[2] | asset_url | stylesheet_tag }}
+{% for css_file in common_css_files %}
+{{ css_file | asset_url | stylesheet_tag }}
+{% endfor %}
+
+
+{% when '/products/zpg-700d6-pellet-grill' %}
+{{ css_files[2] | asset_url | stylesheet_tag }}
+{% for css_file in common_css_files %}
+{{ css_file | asset_url | stylesheet_tag }}
+{% endfor %}
+
+{% when '/products/zpg-200a-portable-pellet-grill' %}
+{% for css_file in common_css_files %}
+{{ css_file | asset_url | stylesheet_tag }}
+{% endfor %}
+{{ css_files[3] | asset_url | stylesheet_tag }}
+
+{% when '/products/zpg-10502b-pellet-grill' or '/products/zpg-5502g-pellet-grill' or '/products/zpg-450a-pellet-grill' %}
+{{ css_files[4] | asset_url | stylesheet_tag }}
+{% when '/products/zpg-450b-pellet-grill' or '/products/zpg-450e-pellet-grill' %}
+{% for css_file in common_css_files %}
+{{ css_file | asset_url | stylesheet_tag }}
+{% endfor %}
+{{ css_files[5] | asset_url | stylesheet_tag }}
+
+{% when '/products/zpg-7002f2-pellet-grill' or '/products/zpg-7002f-pellet-grill' %}
+{% for css_file in common_css_files %}
+{{ css_file | asset_url | stylesheet_tag }}
+{% endfor %}
+{{ css_files[6] | asset_url | stylesheet_tag }}
+
+{% when '/products/zpg-1000e-pellet-grill' or '/products/exclusive-1000d3e-grill-offer'  or '/products/bbq-legend-1000d3e-bundle' %}
+{% for css_file in common_css_files %}
+{{ css_file | asset_url | stylesheet_tag }}
+{% endfor %}
+{{ css_files[7] | asset_url | stylesheet_tag }}
+{% else %}
+
+{% endcase %}
+
+<style>
+    @media screen and (max-width:768px) {
+        .editPage-width {
+            padding: 0;
+        }
+    }
+</style>
+<!-- 详情old -->
+    {% assign css_files = 'bootstrap.css,swiper.css' | split: ',' %}
+    
+    {% if product.handle == 'zpg-550a-pellet-grill' or product.handle == 'flash-sale-pioneer-450b' %}
+    <div class="page-width">
+        {% for css_file in css_files %}
+          {{ css_file | asset_url | stylesheet_tag }}
+        {% endfor %}
+        {% render 'product_detailspage-01' %}
+    </div>
+      
+    {% else %}
+      {% unless product.handle contains 'zpg-450b-pellet-grill'  or product.handle contains 'bbq-legend-1000d3e-bundle' or product.handle contains '700d4e-wifi-exclusive-bundle' or product.handle contains 'multitasker-11002b-wi-fi-pellet-grill' or product.handle contains 'multitasker-7052b-with-wi-fi' or product.handle contains 'zpg-700d4e-pellet-grill' or product.handle contains 'zpg-700d3-pellet-grill' or product.handle contains 'z-grills-700d3-with-cabinet' or product.handle contains 'zpg-700d6-pellet-grill' or product.handle contains 'zpg-7002f2-pellet-grill'  or product.handle contains 'zpg-1000e-pellet-grill' or product.handle contains 'zpg-10502b-pellet-grill' or product.handle contains 'zpg-5502g-pellet-grill'  or product.handle contains 'zpg-450a-pellet-grill' or product.handle contains 'zpg-450e-pellet-grill' or product.handle contains 'zpg-7002f-pellet-grill' %}
+        {% for css_file in css_files %}
+          {{ css_file | asset_url | stylesheet_tag }}
+        {% endfor %}
+       
+        <div class="page-width">
+        {% render 'product_detailspage-02' | quoted %}
+        {% render 'product_detailspage-03' | quoted %}
+        {% render 'product_detailspage-04' | quoted %}
+        {% render 'product_detailspage-05' | quoted %}
+        {% render 'product_detailspage-06' | quoted %}
+        </div>
+      {% endunless %}
+    {% endif %}
+
+
+
+
+
+<!-- 详情old -->
+{% assign excluded_handles = 'zpg-450b-pellet-grill,700d4e-wifi-exclusive-bundle,bbq-legend-1000d3e-bundle,multitasker-11002b-wi-fi-pellet-grill,multitasker-7052b-with-wi-fi,zpg-450e-pellet-grill,zpg-700d4e-pellet-grill,zpg-700d3-pellet-grill,z-grills-700d3-with-cabinet,zpg-700d6-pellet-grill,zpg-7002f2-pellet-grill,zpg-7002f-pellet-grill,zpg-1000e-pellet-grill,zpg-10502b-pellet-grill,exclusive-700d3-grill-offer,exclusive-1000d3e-grill-offer,zpg-5502g-pellet-grill,zpg-450a-pellet-grill,zpg-200a-portable-pellet-grill' | split: ',' %}
+
+<div class="index-section">
+    <div class="{% unless excluded_handles contains product.handle %} page-width {% endunless %}editPage-width">
+        {% unless product.metafields.global.Product_Details.value == blank %}
+        {{ product.metafields.global.Product_Details.value }}
+        {% endunless %}
+    </div>
+</div>
+
+

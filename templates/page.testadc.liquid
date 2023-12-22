@@ -1,0 +1,91 @@
+<style>
+  .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+
+  .product h2 {
+      margin-top: 0;
+  }
+
+  .product p {
+      font-weight: bold;
+      margin: 10px 0;
+  }
+
+  .product-checkbox {
+      margin-right: 10px;
+  }
+</style>
+<div class="page-width">
+  <h1 style="text-align: center;">{{page.title}}</h1>
+  {{ page.content }}
+  {% assign products = 'z-chefs-cooking-tool-set,z-grills-mystery-bag,multitasker-7052b-with-wi-fi' | split: ',' %}
+  {% assign selected_products = [] %}
+
+  <div id="product-list">
+    {% for handle in products %}
+      {% assign product = all_products[handle] %}
+      <div class="product" data-handle="{{ handle }}">
+        <h2>{{ product.title }}</h2>
+        <p>{{ product.price | money }}</p>
+        <input type="checkbox" name="selected_products[]" value="{{ product.variants[0].id }}"
+               data-price="{{ product.variants[0].price | money }}" class="product-checkbox">
+        <label>{{ product.variants[0].title }}</label>
+        <input type="number" min="1" value="1" class="product-quantity">
+
+        <select class="product-variant">
+          {% for variant in product.variants %}
+            <option value="{{ variant.id }}">{{ variant.title }}</option> 
+          {% endfor %}
+        </select>
+      </div>
+    {% endfor %}
+  </div>
+  
+  <button  class="js-drawer-open-cart" id="addToCartButton">Add Selected Products to Cart</button>
+</div>
+
+<script>
+document.getElementById('addToCartButton').addEventListener('click', function() {
+  let selectedProducts = document.querySelectorAll('.product-checkbox:checked');
+  let productsToAdd = [];
+
+  selectedProducts.forEach(function(productCheckbox) {
+    let productId = productCheckbox.value;
+    let productPrice = productCheckbox.getAttribute('data-price');
+    let productQuantityInput = productCheckbox.parentElement.querySelector('.product-quantity');
+    let quantity = parseInt(productQuantityInput.value);
+    let productVariantSelect = productCheckbox.parentElement.querySelector('.product-variant');
+    let selectedVariantId = productVariantSelect.value;
+
+    productsToAdd.push({
+      'id': selectedVariantId,
+      'quantity': quantity
+    });
+  });
+
+  let formData = {
+    'items': productsToAdd
+  };
+
+  fetch(window.Shopify.routes.root + 'cart/add.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log('Added to cart:', data);
+    document.dispatchEvent(new CustomEvent('cart:build'));
+  })
+  .catch(error => {
+    console.error('Error adding to cart:', error);
+  });
+});
+</script>

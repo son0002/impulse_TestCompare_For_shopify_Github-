@@ -1,0 +1,225 @@
+
+{% comment %}
+Snippet Arguments
+- collection: Liquid 'collection' or 'search' object
+- items: Paginated 'collection.products' or 'search.results' list. Cannot be pulled from the the 'collection' object passed in above
+- enable_sidebar: boolean
+- filter_style: 'sidebar' or 'drawer'
+- enable_sort: boolean
+- enable_collection_count
+- per_row
+- mobile_flush_grid
+- quick_shop_enable
+{% endcomment %}
+
+{% liquid
+  if collection.products
+    assign count = collection.products_count
+    assign count_label = 'collections.general.items_with_count'
+  endif
+
+  if collection.results
+    assign count = collection.results_count
+    assign count_label = 'general.search.result_count'
+  endif
+
+  assign filters = collection.filters
+  assign sort_by = collection.sort_by
+  assign default_sort_by = collection.default_sort_by
+  assign sort_options = collection.sort_options
+  assign current_filter_size = 0
+
+  for filter in filters
+    assign current_filter_size = current_filter_size | plus: filter.active_values.size
+  endfor
+%}
+<!-- mian bao xie 20220822 -->
+<div style="margin: 10px 0 15px 0;">
+  {%- render 'breadcrumbs' -%}
+</div>
+
+<style>
+  .boost-pfs-filter-top-display-type .boost-pfs-filter-display-item {
+				font-size: 0;
+				display: inline;
+				vertical-align: middle;
+				width: 20px;
+				height: 20px;
+				margin-left: 10px;
+				line-height: 20px;
+				background: none;
+			}
+
+			.boost-pfs-filter-top-display-type .boost-pfs-filter-display-item:before {
+				display: inline-block;
+				font-size: 16px;
+				text-rendering: auto;
+				text-transform: none;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				color: #ccc;
+				width: 20px;
+				height: 20px;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				vertical-align: middle;
+				opacity: .3;
+				filter: alpha(opacity=30);
+			}
+
+			.ss path{
+				fill: #ccc;
+			}
+
+          .ss2 path ,.greys path{
+				fill: #000;
+			}
+
+        
+  .medium-up--one-quarter .collection-item-specs-list,.medium-up--one-quarter .product_infos ,.medium-up--one-quarter .custom-from{display:none !important;}
+</style>
+<div class="collection-grid__wrapper">
+  <div class="collection-filter">
+    {% if collection.url == '/collections/wood-pellet-grills' or  collection.url == '/collections/700-series-pellet-grills' %} 
+    <div class="collection-filter__item  boost-pfs-filter-top-display-type  boost-pfs-filter-top-display-type-d  boost-pfs-filter-top-display-type-m">
+			<span>View as</span>
+			<a href="javascript:void(0)" title="List View" class="boost-pfs-filter-display-item boost-pfs-filter-display-list"
+				data-view="list"><svg class='ss greys' xmlns="http://www.w3.org/2000/svg" width="20"
+						height="20" viewBox="0 0 20 20" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M5.07692 0H0V5H5.07692V0ZM20 0H7V5H20V0ZM0 7.5H5V12.5H0V7.5ZM20 7.5H7V12.5H20V7.5ZM0 15H5.07692V20H0V15ZM20 15H7V20H20V15Z"
+							fill="#222222" />
+					</svg></a>
+			<a href="javascript:void(0)" title="Grid View" class="boost-pfs-filter-display-item boost-pfs-filter-display-grid active"
+				data-view="grid">
+        <svg t="1674097854658" class=" ss " viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2246" width="20" height="20"><path d="M0.020978 292.554032l292.532543 0 0-292.532543-292.532543 0L0.020978 292.554032 0.020978 292.554032zM365.702518 292.554032l292.53152 0 0-292.532543-292.53152 0L365.702518 292.554032 365.702518 292.554032zM731.447503 0.020466l0 292.532543 292.53152 0 0-292.532543L731.447503 0.020466 731.447503 0.020466zM0.020978 658.297994l292.532543 0L292.553521 365.703029l-292.532543 0L0.020978 658.297994 0.020978 658.297994zM365.702518 658.297994l292.53152 0L658.234037 365.703029l-292.53152 0L365.702518 658.297994 365.702518 658.297994zM731.447503 658.297994l292.53152 0L1023.979022 365.703029l-292.53152 0L731.447503 658.297994 731.447503 658.297994zM0.020978 1023.978511l292.532543 0 0-292.53152-292.532543 0L0.020978 1023.978511 0.020978 1023.978511zM365.702518 1023.978511l292.53152 0 0-292.53152-292.53152 0L365.702518 1023.978511 365.702518 1023.978511zM731.447503 1023.978511l292.53152 0 0-292.53152-292.53152 0L731.447503 1023.978511 731.447503 1023.978511z" p-id="2247" fill="#000000"></path></svg>        </a>
+	</div>
+    <script>
+      // 局部刷新 事件委托
+       $('.ss').eq(0).addClass('ss2')
+        $('#CollectionAjaxContent').on('click','.boost-pfs-filter-top-display-type a',function(evt){
+        
+          var This = $(this)
+			var Indexs = This.index()
+         
+             if (Indexs == 1) {
+					$('.grid--uniform .grid__item').addClass('medium-up--one')
+					$('.grid--uniform .grid__item').removeClass('medium-up--one-quarter')
+					$('.ss').eq(0).addClass('ss2')
+					$('.ss').eq(1).removeClass('ss2')
+
+				} else if (Indexs == 2) {
+					$('.medium-up--one').removeClass('medium-up--one')
+					$('.grid--uniform .grid__item').addClass('medium-up--one-quarter')
+					$('.ss').eq(1).addClass('ss2')
+					$('.ss').eq(0).removeClass('ss2')
+               $('.ss').eq(0).removeClass('greys')
+				}
+      })
+    
+	</script>
+  {% endif %}
+    <div class="collection-filter__item collection-filter__item--drawer">
+      <button
+        type="button"
+        class="js-drawer-open-collection-filters btn btn--tertiary{% unless current_filter_size == 0 %} btn--tertiary-active{% endunless %}"
+        aria-controls="FilterDrawer">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-filter" viewBox="0 0 64 64"><path d="M48 42h10M48 42a5 5 0 1 1-5-5 5 5 0 0 1 5 5zM7 42h31M16 22H6M16 22a5 5 0 1 1 5 5 5 5 0 0 1-5-5zM57 22H26"/></svg>
+          {{ 'collections.filters.title_tags' | t }}
+          {%- if current_filter_size > 0 -%}
+              ({{ current_filter_size }})
+          {%- endif -%}
+      </button>
+    </div>
+
+    <div class="collection-filter__item collection-filter__item--count small--hide">
+      {%- if enable_collection_count -%}
+        {{ count_label | t: count: count }}
+      {%- endif -%}
+    </div>
+
+    <div class="collection-filter__item collection-filter__item--sort">
+        <div class="collection-filter__sort-container">
+        {%- assign sort_by = sort_by | default: default_sort_by -%}
+        <label for="SortBy" class="hidden-label">{{ 'collections.sorting.title' | t }}</label>
+        <select name="SortBy" id="SortBy" data-default-sortby="{{ default_sort_by }}">
+          <option value="title-ascending"{% if sort_by == default_sort_by %} selected="selected"{% endif %}>{{ 'collections.sorting.title' | t }}</option>
+          {%- for option in sort_options -%}
+          <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name }}</option>
+          {%- endfor -%}
+        </select>
+        </div>
+    </div>
+  </div>
+
+  <div class="grid grid--uniform{% if mobile_flush_grid %} small--grid--flush{% endif %}"{% unless enable_collection_count %} data-scroll-to{% endunless %}>
+    {%- for item in items -%}
+      {%- if item.object_type == 'product' -%}
+        {%- render 'product-grid-item',
+          product: item,
+          per_row: per_row,
+          quick_shop_enable: quick_shop_enable
+        -%}
+      {%- else -%}
+        {%- render 'search-grid-item',
+          item: item,
+          per_row: per_row
+        %}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{%- if enable_sidebar and filter_style != 'drawer' and collection.filters.size > 0 -%}
+{% comment %}
+  Sidebar enabled but not in drawer mode, only show filter button on mobile
+{% endcomment %}
+{% style %}
+@media screen and (min-width: 769px) {
+  .collection-filter__item--drawer {
+    display: none;
+  }
+  .collection-filter__item--count {
+    text-align: left;
+  }
+  html[dir="rtl"] .collection-filter__item--count {
+    text-align: right;
+  }
+}
+{% endstyle %}
+{%- endif -%}
+
+{%- if enable_sidebar == false or collection.filters.size == 0 -%}
+{% comment %}
+    Disable sidebar & filter features
+{% endcomment %}
+{% style %}
+.collection-filter__item--drawer {
+  display: none;
+}
+.collection-filter__item--count {
+  text-align: left;
+}
+html[dir="rtl"] .collection-filter__item--count {
+  text-align: right;
+}
+{% endstyle %}
+{%- endif -%}
+{%- if switch_btn == false -%}
+  
+  {% style %}
+    @media screen and (max-width: 768px) {
+.collection-filter__item--sort{ display: none;}
+    }
+  {% endstyle %}
+{%- endif -%}
+
+            
+{%- unless enable_sort -%}
+{% style %}
+.collection-filter__sort-container {
+  display: none;
+}
+{% endstyle %}
+{%- endunless -%}

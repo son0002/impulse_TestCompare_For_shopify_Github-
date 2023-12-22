@@ -1,0 +1,68 @@
+{% assign collection = collections['wood-pellet-grills'] %}
+
+{% assign products = collection.products %}
+{% assign productComparisonData = product.metafields.data.product_comparison %}
+<p>{{productComparisonData}}</p>
+{% if collection.products.size > 0 %}
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        {% for product in collection.products %}
+          <th>{{ product.title }}</th>
+        {% endfor %}
+        {% for field in productComparisonData.compare_fields %}
+          <th>{{ field.title }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for field in productComparisonData.compare_fields %}
+        <tr>
+          <td>{{ field.title }}</td>
+          {% for product in collection.products %}
+            <td>{{ product[field.handle] }}</td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endif %}
+
+<style>
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.compare-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.compare-table td:first-child {
+  text-align: left;
+}
+</style>
+<script>
+  window.onload = function() {
+    const table = document.querySelector('.compare-table');
+    if (table) {
+      const cells = table.querySelectorAll('td');
+      cells.forEach(cell => {
+        cell.addEventListener('click', () => {
+          const content = cell.textContent;
+          alert(content);
+        });
+      });
+    }
+  }
+</script>

@@ -1,0 +1,590 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2072304 */
+  src: url("//at.alicdn.com/t/font_2072304_ns3lxw4nxv.woff2?t=1644835155555") format("woff2"), url("//at.alicdn.com/t/font_2072304_ns3lxw4nxv.woff?t=1644835155555") format("woff"), url("//at.alicdn.com/t/font_2072304_ns3lxw4nxv.ttf?t=1644835155555") format("truetype");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-truck:before {
+  content: "\E60E";
+}
+
+.icon-Paypal:before {
+  content: "\EA24";
+}
+
+.icon-huoche1:before {
+  content: "\E6F0";
+}
+
+.icon-dunpai:before {
+  content: "\E60C";
+}
+
+.icon-tuikuan:before {
+  content: "\E60D";
+}
+
+.icon-line-securepaymentanquanzhifu:before {
+  content: "\E74E";
+}
+
+.icon-fanhuidingbu4:before {
+  content: "\E67A";
+}
+
+.icon-redianzuoyouanniu-:before {
+  content: "\E636";
+}
+
+.icon-Affirm:before {
+  content: "\E699";
+}
+
+.icon-weixiu:before {
+  content: "\E621";
+}
+
+.icon-tiktok:before {
+  content: "\E678";
+}
+
+.icon-gou2:before {
+  content: "\E650";
+}
+
+.icon-group1:before {
+  content: "\EE26";
+}
+
+.icon-360:before {
+  content: "\E609";
+}
+
+.icon-xiazaijiantou:before {
+  content: "\E610";
+}
+
+.icon-gou1:before {
+  content: "\E654";
+}
+
+.icon-gou:before {
+  content: "\E63D";
+}
+
+.icon-xingzhuang60kaobei2:before {
+  content: "\E608";
+}
+
+.icon-huoche:before {
+  content: "\E606";
+}
+
+.icon-dianzan:before {
+  content: "\E607";
+}
+
+.icon-jiangbei1:before {
+  content: "\E60B";
+}
+
+.icon-shangsheng_shangjiantouxiangshangzhangmianxingcopy:before {
+  content: "\E61C";
+}
+
+.icon-up-fill:before {
+  content: "\E604";
+}
+
+.icon-xiajiang:before {
+  content: "\E605";
+}
+
+.icon-zuoyoujiantou-copy-copy-copy-copy:before {
+  content: "\E602";
+}
+
+.icon-left-arrow:before {
+  content: "\E603";
+}
+
+.icon-iconset0299:before {
+  content: "\E6C6";
+}
+
+.icon-diannao:before {
+  content: "\E617";
+}
+
+.icon-woshou:before {
+  content: "\E60F";
+}
+
+.icon-pinterest:before {
+  content: "\E61F";
+}
+
+.icon-youtube:before {
+  content: "\EC77";
+}
+
+.icon-twitterlogo:before {
+  content: "\E60A";
+}
+
+.icon-instagram:before {
+  content: "\E600";
+}
+
+.icon-facebook:before {
+  content: "\E601";
+}
+
+.affirm-as-low-as {
+  margin-bottom: 0 !important;
+  font-weight: normal !important;
+  font-size: 13px;
+}
+
+.iconBox p span {
+  font-size: 12px !important;
+}
+
+/* index-section */
+
+#shopify-section-template--14182390562865__1644565731168972b8 {
+  margin-bottom: 0;
+}
+
+#shopify-section-template--14182390562865__1644565731168972b8 .product__policies {
+  display: none;
+}
+
+.product__policies {
+  display: none;
+}
+
+.site-nav__link,
+.mobile-nav__link--top-level {
+  letter-spacing: 0.1em !important;
+}
+
+#shopify-section-template--14182390562865__164542511770fb79ed {
+  background-color: #f4f5f8;
+}
+
+#shopify-section-template--14182390562865__164543774739613c31 .page-width--narrow,
+#shopify-section-template--14182390562865__16456831010c51823b .section-header,
+#shopify-section-template--14182390562865__16456831010c51823b .section-headerh2 {
+  margin-bottom: 0;
+}
+
+#shopify-section-template--14182390562865__164543774739613c31 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#shopify-section-template--14182390562865__1645417177074e275c {
+  background-color: #f4f5f8;
+  margin-bottom: 0;
+}
+
+#shopify-section-template--14182390562865__1645417177074e275c h2 {
+  margin: 0;
+}
+
+#shopify-section-template--14182390562865__16445590870b9687da {
+  padding: 40px 0 75px 0;
+}
+
+.home-reviews {
+  padding-top: 1.5rem;
+}
+
+.homeHrswiper {
+  width: 94%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.homeHrswiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeHrswiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homeHrswiper .hrRelative {
+  position: relative;
+}
+
+.homeHrswiper .mcimg {
+  display: none;
+}
+
+.hrText p {
+  font-size: 15px;
+}
+
+.homeiconswiper,
+.homeiconswiper-2 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.homeiconswiper {
+  padding: 0 0 20px 0;
+}
+
+.homeiconswiper svg {
+  fill: #bc3d1d;
+}
+
+.section-header_describe {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  #shopify-section-template--14182390562865__16458529940ff914d0 .index-section {
+    padding: 85px 0;
+    background-color: #f1f2f4;
+  }
+
+  #shopify-section-template--14182390562865__164543774739613c31 .index-section {
+    margin: 0;
+  }
+
+  .swiper-button-next-hr svg {
+    color: #fff;
+    width: 40px;
+    transform: rotate(180deg);
+  }
+
+  .swiper-button-prev-hr,
+  .swiper-button-next-hr {
+    background-color: #737475;
+  }
+
+  .swiper-button-prev-hr svg {
+    color: #fff;
+    width: 40px;
+  }
+
+  .homeHrswiper .hrText {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .blog-box .section-header {
+    margin-bottom: 0px;
+  }
+
+  .accessibility-position-bottom-left .accessibility-box {
+    position: fixed !important;
+    left: auto !important;
+    right: 80px !important;
+    top: 15%;
+  }
+}
+
+.text-center h2 {
+  font-weight: 400 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .cs-container .cs-content .button {
+    width: 88px;
+    font-size: 14px;
+  }
+
+  .shopify-app-block klarna-placement {
+    display: inline-block;
+  }
+
+  #shopify-section-template--14182390562865__16458529940ff914d0 .index-section {
+    margin: 0;
+  }
+
+  #shopify-section-template--14182390562865__164507794401119a07 .rte--strong {
+    font-size: 1.6rem !important;
+  }
+
+  #shopify-section-footer {
+    overflow: hidden;
+  }
+
+  #ProductSection-template--14182390562865__16445641245245378d-6657041203249 .page-content--product {
+    padding: 0;
+  }
+
+  .homeiconswiper-2 img {
+    margin: 0 auto;
+  }
+
+  .swiper-button-next-hr svg {
+    color: #202020;
+    width: 40px;
+    transform: rotate(180deg);
+  }
+
+  .swiper-button-prev-hr svg {
+    color: #202020;
+    width: 40px;
+  }
+
+  #shopify-section-template--14182390562865__164543774739613c31 {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+
+  #shopify-section-template--14182390562865__164543774739613c31 .page-width--narrow,
+  #shopify-section-template--14182390562865__164543774739613c31 .page-width--narrow h2 {
+    margin-bottom: 0;
+  }
+
+  #shopify-section-template--14182390562865__16445590870b9687da {
+    padding: 40px 0;
+  }
+
+  .homeHrswiper .mcimg {
+    display: block;
+  }
+
+  .homeHrswiper .pcimg {
+    display: none;
+  }
+
+  .homeHrswiper .swiper-button-prev-hr {
+    right: -12px !important;
+  }
+
+  .homeHrswiper .swiper-button-next {
+    left: -12px !important;
+  }
+
+  .homeHrswiper .hrText {
+    padding: 20px;
+  }
+
+  .homeHrswiper .hrText p {
+    margin-top: 10px;
+  }
+
+  .swiper-button-prev-hr {
+    left: -12px;
+  }
+
+  .swiper-button-next-hr {
+    right: -12px;
+  }
+
+  #tidio-chat-iframe {
+    bottom: 50px !important;
+  }
+
+  .homeiconswiper-2 {
+    overflow: hidden;
+  }
+
+  .homeiconswiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .homeiconswiper .swiper-slide {
+    text-align: center;
+  }
+
+  #shopify-section-template--14182390562865__1645434756440994ef .index-section {
+    margin: 20px 0;
+  }
+
+  .blog-box .small--one-third {
+    width: 50%;
+  }
+
+  .blog-box .small--two-thirds {
+    width: 50%;
+  }
+
+  .section-header_describe {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .promo-grid__text .rte--block {
+    font-size: 1.2rem;
+  }
+
+  .promo-grid__text .rte--strong {
+    font-size: 1.5rem;
+  }
+
+  .text-center h2,
+  #shopify-section-template--14182390562865__164431125102df099b .h3,
+  #shopify-section-template--14182390562865__1649401121117044cc h2 {
+    font-size: 2rem !important;
+    letter-spacing: 0 !important;
+    font-weight: 400 !important;
+  }
+
+  #shopify-section-template--14182390562865__16461243423cce65c9 h2 {
+    font-size: 25px !important;
+  }
+
+  .homeiconswiper img {
+    margin: 0 auto;
+  }
+}
+
+.big-swiper {
+  position: relative;
+  margin: 0 auto;
+}
+
+#stamped-reviews-widget[data-widget-type=carousel] .stamped-carousel-buttons div {
+  color: #343738 !important;
+  font-size: 23px;
+}
+
+#shopify-section-template--14182390562865__16461243423cce65c9 .custom__item {
+  margin-bottom: 0;
+}
+
+#shopify-section-template--14182390562865__16456831010c51823b {
+  margin-top: 0;
+}
+
+.div1 div svg,
+.homeiconswiper svg {
+  width: 40px;
+  height: 40px;
+}
+
+.homeiconswiper h4 {
+  margin: 7px 0 0 0;
+  letter-spacing: 0;
+}
+
+.homeiconswiper p {
+  margin: 0;
+}
+
+.homeiconswiper h4,
+.site-footer .h4 {
+  font-size: 0.9rem !important;
+}
+
+.home-addtocart {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.home-addtocart a {
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.grid-product__tag--sale {
+  display: none;
+}
+
+#accessibility-menu-btn {
+  display: none !important;
+}
+
+.Promotional_Information {
+  background: #edf0f7;
+  padding: 10px 0;
+}
+
+.Promotional_Information p:last-child {
+  margin: 0;
+}
+
+.Promotional_Information p {
+  margin: 0;
+}
+
+.Promotional_Information a {
+  -webkit-text-decoration: underline #bc3d1d;
+          text-decoration: underline #bc3d1d;
+}
+
+@media only screen and (max-width: 1100px) {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -3px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #202020 !important;
+  }
+}
+
+.msT {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.msT p {
+  margin: 0;
+}
+
+.msT svg {
+  width: 20px;
+  height: 20px;
+}
+
+.clickMs p {
+  display: none;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* 产品详情 */
+
+.box-2,
+.box-3 {
+  padding: 0 20px 20px 20px !important;
+}
+

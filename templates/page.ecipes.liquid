@@ -1,0 +1,583 @@
+{{ 'bootstrap.css' | asset_url | stylesheet_tag }} 
+{{ 'swiper.css' | asset_url | stylesheet_tag }} 
+  {{ 'swiper.js' | asset_url | script_tag }}
+  {{ 'jq.js' | asset_url | script_tag }}
+<style type="text/css">
+			.banner img {
+				width: 100%;
+			}
+	
+			.banner {
+				position: relative;
+			}
+	
+			.banner_text {
+				color: #fff;
+				position: absolute;
+				top: 35%;
+				left: 15%;
+			}
+	
+			.banner_text_big {
+				font-size: 9rem;
+				line-height: 65px;
+			}
+	
+			.banner_text_small {
+				margin: 0 0 0 5px;
+				font-size: 3rem;
+			}
+	
+			.banner_posDiv {
+				background-color: rgb(0, 0, 0, .75);
+				padding: 15px 10px;
+				border-left: 7px solid #bd3d1d;
+			}
+	
+			.animationDiv {
+				position: relative;
+				animation: myfirst 2s;
+			}
+	
+			@keyframes myfirst {
+				from {
+					left: -200px;
+					top: 35%;
+				}
+	
+				to {
+					left: 0%;
+					top: 35px;
+				}
+			}
+			.footerContentitem-mc ,.footerContentitem-mcs{display: none;}
+	#shopify-section-1612255741eb606d24 {
+		background-image: url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/8301632988259_.pic_hd.jpg?v=1632988409);
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 100px;
+		padding-bottom: 40px;
+		margin: 0;
+	}
+		
+	.article__title:hover {
+		color: inherit;
+	}
+		
+	@media only screen and (min-width: 1599px) {
+	  .swiper img{min-height: 350px;}
+		#shopify-section-1612255741eb606d24 {
+			background-image: url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/8301632988259_.pic_hd.jpg?v=1632988409);
+			padding-left: 250px !important;
+			padding-right: 250px !important;
+		}
+		
+	}
+		
+	
+			.searchBg {
+				background-color: #e2e0da;
+				padding: 30px 0;
+				text-align: center;
+			}
+	
+			.searchBg_title {
+				font-size: 3rem;
+				text-transform: uppercase;
+			}
+	
+			.classification {
+				background-image: url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/97eadbf7925681fbec82b544caa9c60c.jpg?v=1636186750);
+				background-repeat: no-repeat;
+				background-size: cover;
+				padding: 30px 12%;
+			}
+	
+			.pages-width {
+				padding: 30px 12%;
+			}
+	
+			.classification-items {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+	
+			.classification-items a {
+				padding: 15px 10px;
+				text-align: center;
+				border-radius: 10px;
+			}
+	
+			.classification-items div p {
+				font-weight: 600;
+				margin: 15px 0 0;
+			}
+	
+			.classification-items a {
+				color: #000;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+/* 	
+			.classification-items a:nth-child(1) {
+				background-color: #bd3d1d;
+			} */
+	
+			.search_Z {
+				width: 40%;
+				margin: 0 auto;
+				padding: 5px 0 !important;
+				background-color: #fff;
+			}
+	
+			.videoBox {
+				padding: 0 12%;
+				margin: 50px 0;
+			}
+			.mcimg{display: none;}
+			@media screen and (max-width:768px) {
+				.footerContent{padding: 30px 5% !important;}
+				.mcrow1{
+					background-image:url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/01_fd80f84d-738b-4288-a5ed-4e689c058c3d.jpg?v=1636370767) ;
+					background-repeat: no-repeat;
+					background-size: cover;
+					padding: 20px 0;
+				}
+				.mcrow1s{
+					background-image:url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/02_c956051d-6a2b-4df1-8716-e735a2c38e21.jpg?v=1636370767) ;
+					background-repeat: no-repeat;
+					background-size: cover;
+					padding: 20px 0;
+					margin: 20px 0;
+					text-align: right;
+				}
+				.footerContentitem-mc ,.footerContentitem-mcs{display: block;}
+				.footerContentitem{display: none !important;}
+				#shopify-section-1612255741eb606d24 {
+					padding-top: 50px;
+				}
+				.centerBannerspan1{font-size: 20px !important;}
+				.centerBannerspan2{font-size: 28px !important;}
+				.centerBanner{background-image: url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/1_b3c19d6c-d8a3-499e-a54c-c76664e416cd.jpg?v=1636367992) !important;
+				background-repeat: no-repeat;background-size: cover;
+				text-align: center;
+				color: #fff;
+				padding: 30px 5% !important;
+				}
+	          .faterswiper{padding:30px 5% !important;}
+	          .videoBox{margin: 10px 0;}
+	          .banner_text_small , .banner_text_smallP{margin:0 !important;}
+	          .banner_posDiv ,.banner_text_smallP{width:80%;}
+	          .banner_text{left:0;top:23%;}
+				.pcimg{
+					display: none;
+				}
+				.mcimg{display: block;}
+				iframe {
+					height: 225px !important;
+				}
+	
+				.banner_text_big {
+					font-size: 3rem;
+					line-height: 65px;
+				}
+	
+				.banner_text_small {
+					margin: 0 0 0 5px;
+					font-size: 1rem;
+				}
+	
+				.classification,
+				.videoBox,
+				.pages-width {
+					padding: 30px 5%;
+				}
+	
+				.search_Z {
+					width: 80%;
+					margin: 0 auto;
+					padding: 5px 0 !important;
+					background-color: #fff;
+				}
+	
+				.classification-items img {
+	/* 				width: 50px; */
+				}
+			}
+	
+			@media screen and (min-width:1499px) {
+				.pages-width {
+					padding: 30px 12%;
+					max-width: inherit;
+					;
+				}
+	
+				iframe {
+					height: 735px !important;
+				}
+				
+			}
+	
+			.faterswiper{
+				padding: 30px 12%;
+				background-color: #f6f4f3;
+			}
+	  		.swiper img{min-height: 250px;}
+			.swiper {
+				overflow: hidden;
+			}
+	
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.centerBanner{
+			background-image: url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/fb65157bc80203d04ef3143ad4030fc4.jpg?v=1636367016);
+			background-repeat: no-repeat;background-size: cover;
+			text-align: center;
+			color: #fff;
+			padding: 30px 0;
+			}
+			.centerBannerspan1{font-size: 26px;}
+			.centerBannerspan2{font-size: 32px;}
+			.footerContent{
+				background-image: url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/2_7d5a5789-abd7-4a11-9d1a-e5ab659659dd.jpg?v=1636368273);
+				background-repeat: no-repeat;background-size: cover;
+				padding: 50px 12%;
+				
+			}
+			.footerContentitem{
+				display: flex;
+				align-items: center;
+			}
+			.footerContent img{width: 100%;}
+			.footerContent .row2{width: 60%;}
+			.footerContent .row1{width: 40%;}
+		</style>
+		<div class="banner">
+			<img class="lazyload lazyautosizes lazyloaded pcimg"
+				data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/banner_da746cee-78c4-4017-bfa8-d19da2874cab.jpg?v=1636181827">
+			<img  class="lazyload lazyautosizes lazyloaded mcimg" data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/688dc291be5dc9482e3f33a857aea958.jpg?v=1636363026" >
+			<div class="banner_text">
+				<div class="animationDiv">
+					<div class="banner_posDiv">
+						<p class="banner_text_big"><b>RECIPES</b></p>
+						<p class="banner_text_small"><b>TO INSPIRE YOUR CULINARY ADVENTURES</b></p>
+					</div>
+					<p class='banner_text_smallP' style="margin-left: 22px;"><span>Easy and mouthwatering recipes for every meal and any
+							occasion</span></p>
+	
+				</div>
+			</div>
+		</div>
+		<div class="searchBg">
+			<p class="searchBg_title" align="center"><b>Search Recipes</b></p>
+			<form action="/search" method="get" role="search" id="HeaderSearchForm"
+				class="site-header__search-form search_Z" autocomplete="off">
+				<input type="hidden" name="type" value="article">
+	
+				<input type="search" name="q" value="" placeholder="Search recipes by ingredient or cooking method"
+					class="site-header__search-input" aria-label="Search recipes by ingredient or cooking method">
+				<button style='background: #BC3D1D;
+				    border-radius: 6px;margin-right: 10px;color: #Fff;padding: 0 10px' type="submit"
+					class="text-link site-header__search-btn site-header__search-btn--submit navigable">
+					<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search"
+						viewBox="0 0 64 64">
+						<path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42">
+						</path>
+					</svg>
+					<span class="icon__fallback-text" data-open-accessibility-text-original="16px"
+						style="font-size: 16px;">Search</span>
+				</button>
+			</form>
+		</div>
+		<div class="classification">
+			<div class="classification-items">
+				<a href="/blogs/recipes/tagged/beef">
+					<div>
+						<img
+							src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/56f643d443ad0a07874ca2435b6a1df1.png?v=1636186843">
+						<p>beef</p>
+					</div>
+				</a>
+				<a href="/blogs/recipes/tagged/pork">
+					<div>
+						<img
+							src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ae756ce5e7f7e3098ebfd6a7f78e941d.png?v=1636186843">
+						<p>pork</p>
+					</div>
+				</a>
+				<a href="/blogs/recipes/tagged/wild-game">
+					<div>
+						<img
+							src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/dd487fd8a0b30c1a59447390ab3df221.png?v=1636186843">
+						<p>WILD GAME</p>
+					</div>
+				</a>
+				<a href="/blogs/recipes/tagged/vegetables">
+					<div>
+						<img
+							src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/b86c3866e4dc81eb1688527d22d50a6a.png?v=1636186843">
+						<p>VEGETABLES</p>
+					</div>
+				</a>
+				<a href="/blogs/recipes/tagged/poultry">
+					<div>
+						<img
+							src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/fb6bc62e30207e7c6b9e50371f2680dc_af5f1215-c83a-4177-840e-e0daa27c8474.png?v=1636186843">
+						<p>POULTRY </p>
+					</div>
+				</a>
+				<a href="/blogs/recipes/tagged/baked-goods">
+					<div>
+						<img
+							src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/02e25fa83b36fdc5e439b5d21d904d75.png?v=1636186843">
+						<p>BAKED GOODS </p>
+					</div>
+				</a>
+				<a href="/blogs/recipes/tagged/seafood">
+					<div>
+						<img
+							src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/e3d3893c39f4630caeba22214d1fee6a.png?v=1636186843">
+						<p>SEAFOOD</p>
+					</div>
+				</a>
+				<a href="/blogs/recipes/tagged/lamb">
+					<div>
+						<img
+							src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/29489a7a53e032c80eaa92832754e333.png?v=1636186843">
+						<p>LAMB </p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="videoBox">
+          <h2 style="color: rgb(189, 61, 29); " >COOK WITH Z GRILLS PIT MASTERS</h2>
+		<p style=" font-size: 16px;">Watch the video and learn their techniques</p>	
+          <iframe width="100%" height="600" src="https://www.youtube.com/embed/fTtefd4cFx0" title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+	
+		<div class="page-width pages-width">
+			<div class="grid grid--uniform">
+<h2 style='color:#bd3d1d;padding-left: 22px;'>LATEST RECIPES</h2>
+				<p style='padding-left: 22px;'>Inspiring recipes to make every meal an occasion</p>
+<div class="grid__item medium-up--one-third aos-init aos-animate" data-aos="row-of-3">
+  <div class="grid pogrid">
+    <div class="grid__item small--one-third"><a href="/blogs/recipes/lemon-pepper-grilled-chicken-wings" class="article__grid-image navigable" aria-label="Lemon Pepper Grilled Chicken Wings" style="font-size: 16px;" data-open-accessibility-text-original="16px"><div class="image-wrap">
+              <div class="grid__image-ratio grid__image-ratio--cover grid__image-ratio--landscape lazyloaded" data-bgset="
+  
+  //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_180x.jpg?v=1643508561 180w 135h,
+  //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_360x.jpg?v=1643508561 360w 270h,
+  //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_540x.jpg?v=1643508561 540w 405h,
+  
+  
+  
+  
+  
+  
+
+" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_540x.jpg?v=1643508561&quot;);">
+              <picture style="display: none;"><source data-srcset=" //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_180x.jpg?v=1643508561 180w 135h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_360x.jpg?v=1643508561 360w 270h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_540x.jpg?v=1643508561 540w 405h, " sizes="434px" srcset=" //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_180x.jpg?v=1643508561 180w 135h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_360x.jpg?v=1643508561 360w 270h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_540x.jpg?v=1643508561 540w 405h, "><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="434px"></picture></div>
+              <noscript>
+                <img class="lazyloaded" src="//cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220130020516-lemon-20pepper-20grilled-20chicken-20wings_400x.jpg?v=1643508561" alt="Lemon Pepper Grilled Chicken Wings">
+              </noscript>
+            </div></a></div>
+    <div class="grid__item small--two-thirds psgrid__item">
+      <div class="article__grid-meta posarticle__grid-meta"><div class="article__date"><time datetime="2022-01-30T02:00:40Z">Jan 29, 2022</time>
+</div><a href="/blogs/recipes/lemon-pepper-grilled-chicken-wings" class="article__title navigable" style="font-size: 18px;" data-open-accessibility-text-original="18px">Lemon Pepper Grilled Chicken Wings</a></div>
+    </div>
+  </div>
+    
+</div>
+
+<div class="grid__item medium-up--one-third aos-init aos-animate" data-aos="row-of-3">
+  <div class="grid pogrid">
+    <div class="grid__item small--one-third"><a href="/blogs/recipes/whole-smoked-trout" class="article__grid-image navigable" aria-label="Whole Smoked Trout" style="font-size: 16px;" data-open-accessibility-text-original="16px"><div class="image-wrap">
+              <div class="grid__image-ratio grid__image-ratio--cover grid__image-ratio--landscape lazyloaded" data-bgset="
+  
+  //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_180x.jpg?v=1643423504 180w 117h,
+  //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_360x.jpg?v=1643423504 360w 233h,
+  //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_540x.jpg?v=1643423504 540w 350h,
+  
+  
+  
+  
+  
+  
+
+" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_540x.jpg?v=1643423504&quot;);">
+              <picture style="display: none;"><source data-srcset=" //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_180x.jpg?v=1643423504 180w 117h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_360x.jpg?v=1643423504 360w 233h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_540x.jpg?v=1643423504 540w 350h, " sizes="500.00000000000006px" srcset=" //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_180x.jpg?v=1643423504 180w 117h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_360x.jpg?v=1643423504 360w 233h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_540x.jpg?v=1643423504 540w 350h, "><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="500.00000000000006px"></picture></div>
+              <noscript>
+                <img class="lazyloaded" src="//cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129022748-whole-20smoked-20trout_400x.jpg?v=1643423504" alt="Whole Smoked Trout">
+              </noscript>
+            </div></a></div>
+    <div class="grid__item small--two-thirds psgrid__item">
+      <div class="article__grid-meta posarticle__grid-meta"><div class="article__date"><time datetime="2022-01-29T02:22:57Z">Jan 28, 2022</time>
+</div><a href="/blogs/recipes/whole-smoked-trout" class="article__title navigable" style="font-size: 18px;" data-open-accessibility-text-original="18px">Whole Smoked Trout</a></div>
+    </div>
+  </div>
+    
+</div>
+
+<div class="grid__item medium-up--one-third aos-init aos-animate" data-aos="row-of-3">
+  <div class="grid pogrid">
+    <div class="grid__item small--one-third"><a href="/blogs/recipes/smoked-corn-on-the-cob" class="article__grid-image navigable" aria-label="Smoked Corn on the Cob" style="font-size: 16px;" data-open-accessibility-text-original="16px"><div class="image-wrap">
+              <div class="grid__image-ratio grid__image-ratio--cover grid__image-ratio--landscape lazyloaded" data-bgset="
+  
+  //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129020638-smoked-20corn-20on-20the-20cob_180x.jpg?v=1643422741 180w 120h,
+  //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129020638-smoked-20corn-20on-20the-20cob_360x.jpg?v=1643422741 360w 240h,
+  
+  
+  
+  
+  
+  
+  
+
+" style="background-image: url(&quot;https://images.getrecipekit.com/20220129020638-smoked-20corn-20on-20the-20cob.jpeg?width=650&quality=90&?v=1643422741&quot;);">
+              <picture style="display: none;"><source data-srcset=" //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129020638-smoked-20corn-20on-20the-20cob_180x.jpg?v=1643422741 180w 120h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129020638-smoked-20corn-20on-20the-20cob_360x.jpg?v=1643422741 360w 240h, " sizes="487.5px" srcset=" //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129020638-smoked-20corn-20on-20the-20cob_180x.jpg?v=1643422741 180w 120h, //cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129020638-smoked-20corn-20on-20the-20cob_360x.jpg?v=1643422741 360w 240h, "><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="487.5px"></picture></div>
+              <noscript>
+                <img class="lazyloaded" src="//cdn.shopify.com/s/files/1/0103/1923/3081/articles/20220129020638-smoked-20corn-20on-20the-20cob_400x.jpg?v=1643422741" alt="Smoked Corn on the Cob">
+              </noscript>
+            </div></a></div>
+    <div class="grid__item small--two-thirds psgrid__item">
+      <div class="article__grid-meta posarticle__grid-meta"><div class="article__date"><time datetime="2022-01-29T02:04:32Z">Jan 28, 2022</time>
+</div><a href="/blogs/recipes/smoked-corn-on-the-cob" class="article__title navigable" style="font-size: 18px;" data-open-accessibility-text-original="18px">Smoked Corn on the Cob</a></div>
+    </div>
+  </div>
+    
+</div>
+              <p style='text-align: center;'><a class='btn' href='/blogs/recipes'>VIEW ALL RECIPES</a></p>
+</div>
+		</div>
+		<div class="faterswiper">
+           <h2 style="color: rgb(189, 61, 29); " >MOST POPULAR RECIPES</h2>
+		<p style=" font-size: 16px;">Top rated Z Grills recipes you must try</p>	
+			<div class="swiper mySwiper" >
+				<div class="swiper-wrapper" >
+					<div class="swiper-slide">
+						<a href="/blogs/recipes/smoked-chicken-wings">
+							<img src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/chicken.jpg?v=1644306798" ></a>
+						<p style='margin-top:10px;'><span>Sep 24, 2021</span></p>
+						<p><b>SMOKED CHICKEN WINGS</b></p>
+					</div>
+					<div class="swiper-slide">
+						<a href="/blogs/recipes/smoked-cream-cheese">
+							<img src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/smoked-cream-cheess.jpg?v=1629879593" ></a>
+						<p style='margin-top:10px;'><span>Aug 25, 2021</span></p>
+						<p><b>SMOKED CREAM CHEESE</b></p>
+					</div>
+					<div class="swiper-slide">
+						<a href="/blogs/recipes/3-2-1-baby-back-ribs">
+							<img src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/3-2-1-BABY-BACK-RIBS.jpg?v=1607565454" ></a>
+							<p style='margin-top:10px;'><span>Dec 08, 2020</span></p>
+						<p><b>3-2-1 BABY BACK RIBS</b></p>
+					</div>
+					<div class="swiper-slide">
+						<a href="/blogs/recipes/bbq-smoked-chicken-breasts">
+							<img src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/BBQ_SMOKED_CHICKEN_BREASTS.jpg?v=1614678006" >
+						</a>
+						<p style='margin-top:10px;'><span>Mar 01, 2021</span></p>
+						<p><b>BBQ SMOKED CHICKEN BREASTS</b></p>
+					</div>
+					<div class="swiper-slide">
+						<a href="/blogs/recipes/smoked-brisket">
+							<img src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/SMOKED-BRISKET_4d5749d7-d54f-4cd7-a779-b4b8d8da41e6.jpg?v=1608705221" >
+						</a>
+						<p style='margin-top:10px;'><span>Dec 31, 2020</span></p>
+						<p><b>SMOKED BRISKET</b></p>
+					</div>
+					<div class="swiper-slide">
+						<a href="/blogs/recipes/smoked-bbq-pork-ribs">
+							<img src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/SMOKED_BBQ_PORK_RIBS.jpg?v=1614677628" >
+						</a>
+						<p style='margin-top:10px;'><span>Feb 25, 2021</span></p>
+						<p><b>SMOKED BBQ PORK RIBS</b></p>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		<div class="centerBanner">
+			<h2><span class="centerBannerspan1">CALLING ALL EXCELLENT BACKYARD COOKS:</span><br>
+			<span  class="centerBannerspan2" >WE WANT YOUR RECIPES!</span>
+			</h2>
+			<p>Do you have any culinary creations you would like to share? We’d love to hear about it. Your creativity inspires us to push the boundaries of what our grills can do.</p>
+			<p>Submit your recipes, and if we post them on our website, you’ll receive 5% off any single accessory we offer. </p>
+			<a class="btn"  href="mailto:service@zgrills.com">SUBMIT RECIPE</a>
+		</div>
+		<div class="footerContent ">
+				<div class="footerContentitem">
+					<div class="row1">
+						<h2>JOIN THE OFFICIAL Z GRILLS FAMILY COMMUNITY</h2>
+						<p>Become a member of our community today to get great grilling tips, recipes, and techniques from those who're cooking on a Z Grills wood pellet grill every day.</p>
+					<p class="btn"><a  style="color: #fff;" href="https://www.facebook.com/groups/OfficialGrillsCommunityGroup">JOIN NOW</a></p>
+					</div>
+					<div class="row2" >
+						<img src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/8d6b3a0172b287fddd1e57eef5d4f18e.png?v=1636368482" >
+					</div>
+				</div>
+				<div class="footerContentitem" style="margin-top: 30px;">
+					<div class="row2" >
+						<img src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/02_6bd6e569-5b9a-4582-881e-9a274fc47e0d.png?v=1636368496" >
+					</div>
+						<div class="row1">
+							<h2>EXPERIENCE THE NEW STANDARD OF OUTDOOR COOKING</h2>
+							<p>Enjoy the authentic wood-fired flavor and the ultimate grilling experience with Z Grills Pellet Grills.</p>
+						<p class="btn"><a  style="color: #fff;" href="https://zgrills.com/collections/all-products">SHOP NOW</a></p>
+						</div>
+				</div>
+				
+				<!-- mc -->
+				<div class="footerContentitem-mc">
+					<div class="mcrow1">
+						<h2>JOIN THE OFFICIAL Z GRILLS FAMILY COMMUNITY</h2>
+						<p>Become a member of our community today to get great grilling tips, recipes, and techniques from those who're cooking on a Z Grills wood pellet grill every day</p>
+					<p class="btn"><a  style="color: #fff;" href="https://www.facebook.com/groups/OfficialGrillsCommunityGroup">JOIN NOW</a></p>
+					</div>
+					
+				</div>
+				<div class="footerContentitem-mcs ">
+						<div class="mcrow1s">
+							<h2>EXPERIENCE THE NEW STANDARD OF OUTDOOR COOKING</h2>
+							<p>Enjoy the authentic wood-fired flavor and the ultimate grilling experience with Z Grills Pellet Grills.</p>
+						<p class="btn"><a style="color: #fff;" href="https://zgrills.com/collections/all-products">SHOP NOW</a></p>
+						</div>
+				</div>
+		</div>
+<script>
+  	var winWidth = 768;
+			var slidesPerViewS = 3;
+			var windowWidth = $(window).width();
+			// 小于768 改变触发的值
+			if ((windowWidth < winWidth)) {
+             slidesPerViewS=1;
+			}
+  
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: slidesPerViewS,
+          loop:true,
+			spaceBetween: 30,
+			 navigation: {
+			      nextEl: '.swiper-button-next',
+			      prevEl: '.swiper-button-prev',
+			    },
+           autoplay:true,//等同于以下设置
+  autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+    },
+		});
+	</script>
+{% if page.url == '/pages/affiliate-program' %}
+ {%- section 'newsletter' -%}
+{% endif %}
+

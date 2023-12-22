@@ -1,0 +1,529 @@
+{{ 'swiper.css' | asset_url | stylesheet_tag }}
+{{ 'swiper.js' | asset_url | script_tag }}
+<style>
+    #shopify-section-{{section.id}} .swiper-slide img{
+    width:{{ section.settings.width }};
+      max-height:{{section.settings.max_height}}
+    }
+
+    #shopify-section-{{section.id}} .home-banner svg{
+     color: #fff;
+     width: 60px;
+     height: 60px;
+    }
+
+      .hero-text-wraps {
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        width: 100%;
+        padding: 0 20px;
+        height: 100%;
+      }
+
+      .hero__content__headline{
+        font-family: impact;
+        font-weight: 400;
+      }
+
+      .hero-text-wraps .wraps-items{
+        max-width: 1499px;
+        margin: 0 auto;
+        padding: 0 13px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+
+      .home-banner .swiper-button-prev, .home-banner .swiper-rtl .swiper-button-next{
+        left: 46%;
+      right: auto;
+      }
+
+      .home-banner .swiper-button-next,  .home-banner .swiper-rtl .swiper-button-prev {
+      right: 46%;
+      left: auto;
+      text-align: center;
+  }
+
+  .home-banner .swiper-button-prev,  .home-banner .swiper-button-next{
+    top: auto;
+    bottom: 0;
+    z-index: 11;
+  }
+  .home-banner .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 10px!important;
+    }
+
+
+      .frames {
+
+        color: #fff;
+    }
+    .hero__content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        padding: 30px 0 40px;
+        text-align: center;
+    }
+    .hero__content-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        object-fit: cover;
+    }
+
+    .home-banner .swiper-slide:nth-child(2)  .hero__content-bg{
+      background-color:transparent;
+    }
+
+    @media screen and (min-width: 1499px){
+      .frames{
+        width: 41.666%;
+      }
+      .hero__content {
+        padding: 27px 46px 53px;
+        text-align: left;
+    }
+
+    .frames {
+      color: #fff;
+    }
+
+    .hero__content__headline {
+        font-size: 7rem;
+        line-height: 3rem;
+        margin-bottom: 57px;
+    }
+
+    .hero__content__headline_subtext {
+        font-size: 1.8rem;
+
+        margin-bottom: 36px;
+    }
+
+    #shopify-section-{{section.id}} .swiper-slide .hero__link{
+      margin-top: 20px;
+    }
+
+    }
+    @media screen and (min-width: 768px){
+    .hero__link a{
+        font-size: 16px;
+      }
+
+      .home-banner .swiper-button-prev, .home-banner .swiper-rtl .swiper-button-next{
+        left: 44%;
+      right: auto;
+      }
+
+      .home-banner .swiper-button-next,  .home-banner .swiper-rtl .swiper-button-prev {
+      right: 44%;
+      left: auto;
+      text-align: center;
+  }
+    }
+    @media screen and (max-width: 1499px){
+      .frames{
+        width: 41.666%;
+      }
+      .hero__content {
+        padding: 17px 32px 31px;
+        text-align: left;
+    }
+
+    .hero__content__headline {
+        font-size: 5rem;
+        margin-bottom: 40px;
+        line-height: 3rem;
+
+    }
+
+    .hero__content__headline_subtext {
+        font-size: 1.8rem;
+
+        margin-bottom: 26px;
+    }
+
+    #shopify-section-{{section.id}} .swiper-slide .hero__link{
+      margin-top:26px;
+    }
+
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+      .frames{
+        width: 41.666%;
+      }
+      .hero__content {
+        padding: 17px 22px 21px;
+        text-align: inherit;
+    }
+
+    .hero__content__headline {
+      font-size: 3.3rem;
+      line-height: 1.8rem;
+        margin-bottom: 26px;
+    }
+
+    .hero__content__headline_subtext {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    #shopify-section-{{section.id}} .swiper-slide .hero__link{
+      margin-top:10px;
+    }
+
+    .hero__link .btn{
+      padding: 7px 10px;
+    }
+
+
+
+    }
+
+    .hero__content_iie {
+      position: relative;
+      z-index: 2;
+    }
+      @media screen and (max-width:768px){
+
+            .frames {
+        color: #fff;
+    }
+            .hero-text-wraps{
+              padding:0 17px;
+            }
+
+            .home-banner .swiper-slide{
+              text-align:center;
+              font-size:18px;
+              position:relative;
+              background-color:rgb(255, 255, 255);
+            }
+
+            .frames{
+        width: 100%;
+      }
+      .hero__content {
+        padding: 2px 11px 13px;
+        text-align: inherit;
+    }
+
+    .hero__content__headline {
+      font-size: 3rem;
+        line-height: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .hero__content__headline_subtext {
+      font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    #shopify-section-{{section.id}} .swiper-slide .hero__link{
+      margin-top:10px;
+      padding: 0;
+    }
+    #shopify-section-{{section.id}} .swiper-slide .hero__link a{
+      padding: 7px 7px;
+    }
+    .thumbs1-button-next-home , .thumbs1-button-prevs-home{
+        background-color: transparent;
+      }
+
+
+
+    .home-banner .swiper-button-prev, .home-banner .swiper-rtl .swiper-button-next{
+        left: 36%;
+      right: auto;
+      }
+
+      .home-banner .swiper-button-next,  .home-banner .swiper-rtl .swiper-button-prev {
+      right: 36%;
+      left: auto;
+      text-align: center;
+  }
+
+      }
+
+      .home-banner{
+      --swiper-pagination-color: #fff;/* 两种都可以 */
+    }
+
+    .home-banner .swiper-pagination-bullet{
+      width: 15px;
+      height: 15px;
+      border: 1px solid #fff;
+    }
+</style>
+{%- liquid
+  assign has_image_mobile = false
+  if block.settings.image_mobile != blank
+    assign has_image_mobile = true
+  endif
+-%}
+<!-- Swiper -->
+{% if section.settings.heading != blank %}
+  <h1>{{ section.settings.heading | escape }}</h1>
+{% endif %}
+<div class="swiper home-banner">
+  <!-- each image -->
+  <div class="swiper-wrapper">
+    {%- for block in section.blocks -%}
+      {% case block.type %}
+        {% when 'zhang' %}
+          <div class="swiper-slide">
+            <a href="{% if block.settings.img_link != blank %}{{block.settings.img_link }}{% else %} javascript:void(0); {% endif %}">
+              {%- if block.settings.testi_img != blank -%}
+                {%- assign img_url = block.settings.testi_img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img
+                  class="hero__image lazyload{% if has_image_mobile != true %} small--hide{% endif %}"
+                  src="{{ block.settings.testi_img | img_url: '300x' }}"
+                  data-src="{{ img_url }}"
+                  data-aspectratio=""
+                  data-sizes="auto"
+                  alt=""
+                >
+              {% endif %}
+
+              {%- if block.settings.image_mobile != blank -%}
+                <img
+                  class="hero__image lazyload medium-up--hide"
+                  src="{{ block.settings.image_mobile | img_url: '600x' }}"
+                  data-src=""
+                  data-aspectratio=""
+                  data-sizes="auto"
+                  alt="{{ block.settings.image_mobile | escape }}"
+                  style=""
+                >
+              {% endif %}
+            </a>
+
+            {% if block.settings.block_text != blank %}
+              <div class="hero-text-wraps">
+                <div class="wraps-items">
+                  <div class="hero__content frames">
+                    <div class="hero__content_iie">
+                      <h2 class="her0__content hero__content__headline">
+                        <sub>{{ block.settings.block_heading | escape }}</sub>
+                      </h2>
+
+                      <span
+                        class="her0__content hero__content__headline_subtext"
+                      >
+                        {{- block.settings.block_text | escape -}}
+                      </span>
+
+                      {% if block.settings.button_text != blank %}
+                        <div class="hero__link">
+                          <a href="{{ block.settings.btn_link }}" class="btn navigable">
+                            {{ block.settings.button_text | escape }}
+                          </a>
+                        </div>
+                      {% endif %}
+                    </div>
+                    <div
+                      class="hero__content-bg lazyloaded"
+
+                      data-bgset="//cdn.shopify.com/s/files/1/0549/0255/4781/t/75/assets/charcoal.png?v=137703538868975482251660846007"
+                    >
+                      <picture style="display: none;">
+                        <source
+                          data-srcset="//cdn.shopify.com/s/files/1/0549/0255/4781/t/75/assets/charcoal.png?v=137703538868975482251660846007"
+                          sizes="487px"
+                          srcset="//cdn.shopify.com/s/files/1/0549/0255/4781/t/75/assets/charcoal.png?v=137703538868975482251660846007"
+                        >
+                        <img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" sizes="487px">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+  <!-- end of each image -->
+  <div>
+    <div class="swiper-button-next thumbs1-button-next-home">
+      <svg
+        t="1649844738853"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2549"
+        width="30"
+        height="30"
+      >
+        <path d="M324.3 960.1l-72.8-72.8L626.9 512 251.5 136.7l72.8-72.8L772.5 512z" fill="#ffffff" p-id="2550">
+        </path>
+      </svg>
+    </div>
+    <div class="swiper-button-prev thumbs1-button-prevs-home">
+      <svg
+        style="transform: rotate(180deg);"
+        t="1649844738853"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2549"
+        width="30"
+        height="30"
+      >
+        <path d="M324.3 960.1l-72.8-72.8L626.9 512 251.5 136.7l72.8-72.8L772.5 512z" fill="#ffffff" p-id="2550">
+        </path>
+      </svg>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+<!-- end of slider -->
+<p class="autoTime" style="display:none;">{{ section.settings.test_number }}</p>
+
+{% schema %}
+{
+  "name":"SwiperBlock",
+  "blocks":[
+     {
+        "name":"Testimonial Image",
+        "type":"zhang",
+        "limit":10,
+        "settings":[
+           {
+              "type":"image_picker",
+              "id":"testi_img",
+              "label":"pc Image"
+           },
+           {
+              "type":"image_picker",
+              "id":"image_mobile",
+              "label":"mobile Image"
+           },
+           {
+              "type":"text",
+              "id":"block_heading",
+              "label":"Heading",
+              "default":"test heading"
+           },
+           {
+              "type":"text",
+              "id":"block_text",
+              "label":"text",
+              "default":"test text"
+           },
+           {
+              "type":"text",
+              "id":"img_link",
+              "label":"image link",
+              "info":"单独图片设置链接,可不填"
+           },
+           {
+              "type":"text",
+              "id":"button_text",
+              "label":"text button"
+           },
+           {
+              "type":"url",
+              "id":"btn_link",
+              "label":"btn link"
+           }
+        ]
+     }
+  ],
+  "settings":[
+     {
+        "type":"text",
+        "id":"heading",
+        "label":"Block Heading",
+        "default":"test heading"
+     },
+     {
+        "id":"width",
+        "type":"text",
+        "label":{
+           "en":"width"
+        },
+        "default":{
+           "en":"100%"
+        }
+     },
+     {
+        "id":"max_height",
+        "type":"text",
+        "label":{
+           "en":"max_height"
+        },
+        "default":{
+           "en":"auto"
+        },
+        "info":"最大高度"
+     },
+     {
+        "type":"text",
+        "id":"test_number",
+        "label":"Carousel interval",
+        "info":"微秒数,1000=1s,只允许1000的倍数",
+        "default":"false"
+     },{
+            "type":"color",
+            "id":"bgColors",
+            "label":"Background Color",
+              "default": "#000"
+         }
+  ],
+  "presets":[
+     {
+        "name":{
+           "en":"SwiperBlock"
+        },
+        "category":{
+           "en":"SwiperBlock"
+        }
+     }
+  ]
+}
+{% endschema %}
+
+<script>
+  var Ttime = parseInt($('.autoTime').text().trim());
+  var autoplay = {};
+
+  // 不是number
+  if ($.isNumeric(Ttime) == false || Ttime <= 0) {
+      autoplay = false;
+  } else {
+
+      autoplay = {
+          delay: parseInt(Ttime),
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+      };
+  }
+  var swiper = new Swiper(".home-banner", {
+      lazy: {
+          loadPrevNext: true,
+      },
+      autoplay,
+      navigation: {
+          nextEl: ".home-banner .thumbs1-button-next-home",
+          prevEl: ".home-banner .thumbs1-button-prevs-home",
+          clickable :true,
+      },
+      pagination: {
+        el: '.home-banner .swiper-pagination',
+        clickable :true,
+      },
+  });
+  console.log('{{ block.settings | json }}')
+</script>

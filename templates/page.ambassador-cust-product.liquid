@@ -1,0 +1,256 @@
+{{ 'bootstrap.css' | asset_url | stylesheet_tag }} 
+{{ 'swiper.css' | asset_url | stylesheet_tag }} 
+{{ 'swiper.js' | asset_url | script_tag }}
+
+{% assign product_1 = page.metafields.page.product_y.value %}
+{% assign product_2 = page.metafields.page.product_e.value %}
+{% assign product_3 = page.metafields.page.product_sb.value %}
+{% assign product_4 = page.metafields.page.product_f.value %}
+  <style>
+    .mySwiper-pj img{
+      width: 100%;
+    }
+
+    .product_title,.mardiv{
+      margin-bottom: 10px !important;
+    }
+
+     .product_title span{
+      font-size: 22px !important;
+      margin-bottom: 10px;
+    }
+
+    .product_price{
+      color: #bc3d1d;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    #customProduct{
+      margin: -20px;
+    }
+
+    .mySwiper-pj{
+      padding: 20px;
+    }
+
+    .mySwiper-pj .swiper-slide{
+      text-align: center;
+      padding: 15px 20px;
+      box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
+    }
+
+    .mySwiper-pj img{
+      width: 80% !important;
+    }
+
+    .btns .inputs{
+      border: 1px solid #bc3d1d;
+      font-weight: 600;
+      background: #bc3d1d;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    .rte>div{
+      margin-bottom: 0;
+    }
+
+    .product_title{
+      min-height: 53px;
+    }
+
+    .product_title a{
+      text-decoration: none !important;
+      border: 0 !important;
+    }
+
+    @media screen and (max-width:768px) {
+      .product_title span{
+        font-size: 18px !important;
+      }
+    }
+  </style>
+<div id="customProduct"  style="display: none;">
+  <div class="swiper mySwiper mySwiper-pj">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        {% if product_1 %}
+        <div>
+          <h3 class="product_title">
+            <a href="{{ product_1.url }}">
+              <span>{{ product_1.title }}</span>
+            </a>
+          </h3>
+         <div class="mardiv">
+          <p class="product_price">
+            {{ product_1.price | money}}
+          </p>
+         </div>
+          <div>
+            <img src="{{product_1.featured_image | img_url: 'master'}}" data-widths="[360, 540, 720, 900, 1080, 1600] alt="">
+          </div>
+          <form method="post" action="/cart/add" class="btns">
+            <input
+              type="hidden"
+              name="id"
+              value="{% if product_1.available != false %}{{ product_1.variants.first.id }}{% endif %}"
+            >
+            <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1">
+            <input class="inputs"
+              type="submit"
+              value="{% if product_1.available != false %}Add to cart{% else %}Sold Out{% endif %}"
+              {% if product_1.available == false %}
+                disabled="disabled"
+              {% endif %}
+              class="{% if product_1.available == false %}disableds{% endif %}"
+            >
+          </form>
+        </div>
+        <!-- 添加其他产品信息显示 -->
+      {% endif %}
+      </div>
+      <div class="swiper-slide">
+        {% if product_2 %}
+        <div>
+          <h3 class="product_title">
+            <a href="{{ product_2.url }}">
+              <span>{{ product_2.title }}</span>
+            </a>
+          </h3>
+         <div class="mardiv">
+          <p class="product_price">
+            {{ product_2.price | money}}
+          </p>
+         </div>
+          <div>
+            <img src="{{product_2.featured_image | img_url: 'master'}}" data-widths="[360, 540, 720, 900, 1080, 1600] alt="">
+          </div>
+          <form method="post" action="/cart/add" class="btns">
+            <input
+              type="hidden"
+              name="id"
+              value="{% if product_2.available != false %}{{ product_2.variants.first.id }}{% endif %}"
+            >
+            <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1">
+            <input class="inputs"
+              type="submit"
+              value="{% if product_2.available != false %}Add to cart{% else %}Sold Out{% endif %}"
+              {% if product_2.available == false %}
+                disabled="disabled"
+              {% endif %}
+              class="{% if product_2.available == false %}disableds{% endif %}"
+            >
+          </form>
+        </div>
+        {% endif %}
+      </div>
+      <div class="swiper-slide">
+        {% if product_3 %}
+        <div>
+          <h3 class="product_title">
+            <a href="{{ product_3.url }}">
+              <span>{{ product_3.title }}</span>
+            </a>
+          </h3>
+         <div class="mardiv">
+          <p class="product_price">
+            {{ product_3.price | money}}
+          </p>
+         </div>
+          <div>
+            <img src="{{product_3.featured_image | img_url: 'master'}}" data-widths="[360, 540, 720, 900, 1080, 1600] alt="">
+          </div>
+          <form method="post" action="/cart/add" class="btns">
+            <input
+              type="hidden"
+              name="id"
+              value="{% if product_3.available != false %}{{ product_3.variants.first.id }}{% endif %}"
+            >
+            <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1">
+            <input class="inputs"
+              type="submit"
+              value="{% if product_3.available != false %}Add to cart{% else %}Sold Out{% endif %}"
+              {% if product_3.available == false %}
+                disabled="disabled"
+              {% endif %}
+              class="{% if product_3.available == false %}disableds{% endif %}"
+            >
+          </form>
+        </div>
+        {% endif %}
+      </div>
+      <div class="swiper-slide">
+        {% if product_4 %}
+        <div>
+          <h3 class="product_title">
+            <a href="{{ product_4.url }}">
+              <span>{{ product_4.title }}</span>
+            </a>
+          </h3>
+         <div class="mardiv">
+          <p class="product_price">
+            {{ product_4.price | money}}
+          </p>
+         </div>
+          <div>
+            <img src="{{product_4.featured_image | img_url: 'master'}}" data-widths="[360, 540, 720, 900, 1080, 1600] alt="">
+          </div>
+          <form method="post" action="/cart/add" class="btns">
+            <input
+              type="hidden"
+              name="id"
+              value="{% if product_4.available != false %}{{ product_4.variants.first.id }}{% endif %}"
+            >
+            <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1">
+            <input class="inputs"
+              type="submit"
+              value="{% if product_4.available != false %}Add to cart{% else %}Sold Out{% endif %}"
+              {% if product_4.available == false %}
+                disabled="disabled"
+              {% endif %}
+              class="{% if product_4.available == false %}disableds{% endif %}"
+            >
+          </form>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="swiper-pagination pj-swiper-paginationt"></div>
+  </div>
+</div>
+
+
+<div class="rte rte--nomargin">
+  {{ page.content }}
+</div>
+
+<script>
+  console.log('{{product1 | json}}')
+  document.addEventListener('DOMContentLoaded', function() {
+    var element = document.querySelector('#customProduct');
+    var container = document.querySelector('#product-container');
+
+    container.appendChild(element);
+    element.style.display = 'block';
+  });
+
+  var swiper = new Swiper(".mySwiper-pj", {
+        slidesPerView: 1.2,
+				spaceBetween: 10,
+				pagination: {
+					el: ".pj-swiper-paginationt",
+					clickable: true,
+				},
+				breakpoints: {
+					640: {
+						slidesPerView:3,
+						spaceBetween: 20,
+					},
+					1100: {
+						slidesPerView: 4,
+						spaceBetween: 20,
+					}
+				},
+      });
+</script>

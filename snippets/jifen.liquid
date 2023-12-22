@@ -1,0 +1,93 @@
+
+    <style>
+.jifen-box{
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px 0;
+}
+.jifen-code {
+  background-image: url(https://cdn.shopify.com/s/files/1/0103/1923/3081/files/1_4c660470-e93d-42e3-bc3c-63988e52e2d9.jpg?v=1649922657);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jifen-code p {
+  margin: 0;
+}
+
+.jifen-code .jifen-yh {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.jifen-code .jifen-wn {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size:1rem;
+}
+
+.jifen-btn a {
+  padding: 4px 8px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  color: #bd3d1d;
+  line-height: 14px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.jifen-more{
+  margin-left: 10px;
+}
+
+.jifen-more a{
+  color: #000;
+  text-decoration: underline;
+}
+@media screen and (max-width:768px) {
+.jifen-box{
+  display: block;
+}
+.jifen-code {
+  width: 265px;
+  margin: 0 auto;
+}
+
+.jifen-code .jifen-yh {
+font-size: 18px;
+
+}
+.jifen-more{
+margin: 5px 0 20px 0;
+}
+.jifen-code .jifen-wn {
+font-size:13px;
+}
+}
+</style>
+<div class="jifen-box">
+<div class="jifen-code">
+  <div>
+      <p class="jifen-yh">$15 Off</p>
+      <p class="jifen-wn">For members only</p>
+  </div>
+  <div class="jifen-btn"> 
+      <a onclick="SmileUI.openPanel();">
+          Join Now
+      </a>
+  </div>
+</div>
+<div class="jifen-more">
+  <a href="/pages/rewards-program">
+      More
+  </a>
+</div>
+</div>

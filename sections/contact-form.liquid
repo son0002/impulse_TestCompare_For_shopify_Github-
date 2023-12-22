@@ -1,0 +1,257 @@
+<div class="index-section">
+  <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+    {%- if section.settings.title != blank -%}
+    <div class="section-header">
+      <h2 class="section-header__title">
+        {{ section.settings.title }}
+      </h2>
+      {%- if section.settings.text != blank -%}
+      <div class="rte section-header__rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+    </div>
+    {% endif %}
+    {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
+    <style type="text/css">
+      .col-xs-12 img {
+        width: 40px;
+        margin-bottom: 10px;
+      }
+
+      .contact-row {
+        margin: 0 auto;
+        padding-bottom: 30px;
+      }
+
+      .contact-row .contact-item {
+        border-radius: 8px;
+        padding: 20px 10px 20px 10px;
+        border: 1px solid gainsboro;
+        box-shadow: 0px 0px 3px 1px gainsboro;
+      }
+
+      .contact-items {
+        border-radius: 8px;
+        padding: 20px 10px 20px 10px;
+        border: 1px solid gainsboro;
+        box-shadow: 0px 0px 3px 1px gainsboro;
+      }
+
+      
+      @media screen and (min-width: 768px) {
+        .contact-row .contact-item {
+        width: 48%;
+      }
+      .contact-row .contact-item:nth-child(3){
+        margin-left: 4%;
+      }
+
+      .contact-items:nth-child(3),.contact-items:nth-child(4) {
+        margin-bottom: 30px;
+        margin-left: 2%;
+      }
+      .contact-items {
+        width: 32%;
+      }
+      }
+      @media screen and (max-width: 768px) {
+        .contact-items{
+          margin-top: 20px;
+        }
+        .contact-row .contact-item:nth-child(3){
+        margin-top: 20px;
+      }
+        .contact-row .mcgrid__item:nth-child(2),
+        .contact-items:nth-child(2) {
+          margin-left: 0;
+        }
+
+        .row h3 {
+          font-size: 24px;
+        }
+
+      }
+    </style>
+    <div class="row contact-row">
+      <h3>CUSTOMER SUPPORT</h3>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contact-item">
+        <img src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/Live_Chat.png?v=1624453274">
+        <p style="margin-bottom:10px;"><b>Chat Us</b></p>
+        <p class="chat-button" style="margin-bottom:10px;cursor: pointer;color:#bc3d1d;"><b>Live Chat Now</b></p>
+        <p style="margin-bottom:10px;"> Talk to a real human who really cares and get instant answers to your
+          questions.</p>
+
+
+        <script type="text/javascript">
+          (function () {
+            function onTidioChatApiReady() {
+              window.tidioChatApi.hide();
+              window.tidioChatApi.on("close", function () {
+                window.tidioChatApi.hide();
+              });
+            }
+
+            if (window.tidioChatApi) {
+              window.tidioChatApi.on("ready", onTidioChatApiReady);
+            } else {
+              document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+            }
+
+            document.querySelector(".chat-button").addEventListener("click", function () {
+              window.tidioChatApi.show();
+              window.tidioChatApi.open();
+            });
+          })();
+        </script>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contact-item">
+        <img src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/phone.png?v=1624453289">
+        <p style="margin-bottom:10px;"><b>Call Us</b></p>
+        <div>
+          <p><span>833-ZGRILLS or <a style="color:#bc3d1d;" href="tel:400-0000-688">833-947-4557</a><br></span></p>
+          <p>We are here for you Monday through Friday, <span style="color:#bc3d1d;">9:00 am. - 5:30 pm.</span>
+            (Holiday hours may differ.)</p>
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="form-vertical">
+      <img style="width:40px;margin-bottom:10px;"
+        src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/email.png?v=1624449953">
+      <p><b>Email Us</b></p>
+      <p >Send us a message at support@zgrills.com. We'll get back to you as quickly as possible.</p>
+      {%- assign form_id = 'contact-' | append: section.id -%}
+      {%- form 'contact', id: form_id -%}
+
+      {%- if form.posted_successfully? -%}
+      <p class="note note--success">
+        {{ 'contact.form.post_success' | t }}
+      </p>
+      {%- endif -%}
+
+      {{ form.errors | default_errors }}
+
+      <div class="grid grid--small">
+        <div class="grid__item medium-up--one-half">
+          <label for="ContactFormName-{{ section.id }}">{{ 'contact.form.name' | t }}</label>
+          <input type="text" id="ContactFormName-{{ section.id }}" class="input-full" name="contact[name]"
+            autocapitalize="words"
+            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+        </div>
+
+        <div class="grid__item medium-up--one-half">
+          <label for="ContactFormEmail-{{ section.id }}">{{ 'contact.form.email' | t }}</label>
+          <input type="email" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]"
+            autocorrect="off" autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+        </div>
+      </div>
+
+      {%- if section.settings.show_phone -%}
+      <label for="ContactFormPhone-{{ section.id }}">
+        ORDER NUMBER
+        <!--       	{{ 'contact.form.phone' | t }} -->
+      </label>
+
+      <input type="tel" id="ContactFormPhone-{{ blockId }}" class="input-full" name="contact[Order Number]"
+        pattern="[0-9\-]*"
+        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+      {%- endif -%}
+
+      <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
+      <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full"
+        name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+      <button type="submit" class="btn">
+        {{ 'contact.form.send' | t }}
+      </button>
+
+      {% comment %}
+      Remove the following three lines of code to remove the note
+      about being protected by Google's reCAPTCHA service.
+      By removing it, the small reCAPTCHA widget will appear in the
+      bottom right corner of the page.
+      {% endcomment %}
+      {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+            
+      
+      {%- endform -%}
+    </div>
+
+
+    <div class="row contact-row">
+      <div class="" style="padding-left: 0px;">
+        <h3>For Partners and Business</h3>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12  contact-items">
+          <img src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/Business_Inquiries.png?v=1624451351">
+          <p><b>Business Inquiries</b></p>
+          <p><a style="color: #BC3D1D;" href="mailto:support@zgrills.com"><b>Click here</b></a> for support and all
+            business inquiries. </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 contact-items">
+          <img src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/Affiliate_Partner.png?v=1624451350">
+          <p><b>Affiliate Partners</b></p>
+          <p><a style="color: #BC3D1D;" href="mailto:support@zgrills.com"><b>Click here</b></a> to send all your
+            questions or become our affiliate. </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 contact-items">
+          <img src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/Media.png?v=1624451367">
+          <p><b>Media</b></p>
+          <p>For media inquiries, quotes, and interviews,<a style="color: #BC3D1D;" href="mailto:serena@zgrills.com"><b>
+                click here</b></a> to contact us</p>
+        </div>
+
+        <div class="mcgrid__item col-lg-12 col-md-12 col-sm-12 col-xs-12"
+          style="padding: 50px 0;">
+          <span style="text-align:left;">
+            <h3>ZGRILLS INC.</h3><br>Address: 2625 E Cedar St, Ontario, California, United States, 91761
+          </span>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Contact form",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "All submissions are sent to the customer email address of your store. [Learn more](https://help.shopify.com/en/manual/using-themes/change-the-layout/add-contact-form#view-contact-form-submissions)."
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Contact us"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_phone",
+        "label": "Show phone number"
+      },
+      {
+        "type": "checkbox",
+        "id": "narrow_column",
+        "label": "Narrow column",
+        "default": true
+      }
+    ],
+    "presets": [{
+      "name": "Contact form"
+    }]
+  }
+{% endschema %}

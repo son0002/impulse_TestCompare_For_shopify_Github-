@@ -1,0 +1,980 @@
+{{ 'jq.js' | asset_url | script_tag }}
+{{ 'bootstrap.css' | asset_url | stylesheet_tag }}
+{{ 'swiper.css' | asset_url | stylesheet_tag }}
+{{ 'swiper.js' | asset_url | script_tag }}
+<style>
+    .title-weight h2,
+    .title-weight h1,
+    .title-weight span,
+    .title-weight {
+        font-family: Impact;
+    }
+
+    .lazyloaded{
+        width: 100%;
+    }
+
+    .product-box {
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    .product_sku {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .product_sku_item {
+        width: 49%;
+        background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 1px solid #f1f2f6;
+    justify-content: center;
+    border-radius: 5px;
+    }
+
+    .product_sku_item div {
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .adc-form {
+        margin: 10px 0;
+    }
+
+    .btns {
+        background-color: #bc3d1d;
+        text-align: center;
+        line-height: 40px;
+    }
+
+
+
+    .adc-form button {
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .skuActive {
+        background-color: #f1f2f6;
+    color: #000;
+    border-radius: 5px;
+    font-weight: 700;
+    }
+
+    .product-price-new {
+        display: inline-block;
+        color: #bc3d1d;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .product-price-old {
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+        text-decoration: line-through;
+    }
+
+    .product-7002c2e li {
+        list-style: none;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .swiper-container {
+        overflow: hidden;
+    }
+
+    .page_widths {
+        max-width: 1420px;
+        margin: 0 auto;
+    }
+
+    .styletitle h2 ,.styletitle span{
+        text-shadow: 0px 0px 7px #21D4FD;
+        -webkit-text-stroke: 2px #000103;
+    }
+
+    .addtocat_bg {
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box_fixed {
+        width: 100%;
+        position: fixed;
+        bottom: -1px;
+        display: none;
+        z-index: 99;
+        background-color: #fff;
+    }
+
+
+    #s-6599dfbd-1234-44f5-9248-66b67fc58246 .shg-row .shg-c-lg-2,
+    #s-6599dfbd-1234-44f5-9248-66b67fc58246 .shg-row .shg-c-lg-4 {
+        width: 20% !important;
+        padding: 0 10px;
+    }
+
+    #s-6599dfbd-1234-44f5-9248-66b67fc58246 .shg-row .shg-c-lg-2:nth-child(1) {
+        padding-left: 0;
+    }
+
+    #s-6599dfbd-1234-44f5-9248-66b67fc58246 .shg-row .shg-c-lg-2:nth-child(5) {
+        padding-right: 0;
+    }
+
+
+    .blind-product_title {
+        color: #000000;
+        font-size: 24px;
+    }
+
+    .KlarnaInfoPageOnSiteMessagingAppElement {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        color: #fff;
+    }
+
+    .KlarnaInfoPageOnSiteMessagingAppElement button {
+        display: contents;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .KlarnaInfoPageOnSiteMessagingAppElement p button {
+        text-decoration: underline;
+    }
+
+    .KlarnaInfoPageOnSiteMessagingAppElement .text-wrapper {
+        margin-left: 10px;
+    }
+
+    .befonex,
+    .befonex h2 {
+        margin-bottom: 0;
+    }
+
+    .badge svg {
+        width: 30px;
+    }
+
+    #certify {
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #certify .swiper-container {
+        padding-bottom: 60px;
+    }
+
+    #certify .swiper-slide {
+        background: #fff;
+        /* box-shadow: 0 8px 30px #ddd; */
+    }
+
+    #certify .swiper-slide img {
+        display: block;
+    }
+
+    #certify .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 5px;
+        border: 3px solid #fff;
+        background-color: #d5d5d5;
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+    }
+
+    #certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
+        border: 3px solid #B70101;
+        background-color: #fff;
+    }
+
+    #certify .swiper-button-prev {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #FEE100;
+    }
+
+    #certify .swiper-button-next {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #FEE100;
+    }
+
+    #certify svg{
+        color: #000;
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .reviews img {
+        width: 130px !important;
+        height: 130px;
+        border-radius: 50%;
+    }
+
+    .name {
+        font-weight: 600;
+    }
+
+    .testimonial-stars {
+        color: #09FEEF;
+    }
+
+    .reviews h2 {
+        font-weight: 700;
+    }
+
+
+    .swiper-container450b_2,
+    .swiper-container450b_2 .swiper-slide,
+    .reviews img {
+        width: 100%;
+    }
+
+
+    .editSpan .btnSpan {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 13px;
+        background-color: #FEE100;
+        padding: 6px;
+        border-radius: 16px;
+        color: #000;
+    }
+
+    .editSpan2 .btnSpan2 {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    .swiper-container450bmc_2 {
+        display: none;
+    }
+
+    .swiper-container450bmc_2 .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+    }
+
+    #product-singleform {
+        margin: 10px 20px 10px 20px;
+        padding: 7px 0 7px 0;
+        border-radius: 3px;
+        background: #bd3d1d;
+    }
+
+    #product-singleform button {
+        width: 100%;
+        height: 100%;
+    }
+
+    .affirm-modal-trigger,.affirm-as-low-as {
+        color: #fff;
+    }
+
+    .product-title a{
+        color: #FEE100;
+    }
+
+    .stamped-badge-caption{
+        color: #D9D9D9;
+    }
+
+    .product-box-item p {
+        margin: 0;
+    }
+
+    .badge {
+        padding: 0 !important;
+    }
+
+    .textcontent {
+        margin-top: 30px;
+    }
+
+    .textcontent span {
+        color: #FEE100;
+    }
+
+    .textcontent b {
+        color: #B4B4B4;
+    }
+
+    .box p{
+        width: 100%;
+    }
+
+
+    @media screen and (min-width:768px) {
+        #s-343fcff2-78ee-4e6a-a87d-9c20f9be6e25 .shg-row {
+            align-items: center;
+        }
+
+        .product-box-item {
+            width: 50%;
+            padding: 0 15px;
+        }
+
+
+        .reviews div:nth-child(1) {
+            width: 70%;
+        }
+
+        .reviews div:nth-child(2) {
+            width: 30%;
+        }
+
+        .reviews {
+            color: #fff;
+    background: #0F253B;
+            min-height: 350px;
+        }
+
+        .product-box {
+            padding: 2%;
+            background: #001627;
+            box-shadow: 0px 0px 48px 6px #FEE100;
+        }
+        
+    }
+    .mySwiper-re .swiper-slide-active ,#certify .swiper-slide-active{
+            border: 2px solid #09FEEF;
+        }
+
+        .media-content {
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin-top: 30px;
+  }
+
+  .slideContent {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ICON_8d73440c-e305-4245-bf41-1df841583c5a.jpg?v=1681719765");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .media-mySwiper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .mediaimg {
+    margin: 0;
+  }
+
+  .baheyi-big-bg {
+    padding: 0 10px;
+  }
+
+  .cs-container {
+    padding: 0 10px;
+  }
+
+  .rl-box {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .rl-content {
+    display: block;
+  }
+
+  .rl-content p {
+    text-align: center;
+  }
+
+  .rl-content b {
+    font-size: 26px;
+  }
+
+  .box-2 {
+    margin: 10px 0;
+  }
+
+  .flex-cs div {
+    text-align: left;
+    width: 50%;
+  }
+
+  .font-si img {
+    width: 60px;
+  }
+
+  
+
+  .media-text {
+    position: absolute;
+    width: 50%;
+    left: 5%;
+    height: 70%;
+    top: 15%;
+    background-color: #000c;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.slide-res img {
+    max-width: 88px;
+    width: 100%;
+}
+
+.media-mySwiper .swiper-slide {
+    padding: 15px 8%;
+    min-height: 230px;
+    color: #fff;
+    font-size: 18px;
+}
+.media-text .sad2ssa {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.media-mySwiper .icon {
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+}
+
+.media-mySwiper .swiper-button-prev, .media-mySwiper .swiper-button-next {
+    color: #fff;
+    background-color: #bc3d1d;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+    @media only screen and (max-width: 769px) {
+        .media-mySwiper .swiper-button-prev, .media-mySwiper .swiper-button-next {
+  
+    width: 30px;
+    height: 30px;
+}
+
+        .media-text {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+        .product-box {
+            padding: 2%;
+            border: 2px solid;
+            border-image: linear-gradient(0deg, #B1790D, #FCF3B3, #DFB861, #DFA136, #FAE687, #FDB900) 10 10;
+            box-shadow: 0px 0px 70px 0px rgba(253, 176, 6, 0.45);
+            background-image: none;
+        }
+
+        .styletitle h2 {
+            display: inline !important;
+            background-position: 0 14px;
+            background-size: 100% 19px;
+        }
+
+        .blind-product_title {
+            font-size: 14px;
+        }
+
+        .page_widths {
+            padding: 0 10px;
+        }
+
+        .product-box {
+            flex-flow: wrap;
+        }
+
+        .product-box-item {
+            width: 100%;
+            padding: 0;
+        }
+
+        .product-box .swiper-button-next {
+            right: -10px !important;
+        }
+
+        .product-box .swiper-button-prev {
+            left: -10px !important;
+        }
+
+        .addtocat_bg {
+            text-align: center;
+            color: #000;
+            background-color: #fff;
+            background-size: 100% 100%;
+            padding-top: 15px !important;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .addtocat_bg h2 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .swiper-container450bmc_2 {
+            display: block;
+        }
+
+        .mcnone {
+            display: none;
+        }
+
+
+        .reviews {
+            display: block;
+            padding: 5%;
+            color: #fff;
+    background: #0F253B;
+        }
+
+        .mySwiper-re .swiper-pagination-bullet {
+            background-color: #fff !important;
+        }
+
+        #s-68c8ee34-8d02-4178-9e60-638fbdf79890 .col-xs-12 {
+            padding: 0;
+        }
+
+
+        #s-1abf13f6-4454-4f68-9b0f-102baa042e76 h2 {
+            line-height: 30px;
+        }
+    }
+
+</style>
+
+
+<!--  template  -->
+{% render 'shogun-products', content: page %}
+{% comment %}
+Auto-generated by Shogun.
+This file can be re-written at any time.
+{% endcomment %}
+
+<div class="shg-clearfix"></div>
+{{page.content}}
+<div class="container-fluid box_fixed">
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+
+        </div>
+        <div class="addtocat_bg col-lg-10 col-md-10 col-sm-10 col-xs-12">
+            <div>
+                <h2 style="margin:0;" class='blind-product_title'>BLIND BOX WITH PID</h2>
+                <p style="margin: 0;color: #000;text-align: left;">LOW STOCK! HURRY UP!</p>
+            </div>
+            <form id="product-singleform" method="post" action="/cart/add" id="AddToCartForm-6587008548913"
+                accept-charset="UTF-8" class="mcWid larges orangellows buttons" enctype="multipart/form-data"><input
+                    type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+                <select name="id" id="ProductSelect-6587008548913" class="product-single__variants no-js">
+                    <option class='blindVal' selected="selected" value="39363530555441">
+                        Pellet Grill Blind Box - $399.00 USD
+                    </option>
+                </select>
+                <div class="payment-buttons">
+                    <button type="submit" name="add" id="AddToCart-6587008548913" class="">
+                        <span style="color: #fff;" id="AddToCartText-6587008548913"
+                            data-default-text="Add to cart"><b>GRAB IT NOW</b></span>
+
+                    </button>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(".box").addClass("active")
+    var num = 0
+    var galleryThumbs = new Swiper('.gallery-thumbs-boss', {
+        spaceBetween: 5,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        allowSlidePrev: false,
+        allowSlideNext: false,
+       breakpoints: {
+                1100: {
+                    spaceBetween: 30,
+                }
+            },
+        on: {
+            click: function () {
+
+                $(".wrap").on("click", function () {
+                    $(this).children().removeClass("active")
+                })
+            }
+        }
+    });
+    var galleryTop = new Swiper('.gallery-top-boss', {
+        mousewheels: false,
+        spaceBetween: 10,
+        thumbs: {
+            swiper: galleryThumbs
+        },
+        swipeHandler: '.swipe-handler',
+
+    });
+
+    // 2
+    var galleryThumbs1 = new Swiper('.gallery-thumbs-boss-item1', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next0',
+            prevEl: '.swiper-button-prev0',
+        },
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+
+    });
+    var galleryTop1 = new Swiper('.gallery-top-boss-item1', {
+        loop: true,
+        noSwiping: true,
+        spaceBetween: 10,
+        thumbs: {
+            swiper: galleryThumbs1
+        },
+        navigation: {
+            nextEl: '.swiper-button-next0',
+            prevEl: '.swiper-button-prev0',
+        },
+    });
+
+    var galleryThumbs3 = new Swiper('.gallery-thumbs-boss-item3', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next3',
+            prevEl: '.swiper-button-prev3',
+        },
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+
+    });
+    var galleryTop3 = new Swiper('.gallery-top-boss-item3', {
+        loop: true,
+        noSwiping: true,
+        spaceBetween: 10,
+        thumbs: {
+            swiper: galleryThumbs1
+        },
+        navigation: {
+            nextEl: '.swiper-button-next3',
+            prevEl: '.swiper-button-prev3',
+        },
+    });
+    // 3
+    var galleryThumbs2 = new Swiper('.gallery-thumbs-boss-item2', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next1',
+            prevEl: '.swiper-button-prev1',
+        },
+    });
+    var galleryTop2 = new Swiper('.gallery-top-boss-item2', {
+        noSwiping: true,
+        spaceBetween: 10,
+        thumbs: {
+            swiper: galleryThumbs2
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next1',
+            prevEl: '.swiper-button-prev1',
+        },
+    });
+
+
+    // 6
+    var galleryThumbs5 = new Swiper('.gallery-thumbs-boss-item5', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next4',
+            prevEl: '.swiper-button-prev4',
+        },
+    });
+    var galleryTop5 = new Swiper('.gallery-top-boss-item5', {
+        noSwiping: true,
+        spaceBetween: 10,
+        thumbs: {
+            swiper: galleryThumbs5
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next4',
+            prevEl: '.swiper-button-prev4',
+        },
+    });
+
+
+    var galleryThumbs6 = new Swiper('.gallery-thumbs-boss-item6', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next6',
+            prevEl: '.swiper-button-prev6',
+        },
+    });
+    var galleryTop5 = new Swiper('.gallery-top-boss-item6', {
+        noSwiping: true,
+        spaceBetween: 10,
+        thumbs: {
+            swiper: galleryThumbs6
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next6',
+            prevEl: '.swiper-button-prev6',
+        },
+    });
+
+
+    var galleryThumbsnew = new Swiper('.gallery-thumbs-boss-item-new', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next-new',
+            prevEl: '.swiper-button-prev-new',
+        },
+    });
+    var galleryTopnew = new Swiper('.gallery-top-boss-item-new', {
+        noSwiping: true,
+        spaceBetween: 10,
+        thumbs: {
+            swiper: galleryThumbsnew
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next-new',
+            prevEl: '.swiper-button-prev-new',
+        },
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+
+        var product_info = {{ all_products['z-grills-pellet-grill-blind-box-with-pid-and-grill-cover'] | json
+    }};
+
+    function compareFn(number, name) {
+        number === null ?
+            name.css('display', 'none') :
+            name.text(price_fun('$' + number));
+    };
+    function products_info_7002c2e(className, prooduct_handle) {
+        $(className + ' h2 a').text(prooduct_handle.title);
+        $(className + ' .product_img img').attr('src', prooduct_handle.images[0]);
+        $(className + ' h2 a').attr('href', ('/products/') + prooduct_handle.handle)
+        $(className + ' .product_sku_item1 div').text(prooduct_handle.variants[0].title)
+        $(className + ' .product_sku_item2 div').text(prooduct_handle.variants[1].title)
+        compareFn(prooduct_handle.variants[0].price, $(className + ' .product-price-new'))
+        compareFn(prooduct_handle.variants[0].compare_at_price, $(className + ' .product-price-old'))
+        $(className + ' option').attr('value', prooduct_handle.variants[0].id)
+    }
+    products_info_7002c2e('.product-7002c2e', product_info)
+    $('.product-7002c2e .product_sku_item').eq(0).addClass('skuActive')
+    $('.product-7002c2e .product_sku_item').on('click', function () {
+        let dom = $(this)
+        var indexs = dom.index()
+        dom.addClass('skuActive')
+        dom.siblings().removeClass('skuActive')
+
+        switch (indexs) {
+            case 0:
+                compareFn(product_info.variants[0].price, $('.product-7002c2e .product-price-new'))
+                compareFn(product_info.variants[0].compare_at_price, $('.product-7002c2e .product-price-old'))
+                $('.product-7002c2e option').attr('value', product_info.variants[0].id)
+                $('.product-7002c2e .product_img img').attr('src', product_info.images[0]);
+                $('.bdimg').css('display', 'none')
+                $('.blindVal').attr('value', product_info.variants[0].id)
+                break;
+            case 1:
+                compareFn(product_info.variants[1].price, $('.product-7002c2e .product-price-new'))
+                compareFn(product_info.variants[1].compare_at_price, $('.product-7002c2e .product-price-old'))
+                $('.product-7002c2e option').attr('value', product_info.variants[1].id)
+                $('.product-7002c2e .product_img img').attr('src', product_info.images[1]);
+                $('.bdimg').css('display', 'block')
+                $('.blindVal').attr('value', product_info.variants[1].id)
+                break;
+            default:
+        }
+
+    })
+
+    var winWidth = 768;
+    var winHeight = 1050;
+    var pmHeight = 200;
+    var windowWidth = $(window).width();
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > pmHeight) {
+            $(".box_fixed").show(500)
+        } else {
+            $(".box_fixed").hide(500)
+        }
+    });
+   
+		
+	})
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+    var arr = [{
+        name: ".swiper-container450b_2",
+        param: {
+            slidesPerView: 2,
+            spaceBetween:20,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination450b_2',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next450b_2',
+            },
+
+        }
+    }, {
+        name: ".swiper-container450bmc_2",
+        param: {
+            slidesPerView: 1.3,
+            spaceBetween: 5,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        }
+    }, {
+        name: "#certify .swiper-container",
+        param: {
+            watchSlidesProgress: true,
+            slidesPerView: 1.9,
+            centeredSlides: true,
+            navigation: {
+            nextEl: '.swiper-button-next-review',
+            prevEl: '.swiper-button-prev-review',
+        },
+
+            loop: true,
+            on: {
+                progress: function (progress) {
+                    for (i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i);
+                        var slideProgress = this.slides[i].progress;
+                        modify = 1;
+                        if (Math.abs(slideProgress) > 1) {
+                            modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                        }
+                        translate = slideProgress * modify * 260 + 'px';
+                        scale = 1 - Math.abs(slideProgress) / 9;
+                        zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                        slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                        slide.css('zIndex', zIndex);
+                        slide.css('opacity', 1);
+                        if (Math.abs(slideProgress) > 3) {
+                            slide.css('opacity', 0);
+                        }
+                    }
+                },
+                setTransition: function (transition) {
+                    for (var i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i)
+                        slide.transition(transition);
+                    }
+
+                }
+            }
+        }
+    }]
+    swiper = [];
+    arr.forEach((a, e) => {
+        swiper[e] = new Swiper(a.name, a.param)
+    });
+    var iconCount = 0;
+    $('.faq_item .pcfaqBg').on("click", function (e) {
+        $(this).siblings('.text_p').slideToggle("show")
+        iconCount++;
+        if (iconCount % 2 != 0) {
+            $(this).find('.icon').addClass('activeIcon')
+            $(this).find('.icon').removeClass('removeIcon')
+        } else {
+            $(this).find('.icon').addClass('removeIcon')
+            $(this).find('.icon').removeClass('activeIcon')
+        }
+    })
+</script>

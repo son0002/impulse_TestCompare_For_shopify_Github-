@@ -1,0 +1,463 @@
+{%- liquid
+  assign current_filter_size = 0
+
+  for filter in collection.filters
+    assign current_filter_size = current_filter_size | plus: filter.active_values.size
+  endfor
+-%}
+
+<style>
+  @media only screen and (min-width:768px){
+   .medium-up--one .grid-product__meta{
+    padding: 0px 0 6px;
+  }
+
+ 
+
+    .medium-up--one{
+    margin-bottom:0px;
+    border-top: 1px solid #e8e9eb;
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-left: 0;
+/*     float: none; */
+    width: 100%;
+    clear: both;
+    display: block;
+    margin-left: 22px;
+  }
+  .medium-up--one:first-child{
+    border-top: 0;
+  }
+    }
+    .medium-up--one .grid__image-ratio--square:before{
+    padding-bottom:0;
+  }
+
+  .medium-up--one .grid__image-ratio img{
+    position: inherit;
+    height: auto;
+  }
+
+  .medium-up--one .grid-product__link{
+    width: 100%;
+    position: relative;
+  }
+  .medium-up--one .grid-product__image-mask{
+    width: 250px;
+    float: left;
+  }
+
+  .medium-up--one .grid-product__meta{
+    width: calc(100% - 250px);
+    float: left;
+    padding-left: 16px;
+  }
+
+  .medium-up--one .edit_price{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    flex-wrap: nowrap;
+    user-select: none;
+  }
+
+  .medium-up--one .collection-item-specs-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 80px;
+    width: 100%;
+  }
+
+  .medium-up--one .spec-data{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .medium-up--one .collection-item-specs-list span{
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight:600;
+    margin-bottom: 5px;
+  }
+
+  .medium-up--one .spec-label {
+    color: #9c9c9c;
+    font-size: 13px !important;
+  }
+
+  .stamped-product-reviews-badge{
+    margin:10px 0
+  }
+
+  .medium-up--one .boost-pfs-filter-product-item-price{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #bc3d1d;
+  }
+
+  .medium-up--one .grid-product__price--original{
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 5px;
+    color: #666;
+  }
+
+  .medium-up--one .btn{
+    background-color:#202020;
+    letter-spacing: 0px;
+  }
+
+  @media only screen and (max-width:768px){
+    .medium-up--one {
+      width:calc(100% - 5px);
+    }
+
+    .medium-up--one .product_infos{
+      display:none;
+    }
+
+    .medium-up--one .edit_price{
+      display:block;
+    }
+    
+    .medium-up--one .collection-item-specs-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+    }
+
+    .medium-up--one .collection-item-specs-list span{
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight:600;
+    margin-bottom: 3px;
+  }
+
+  .medium-up--one .spec-label {
+    color: #9c9c9c;
+    font-size: 13px !important;
+  }
+
+  .medium-up--one .grid-product__title--heading{
+    font-size:18px;
+  }
+
+  .boost-pfs-filter-product-item-price{
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:10px;
+  }
+
+  .grid-product__price--original{
+      font-size:13px;
+   }
+
+    .medium-up--one{
+    margin-bottom:0px;
+    border-top: 1px solid #e8e9eb;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-left: 0;
+/*     float: none; */
+    width: 100%;
+    clear: both;
+    display: block;
+  }
+
+  .affirm-as-low-as{
+    text-align: center;
+    margin: 10px 0;
+  }
+  }
+  .disableds{
+    background-color: #f6f6f6 !important;
+    border-color: #b6b6b6 !important;
+  }
+
+  .product_infos{
+    font-size: 14px;
+    line-height: 18px;
+    color: #3a3a3a;
+  }
+</style>
+
+<div
+  class="collection-content"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-grid"
+>
+  <div id="CollectionAjaxContent">
+    <div class="page-width">
+      <div class="grid">
+        <div class="grid__item medium-up--one-fifth grid__item--sidebar">
+          {%- render 'collection-grid-filters',
+            collection: collection,
+            enable_sidebar: section.settings.enable_sidebar,
+            filter_style: section.settings.filter_style,
+            collapsed: section.settings.collapsed,
+            enable_color_swatches: section.settings.enable_color_swatches
+          -%}
+        </div>
+        <div class="grid__item medium-up--four-fifths grid__item--content">
+          {%- paginate collection.products by paginate_by -%}
+
+          {%- for block in section.blocks -%}
+            <div {{ block.shopify_attributes }} {%- if block.type == 'product-grid' -%}data-scroll-to{%- endif -%}>
+              {%- case block.type -%}
+              {%- when 'collection_description' -%}
+                {%- if collection.description != blank and current_filter_size == 0 -%}
+                  <div class="rte collection__description">
+                    {{ collection.description }}
+                  </div>
+                {%- endif -%}
+              {%- when 'subcollections' -%}
+                {%- if paginate.current_page == 1 and current_filter_size == 0 -%}
+                  {%- render 'subcollections', per_row: block.settings.subcollections_per_row -%}
+                {%- endif -%}
+              {%- when 'product_grid' -%}
+                <div  data-scroll-to>
+                  {%- assign paginate_by = block.settings.per_row | times: block.settings.rows_per_page -%}
+
+                  {% render 'collection-grid',
+                    collection: collection,
+                    items: collection.products,
+                    enable_sidebar: section.settings.enable_sidebar,
+                    filter_style: section.settings.filter_style,
+                    enable_sort: section.settings.enable_sort,
+                    enable_collection_count: block.settings.enable_collection_count,
+                    per_row: block.settings.per_row,
+                    mobile_flush_grid: block.settings.mobile_flush_grid,
+                    quick_shop_enable: settings.quick_shop_enable,
+                    switch_btn:section.settings.switch_btn
+                  %}
+                  {%- if paginate.pages > 1 -%}
+                    {%- render 'pagination', paginate: paginate -%}
+                  {%- endif -%}
+                </div>
+              {%- endcase -%}
+            </div>
+          {%- endfor -%}
+
+          {%- endpaginate -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.enable_sidebar == false or section.settings.filter_style == 'drawer' or collection.filters.size == 0 -%}
+{% comment %}
+  Override grid styles if sidebar is disabled
+{% endcomment %}
+{% style %}
+  .collection-content .grid__item--sidebar { width: 0; padding:0; }
+  .collection-content .grid__item--content { width: 100%; }
+  .grid__item--sidebar { position: static; overflow: hidden; }
+{% endstyle %}
+{%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollectionPage",
+  {% if collection.description != blank %}
+    "description": {{ collection.description | strip_html | json }},
+  {% endif %}
+  {% if page_image %}
+    {% assign image_size = page_image.width | append: 'x' %}
+    "image": {
+      "@type": "ImageObject",
+      "height": {{ page_image.height | json }},
+      "url": {{ page_image | img_url: image_size | prepend: "https:" | json }},
+      "width": {{ page_image.width | json }}
+    },
+  {% endif %}
+  "name": {{ collection.title | json }},
+  "@type": "FAQPage",
+  "mainEntity": {
+    "@type": "Question",
+    "name": "What Is Pellet Smoker?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pellet grills/smokers are all-in-one outdoor cookers that can be used as smokers,
+                charcoal/gas grills, and ovens. They burn hardwood pellets for either direct or indirect
+                cooking and infuse pure hardwood smoky flavor into your food. Read more"
+    }
+  }, {
+    "@type": "Question",
+    "name": "How Does A Pellet Grill Work?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "First, the wood pellets are poured into a storage container on the side of the grill
+                called a hopper. The pellets are then fed into the cooking chamber by an electrically
+                powered auger motor. There, a hot rod ignites the pellets and the intake fans bring in
+                air. Heat and smoke are then circulated throughout the cooking chamber. Learn more"
+    }
+  }, {
+    "@type": "Question",
+    "name": "Z Grills Pellet Grill vs Electric vs Gas vs Charcoal vs Propane Grill",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "
+                For the ultimate in flavor, versatility, ease of use, and precision, a Z Grills wood
+                pellet grill is the only grill you need!
+                Using fan forced convection cooking and 100% all-natural hardwood fuel, Z
+                Grills pellet grills produce better flavor than charcoal grills and are more convenient
+                than gas grills. Discover more Z Grills benefits"
+    }
+  }, {
+    "@type": "Question",
+    "name": " What Size Pellet Grill Do I Need?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Looking for the best pellet grill? The one that meets your needs is the best one for you! The right size pellet
+                  grill depends on how you plan to use it. If you cook for your family only, a smaller size
+                  may suffice, but if you entertain large crowds, you may need a larger grill. Check
+                  out our pellet grill buying guide to find the perfect grill for your need."
+    }
+  }
+}
+</script>
+
+{% schema %}
+  {
+    "name": "Product grid",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Filtering and sorting"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_sidebar",
+        "label": "Enable filter",
+        "default": true,
+        "info": "Allow your customers to filter collections and search results by product availability, price, color, and more. [Customize filters](/admin/menus)"
+      },
+      {
+        "type": "checkbox",
+        "id": "switch_btn",
+        "label": "switch btn",
+        "default": true,
+        "info": "Customized version, hidden tab on mobile."
+      },
+      {
+        "type": "checkbox",
+        "id": "collapsed",
+        "label": "Collapse filters",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "filter_style",
+        "label": "Filter style",
+        "default": "sidebar",
+        "options": [
+          {
+            "value": "sidebar",
+            "label": "Sidebar"
+          },
+          {
+            "value": "drawer",
+            "label": "Drawer"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_color_swatches",
+        "label": "Enable color swatches",
+        "info": "[View setup instructions](https://archetypethemes.co/blogs/impulse/how-do-i-set-up-color-swatches)"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_sort",
+        "label": "Show sort options",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection_description",
+        "name": "Collection description",
+        "limit": 1
+      },
+      {
+        "type": "product_grid",
+        "name": "Products",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enable_collection_count",
+            "label": "Enable collection count",
+            "default": true
+          },
+          {
+            "type": "range",
+            "id": "per_row",
+            "label": "Products per row",
+            "default": 4,
+            "min": 1,
+            "max": 5,
+            "step": 1
+          },
+          {
+            "type": "range",
+            "id": "rows_per_page",
+            "label": "Rows per page",
+            "default": 7,
+            "min": 3,
+            "max": 20,
+            "step": 1
+          },
+          {
+            "type": "checkbox",
+            "id": "mobile_flush_grid",
+            "label": "Flush grid on mobile",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "test_func",
+            "label": "testcheck",
+            "default": false
+          }
+        ],
+        "limit": 1
+      },
+      {
+        "type": "subcollections",
+        "name": "Subcollections",
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "Links to collections from your menu will appear here. [Learn more](https://archetypethemes.co/blogs/expanse/how-do-i-create-subcollections)"
+          },
+          {
+            "type": "range",
+            "id": "subcollections_per_row",
+            "label": "Subcollections per row",
+            "default": 5,
+            "min": 2,
+            "max": 5,
+            "step": 1
+          }
+        ],
+        "limit": 1
+      }
+    ]
+
+  }
+{% endschema %}

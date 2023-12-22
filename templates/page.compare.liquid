@@ -1,0 +1,1953 @@
+{{ 'jq.js' | asset_url | script_tag }}
+{{ 'compare.css' | asset_url | stylesheet_tag }}
+{{ 'bootstrap.css' | asset_url | stylesheet_tag }}
+{{ 'bootstrap.js' | asset_url | script_tag }}
+
+{% assign variants2 = all_products['zpg-700d4e-pellet-grill'].variants %}
+<script>
+	const product2 = {{ all_products['zpg-700d4e-pellet-grill'] | json }};
+
+	{% for variant in variants2 %}
+	product2.variants[{{ forloop.index0 }}].inventory_quantity = {{ variant.inventory_quantity }};
+	{% endfor %}
+
+	if (product2.variants[0].inventory_quantity <= 0) {
+
+		$(".qbd3").attr("disabled", "disabled");
+		$(".qbd3 span").text("Sold Out")
+	}
+
+</script>
+
+<div class="compare-bg">
+	<div class="container-fluid bigcontainer">
+		<div class="row">
+			<p class="mctext" style="color: #ffffff;font-size:13px;display:none;margin:20px 0 0 0 ;">(The price
+				displayed on this page may not reflect the current price of the product. The current product price is
+				shown on the product page.)</p>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pccol ">
+				<div style="margin: 50px 0 0 0;">
+					<h2 style="color: #ffffff;">PELLET GRILL COMPARISON</h2>
+					<p style="color: #ffffff;">Select up to 3 grills to compare</p>
+					<p style="color: #ffffff;font-size:13px;">(The price displayed on this page may not reflect the
+						current price of the product. The current product price is shown on the product page.)</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pc_product1000">
+				<div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+
+					<ul id="myTabs" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="dropdown active"><a href="#" id="myTabDrop1"
+								class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents"
+								aria-expanded="false">ZPG-700D4E</span></a>
+
+						</li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+
+
+						<!-- 700d4e -->
+						<div role="tabpanel" class="tab-pane fade active in" id="dropdown22"
+							aria-labelledby="dropdown22-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-700D3-1.jpg?v=1612593866" />
+									</div>
+									<h3 align="center">FLAGSHIP 700D4E WIFI -STAINLESS STEEL</h3>
+									<p>{{ all_products['zpg-700d4e-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-700d4e-pellet-grill'].compare_at_price_min |money
+											}}</span></p>
+
+									<form method="post" action="/cart/add" id="AddToCartForm-4822491988017"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4822491988017"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39774960517169">
+												700D3 - $799.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-4822491988017"
+												class="btn btn--full add-to-cart qbd3 btn--secondary">
+												<span id="AddToCartText-4822491988017" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-700d4e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+			<!-- 700系列为主 -->
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6  ">
+				<div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+					<ul id="myTabs" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="dropdown active"><a href="#" id="myTabDrop17_700"
+								class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents_700"
+								aria-expanded="false">🆕ZPG-200A <span class="caret"></span></a>
+							<ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents_700">
+								<li class="click_one_700 active"><a href="#dropdown17_700" role="tab"
+										id="dropdown17_700-tab" data-toggle="tab" aria-controls="dropdown1_700"
+										aria-expanded="true">🆕ZPG-200A</a></li>
+								<li class="click_one_700"><a href="#dropdown5_700" role="tab" id="dropdown5_700-tab"
+										data-toggle="tab" aria-controls="dropdown5_700"
+										aria-expanded="false">ZPG-450A</a></li>
+								<li class="click_one_700"><a href="#dropdown25_700" role="tab" id="dropdown25-tab_700"
+										data-toggle="tab" aria-controls="dropdown25_700"
+										aria-expanded="false">ZPG-450B</a></li>
+								<li class="click_one_700"><a href="#dropdown6_700" role="tab" id="dropdown6_700-tab"
+										data-toggle="tab" aria-controls="dropdown6_700"
+										aria-expanded="false">ZPG-550A</a></li>
+								<li class="click_one_700"><a href="#dropdown11_700" role="tab" id="dropdown11_700-tab"
+										data-toggle="tab" aria-controls="dropdown11_700"
+										aria-expanded="false">ZPG-L6002E</a></li>
+								<li class="click_one_700 "><a href="#dropdown13_700" role="tab" id="dropdown13_700-tab"
+										data-toggle="tab" aria-controls="dropdown13_700"
+										aria-expanded="false">ZPG-7002B</a></li>
+								<li class="click_one_700"><a href="#dropdown14_700" role="tab" id="dropdown14_700-tab"
+										data-toggle="tab" aria-controls="dropdown14_700"
+										aria-expanded="false">ZPG-7002E</a></li>
+								<li class="click_one_700"><a href="#dropdown15_700" role="tab" id="dropdown15_700-tab"
+										data-toggle="tab" aria-controls="dropdown15_700"
+										aria-expanded="false">ZPG-700D</a></li>
+								<li class="click_one_700"><a href="#dropdown16_700" role="tab" id="dropdown16_700-tab"
+										data-toggle="tab" aria-controls="dropdown16_700"
+										aria-expanded="false">ZPG-700E</a></li>
+
+								<li class="click_one_700"><a href="#dropdown21_700" role="tab" id="dropdown21-tab_700"
+										data-toggle="tab" aria-controls="dropdown21_700"
+										aria-expanded="false">ZPG-700D3</a></li>
+								<li class="click_one_700"><a href="#dropdown22_700" role="tab" id="dropdown22-tab_700"
+										data-toggle="tab" aria-controls="dropdown22_700"
+										aria-expanded="false">ZPG-700D4E</a></li>
+								<li class="click_one_700"><a href="#dropdown23_700" role="tab" id="dropdown23-tab_700"
+										data-toggle="tab" aria-controls="dropdown23_700"
+										aria-expanded="false">ZPG-7002C</a></li>
+								<li class="click_one_700"><a href="#dropdown24_700" role="tab" id="dropdown24-tab_700"
+										data-toggle="tab" aria-controls="dropdown24_700"
+										aria-expanded="false">ZPG-7002C2E</a></li>
+								<li class="click_one_700"><a href="#dropdown4_700" role="tab" id="dropdown4_700-tab"
+										data-toggle="tab" aria-controls="dropdown4_700"
+										aria-expanded="false">ZPG-1000E</a></li>
+								<li class="click_one_700"><a href="#dropdown2_700" role="tab" id="dropdown2_700-tab"
+										data-toggle="tab" aria-controls="dropdown2_700"
+										aria-expanded="false">ZPG-10002B2E</a></li>
+								<li class="click_one_700"><a href="#dropdown12_700" role="tab" id="dropdown12_700-tab"
+										data-toggle="tab" aria-controls="dropdown12_700"
+										aria-expanded="false">ZPG-10002B</a></li>
+
+								<li class="click_one_700"><a href="#dropdown3_700" role="tab" id="dropdown3_700-tab"
+										data-toggle="tab" aria-controls="dropdown3_700"
+										aria-expanded="false">ZPG-1000D</a></li>
+								<li class="click_one_700"><a href="#dropdown26_700" role="tab" id="dropdown26-tab_700"
+										data-toggle="tab" aria-controls="dropdown26_700"
+										aria-expanded="false">🆕ZPG-10502B</a></li>
+								<li class="click_one_700"><a href="#dropdown1_700" role="tab" id="dropdown1_700-tab"
+										data-toggle="tab" aria-controls="dropdown17_700"
+										aria-expanded="false">🆕ZPG-7052B</a></li>
+								<li class="click_one_700"><a href="#dropdown18_700" role="tab" id="dropdown18_700-tab"
+										data-toggle="tab" aria-controls="dropdown18_700"
+										aria-expanded="false">🆕ZPG-11002B</a></li>
+
+							</ul>
+						</li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+
+						<!-- ZPG-200a -->
+						<div role="tabpanel" class="tab-pane fade active in" id="dropdown17_700"
+							aria-labelledby="dropdown17_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/products/200A-1_540x_8c3e6c42-7461-4ea3-89f8-4877da2b8174_1080x.jpg?v=1660991202" />
+									</div>
+									<h3 align="center">Z GRILLS-200A</h3>
+									<p>$329.00</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4803514531889"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4803514531889"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39562408591409">
+												ZPG-200A - $499.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons">
+											<button type="submit" name="add" id="AddToCart-4803514531889"
+												class="btn btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-4803514531889">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-200a-portable-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ZPG-7052b -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown1_700"
+							aria-labelledby="dropdown1_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/7052B_1080x_7c32ecf1-6aaf-4a04-ad84-d5fa651a0a7f.webp?v=1678873698" />
+									</div>
+									<h3 align="center">Z GRILLS-7052B</h3>
+									<p> $1,099.00</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-1458218696761"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-1458218696761"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39671316054065">
+												Default Title - $399.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-1458218696761"
+												class="btn btn--full add-to-cart swlapro btn--secondary">
+												<span id="AddToCartText-1458218696761" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/multitasker-7052b-with-wi-fi">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- next product -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown2_700"
+							aria-labelledby="dropdown2_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-10002E_d77feef0-92c7-4d43-88ff-b226c3d53b63.jpg?v=1612323673" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-10002e-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-10002e-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-10002e-pellet-grill'].compare_at_price_min |money
+											}}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4468734394417"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4468734394417"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31753905143857">ZPG-10002E - $618.99 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-10002e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="dropdown3_700"
+							aria-labelledby="dropdown3_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-1000D.jpg?v=1611736474" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-1000d-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-1000d-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-1000d-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4468748845105"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4468748845105"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32306602836017">ZPG-1000D - $599.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn yqd btn--full add-to-cart btn--secondary"> <span id=""> Add
+													to cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-1000d-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-1000E -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown4_700"
+							aria-labelledby="dropdown4_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-1000E.jpg?v=1611736533" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-1000e-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-1000e-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-1000e-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4468755431473"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4468755431473"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32436804911153">ZPG-1000E - $679.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn yqe btn--full add-to-cart btn--secondary"> <span id=""> Add
+													to cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-1000e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!--     450a         -->
+						<div role="tabpanel" class="tab-pane fade " id="dropdown5_700"
+							aria-labelledby="dropdown5_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-450A.jpg?v=1611733999" />
+									</div>
+									<h3 align="center">ZGRILLS-450A</h3>
+									<p>{{ all_products['zpg-450a-pellet-grill'].price_min |money }}</p>
+									<form method="post" action="/cart/add" id="" accept-charset="UTF-8"
+										class="product-single__form" enctype="multipart/form-data"><input type="hidden"
+											name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="" class="product-single__variants no-js">
+											<option selected="selected" value="32539342602289">
+												ZPG-450A - $369.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons">
+											<button type="submit" name="add" id=""
+												class="btn btn--full swla add-to-cart btn--secondary">
+												<span id="">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-450a-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- 550a -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown6_700"
+							aria-labelledby="dropdown6_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-550A.jpg?v=1611734177" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-550a-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-550a-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-550a-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4465270259761"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4465270259761"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31670286319665">ZPG-550A - $369.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-550a-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ZPG-L6002E -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown11_700"
+							aria-labelledby="dropdown11_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-6002E.jpg?v=1611735405" />
+									</div>
+									<h3 align="center">Z GRILLS-L6002E</h3>
+									<p>$479.00</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4465267310641"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4465267310641"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32047726526513">ZPG-L6002E - $396.59 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-l6002e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-7052B -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown12_700"
+							aria-labelledby="dropdown12_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-10002B.jpg?v=1611736342" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-10002b-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-10002b-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-10002b-pellet-grill'].compare_at_price_min |money
+											}}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4468682522673"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4468682522673"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31753783902257">ZPG-10002B - $569.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-10002b-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-7002B -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown13_700"
+							aria-labelledby="dropdown13_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/products/7002b_2d476cf9-cb3d-4dcf-8123-0e6fafd56b76_1080x.jpg?v=1664361721" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-7002b-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-7002b-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-7002b-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4364458983473"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4364458983473"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31670287204401">ZPG-7002B - $442.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn qbeb btn--full add-to-cart btn--secondary"> <span id=""> Add
+													to cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-7002b-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-7002E -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown14_700"
+							aria-labelledby="dropdown14_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-7002E.jpg?v=1611735850" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-7002e-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-7002e-pellet-grill'].price_min |money }}</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-1599531712569"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-1599531712569"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31670288318513">
+												ZPG-7002E - $485.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons">
+											<button type="submit" name="add" id="AddToCart-1599531712569"
+												class="btn btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-1599531712569" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-7002e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-700D -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown15_700"
+							aria-labelledby="dropdown15_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-700D.jpg?v=1611735935" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-700d-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-700d-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-700d-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4364458983473"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓"><select name="id"
+											id="ProductSelect-4364458983473" class="product-single__variants no-js">
+											<option selected="selected" value="31670289432625">
+												700D Wood Pellet Grill Smoker - $609.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn qbeb btn--full add-to-cart btn--secondary navigable"> <span
+													id=""> Add to cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-700d-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-700E -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown16_700"
+							aria-labelledby="dropdown16_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-700E.jpg?v=1611735824" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-700e-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-700e-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-700e-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-1605106696249"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-1605106696249"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32306663850033">ZPG-700E - $599.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-700e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ZPG-1102b -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown18_700"
+							aria-labelledby="dropdown18_700-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/products/11002B_9304cfd4-da79-4bcd-b71b-39190b042c9e_1080x.jpg?v=1678342490" />
+									</div>
+									<h3 align="center">{{ all_products['multitasker-11002b-wi-fi-pellet-grill'].title }}
+									</h3>
+									<p>{{ all_products['multitasker-11002b-wi-fi-pellet-grill'].price_min |money }}</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-6657041203249"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-6657041203249"
+											class="product-single__variants no-js">
+											<option class="Val" selected="selected" value="39526266273841">
+												11002B Wi-Fi Pellet Grill - $1,199.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-6657041203249"
+												class="btn btn--full add-to-cart btn--secondary navigable">
+												<span id="AddToCartText-6657041203249" data-default-text="Add to cart"
+													style="font-size: 13px;"
+													data-open-accessibility-text-original="13px">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a
+												href="/products/multitasker-11002b-wi-fi-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 700d2 -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown21_700"
+							aria-labelledby="dropdown21-tab_700">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-700D2-12.jpg?v=1612593762" />
+									</div>
+									<h3 align="center">Z GRILLS-700D3</h3>
+									<p> <span class="qibaid2price">{{ all_products['zpg-700d3-pellet-grill'].price_min
+											|money }}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4822493954097"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4822493954097"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32605311238193">
+												700D2 - $729.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-4822493954097"
+												class="qbd2 btn btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-4822493954097" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-700d2-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- 700d3 -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown22_700"
+							aria-labelledby="dropdown22-tab_700">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-700D3-1.jpg?v=1612593866" />
+									</div>
+									<h3 align="center">FLAGSHIP 700D4E WIFI -STAINLESS STEEL</h3>
+									<p>{{ all_products['zpg-700d4e-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-700d4e-pellet-grill'].compare_at_price_min |money
+											}}</span></p>
+
+									<form method="post" action="/cart/add" id="AddToCartForm-4822491988017"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4822491988017"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39774960517169">
+												700D3 - $799.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-4822491988017"
+												class="btn qbd3 btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-4822491988017" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-700d4e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- 7002f -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown23_700"
+							aria-labelledby="dropdown23-tab_700">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-7002F-12.jpg?v=1612594149" />
+									</div>
+									<h3 align="center">Z GRILLS-7002C</h3>
+									<p>{{ all_products['zpg-7002f-pellet-grill'].price_min |money }}</p>
+
+									<form method="post" action="/cart/add" id="AddToCartForm-4822496018481"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4822496018481"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32605304487985">
+												7002F - $499.98 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-4822496018481"
+												class="btn qbef btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-4822496018481" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-7002f-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- 7002f2 -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown24_700"
+							aria-labelledby="dropdown24-tab_700">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-7002F2-5.jpg?v=1612594395" />
+									</div>
+									<h3 align="center">Z GRILLS-7002C2E</h3>
+									<p><span class="qibai2f2price">{{ all_products['zpg-7002f2-pellet-grill'].price_min
+											|money }}</span> <span style="text-decoration: line-through;">$699.00</span>
+									</p>
+
+									<form method="post" action="/cart/add" id="AddToCartForm-4822497919025"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4822497919025"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32605308616753">
+												7002C2E Wood Pellet Grill Smoker - $619.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-4822497919025"
+												class="btn efe btn--full efe add-to-cart btn--secondary">
+												<span id="AddToCartText-4822497919025" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-7002f2-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+						<!--  450b  -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown25_700"
+							aria-labelledby="dropdown25-tab_700">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-450b.png?v=1618643288" />
+									</div>
+									<h3 align="center">ZGRILLS-450B</h3>
+									<p><span class="siwu0b">{{ all_products['zpg-450b-pellet-grill'].price_min |money
+											}}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-6560069910577"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-6560069910577"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39301518819377">
+												450B Wood Pellet Grill Smoker - $399.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons">
+											<button type="submit" name="add" id="AddToCart-6560069910577"
+												class="btn siwu0b btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-6560069910577" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-450b-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!--  10502b  -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown26_700"
+							aria-labelledby="dropdown26-tab_700">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/9_1080x_2caa5b5e-bbcc-4f64-beca-2eca894eeec3.webp?v=1700019985" />
+									</div>
+									<h3 align="center">Z GRILLS-10502B</h3>
+									<p><span class="siwu0b">{{ all_products['zpg-10502b-pellet-grill'].price_min |money
+											}}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-6560069910577"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-6560069910577"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39928659476529">
+
+											</option>
+										</select>
+										<div class="payment-buttons">
+											<button type="submit" name="add" id="AddToCart-6560069910577"
+												class="btn siwu0b btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-6560069910577" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-10502b-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 1000系列为主 -->
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+					<ul id="myTabs" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="dropdown active"><a href="#" id="myTabDrop1_1000"
+								class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents"
+								aria-expanded="false">ZPG-7002C2E<span class="caret"></span></a>
+							<ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents_1000">
+								<li class="click_one_1000 active"><a href="#dropdown1_1000" role="tab"
+										id="dropdown1_1000-tab" data-toggle="tab" aria-controls="dropdown1_1000"
+										aria-expanded="true">ZPG-7002C2E</a></li>
+								<li class="click_one_1000"><a href="#dropdown2_1000" role="tab" id="dropdown2_1000-tab"
+										data-toggle="tab" aria-controls="dropdown2_1000"
+										aria-expanded="false">ZPG-10002B2E</a></li>
+								<li class="click_one_1000"><a href="#dropdown3_1000" role="tab" id="dropdown3_1000-tab"
+										data-toggle="tab" aria-controls="dropdown3_1000"
+										aria-expanded="false">ZPG-1000D</a></li>
+								<li class="click_one_1000"><a href="#dropdown4_1000" role="tab" id="dropdown4_1000-tab"
+										data-toggle="tab" aria-controls="dropdown4_1000"
+										aria-expanded="false">ZPG-1000E</a></li>
+								<li class="click_one_1000"><a href="#dropdown5_1000" role="tab" id="dropdown5_1000-tab"
+										data-toggle="tab" aria-controls="dropdown5_1000"
+										aria-expanded="false">ZPG-450A</a></li>
+								<li class="click_one_1000"><a href="#dropdown6_1000" role="tab" id="dropdown6_1000-tab"
+										data-toggle="tab" aria-controls="dropdown6_1000"
+										aria-expanded="false">ZPG-550A</a></li>
+
+								<li class="click_one_1000"><a href="#dropdown11_1000" role="tab"
+										id="dropdown11_1000-tab" data-toggle="tab" aria-controls="dropdown11_1000"
+										aria-expanded="false">ZPG-L6002E</a></li>
+								<li class="click_one_1000"><a href="#dropdown12_1000" role="tab"
+										id="dropdown12_1000-tab" data-toggle="tab" aria-controls="dropdown12_1000"
+										aria-expanded="false">🆕ZPG-7052B</a></li>
+								<li class="click_one_1000 "><a href="#dropdown13_1000" role="tab"
+										id="dropdown13_1000-tab" data-toggle="tab" aria-controls="dropdown13_1000"
+										aria-expanded="false">ZPG-7002B</a></li>
+								<li class="click_one_1000"><a href="#dropdown14_1000" role="tab"
+										id="dropdown14_1000-tab" data-toggle="tab" aria-controls="dropdown14_1000"
+										aria-expanded="false">ZPG-7002E</a></li>
+								<li class="click_one_1000"><a href="#dropdown15_1000" role="tab"
+										id="dropdown15_1000-tab" data-toggle="tab" aria-controls="dropdown15_1000"
+										aria-expanded="false">ZPG-700D</a></li>
+								<li class="click_one_1000"><a href="#dropdown16_1000" role="tab"
+										id="dropdown16_1000-tab" data-toggle="tab" aria-controls="dropdown16_1000"
+										aria-expanded="false">ZPG-700E</a></li>
+								<li class="click_one_1000"><a href="#dropdown17_1000" role="tab"
+										id="dropdown17_1000-tab" data-toggle="tab" aria-controls="dropdown17_1000"
+										aria-expanded="false">🆕ZPG-200A</a></li>
+								<li class="click_one_1000"><a href="#dropdown18_1000" role="tab"
+										id="dropdown18_1000-tab" data-toggle="tab" aria-controls="dropdown18_1000"
+										aria-expanded="false">🆕ZPG-11002B</a></li>
+
+								<li class="click_one_1000"><a href="#dropdown21_1000" role="tab"
+										id="dropdown21-tab_1000" data-toggle="tab" aria-controls="dropdown21_1000"
+										aria-expanded="false">ZPG-700D3</a></li>
+								<li class="click_one_1000"><a href="#dropdown22_1000" role="tab"
+										id="dropdown22-tab_1000" data-toggle="tab" aria-controls="dropdown22_1000"
+										aria-expanded="false">ZPG-700D4E</a></li>
+								<li class="click_one_1000"><a href="#dropdown23_1000" role="tab"
+										id="dropdown23-tab_1000" data-toggle="tab" aria-controls="dropdown23_1000"
+										aria-expanded="false">ZPG-7002C</a></li>
+								<li class="click_one_1000"><a href="#dropdown24_1000" role="tab"
+										id="dropdown24-tab_1000" data-toggle="tab" aria-controls="dropdown24_1000"
+										aria-expanded="false">ZPG-10002B</a></li>
+								<li class="click_one_1000"><a href="#dropdown25_1000" role="tab"
+										id="dropdown25-tab_1000" data-toggle="tab" aria-controls="dropdown25_1000"
+										aria-expanded="false">ZPG-450B</a></li>
+								<li class="click_one_1000"><a href="#dropdown26_1000" role="tab"
+										id="dropdown26-tab_1000" data-toggle="tab" aria-controls="dropdown26_1000"
+										aria-expanded="false">🆕ZPG-10502B</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div id="myTabContent" class="tab-content"><!--     10002b         -->
+						<div role="tabpanel" class="tab-pane fade active in" id="dropdown1_1000"
+							aria-labelledby="dropdown1_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-7002F2-5.jpg?v=1612594395" />
+									</div>
+									<h3 align="center">Z GRILLS-7002C2E</h3>
+									<p><span class="qibai2f2price">{{ all_products['zpg-7002f2-pellet-grill'].price_min
+											|money }}</span> <span style="text-decoration: line-through;">$699.00</span>
+									</p>
+
+									<form method="post" action="/cart/add" id="AddToCartForm-4822497919025"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4822497919025"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32605308616753">
+												7002C2E Wood Pellet Grill Smoker - $619.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-4822497919025"
+												class="btn efe btn--full efe add-to-cart btn--secondary">
+												<span id="AddToCartText-4822497919025" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-7002f2-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-10002E -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown2_1000"
+							aria-labelledby="dropdown2_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-10002E_d77feef0-92c7-4d43-88ff-b226c3d53b63.jpg?v=1612323673" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-10002e-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-10002e-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-10002e-pellet-grill'].compare_at_price_min |money
+											}}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4468734394417"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4468734394417"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31753905143857">ZPG-10002E - $618.99 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-10002e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-1000D -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown3_1000"
+							aria-labelledby="dropdown3_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-1000D.jpg?v=1611736474" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-1000d-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-1000d-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-1000d-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4468748845105"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4468748845105"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32306602836017">ZPG-1000D - $599.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn yqd btn--full add-to-cart btn--secondary"> <span id=""> Add
+													to cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-1000d-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-1000E -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown4_1000"
+							aria-labelledby="dropdown4_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-1000E.jpg?v=1611736533" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-1000e-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-1000e-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-1000e-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4468755431473"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4468755431473"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32436804911153">ZPG-1000E - $679.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn yqe btn--full add-to-cart btn--secondary"> <span id=""> Add
+													to cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-1000e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!--     450a         -->
+						<div role="tabpanel" class="tab-pane fade " id="dropdown5_1000"
+							aria-labelledby="dropdown5_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-450A.jpg?v=1611733999" />
+									</div>
+									<h3 align="center">ZGRILLS-450A</h3>
+									<p>{{ all_products['zpg-450a-pellet-grill'].price_min |money }}</p>
+									<form method="post" action="/cart/add" id="" accept-charset="UTF-8"
+										class="product-single__form" enctype="multipart/form-data"><input type="hidden"
+											name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="" class="product-single__variants no-js">
+											<option selected="selected" value="32539342602289">
+												ZPG-450A - $369.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons">
+											<button type="submit" name="add" id=""
+												class="btn btn--full swla add-to-cart btn--secondary">
+												<span id="">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-450a-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- 550a -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown6_1000"
+							aria-labelledby="dropdown6_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-550A.jpg?v=1611734177" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-550a-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-550a-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-550a-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4465270259761"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4465270259761"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31670286319665">ZPG-550A - $369.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-550a-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ZPG-L6002E -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown11_1000"
+							aria-labelledby="dropdown11_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-6002E.jpg?v=1611735405" />
+									</div>
+									<h3 align="center">Z GRILLS-L6002E</h3>
+									<p>$479.00</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4465267310641"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4465267310641"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32047726526513">ZPG-L6002E - $396.59 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-l6002e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-7052B -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown12_1000"
+							aria-labelledby="dropdown12_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/7052B_1080x_7c32ecf1-6aaf-4a04-ad84-d5fa651a0a7f.webp?v=1678873698" />
+									</div>
+									<h3 align="center">Z GRILLS-7052B</h3>
+									<p> $1,099.00</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-1458218696761"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-1458218696761"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39671316054065">
+												Default Title - $399.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-1458218696761"
+												class="btn btn--full add-to-cart swlapro btn--secondary">
+												<span id="AddToCartText-1458218696761" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/multitasker-7052b-with-wi-fi">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-7002B -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown13_1000"
+							aria-labelledby="dropdown13_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/products/7002b_2d476cf9-cb3d-4dcf-8123-0e6fafd56b76_1080x.jpg?v=1664361721" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-7002b-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-7002b-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-7002b-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4364458983473"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4364458983473"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31670287204401">ZPG-7002B - $442.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn qbeb btn--full add-to-cart btn--secondary"> <span id=""> Add
+													to cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-7002b-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-7002E -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown14_1000"
+							aria-labelledby="dropdown14_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-7002E.jpg?v=1611735850" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-7002e-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-7002e-pellet-grill'].price_min |money }}</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-1599531712569"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-1599531712569"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31670288318513">
+												ZPG-7002E - $485.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons">
+											<button type="submit" name="add" id="AddToCart-1599531712569"
+												class="btn btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-1599531712569" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-7002e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-700D -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown15_1000"
+							aria-labelledby="dropdown15_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-700D.jpg?v=1611735935" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-700d-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-700d-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-700d-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4364458983473"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓"><select name="id"
+											id="ProductSelect-4364458983473" class="product-single__variants no-js">
+											<option selected="selected" value="31670289432625">
+												700D Wood Pellet Grill Smoker - $609.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn qbeb btn--full add-to-cart btn--secondary navigable"> <span
+													id=""> Add to cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-700d-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- ZPG-700E -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown16_1000"
+							aria-labelledby="dropdown16_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/ZPG-700E.jpg?v=1611735824" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-700e-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-700e-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-700e-pellet-grill'].compare_at_price_min |money }}</span>
+									</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-1605106696249"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-1605106696249"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32306663850033">ZPG-700E - $599.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-700e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ZPG-1102b -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown18_1000"
+							aria-labelledby="dropdown18_1000-tab">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/products/11002B_9304cfd4-da79-4bcd-b71b-39190b042c9e_1080x.jpg?v=1678342490" />
+									</div>
+									<h3 align="center">{{ all_products['multitasker-11002b-wi-fi-pellet-grill'].title }}
+									</h3>
+									<p>{{ all_products['multitasker-11002b-wi-fi-pellet-grill'].price_min |money }}</p>
+									<form method="post" action="/cart/add" id="AddToCartForm-6657041203249"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-6657041203249"
+											class="product-single__variants no-js">
+											<option class="Val" selected="selected" value="39526266273841">
+												11002B Wi-Fi Pellet Grill - $1,199.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-6657041203249"
+												class="btn btn--full add-to-cart btn--secondary navigable">
+												<span id="AddToCartText-6657041203249" data-default-text="Add to cart"
+													style="font-size: 13px;"
+													data-open-accessibility-text-original="13px">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a
+												href="/products/multitasker-11002b-wi-fi-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 700d2 -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown21_1000"
+							aria-labelledby="dropdown21-tab_1000">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-700D2-12.jpg?v=1612593762" />
+									</div>
+									<h3 align="center">Z GRILLS-700D3</h3>
+									<p> <span class="qibaid2price">{{ all_products['zpg-700d3-pellet-grill'].price_min
+											|money }}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4822493954097"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4822493954097"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32605311238193">
+												700D2 - $729.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-4822493954097"
+												class="qbd2 btn btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-4822493954097" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-700d2-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- 700d3 -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown22_1000"
+							aria-labelledby="dropdown22-tab_1000">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-700D3-1.jpg?v=1612593866" />
+									</div>
+									<h3 align="center">FLAGSHIP 700D4E WIFI -STAINLESS STEEL</h3>
+									<p>{{ all_products['zpg-700d4e-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-700d4e-pellet-grill'].compare_at_price_min |money
+											}}</span></p>
+
+									<form method="post" action="/cart/add" id="AddToCartForm-4822491988017"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4822491988017"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39774960517169">
+												700D3 - $799.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-4822491988017"
+												class="btn qbd3 btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-4822491988017" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-700d4e-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- 7002f -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown23_1000"
+							aria-labelledby="dropdown23-tab_1000">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-7002F-12.jpg?v=1612594149" />
+									</div>
+									<h3 align="center">Z GRILLS-7002C</h3>
+									<p>{{ all_products['zpg-7002f-pellet-grill'].price_min |money }}</p>
+
+									<form method="post" action="/cart/add" id="AddToCartForm-4822496018481"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-4822496018481"
+											class="product-single__variants no-js">
+											<option selected="selected" value="32605304487985">
+												7002F - $499.98 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add"
+												id="AddToCart-4822496018481"
+												class="btn qbef btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-4822496018481" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-7002f-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!-- 7002f2 -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown24_1000"
+							aria-labelledby="dropdown24-tab_1000">
+							<div class="zg450a" align="center">
+
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-10002B.jpg?v=1611736342" />
+									</div>
+									<h3 align="center">{{ all_products['zpg-10002b-pellet-grill'].title }}</h3>
+									<p>{{ all_products['zpg-10002b-pellet-grill'].price_min |money }} <span
+											style="text-decoration: line-through;">{{
+											all_products['zpg-10002b-pellet-grill'].compare_at_price_min |money
+											}}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-4468682522673"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product" /><input type="hidden" name="utf8" value="✓" /><select
+											name="id" id="ProductSelect-4468682522673"
+											class="product-single__variants no-js">
+											<option selected="selected" value="31753783902257">ZPG-10002B - $569.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons"><button type="submit" name="add" id=""
+												class="btn btn--full add-to-cart btn--secondary"> <span id=""> Add to
+													cart </span> </button></div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-10002b-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+
+						<!--  450b  -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown25_1000"
+							aria-labelledby="dropdown25-tab_1000">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-450b.png?v=1618643288" />
+									</div>
+									<h3 align="center">ZGRILLS-450B</h3>
+									<p><span class="siwu0b">{{ all_products['zpg-450b-pellet-grill'].price_min |money
+											}}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-6560069910577"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-6560069910577"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39301518819377">
+												450B Wood Pellet Grill Smoker - $399.00 USD
+											</option>
+										</select>
+										<div class="payment-buttons">
+											<button type="submit" name="add" id="AddToCart-6560069910577"
+												class="btn siwu0b btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-6560069910577" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-450b-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+						<!--  10502b  -->
+						<div role="tabpanel" class="tab-pane fade" id="dropdown26_1000"
+							aria-labelledby="dropdown26-tab_1000">
+							<div class="zg450a" align="center">
+								<div class="zg450a_item">
+									<div><img class="ljz"
+											data-src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/9_1080x_2caa5b5e-bbcc-4f64-beca-2eca894eeec3.webp?v=1700019985" />
+									</div>
+									<h3 align="center">Z GRILLS-10502B</h3>
+									<p><span class="siwu0b">{{ all_products['zpg-10502b-pellet-grill'].price_min |money
+											}}</span></p>
+									<form method="post" action="/cart/add" id="AddToCartForm-6560069910577"
+										accept-charset="UTF-8" class="product-single__form"
+										enctype="multipart/form-data"><input type="hidden" name="form_type"
+											value="product"><input type="hidden" name="utf8" value="✓">
+										<select name="id" id="ProductSelect-6560069910577"
+											class="product-single__variants no-js">
+											<option selected="selected" value="39928659476529">
+
+											</option>
+										</select>
+										<div class="payment-buttons">
+											<button type="submit" name="add" id="AddToCart-6560069910577"
+												class="btn siwu0b btn--full add-to-cart btn--secondary">
+												<span id="AddToCartText-6560069910577" data-default-text="Add to cart">
+													Add to cart
+												</span>
+											</button>
+										</div>
+									</form>
+									<div align="center"><span> <a href="/products/zpg-10502b-pellet-grill">View
+												Details</a></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 700系列 -->
+</div>
+<hr /> <!-- 数据 -->
+{% section 'compare' %}
+<!-- static -->
+<div class="staTic" style="z-index: 1;">
+	<div class="container-fluid"
+		style="padding: 10px; text-align: center; background-color: #ffffff; box-shadow: rgba(0, 0, 0, 0.15) 2px 1px 17px 0px; border-bottom: 1px solid #cccccc;">
+		<div class="row comrow" style="width:70%;margin: 0 auto;">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"></div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 ">
+				<img style="width: 50px; height: 50px;" class="ljz jichu" data-src="" />
+				<p class="jichu_title"> </p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 qibai pccol"><img style="width: 50px; height: 50px;"
+					class="ljz qibai" data-src="" />
+				<p class="qibai_title"> </p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 yiqian "><img style="width: 50px; height: 50px;"
+					class="ljz yiqian" data-src="" />
+				<p class="yiqian_title"> </p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="containers">
+	<div class="contents container">
+		<h2>Looking for accessories, replacement parts, assembly videos, FAQs, or how-to guides? </h2>
+		<p>Find them all on our Help page.</p>
+		<button><a href="https://help.zgrills.com/">GET SUPPORT</a></button>
+	</div>
+</div>
+<script>
+
+	$(document).ready(function () {
+		var windowWidth = $(window).width();
+		var count_number = (windowWidth < 768) ? 100 : 100;
+
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 500) {
+				$(".staTic").css({
+					"position": "fixed",
+					"top": count_number,
+					"width": "100%",
+					"display": "block"
+				});
+			} else {
+				$(".staTic").css({
+					"position": "fixed",
+					"display": "none"
+				});
+			}
+		});
+
+		var parentHeight = $('.bs-example-tabs').height();
+		var chiHeight = $('.dropdown-toggle').height();
+		var Heights = parentHeight - chiHeight;
+		var dropdownMenuHeight = (windowWidth < 768) ? 200 : Heights;
+
+		$('.dropdown-menu').css({
+			"height": dropdownMenuHeight,
+			"overflow": "auto"
+		});
+	});
+
+
+	var obj = {
+		siwu0a: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-450A_cf6dd76c-6222-43b3-9425-7429a2b9f565.jpg?v=1611736919",
+		wuwu0a: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-550A_40cc4697-9cae-4d7e-8d52-6003726cbe77.jpg?v=1611736919",
+		wuwu0b: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/550B-1_4dc95b0e-3b82-469b-ad99-b0b99acb9a09.jpg?v=1611740492",
+		wuwu02g: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-5502G-5_19228921-9923-4588-ba7f-6b9e04deaf64.jpg?v=1611736919",
+		wuwu02h: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-5502H-6_217bfb76-1017-4f7b-b635-8ebeccd6d98f.jpg?v=1611736919",
+		liubai2b: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-6002B_77587a07-5d73-4e9c-9ce1-b4738c59b6f7.jpg?v=1611736919",
+		liubai2e: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-6002E_ccc7cef4-0be8-404c-a42d-6fbc19b34709.jpg?v=1611736919",
+		siwu0apro: "https://cdn.shopifycdn.net/s/files/1/0103/1923/3081/files/E71397F1-1B09-4F2F-B927-B393B917FC2D.jpg?v=1666775518",
+		qibai2b: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-7002B_f1d9b2db-ad8b-455b-af12-a85a434b1a2e.jpg?v=1611736919",
+		qibai2e: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-7002E_1760307e-cc25-4b18-9b33-d585202b0b5d.jpg?v=1611736919",
+		qibaid: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-700D_a396f810-dc03-4ce2-87c1-8a5223136569.jpg?v=1611736919",
+		qibaie: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-700E_6faf77ed-7411-47a1-a6f7-e6b9eaf68005.jpg?v=1611736919",
+		qibai2bpro: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/678D2137-61ED-4500-A6D5-3FF75909C9BE.jpg?v=1666856050",
+		qibaidpro: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/WechatIMG1437.jpg?v=1638265504",
+		yiqian2b: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-10002B_44fcab46-5dbd-42d5-b9d1-24bc64857f31.jpg?v=1611736919",
+		yiqian2e: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-10002E_6ab6551d-9399-4f67-aff3-b8fa32db4cf4.jpg?v=1611736919",
+		yiqiand: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-1000D_55a95606-7250-4389-ae65-03185a5cbd67.jpg?v=1611736919",
+		yiqiane: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-1000E_90981d5c-eeb4-4f8f-aa0a-953088b060ae.jpg?v=1611736919",
+		liubaid: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-600D-5.jpg?v=1612514435",
+		liubaie: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-600E-1-1_3759fdeb-8953-4512-a61d-f323d9d3b51a.jpg?v=1612580791",
+		qibaid2: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-700D2-12_75340b13-1908-4273-8d6b-2ff66079a0eb.jpg?v=1612594903",
+		qibaid3: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-700D3-1_e8a51910-d8de-4f35-9a2c-b1843e076167.jpg?v=1612594920",
+		qibai2f: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-7002F-12_218ab6c2-6e6e-4f01-9a61-a82eb85d8670.jpg?v=1612594932",
+		qibai2f2: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/ZPG-7002F2-5_2658cfc0-04da-422e-8f2f-1b4c60562e7e.jpg?v=1612594951",
+		siwu0b: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/60X60.png?v=1618898191",
+		ylwleb: "https://cdn.shopify.com/s/files/1/0103/1923/3081/files/9_1080x_2caa5b5e-bbcc-4f64-beca-2eca894eeec3.webp?v=1700019985"
+	}
+
+
+	$(".jichu").attr("src", obj.qibaid3);
+	$(".jichu_title").html("<b>ZGRILLS-700D4E</b>")
+	$(".qibai").attr("src", obj.siwu0apro);
+	$(".qibai_title").html("<b>Z GRILLS-7052B</b>")
+
+
+
+	// 1000
+	$('#myTabDrop1-contents_1000').find('li').each(function () {
+		$(".yiqian").attr("src", obj.qibai2f2);
+		$(".yiqian_title").html("<b>Z GRILLS-7002C2E</b>")
+		$(this).click(function () {
+
+			$(".VBS").children().css("display", "none")
+			switch ($(this).index()) {
+				case 0:
+					$(".dropdown1_item-24_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibai2f2);
+					$(".yiqian_title").html("<b>Z GRILLS-7002F2</b>")
+
+					break;
+				case 1:
+					$(".dropdown1_item-2_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.yiqian2e);
+					$(".yiqian_title").html("<b>{{ all_products['zpg-10002e-pellet-grill'].title }}</b>")
+					break;
+				case 2:
+					$(".dropdown1_item-3_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.yiqiand);
+					$(".yiqian_title").html("<b>{{ all_products['zpg-1000d-pellet-grill'].title }}</b>")
+					break;
+				case 3:
+					$(".dropdown1_item-4_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.yiqiane);
+					$(".yiqian_title").html("<b>{{ all_products['zpg-1000e-pellet-grill'].title }}</b>")
+					break;
+				case 4:
+					$(".dropdown1_item-5_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.siwu0a);
+					$(".yiqian_title").html("<b>ZGRILLS-450A</b>")
+					break;
+				case 5:
+					$(".dropdown1_item-6_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.wuwu0a);
+					$(".yiqian_title").html("<b>{{ all_products['zpg-550a-pellet-grill'].title }}</b>")
+					break;
+				case 6:
+					$(".dropdown1_item-11_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.liubai2e);
+					$(".yiqian_title").html("<b>Z GRILLS-L6002E</b>")
+					break;
+				case 7:
+					$(".dropdown1_item-12_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.siwu0apro);
+					$(".yiqian_title").html("<b>Z GRILLS-7052B</b>")
+					break;
+				case 8:
+					$(".dropdown1_item-13_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibai2b);
+					$(".yiqian_title").html("<b>{{ all_products['zpg-7002b-pellet-grill'].title }}</b>")
+					break;
+				case 9:
+					$(".dropdown1_item-14_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibai2e);
+					$(".yiqian_title").html("<b>{{ all_products['zpg-7002e-pellet-grill'].title }}</b>")
+					break;
+				case 10:
+					$(".dropdown1_item-15_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibaid);
+					$(".yiqian_title").html("<b>{{ all_products['zpg-700d-pellet-grill'].title }}</b>")
+					break;
+				case 11:
+					$(".dropdown1_item-16_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibaie);
+					$(".yiqian_title").html("<b>{{ all_products['zpg-700e-pellet-grill'].title }}</b>")
+					break;
+				case 12:
+					$(".dropdown1_item-17_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibai2bpro);
+					$(".yiqian_title").html("<b>Z GRILLS-200A</b>")
+					break;
+				case 13:
+					$(".dropdown1_item-18_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibaidpro);
+					$(".yiqian_title").html("<b>MULTITASKER 11002B WITH WI-FI</b>")
+					break;
+
+				case 14:
+					$(".dropdown1_item-21_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibaid2);
+					$(".yiqian_title").html("<b>Z GRILLS-700D3</b>")
+					break;
+				case 15:
+					$(".dropdown1_item-22_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibaid3);
+					$(".yiqian_title").html("<b>FLAGSHIP 700D4E WIFI -STAINLESS STEEL</b>")
+					break;
+				case 16:
+					$(".dropdown1_item-23_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.qibai2f);
+					$(".yiqian_title").html("<b>Z GRILLS-7002C</b>")
+					break;
+				case 17:
+					$(".dropdown1_item-1_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.yiqian2b);
+					$(".yiqian_title").html("<b>{{ all_products['zpg-10002b-pellet-grill'].title }}</b>")
+					break;
+				case 18:
+					$(".dropdown1_item-25_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.siwu0b);
+					$(".yiqian_title").html("<b>Z GRILLS-450B</b>")
+					break;
+				case 19:
+					$(".dropdown1_item-26_1000").css("display", "block");
+					$(".yiqian").attr("src", obj.ylwleb);
+					$(".yiqian_title").html("<b>Z GRILLS-10502B</b>")
+					break;
+			}
+		})
+	})
+	$(".click_one_1000").on("click", function (event) {
+		var id = $(this).text()
+		$("#myTabDrop1_1000").text(id).append("<span class='caret'></span>")
+	})
+
+	$('#myTabDrop1-contents_700').find('li').each(function () {
+		$(".qibai").attr("src", obj.siwu0apro);
+		$(".qibai_title").html("<b>MULTITASKER 7052B WITH WI-FI</b>")
+		$(this).click(function () {
+
+			$(".VB").children().css("display", "none")
+			switch ($(this).index()) {
+				case 0:
+					$(".dropdown1_item-17_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibai2bpro);
+					$(".qibai_title").html("<b>Z GRILLS-200A</b>")
+					break;
+				case 1:
+					$(".dropdown1_item-5_700").css("display", "block");
+					$(".qibai").attr("src", obj.siwu0a);
+					$(".qibai_title").html("<b>ZGRILLS-450A</b>")
+					break;
+				case 2:
+
+					$(".dropdown1_item-25_700").css("display", "block");
+					$(".qibai").attr("src", obj.siwu0b);
+					$(".qibai_title").html("<b>Z GRILLS-450B</b>")
+					break;
+				case 3:
+
+					$(".dropdown1_item-6_700").css("display", "block");
+					$(".qibai").attr("src", obj.wuwu0a);
+					$(".qibai_title").html("<b>{{ all_products['zpg-550a-pellet-grill'].title }}</b>")
+					break;
+				case 4:
+					$(".dropdown1_item-11_700").css("display", "block");
+					$(".qibai").attr("src", obj.liubai2e);
+					$(".qibai_title").html("<b>Z GRILLS-L6002E</b>")
+					break;
+
+				case 5:
+					$(".dropdown1_item-13_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibai2b);
+					$(".qibai_title").html("<b>{{ all_products['zpg-7002b-pellet-grill'].title }}</b>")
+					break;
+				case 6:
+					$(".dropdown1_item-14_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibai2e);
+					$(".qibai_title").html("<b>{{ all_products['zpg-7002e-pellet-grill'].title }}</b>")
+					break;
+				case 7:
+					$(".dropdown1_item-15_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibaid);
+					$(".qibai_title").html("<b>{{ all_products['zpg-700d-pellet-grill'].title }}</b>")
+					break;
+				case 8:
+					$(".dropdown1_item-16_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibaie);
+					$(".qibai_title").html("<b>{{ all_products['zpg-700e-pellet-grill'].title }}</b>")
+					break;
+				case 9:
+					$(".dropdown1_item-21_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibaid2);
+					$(".qibai_title").html("<b>Z GRILLS-700D3</b>")
+					break;
+				case 10:
+					$(".dropdown1_item-22_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibaid3);
+					$(".qibai_title").html("<b>FLAGSHIP 700D4E WIFI -STAINLESS STEEL</b>")
+					break;
+				case 11:
+					$(".dropdown1_item-23_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibai2f);
+					$(".qibai_title").html("<b>Z GRILLS-7002C</b>")
+					break;
+				case 12:
+					$(".dropdown1_item-24_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibai2f2);
+					$(".qibai_title").html("<b>Z GRILLS-7002F2</b>")
+					break;
+				case 13:
+					$(".dropdown1_item-4_700").css("display", "block");
+					$(".qibai").attr("src", obj.yiqiane);
+					$(".qibai_title").html("<b>{{ all_products['zpg-1000e-pellet-grill'].title }}</b>")
+					break;
+				case 14:
+					$(".dropdown1_item-2_700").css("display", "block");
+					$(".qibai").attr("src", obj.yiqian2e);
+					$(".qibai_title").html("<b>{{ all_products['zpg-10002e-pellet-grill'].title }}</b>")
+					break;
+				case 15:
+					$(".dropdown1_item-12_700").css("display", "block");
+					$(".qibai").attr("src", obj.yiqian2b);
+					$(".qibai_title").html("<b>{{ all_products['zpg-10002b-pellet-grill'].title }}</b>")
+					break;
+				case 16:
+					$(".dropdown1_item-3_700").css("display", "block");
+					$(".qibai").attr("src", obj.yiqiand);
+					$(".qibai_title").html("<b>{{ all_products['zpg-1000d-pellet-grill'].title }}</b>")
+					break;
+				case 17:
+					$(".dropdown1_item-26_700").css("display", "block");
+					$(".qibai").attr("src", obj.ylwleb);
+					$(".qibai_title").html("<b>Z GRILLS-10502B</b>")
+					break;
+				case 18:
+					$(".dropdown1_item-1_700").css("display", "block");
+					$(".qibai").attr("src", obj.siwu0apro);
+					$(".qibai_title").html("<b>Z GRILLS-7052B</b>")
+					break;
+				case 19:
+					$(".dropdown1_item-18_700").css("display", "block");
+					$(".qibai").attr("src", obj.qibaidpro);
+					$(".qibai_title").html("<b>MULTITASKER 11002B WITH WI-FI</b>")
+					break;
+			}
+		})
+	})
+	$(".click_one_700").on("click", function (event) {
+		var id = $(this).text()
+		$("#myTabDrop17_700").text(id).append("<span class='caret'></span>")
+	})
+
+	var down_count = 0
+	$('.dropdown').click(function () {
+		down_count++
+		if (down_count % 2) {
+			$(this).removeClass('open')
+		} else {
+			$(this).addClass('open')
+		}
+	})
+
+	$('.block1 .SPECS_title').click(function () {
+		var This = $(this).parents('.block1')
+		if (This.find('.block_item').is(':hidden')) {
+			This.find('.block_item').fadeIn("slow")
+			This.find('.MuiSvgIcon-root').css({
+				"transform": "rotate(0deg)",
+				"transition": ".3s all"
+			})
+		} else {
+			This.find('.block_item').fadeOut("slow")
+			This.find('.MuiSvgIcon-root').css({
+				"transform": "rotate(180deg)",
+				"transition": ".3s all"
+			})
+		}
+	})
+
+	$(document).ready(function () {
+        // 监听窗口尺寸变化事件
+        $(window).on('resize', function () {
+            checkAndExecuteFunction();
+        });
+
+    });
+
+
+
+    function checkAndExecuteFunction() {
+        if (window.matchMedia('(min-width: 768px)').matches) {
+            // 在视口宽度大于等于 768px 时，执行函数
+            equalizeGridTextHeight('.tab-content h3');
+        }
+    }
+
+    window.onload = function () {
+        // 在这里执行获取高度的逻辑
+        checkAndExecuteFunction();
+    };
+
+</script>
+
+
+<script>
+	// /*! lazysizes - v5.2.2 */
+
+
+
+
+	!function (e) { var t = function (u, D, f) { "use strict"; var k, H; if (function () { var e; var t = { LazyClass: "ljz", loadedClass: "lazyloaded", loadingClass: "lazyloading", preloadClass: "lazypreload", errorClass: "lazyerror", autosizesClass: "lazyautosizes", srcAttr: "data-src", srcsetAttr: "data-srcset", sizesAttr: "data-sizes", minSize: 40, customMedia: {}, init: true, expFactor: 1.5, hFac: .8, loadMode: 2, loadHidden: true, ricTimeout: 0, throttleDelay: 125 }; H = u.lazySizesConfig || u.lazysizesConfig || {}; for (e in t) { if (!(e in H)) { H[e] = t[e] } } }(), !D || !D.getElementsByClassName) { return { init: function () { }, cfg: H, noSupport: true } } var O = D.documentElement, a = u.HTMLPictureElement, P = "addEventListener", $ = "getAttribute", q = u[P].bind(u), I = u.setTimeout, U = u.requestAnimationFrame || I, l = u.requestIdleCallback, j = /^picture$/i, r = ["load", "error", "lazyincluded", "_lazyloaded"], i = {}, G = Array.prototype.forEach, J = function (e, t) { if (!i[t]) { i[t] = new RegExp("(\\s|^)" + t + "(\\s|$)") } return i[t].test(e[$]("class") || "") && i[t] }, K = function (e, t) { if (!J(e, t)) { e.setAttribute("class", (e[$]("class") || "").trim() + " " + t) } }, Q = function (e, t) { var i; if (i = J(e, t)) { e.setAttribute("class", (e[$]("class") || "").replace(i, " ")) } }, V = function (t, i, e) { var a = e ? P : "removeEventListener"; if (e) { V(t, i) } r.forEach(function (e) { t[a](e, i) }) }, X = function (e, t, i, a, r) { var n = D.createEvent("Event"); if (!i) { i = {} } i.instance = k; n.initEvent(t, !a, !r); n.detail = i; e.dispatchEvent(n); return n }, Y = function (e, t) { var i; if (!a && (i = u.picturefill || H.pf)) { if (t && t.src && !e[$]("srcset")) { e.setAttribute("srcset", t.src) } i({ reevaluate: true, elements: [e] }) } else if (t && t.src) { e.src = t.src } }, Z = function (e, t) { return (getComputedStyle(e, null) || {})[t] }, s = function (e, t, i) { i = i || e.offsetWidth; while (i < H.minSize && t && !e._lazysizesWidth) { i = t.offsetWidth; t = t.parentNode } return i }, ee = function () { var i, a; var t = []; var r = []; var n = t; var s = function () { var e = n; n = t.length ? r : t; i = true; a = false; while (e.length) { e.shift()() } i = false }; var e = function (e, t) { if (i && !t) { e.apply(this, arguments) } else { n.push(e); if (!a) { a = true; (D.hidden ? I : U)(s) } } }; e._lsFlush = s; return e }(), te = function (i, e) { return e ? function () { ee(i) } : function () { var e = this; var t = arguments; ee(function () { i.apply(e, t) }) } }, ie = function (e) { var i; var a = 0; var r = H.throttleDelay; var n = H.ricTimeout; var t = function () { i = false; a = f.now(); e() }; var s = l && n > 49 ? function () { l(t, { timeout: n }); if (n !== H.ricTimeout) { n = H.ricTimeout } } : te(function () { I(t) }, true); return function (e) { var t; if (e = e === true) { n = 33 } if (i) { return } i = true; t = r - (f.now() - a); if (t < 0) { t = 0 } if (e || t < 9) { s() } else { I(s, t) } } }, ae = function (e) { var t, i; var a = 99; var r = function () { t = null; e() }; var n = function () { var e = f.now() - i; if (e < a) { I(n, a - e) } else { (l || r)(r) } }; return function () { i = f.now(); if (!t) { t = I(n, a) } } }, e = function () { var v, m, c, h, e; var y, z, g, p, C, b, A; var n = /^img$/i; var d = /^iframe$/i; var E = "onscroll" in u && !/(gle|ing)bot/.test(navigator.userAgent); var _ = 0; var w = 0; var N = 0; var M = -1; var x = function (e) { N--; if (!e || N < 0 || !e.target) { N = 0 } }; var W = function (e) { if (A == null) { A = Z(D.body, "visibility") == "hidden" } return A || !(Z(e.parentNode, "visibility") == "hidden" && Z(e, "visibility") == "hidden") }; var S = function (e, t) { var i; var a = e; var r = W(e); g -= t; b += t; p -= t; C += t; while (r && (a = a.offsetParent) && a != D.body && a != O) { r = (Z(a, "opacity") || 1) > 0; if (r && Z(a, "overflow") != "visible") { i = a.getBoundingClientRect(); r = C > i.left && p < i.right && b > i.top - 1 && g < i.bottom + 1 } } return r }; var t = function () { var e, t, i, a, r, n, s, l, o, u, f, c; var d = k.elements; if ((h = H.loadMode) && N < 8 && (e = d.length)) { t = 0; M++; for (; t < e; t++) { if (!d[t] || d[t]._lazyRace) { continue } if (!E || k.prematureUnveil && k.prematureUnveil(d[t])) { R(d[t]); continue } if (!(l = d[t][$]("data-expand")) || !(n = l * 1)) { n = w } if (!u) { u = !H.expand || H.expand < 1 ? O.clientHeight > 500 && O.clientWidth > 500 ? 500 : 370 : H.expand; k._defEx = u; f = u * H.expFactor; c = H.hFac; A = null; if (w < f && N < 1 && M > 2 && h > 2 && !D.hidden) { w = f; M = 0 } else if (h > 1 && M > 1 && N < 6) { w = u } else { w = _ } } if (o !== n) { y = innerWidth + n * c; z = innerHeight + n; s = n * -1; o = n } i = d[t].getBoundingClientRect(); if ((b = i.bottom) >= s && (g = i.top) <= z && (C = i.right) >= s * c && (p = i.left) <= y && (b || C || p || g) && (H.loadHidden || W(d[t])) && (m && N < 3 && !l && (h < 3 || M < 4) || S(d[t], n))) { R(d[t]); r = true; if (N > 9) { break } } else if (!r && m && !a && N < 4 && M < 4 && h > 2 && (v[0] || H.preloadAfterLoad) && (v[0] || !l && (b || C || p || g || d[t][$](H.sizesAttr) != "auto"))) { a = v[0] || d[t] } } if (a && !r) { R(a) } } }; var i = ie(t); var B = function (e) { var t = e.target; if (t._lazyCache) { delete t._lazyCache; return } x(e); K(t, H.loadedClass); Q(t, H.loadingClass); V(t, L); X(t, "lazyloaded") }; var a = te(B); var L = function (e) { a({ target: e.target }) }; var T = function (t, i) { try { t.contentWindow.location.replace(i) } catch (e) { t.src = i } }; var F = function (e) { var t; var i = e[$](H.srcsetAttr); if (t = H.customMedia[e[$]("data-media") || e[$]("media")]) { e.setAttribute("media", t) } if (i) { e.setAttribute("srcset", i) } }; var s = te(function (t, e, i, a, r) { var n, s, l, o, u, f; if (!(u = X(t, "lazybeforeunveil", e)).defaultPrevented) { if (a) { if (i) { K(t, H.autosizesClass) } else { t.setAttribute("sizes", a) } } s = t[$](H.srcsetAttr); n = t[$](H.srcAttr); if (r) { l = t.parentNode; o = l && j.test(l.nodeName || "") } f = e.firesLoad || "src" in t && (s || n || o); u = { target: t }; K(t, H.loadingClass); if (f) { clearTimeout(c); c = I(x, 2500); V(t, L, true) } if (o) { G.call(l.getElementsByTagName("source"), F) } if (s) { t.setAttribute("srcset", s) } else if (n && !o) { if (d.test(t.nodeName)) { T(t, n) } else { t.src = n } } if (r && (s || o)) { Y(t, { src: n }) } } if (t._lazyRace) { delete t._lazyRace } Q(t, H.LazyClass); ee(function () { var e = t.complete && t.naturalWidth > 1; if (!f || e) { if (e) { K(t, "ls-is-cached") } B(u); t._lazyCache = true; I(function () { if ("_lazyCache" in t) { delete t._lazyCache } }, 9) } if (t.loading == "lazy") { N-- } }, true) }); var R = function (e) { if (e._lazyRace) { return } var t; var i = n.test(e.nodeName); var a = i && (e[$](H.sizesAttr) || e[$]("sizes")); var r = a == "auto"; if ((r || !m) && i && (e[$]("src") || e.srcset) && !e.complete && !J(e, H.errorClass) && J(e, H.LazyClass)) { return } t = X(e, "lazyunveilread").detail; if (r) { re.updateElem(e, true, e.offsetWidth) } e._lazyRace = true; N++; s(e, t, r, a, i) }; var r = ae(function () { H.loadMode = 3; i() }); var l = function () { if (H.loadMode == 3) { H.loadMode = 2 } r() }; var o = function () { if (m) { return } if (f.now() - e < 999) { I(o, 999); return } m = true; H.loadMode = 3; i(); q("scroll", l, true) }; return { _: function () { e = f.now(); k.elements = D.getElementsByClassName(H.LazyClass); v = D.getElementsByClassName(H.LazyClass + " " + H.preloadClass); q("scroll", i, true); q("resize", i, true); q("pageshow", function (e) { if (e.persisted) { var t = D.querySelectorAll("." + H.loadingClass); if (t.length && t.forEach) { U(function () { t.forEach(function (e) { if (e.complete) { R(e) } }) }) } } }); if (u.MutationObserver) { new MutationObserver(i).observe(O, { childList: true, subtree: true, attributes: true }) } else { O[P]("DOMNodeInserted", i, true); O[P]("DOMAttrModified", i, true); setInterval(i, 999) } q("hashchange", i, true);["focus", "mouseover", "click", "load", "transitionend", "animationend"].forEach(function (e) { D[P](e, i, true) }); if (/d$|^c/.test(D.readyState)) { o() } else { q("load", o); D[P]("DOMContentLoaded", i); I(o, 2e4) } if (k.elements.length) { t(); ee._lsFlush() } else { i() } }, checkElems: i, unveil: R, _aLSL: l } }(), re = function () { var i; var n = te(function (e, t, i, a) { var r, n, s; e._lazysizesWidth = a; a += "px"; e.setAttribute("sizes", a); if (j.test(t.nodeName || "")) { r = t.getElementsByTagName("source"); for (n = 0, s = r.length; n < s; n++) { r[n].setAttribute("sizes", a) } } if (!i.detail.dataAttr) { Y(e, i.detail) } }); var a = function (e, t, i) { var a; var r = e.parentNode; if (r) { i = s(e, r, i); a = X(e, "lazybeforesizes", { width: i, dataAttr: !!t }); if (!a.defaultPrevented) { i = a.detail.width; if (i && i !== e._lazysizesWidth) { n(e, r, a, i) } } } }; var e = function () { var e; var t = i.length; if (t) { e = 0; for (; e < t; e++) { a(i[e]) } } }; var t = ae(e); return { _: function () { i = D.getElementsByClassName(H.autosizesClass); q("resize", t) }, checkElems: t, updateElem: a } }(), t = function () { if (!t.i && D.getElementsByClassName) { t.i = true; re._(); e._() } }; return I(function () { H.init && t() }), k = { cfg: H, autoSizer: re, loader: e, init: t, uP: Y, aC: K, rC: Q, hC: J, fire: X, gW: s, rAF: ee } }(e, e.document, Date); e.lazySizes = t, "object" == typeof module && module.exports && (module.exports = t) }("undefined" != typeof window ? window : {});
+
+
+</script>

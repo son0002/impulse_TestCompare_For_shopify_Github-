@@ -1,0 +1,284 @@
+/* 450apro */
+/* #dropdown8 ,#dropdown12_1000 ,#dropdown14_700{
+    display:none;
+    }
+    #dropdown8-tab ,#dropdown12_1000-tab ,#dropdown14_700-tab{
+    display:none;
+    } */
+    
+    /* 7002bpro */
+    /* #dropdown13-tab ,#dropdown5_700-tab ,#dropdown17_1000-tab {
+    display:none;
+    }
+    #dropdown13 ,#dropdown5_700 ,#dropdown17_1000{
+    display:none;
+    } */
+    .SPECS_title{
+        cursor: pointer;
+    display: flex;
+    justify-content: space-between;  
+    }
+.SPECS_title svg{
+  width:35px;
+  height:35px;
+}
+
+.SPECS_title h2{text-transform: capitalize;}
+   .bigcontainer h3{
+     font-size:22px !important;
+   }
+          .compare-bg {
+                    background-color: #202020;
+                
+                }
+    
+                .bigcontainer {
+                    width: 70%;
+                }
+    
+                .bigcontainer_parameter {
+                    width: 70%;
+                }
+    
+                .bs-example {
+                    width: 100%;
+                    padding-top: 50px;
+                    padding-bottom: 30px;
+                }
+    
+                .dropdown {
+                    width: 90%;
+                }
+    
+                .dropdown a {
+                    text-align: center;
+                    border-radius: 7px !important;
+                    background-color: #ffffff !important;
+                    color: #000000 !important;
+                    padding: 5px;
+                }
+    
+                .nav-tabs {
+                    border-bottom: 0 !important;
+    
+                }
+    
+                #myTabs {
+                    width: 100%;
+                }
+    
+                .tab-content {
+                    width: 99.3%;
+                    margin: 0 auto;
+                    color: #ffffff;
+                    margin-top: 10px;
+                }
+    
+                .dropdown-menu {
+                    width: 100%;
+                  border-radius:7px;
+                }
+    
+                .zg450a {
+                    background-color: #ffffff;
+                  border-radius:7px;
+                }
+    
+                .zg450a img {
+                    padding: 30px;
+                    width: 100%;
+                }
+    
+                .zg450a_item {
+                    padding: 10px;
+                }
+    
+                .nav-tabs>li {
+                    width: 100%
+                }
+    
+                .tab-pane p {
+                    color: #000000;
+                }
+    
+                .tab-pane h3 {
+                    color: #000000;
+                }
+    
+                .tab-pane span {
+                    color: #000000;
+                }
+    
+                .tab-pane form {
+                    width: 93%;
+                }
+    
+                .dropdown-menu {
+                    margin: 2px -1px 0 !important;
+                }
+    
+                form button {
+                    letter-spacing: 0em !important;
+                }
+    
+                ul {
+                    margin: auto;
+                }
+    
+                /* Total Cooking Area (sq. in.) */
+                .mccol {
+                    display: none;
+                }
+    
+                @media screen and (max-width: 768px) {
+                  .comrow{width:95% !important;margin: 0 auto;}
+                  .bigcontainer_parameter {
+                    width: 95%;
+                }
+                  .bigcontainer{width:95%}
+                    .pccol {
+                        display: none;
+                    }
+    
+                    .mccol {
+                        display: block;
+                    }
+    
+                    .pc_product1000 {
+                        display: none;
+                    }
+    
+                    .bigcontainer_parameter {
+                        width: 100%;
+                    }
+    
+                    .col-xs-6 {
+                        min-height: auto !important;
+                       
+                    }
+    
+                    .mccol p {
+                        margin-left: 17px !important;
+                    }
+                  .mctext{display:block !important;}
+                  .bs-example {
+                    padding-top: 20px !important;
+                }
+                .SPECS_title h2{text-transform: capitalize;font-size: 2rem;}
+
+                .staTic{
+                    display: none !important;
+                }
+                }
+    
+                .dataColor_700 {
+                    color: #000000;
+                }
+    
+                .dataNone_700 {
+                    color: #000000;
+                    display: none;
+                }
+    
+                .dataColor_1000 {
+                    color: #000000;
+                }
+    
+                .dataNone_1000 {
+                    color: #000000;
+                    display: none;
+                }
+    
+                .dataColor {
+                    color: #000000;
+                }
+    
+                .dataNone {
+                    color: #000000;
+                    display: none;
+                }
+    
+                .iconfont {
+                    font-size: 18px;
+                }
+    
+                .VB {
+                    text-align: center;
+                }
+    
+                .VBS {
+                    text-align: center;
+                }
+    .caret {
+        /* display: inline-block; */
+        width: 0;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        border-top: 6px dashed !important;
+        border-top: 4px solid\9;
+        border-right: 6px solid transparent !important;
+        border-left: 6px solid transparent !important;
+        float: right;
+        margin-top: 8px;
+        margin-right: 6px;
+    }
+    .bigcontainer_parameter{margin-bottom:50px;}
+.containers {
+	  background-image: url("https://cdn.shopify.com/s/files/1/0103/1923/3081/files/20230301-Grills-Compare.jpg?v=1679301148");
+	  background-position: center;
+	  background-size: cover;
+	  height: 260px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+	
+	@media screen and (max-width: 768px) {
+	  .containers {
+	    background-image: url("https://cdn.shopify.com/s/files/1/0103/1923/3081/files/20230301-Grills-Compare_76542242-2c31-4e39-be46-439f9e98fff2.jpg?v=1679301148");
+		height: 460px;
+	  }
+	}
+	
+	.contents {
+	  text-align: center;
+	  color: #fff;
+	}
+	
+	
+	.contents h2 {
+	 
+	  margin-bottom: 1rem;
+	}
+	
+	.contents button {
+	  background-color: #bc3d1d;
+	  color: white;
+	  border: none;
+	  padding: 10px 15px;
+	  font-size: 1rem;
+	  border-radius:3px;
+	}
+	
+	.contents button a{
+		text-decoration: none;
+		color: #fff;
+        font-weight: 600;
+	}
+
+    .product-single__form button{
+        min-height: 30px !important;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    }
+
+    .dropdown-menu::-webkit-scrollbar {
+        width: 10px;
+    }
+    .dropdown-menu::-webkit-scrollbar-track {
+        background-color: darkgrey;
+    }
+    .dropdown-menu::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
