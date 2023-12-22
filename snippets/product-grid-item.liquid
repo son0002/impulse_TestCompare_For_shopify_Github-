@@ -337,11 +337,11 @@ Arguments
   <p class="affirm-as-low-as medium-up--hide" data-page-type="product" data-amount="{{ product.price}}"></p>
 </div>
 <script>
-  // jQuery
+// jQuery
 $(document).ready(function () {
   // 为具有类名 'SPCMP_Add' 的复选框添加事件监听器
   $('.SPCMP_Add').change(function () {
-    // 检查复选框的状态
+    // 使用 $(this) 获取当前触发事件的元素
     if ($(this).prop('checked')) {
       // 复选框被选中的处理逻辑
       var productId = $(this).attr('spcmp_pid');
@@ -355,5 +355,6 @@ $(document).ready(function () {
     }
   });
 });
+
 
 </script>
