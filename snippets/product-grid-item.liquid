@@ -336,3 +336,24 @@ Arguments
   {%- endif -%}
   <p class="affirm-as-low-as medium-up--hide" data-page-type="product" data-amount="{{ product.price}}"></p>
 </div>
+<script>
+  // jQuery
+$(document).ready(function () {
+  // 为具有类名 'SPCMP_Add' 的复选框添加事件监听器
+  $('.SPCMP_Add').change(function () {
+    // 检查复选框的状态
+    if ($(this).prop('checked')) {
+      // 复选框被选中的处理逻辑
+      var productId = $(this).attr('spcmp_pid');
+      console.log('Product with ID ' + productId + ' is selected for comparison.');
+      // 这里可以触发其他逻辑，例如将产品ID添加到比较列表中
+    } else {
+      // 复选框被取消选中的处理逻辑
+      var productId = $(this).attr('spcmp_pid');
+      console.log('Product with ID ' + productId + ' is deselected for comparison.');
+      // 这里可以触发其他逻辑，例如将产品ID从比较列表中移除
+    }
+  });
+});
+
+</script>
