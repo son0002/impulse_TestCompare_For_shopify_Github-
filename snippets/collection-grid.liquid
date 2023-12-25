@@ -266,16 +266,11 @@ $(document).ready(function () {
   $('.SPCMP_Add').change(function () {
     var isChecked = $(this).prop('checked');
     var productId = $(this).attr('spcmp_pid');
-
+    var productTitle = $(this).attr('spcmp_title');
     // 获取产品信息
-    var productInfo = productInfoMap[productId];
-console.log(productInfo)
     if (isChecked && productInfo) {
-      console.log('ID 为 ' + productId + ' 的产品已选择进行比较。');
-      console.log('产品路径: ' + productInfo.path);
-      console.log('图片路径: ' + productInfo.imagePath);
-      console.log('产品标题: ' + productInfo.title);
-      // 这里可以触发其他逻辑，例如将产品信息添加到比较列表中
+      console.log('ID 为 ' + productId + productTitle);
+     
     } else {
       console.log('ID 为 ' + productId + ' 的产品取消选择进行比较。');
       // 这里可以触发其他逻辑，例如将产品信息从比较列表中移除
