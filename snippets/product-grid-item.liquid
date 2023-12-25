@@ -168,7 +168,7 @@ Arguments
           {%- endfor -%}
         {%- endif -%}
         <label class="SPCMP_chk_lbl"><input type="checkbox" class="SPCMP_Add " name="SPCMP_chk"
-          spcmp_pid="{{product.id}}" spcmp_ptitle="{{product.title}}" spcmp_img="{{product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.'}}" spcmp_handle="{{product.url}}"><span class="SPCMP_Add_span">Add to Compare</span></label>
+          spcmp_pid="{{product.id}}" spcmp_ptitle="{{product.title}}" spcmp_img="{{product.featured_image | img_url: '1x1'}}" spcmp_handle="{{product.url}}"><span class="SPCMP_Add_span">Add to Compare</span></label>
       </div>
      
  </a>
