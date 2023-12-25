@@ -156,15 +156,18 @@ Snippet Arguments
   <div class="grid grid--uniform{% if mobile_flush_grid %} small--grid--flush{% endif %}"{% unless enable_collection_count %} data-scroll-to{% endunless %}>
     {%- for item in items -%}
     {%- if item.object_type == 'product' -%}
-      <div class="product-grid-item">
+      {%- render 'product-grid-item',
+        product: item,
+        per_row: per_row,
+        quick_shop_enable: quick_shop_enable
+      -%}
+      <!-- 新增显示产品 ID 和默认图片的部分 -->
+      <div class="additional-info">
         <p>Product ID: {{ item.id }}</p>
         {%- if item.images.size > 0 -%}
           {% assign default_image = item.images.first %}
           <img src="{{ default_image.src | img_url: 'medium' }}" alt="{{ item.title }}" />
         {%- endif -%}
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.price | money }}</p>
-        <!-- 其他 product-grid-item 的内容 -->
       </div>
     {%- else -%}
       {%- render 'search-grid-item',
