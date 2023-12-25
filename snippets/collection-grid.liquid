@@ -224,7 +224,7 @@ html[dir="rtl"] .collection-filter__item--count {
 {% endstyle %}
 {%- endunless -%}
 <script>
-  // jQuery
+
 $(document).ready(function () {
   // 为具有类名 'SPCMP_Add' 的复选框添加事件监听器
   $('.SPCMP_Add').change(function () {
@@ -240,7 +240,18 @@ $(document).ready(function () {
       console.log('Product with ID ' + productId + ' is deselected for comparison.');
       // 这里可以触发其他逻辑，例如将产品ID从比较列表中移除
     }
+
+    // 在这里检查已选择产品的数量
+    var selectedProductCount = $('.SPCMP_Add:checked').length;
+    if (selectedProductCount > 1 && selectedProductCount < 5) {
+      console.log('Selected product count is between 2 and 4.');
+      // 这里可以触发其他逻辑，例如启用比较按钮
+    } else {
+      console.log('Selected product count is not within the specified range.');
+      // 这里可以触发其他逻辑，例如禁用比较按钮
+    }
   });
 });
+
 
 </script>
