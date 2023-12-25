@@ -251,9 +251,19 @@ html[dir="rtl"] .collection-filter__item--count {
   </div>
 
 </div>
-<script>
 
+<script>
+var productInfoMap = {
+    {% for product in all_products %}
+      '{{ product.id }}': {
+        path: '{{ product.path }}',
+        imagePath: '{{ product.image_path }}',
+        title: '{{ product.title | escape | json }}'
+      },
+    {% endfor %}
+  };
 // jQuery
+
 $(document).ready(function () {
     // 缓存 sa_ca_content 元素
     var $saCaContent = $('.sa_ca_content');
@@ -269,8 +279,10 @@ $(document).ready(function () {
         // 检查复选框的状态
         if (isChecked) {
             // 复选框被选中的处理逻辑
-            console.log('ID 为 ' + productId + productTitle);
-            // 这里可以触发其他逻辑，例如将产品ID添加到比较列表中
+            console.log('ID 为 ' + productId + ' 的产品已选择进行比较。');
+      console.log('产品路径: ' + productInfo.path);
+      console.log('图片路径: ' + productInfo.imagePath);
+      console.log('产品标题: ' + productInfo.title);
         } else {
             // 复选框被取消选中的处理逻辑
             console.log('ID 为 ' + productId + ' 的产品取消选择进行比较。');
