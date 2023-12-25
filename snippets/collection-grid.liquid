@@ -229,14 +229,14 @@ html[dir="rtl"] .collection-filter__item--count {
   <div class="sa_ca_container ca_bottom">
     <div class="sa_ca_content sa_ca_close">
       <div class="sa_ca_icontainer">
-        <div class="sa_ca_item"><a class="sa_ca_pimg"
+        <!-- <div class="sa_ca_item"><a class="sa_ca_pimg"
             href="/products/deck-boss-590?variant=43936804208797"><img alt=""
               src="https://cdn.shopify.com/s/files/1/0549/0255/4781/files/Deck-Boss-590-Front_medium.jpg?v=1696274888"><span
               class="sa_ca_idelete" spcmp_pid="7802786218141" spcmp_vid="43936804208797"
               dtype="sticky">✕</span></a>
           <div class="sa_ca_summary"><a href="/products/deck-boss-590?variant=43936804208797"
               class="sa_ca_ptitle">Deck Boss 590</a><a class="money">$899.00 USD</a></div>
-        </div>
+        </div> -->
 
       </div>
       <div class="compare-controls "><a class="compare-button com-page-btn btn" title="Compare Product"
@@ -258,21 +258,33 @@ html[dir="rtl"] .collection-filter__item--count {
 <script>
 
 // jQuery
-
 $(document).ready(function () {
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
 
   $('.SPCMP_Add').change(function () {
     var isChecked = $(this).prop('checked');
+    
     var productId = $(this).attr('spcmp_pid');
     var productTitle = $(this).attr('spcmp_ptitle');
+    var productPath =  $(this).attr('spcmp_handle');
+    var productImg = $(this).attr('spcmp_img');
+    
     // 获取产品信息
     if (isChecked) {
-      console.log('ID 为 ' + productId + productTitle); 
-     
+      console.log('ID为 ' + productId + ' ' + productTitle);
+
+      // 查找已存在的 .sa_ca_icontainer 元素
+      var $saCaIcontainer = $saCaContent.find('.sa_ca_icontainer');
+
+      // 创建新的 .sa_ca_item 元素
+      var newProductItem = $('<div class="sa_ca_item"><a class="sa_ca_pimg" href="' + productPath + '"><img alt="" src="' + productImg + '"><span class="sa_ca_idelete" spcmp_pid="' + productId + '" dtype="sticky">✕</span></a>\
+        <div class="sa_ca_summary"><a href="' + productPath + '" class="sa_ca_ptitle">' + productTitle + '</a><a class="money">' + productId + '</a></div></div>');
+
+      // 将新的 .sa_ca_item 元素添加到 .sa_ca_icontainer 中
+      $saCaIcontainer.append(newProductItem);
     } else {
-      console.log('ID 为 ' + productId + ' 的产品取消选择进行比较。');
+      console.log('ID为 ' + productId + ' 的产品取消选择进行比较。');
       // 这里可以触发其他逻辑，例如将产品信息从比较列表中移除
     }
 
