@@ -260,7 +260,7 @@ $(document).ready(function () {
     var $saCaContent = $('.sa_ca_content');
     // 缓存 ca_flap 元素
     var $caFlap = $('.ca_flap');
-   var productTitle ='{{ product.title }}'
+    var productTitle = '{{ product.title | json }}';
     // 为具有类名 'SPCMP_Add' 的复选框添加事件监听器
     $('.SPCMP_Add').change(function () {
         // 使用 $(this) 获取当前触发事件的元素
