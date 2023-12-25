@@ -251,9 +251,8 @@ html[dir="rtl"] .collection-filter__item--count {
   </div>
 
 </div>
-
 <script>
-var productInfoMap = {
+  var productInfoMap = {
     {% for product in all_products %}
       '{{ product.id }}': {
         path: '{{ product.path }}',
@@ -262,6 +261,11 @@ var productInfoMap = {
       },
     {% endfor %}
   };
+  console.log(productInfoMap);
+
+</script>
+<script>
+
 // jQuery
 
 $(document).ready(function () {
