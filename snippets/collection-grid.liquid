@@ -247,7 +247,7 @@ html[dir="rtl"] .collection-filter__item--count {
       </div>
       <span class="close ca_tab" title="Hide"><span class="SP_triangle"></span></span>
     </div>
-    <div class="ca_flap ca_tab" title="Compare Tab" style="display: block;"><span
+    <div class="ca_flap ca_tab" title="Compare Tab" style="display: none;"><span
         class="SP_triangle"></span><span>Select up to 4 items to compare.</span></div>
   </div>
 
@@ -256,6 +256,12 @@ html[dir="rtl"] .collection-filter__item--count {
 
 // jQuery
 $(document).ready(function () {
+    // 缓存 sa_ca_content 元素
+    var $saCaContent = $('.sa_ca_content');
+			// 缓存 sa_ca_content 和 ca_flap 元素
+    var $saCaContent = $('.sa_ca_content');
+		var $caFlap = $('.ca_flap');
+
   // 为具有类名 'SPCMP_Add' 的复选框添加事件监听器
   $('.SPCMP_Add').change(function () {
     // 使用 $(this) 获取当前触发事件的元素
@@ -287,6 +293,7 @@ $(document).ready(function () {
     if (selectedProductCount > 1 && selectedProductCount <= 4) {
       console.log('Selected product count is between 2 and 4.');
       // 这里可以触发其他逻辑，例如启用比较按钮
+      $caFlap.css('display', 'block');
     } else {
       console.log('Selected product count is not within the specified range.');
       // 这里可以触发其他逻辑，例如禁用比较按钮
@@ -295,9 +302,7 @@ $(document).ready(function () {
 
 
 
-  // 缓存 sa_ca_content 元素
-  var $saCaContent = $('.sa_ca_content');
-		
+  
 		$('.sa_ca_content .close .SP_triangle').click(function() {
 		    // 移除 sa_ca_open 类
 		    $saCaContent.removeClass('sa_ca_open');
@@ -309,9 +314,7 @@ $(document).ready(function () {
 		    $('.ca_flap').css('display', 'block');
 		});
 
-		// 缓存 sa_ca_content 和 ca_flap 元素
-		var $saCaContent = $('.sa_ca_content');
-		var $caFlap = $('.ca_flap');
+	
 		
 		$('.ca_flap .SP_triangle').click(function() {
 		    // 添加 sa_ca_open 类
