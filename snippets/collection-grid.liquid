@@ -162,6 +162,7 @@ Snippet Arguments
           quick_shop_enable: quick_shop_enable
         -%}
       {%- else -%}
+      <p>Item object type: {{ item.object_type }}</p>
         {%- render 'search-grid-item',
           item: item,
           per_row: per_row
@@ -170,7 +171,7 @@ Snippet Arguments
     {%- endfor -%}
   </div>
 </div>
-<p>{{item.title}}</p>
+
 {%- if enable_sidebar and filter_style != 'drawer' and collection.filters.size > 0 -%}
 {% comment %}
   Sidebar enabled but not in drawer mode, only show filter button on mobile
