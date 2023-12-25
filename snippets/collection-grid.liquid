@@ -237,16 +237,20 @@ html[dir="rtl"] .collection-filter__item--count {
           <div class="sa_ca_summary"><a href="/products/deck-boss-590?variant=43936804208797"
               class="sa_ca_ptitle">Deck Boss 590</a><a class="money">$899.00 USD</a></div>
         </div>
-        
+
       </div>
       <div class="compare-controls "><a class="compare-button com-page-btn btn" title="Compare Product"
           href="/pages/product-compare/?NzcxMTQ0ODg5MTU0OTo0MzQ0MjE3ODM1OTQ1Mw==,NzgwMjc4NjM4MTk4MTo0MzkzNjgwNDM3MjYzNw==,NzgwMjc4NjIxODE0MTo0MzkzNjgwNDIwODc5Nw==,Njk5NzI4NDc4MjIzNzo0MDk2MDI2NzUxODEwOQ==">Compare
           Now</a><a href="javascript:void(0);" title="Remove All Product" class="ca_Rmvall">REMOVE
           ALL</a>
         <p class="ca_com_text">Select up to 4 items to compare.</p>
-      </div><span class="close ca_tab" title="Hide"><span class="SP_triangle"></span></span>
+      </div>
+      <span class="close ca_tab" title="Hide"><span class="SP_triangle"></span></span>
     </div>
+    <div class="ca_flap ca_tab" title="Compare Tab" style="display: none;"><span
+        class="SP_triangle"></span><span>Select up to 4 items to compare.</span></div>
   </div>
+
 </div>
 <script>
 
@@ -288,6 +292,38 @@ $(document).ready(function () {
       // 这里可以触发其他逻辑，例如禁用比较按钮
     }
   });
+
+
+
+  // 缓存 sa_ca_content 元素
+  var $saCaContent = $('.sa_ca_content');
+		
+		$('.sa_ca_content .close .SP_triangle').click(function() {
+		    // 移除 sa_ca_open 类
+		    $saCaContent.removeClass('sa_ca_open');
+		    
+		    // 添加 sa_ca_close 类
+		    $saCaContent.addClass('sa_ca_close');
+		    
+		    // 让 ca_flap 显示（假设 ca_flap 是 .ca_flap 的类）
+		    $('.ca_flap').css('display', 'block');
+		});
+
+		// 缓存 sa_ca_content 和 ca_flap 元素
+		var $saCaContent = $('.sa_ca_content');
+		var $caFlap = $('.ca_flap');
+		
+		$('.ca_flap .SP_triangle').click(function() {
+		    // 添加 sa_ca_open 类
+		    $saCaContent.addClass('sa_ca_open');
+		    
+		    // 移除 sa_ca_close 类
+		    $saCaContent.removeClass('sa_ca_close');
+		    
+		    // 隐藏 ca_flap
+		    $caFlap.css('display', 'none');
+		});
+
 });
 
 
