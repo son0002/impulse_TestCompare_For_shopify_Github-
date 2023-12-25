@@ -260,13 +260,13 @@ $(document).ready(function () {
     var $saCaContent = $('.sa_ca_content');
     // 缓存 ca_flap 元素
     var $caFlap = $('.ca_flap');
-    var productTitle = '{{ product.title | json }}';
+ 
     // 为具有类名 'SPCMP_Add' 的复选框添加事件监听器
     $('.SPCMP_Add').change(function () {
         // 使用 $(this) 获取当前触发事件的元素
         var isChecked = $(this).prop('checked');
         var productId = $(this).attr('spcmp_pid');
-
+        var productTitle = $(this).attr('spcmp_title');
         // 检查复选框的状态
         if (isChecked) {
             // 复选框被选中的处理逻辑
