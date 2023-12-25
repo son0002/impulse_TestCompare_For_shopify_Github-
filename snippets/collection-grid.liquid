@@ -33,16 +33,6 @@ Snippet Arguments
     assign current_filter_size = current_filter_size | plus: filter.active_values.size
   endfor
 %}
-{%- if product -%}
-  <p>Product Title: {{ product.title }}</p>
-  <p>Product ID: {{ product.id }}</p>
-  <p>Product Price: {{ product.price | money }}</p>
-  {%- if product.featured_image -%}
-    <img src="{{ product.featured_image.src | img_url: 'medium' }}" alt="{{ product.title }}" />
-  {%- endif -%}
-{%- else -%}
-  <p>No product found.</p>
-{%- endif -%}
 
 <!-- mian bao xie 20220822 -->
 <div style="margin: 10px 0 15px 0;">
@@ -180,7 +170,7 @@ Snippet Arguments
     {%- endfor -%}
   </div>
 </div>
-
+<p>{{item.title}}</p>
 {%- if enable_sidebar and filter_style != 'drawer' and collection.filters.size > 0 -%}
 {% comment %}
   Sidebar enabled but not in drawer mode, only show filter button on mobile
