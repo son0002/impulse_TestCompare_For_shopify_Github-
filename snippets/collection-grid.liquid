@@ -254,11 +254,7 @@ html[dir="rtl"] .collection-filter__item--count {
 <script>
   var productInfoMap = {
     {% for product in all_products %}
-      '{{ product.id }}': {
-        path: '{{ product.path }}',
-        imagePath: '{{ product.image_path }}',
-        title: '{{ product.title | escape | json }}'
-      },
+      '{{ product.id }}'
     {% endfor %}
   };
   console.log(productInfoMap)
