@@ -178,7 +178,7 @@ Snippet Arguments
   {%- endfor -%}
   </div>
 </div>
-
+{{ item.id }}
 {%- if enable_sidebar and filter_style != 'drawer' and collection.filters.size > 0 -%}
 {% comment %}
   Sidebar enabled but not in drawer mode, only show filter button on mobile
