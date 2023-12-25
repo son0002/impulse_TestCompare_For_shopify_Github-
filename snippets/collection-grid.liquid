@@ -265,64 +265,55 @@ var productInfoMap = {
 // jQuery
 
 $(document).ready(function () {
-    // 缓存 sa_ca_content 元素
-    var $saCaContent = $('.sa_ca_content');
-    // 缓存 ca_flap 元素
-    var $caFlap = $('.ca_flap');
-    // 为具有类名 'SPCMP_Add' 的复选框添加事件监听器
-    $('.SPCMP_Add').change(function () {
-        // 使用 $(this) 获取当前触发事件的元素
-        var isChecked = $(this).prop('checked');
-        var productId = $(this).attr('spcmp_pid');
-        var productTitle = $(this).attr('spcmp_ptitle');
-       
-        // 检查复选框的状态
-        if (isChecked) {
-            // 复选框被选中的处理逻辑
-            console.log('ID 为 ' + productId + ' 的产品已选择进行比较。');
+  var $saCaContent = $('.sa_ca_content');
+  var $caFlap = $('.ca_flap');
+
+  $('.SPCMP_Add').change(function () {
+    var isChecked = $(this).prop('checked');
+    var productId = $(this).attr('spcmp_pid');
+
+    // 获取产品信息
+    var productInfo = productInfoMap[productId];
+
+    if (isChecked && productInfo) {
+      console.log('ID 为 ' + productId + ' 的产品已选择进行比较。');
       console.log('产品路径: ' + productInfo.path);
       console.log('图片路径: ' + productInfo.imagePath);
       console.log('产品标题: ' + productInfo.title);
-        } else {
-            // 复选框被取消选中的处理逻辑
-            console.log('ID 为 ' + productId + ' 的产品取消选择进行比较。');
-            // 这里可以触发其他逻辑，例如将产品ID从比较列表中移除
-        }
+      // 这里可以触发其他逻辑，例如将产品信息添加到比较列表中
+    } else {
+      console.log('ID 为 ' + productId + ' 的产品取消选择进行比较。');
+      // 这里可以触发其他逻辑，例如将产品信息从比较列表中移除
+    }
 
-        // 在这里检查已选择产品的数量
-        var selectedProductCount = $('.SPCMP_Add:checked').length;
+    var selectedProductCount = $('.SPCMP_Add:checked').length;
 
-        // 早返回：如果选择产品数量超过四个，显示提醒并取消当前选择
-        if (selectedProductCount > 4) {
-            alert('最多只能选择四个产品！');
-            $(this).prop('checked', false); // 取消当前复选框的选中状态
-            return;
-        }
+    if (selectedProductCount > 4) {
+      alert('最多只能选择四个产品！');
+      $(this).prop('checked', false);
+      return;
+    }
 
-        // 如果选择产品数量在指定范围内，执行相应逻辑
-        if (selectedProductCount > 1 && selectedProductCount <= 4) {
-            console.log('已选择产品数量在2到4之间。');
-            // 这里可以触发其他逻辑，例如启用比较按钮
-            $caFlap.css('display', 'block');
-        } else {
-            console.log('已选择产品数量不在指定范围内。');
-            // 这里可以触发其他逻辑，例如禁用比较按钮
-            $caFlap.css('display', 'none');
-        }
-    });
+    if (selectedProductCount > 1 && selectedProductCount <= 4) {
+      console.log('已选择产品数量在2到4之间。');
+      $caFlap.css('display', 'block');
+    } else {
+      console.log('已选择产品数量不在指定范围内。');
+      $caFlap.css('display', 'none');
+    }
+  });
 
-    $('.sa_ca_content .close .SP_triangle').click(function() {
-        $saCaContent.removeClass('sa_ca_open');
-        $saCaContent.addClass('sa_ca_close');
-        $caFlap.css('display', 'block');
-    });
+  $('.sa_ca_content .close .SP_triangle').click(function() {
+    $saCaContent.removeClass('sa_ca_open');
+    $saCaContent.addClass('sa_ca_close');
+    $caFlap.css('display', 'block');
+  });
 
-    $('.ca_flap .SP_triangle').click(function() {
-        $saCaContent.addClass('sa_ca_open');
-        $saCaContent.removeClass('sa_ca_close');
-        $caFlap.css('display', 'none');
-    });
+  $('.ca_flap .SP_triangle').click(function() {
+    $saCaContent.addClass('sa_ca_open');
+    $saCaContent.removeClass('sa_ca_close');
+    $caFlap.css('display', 'none');
+  });
 });
-
 
 </script>
