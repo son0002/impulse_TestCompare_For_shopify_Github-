@@ -255,10 +255,7 @@ html[dir="rtl"] .collection-filter__item--count {
   var allProductInfo = [
     {% for product in all_products %}
       {
-        id: '{{ product.id }}',
-        path: '{{ product.path }}',
-        imagePath: '{{ product.image_path }}',
-        title: '{{ product.title | escape | json }}'
+        id: '{{ product.id }}'
       },
     {% endfor %}
   ];
