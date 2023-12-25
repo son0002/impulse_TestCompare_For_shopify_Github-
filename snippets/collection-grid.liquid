@@ -305,26 +305,16 @@ $(document).ready(function () {
 
   
 		$('.sa_ca_content .close .SP_triangle').click(function() {
-		    // 移除 sa_ca_open 类
 		    $saCaContent.removeClass('sa_ca_open');
-		    
-		    // 添加 sa_ca_close 类
 		    $saCaContent.addClass('sa_ca_close');
-		    
-		    // 让 ca_flap 显示（假设 ca_flap 是 .ca_flap 的类）
-		    $('.ca_flap').css('display', 'block');
+        $caFlap.css('display', 'block');
 		});
 
 	
 		
 		$('.ca_flap .SP_triangle').click(function() {
-		    // 添加 sa_ca_open 类
 		    $saCaContent.addClass('sa_ca_open');
-		    
-		    // 移除 sa_ca_close 类
 		    $saCaContent.removeClass('sa_ca_close');
-		    
-		    // 隐藏 ca_flap
 		    $caFlap.css('display', 'none');
 		});
 
