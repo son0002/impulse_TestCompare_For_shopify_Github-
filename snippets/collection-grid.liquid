@@ -225,6 +225,7 @@ html[dir="rtl"] .collection-filter__item--count {
 {%- endunless -%}
 <script>
 
+// jQuery
 $(document).ready(function () {
   // 为具有类名 'SPCMP_Add' 的复选框添加事件监听器
   $('.SPCMP_Add').change(function () {
@@ -243,7 +244,12 @@ $(document).ready(function () {
 
     // 在这里检查已选择产品的数量
     var selectedProductCount = $('.SPCMP_Add:checked').length;
-    if (selectedProductCount > 1 && selectedProductCount < 5) {
+    if (selectedProductCount > 4) {
+      alert('最多只能选择四个产品！');
+      // 这里可以触发其他逻辑，例如禁止继续选择产品
+      // 或者清除多余的选择以确保不超过四个产品
+      $(this).prop('checked', false); // 取消当前复选框的选中状态
+    } else if (selectedProductCount > 1 && selectedProductCount <= 4) {
       console.log('Selected product count is between 2 and 4.');
       // 这里可以触发其他逻辑，例如启用比较按钮
     } else {
@@ -252,6 +258,7 @@ $(document).ready(function () {
     }
   });
 });
+
 
 
 </script>
