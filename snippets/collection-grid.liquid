@@ -155,30 +155,22 @@ Snippet Arguments
 
   <div class="grid grid--uniform{% if mobile_flush_grid %} small--grid--flush{% endif %}"{% unless enable_collection_count %} data-scroll-to{% endunless %}>
     {%- for item in items -%}
-    {%- if item.object_type == 'product' -%}
-      {%- render 'product-grid-item',
-        product: item,
-        per_row: per_row,
-        quick_shop_enable: quick_shop_enable
-      -%}
-      <!-- 新增显示产品 ID 和默认图片的部分 -->
-      <div class="additional-info">
-        <p>Product ID: {{ item.id }}</p>
-        {%- if item.images.size > 0 -%}
-          {% assign default_image = item.images.first %}
-          <img src="{{ default_image.src | img_url: 'medium' }}" alt="{{ item.title }}" />
-        {%- endif -%}
-      </div>
-    {%- else -%}
-      {%- render 'search-grid-item',
-        item: item,
-        per_row: per_row
-      %}
-    {%- endif -%}
-  {%- endfor -%}
+      {%- if item.object_type == 'product' -%}
+        {%- render 'product-grid-item',
+          product: item,
+          per_row: per_row,
+          quick_shop_enable: quick_shop_enable
+        -%}
+      {%- else -%}
+        {%- render 'search-grid-item',
+          item: item,
+          per_row: per_row
+        %}
+      {%- endif -%}
+    {%- endfor -%}
   </div>
 </div>
-{{ item.id }}
+
 {%- if enable_sidebar and filter_style != 'drawer' and collection.filters.size > 0 -%}
 {% comment %}
   Sidebar enabled but not in drawer mode, only show filter button on mobile
