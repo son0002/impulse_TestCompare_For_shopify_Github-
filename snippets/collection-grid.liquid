@@ -273,7 +273,7 @@ $(document).ready(function () {
     var selectedProductCount = $('.SPCMP_Add:checked').length;
 
     // 检查选中的产品数量
-    if (selectedProductCount > 4) {
+    if (selectedProductCount > 4 && isChecked) {
       console.log('最多只能选择四个产品！');
       alert('最多只能选择四个产品！');
       $(this).prop('checked', false);
@@ -293,7 +293,6 @@ $(document).ready(function () {
       // 将新的 .sa_ca_item 元素添加到 .sa_ca_icontainer 中
       $saCaIcontainer.append(newProductItem);
 
-      // 根据选中的产品数量更新 ca_flap 的显示状态
       updateCaFlapDisplay(selectedProductCount);
     } else {
       console.log('ID为 ' + productId + ' 的产品取消选择进行比较。');
