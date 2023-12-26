@@ -1,6 +1,7 @@
 {{page.content}}
 {% assign product_handle = request.querystring.handle %}
-{{product_handle}}
+
+Handle: {{ product_handle }}
 <script>
   console.log({{product_handle}})
 var productMetafields = {};
