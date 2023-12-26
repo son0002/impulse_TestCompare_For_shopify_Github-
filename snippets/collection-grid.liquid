@@ -301,7 +301,7 @@ $(document).ready(function () {
     updateCaFlapDisplay(selectedProductCount);
   });
 
-  // 删除产品项
+// 删除产品项
 $('.sa_ca_content').on('click', '.sa_ca_idelete', function(event) {
   event.preventDefault();  // 阻止链接默认行为
   event.stopPropagation(); // 阻止事件冒泡
@@ -311,6 +311,13 @@ $('.sa_ca_content').on('click', '.sa_ca_idelete', function(event) {
   // 更新产品计数和ca_flap的显示
   var selectedProductCount = $('.SPCMP_Add:checked').length;
   updateCaFlapDisplay(selectedProductCount);
+
+  // 检查是否还有剩余的sa_ca_item
+  if ($('.sa_ca_icontainer .sa_ca_item').length === 0) {
+    // 如果没有，更改sa_ca_content的类
+    $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
+    $caFlap.css('display', 'none');
+  }
 });
 
 
