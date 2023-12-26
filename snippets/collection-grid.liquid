@@ -261,7 +261,7 @@ html[dir="rtl"] .collection-filter__item--count {
 $(document).ready(function () {
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
-
+  var $close =  $('.sa_ca_content .close')
   $('.SPCMP_Add').change(function () {
     var isChecked = $(this).prop('checked');
     
@@ -298,7 +298,7 @@ $(document).ready(function () {
 
     if (selectedProductCount > 1 && selectedProductCount <= 4) {
       console.log('已选择产品数量在2到4之间。');
-      $caFlap.css('display', 'block');
+      $close.css('display', 'block');
     } else {
       console.log('已选择产品数量不在指定范围内。');
       $caFlap.css('display', 'none');
