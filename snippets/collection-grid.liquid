@@ -345,7 +345,10 @@ $(document).ready(function () {
     }
   }
 
+  // 从本地存储恢复复选框状态的函数
   function restoreCheckBoxState() {
+    var selectedProductCount = 0;
+
     $('.SPCMP_Add').each(function() {
       var productId = $(this).attr('spcmp_pid');
       var isChecked = localStorage.getItem(productId) === 'true';
@@ -353,9 +356,14 @@ $(document).ready(function () {
 
       if (isChecked) {
         addProductItem(productId, $(this));
+        selectedProductCount++;
       }
     });
+
+    // 在状态恢复后更新ca_flap的显示状态
+    updateCaFlapDisplay(selectedProductCount);
   }
+
 });
 
 </script>
