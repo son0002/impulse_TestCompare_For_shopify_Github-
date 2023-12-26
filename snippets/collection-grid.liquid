@@ -374,22 +374,24 @@ $(document).ready(function () {
 
 
   // 从本地存储恢复复选框状态的函数
-  function restoreCheckBoxState() {
-    var selectedProductCount = 0;
+  // 从本地存储恢复复选框状态的函数
+function restoreCheckBoxState() {
+  var selectedProductCount = 0;
 
-    $('.SPCMP_Add').each(function() {
-      var productId = $(this).attr('spcmp_pid');
-      var isChecked = localStorage.getItem(productId) === 'true';
-      $(this).prop('checked', isChecked);
+  $('.SPCMP_Add').each(function() {
+    var productId = $(this).attr('spcmp_pid');
+    var isChecked = localStorage.getItem(productId) === 'true';
+    $(this).prop('checked', isChecked);
 
-      if (isChecked) {
-        addProductItem(productId, $(this));
-        selectedProductCount++;
-      }
-    });
+    if (isChecked) {
+      addProductItem(productId, $(this));
+      selectedProductCount++;
+    }
+  });
 
-    updateCaFlapDisplay(selectedProductCount);
-  }
+  updateCaFlapDisplay(selectedProductCount);
+  updateCompareButtonLink(); // 更新比较按钮的链接
+}
 
 });
 
