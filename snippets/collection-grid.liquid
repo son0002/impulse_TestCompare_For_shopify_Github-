@@ -288,7 +288,7 @@ $(document).ready(function () {
       var selectedProductCount = $('.SPCMP_Add:checked').length;
 
       if (selectedProductCount > 4) {
-        console.log('最多只能选择四个产品！');
+        alert('最多只能选择四个产品！');
         $(this).prop('checked', false);
         return;
       }
@@ -308,7 +308,7 @@ $(document).ready(function () {
       var selectedProductCount = $('.SPCMP_Add:checked').length;
 
       if (selectedProductCount > 4) {
-        console.log('最多只能选择四个产品！');
+        alert('最多只能选择四个产品！');
         $(this).prop('checked', false);
         return;
       }
