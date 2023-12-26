@@ -255,8 +255,6 @@ html[dir="rtl"] .collection-filter__item--count {
 
 
 <script>
-
-// jQuery
 $(document).ready(function () {
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
@@ -283,36 +281,22 @@ $(document).ready(function () {
 
       // 将新的 .sa_ca_item 元素添加到 .sa_ca_icontainer 中
       $saCaIcontainer.append(newProductItem);
-
-      // 检查已选择产品的数量并决定是否显示 ca_flap
-      var selectedProductCount = $('.SPCMP_Add:checked').length;
-
-      if (selectedProductCount > 4) {
-        alert('最多只能选择四个产品！');
-        $(this).prop('checked', false);
-        return;
-      }
-
-      if (selectedProductCount > 1 && selectedProductCount <= 4) {
-        console.log('已选择产品数量在2到4之间。');
-        $caFlap.css('display', 'block');
-      } else {
-        console.log('已选择产品数量不在指定范围内。');
-        $caFlap.css('display', 'none');
-      }
     } else {
       console.log('ID为 ' + productId + ' 的产品取消选择进行比较。');
       // 这里可以触发其他逻辑，例如将产品信息从比较列表中移除
+    }
 
-      // 重新检查已选择产品的数量并决定是否显示 ca_flap
-      var selectedProductCount = $('.SPCMP_Add:checked').length;
+    // 检查已选择产品的数量并决定是否显示 ca_flap
+    var selectedProductCount = $('.SPCMP_Add:checked').length;
 
-      if (selectedProductCount > 4) {
-        alert('最多只能选择四个产品！');
-        $(this).prop('checked', false);
-        return;
-      }
+    if (selectedProductCount > 4) {
+      console.log('最多只能选择四个产品！');
+      $(this).prop('checked', false);
+      return;
+    }
 
+    if (!$saCaContent.hasClass('sa_ca_open')) {
+      // 在 sa_ca_open 状态下也执行相应逻辑
       if (selectedProductCount > 1 && selectedProductCount <= 4) {
         console.log('已选择产品数量在2到4之间。');
         $caFlap.css('display', 'block');
@@ -324,15 +308,13 @@ $(document).ready(function () {
   });
 
   $('.sa_ca_content .close .SP_triangle').click(function() {
-    $saCaContent.removeClass('sa_ca_open');
-    $saCaContent.addClass('sa_ca_close');
-    $caFlap.css('display', 'block');
+    $saCaContent.toggleClass('sa_ca_open sa_ca_close');
+    $caFlap.css('display', $saCaContent.hasClass('sa_ca_open') ? 'none' : 'block');
   });
 
   $('.ca_flap .SP_triangle').click(function() {
-    $saCaContent.addClass('sa_ca_open');
-    $saCaContent.removeClass('sa_ca_close');
-    $caFlap.css('display', 'none');
+    $saCaContent.toggleClass('sa_ca_open sa_ca_close');
+    $caFlap.css('display', $saCaContent.hasClass('sa_ca_open') ? 'none' : 'block');
   });
 });
 
