@@ -260,63 +260,65 @@ html[dir="rtl"] .collection-filter__item--count {
 $(document).ready(function () {
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
-  var $close =  $('.sa_ca_content .close')
+
+  // 处理产品选择更改
   $('.SPCMP_Add').change(function () {
-  var isChecked = $(this).prop('checked');
-  
-  var productId = $(this).attr('spcmp_pid');
-  var productTitle = $(this).attr('spcmp_ptitle');
-  var productPath =  $(this).attr('spcmp_handle');
-  var productImg = $(this).attr('spcmp_img');
-  
-  // 获取产品信息
-  if (isChecked) {
-    console.log('ID为 ' + productId + ' ' + productTitle);
+    var isChecked = $(this).prop('checked');
+    var productId = $(this).attr('spcmp_pid');
+    var productTitle = $(this).attr('spcmp_ptitle');
+    var productPath =  $(this).attr('spcmp_handle');
+    var productImg = $(this).attr('spcmp_img');
 
-    // 查找已存在的 .sa_ca_icontainer 元素
-    var $saCaIcontainer = $saCaContent.find('.sa_ca_icontainer');
+    // 获取选中的产品数量
+    var selectedProductCount = $('.SPCMP_Add:checked').length;
 
-    // 创建新的 .sa_ca_item 元素
-    var newProductItem = $('<div class="sa_ca_item"><a class="sa_ca_pimg" href="' + productPath + '"><img alt="" src="' + productImg + '"><span class="sa_ca_idelete" spcmp_pid="' + productId + '" dtype="sticky">✕</span></a>\
-      <div class="sa_ca_summary"><a href="' + productPath + '" class="sa_ca_ptitle">' + productTitle + '</a><a class="money">' + productId + '</a></div></div>');
-
-    // 将新的 .sa_ca_item 元素添加到 .sa_ca_icontainer 中
-    $saCaIcontainer.append(newProductItem);
-
-    // 检查容器状态并决定是否显示 ca_flap
-    if (!$saCaContent.hasClass('sa_ca_open')) {
-      var selectedProductCount = $('.SPCMP_Add:checked').length;
-
-      if (selectedProductCount > 4) {
-        console.log('最多只能选择四个产品！');
-        $(this).prop('checked', false);
-        return;
-      }
-
-      if (selectedProductCount > 1 && selectedProductCount <= 4) {
-        console.log('已选择产品数量在2到4之间。');
-        $caFlap.css('display', 'block');
-      } else {
-        console.log('已选择产品数量不在指定范围内。');
-        $caFlap.css('display', 'none');
-      }
+    // 检查选中的产品数量
+    if (selectedProductCount > 4) {
+      console.log('最多只能选择四个产品！');
+      alert('最多只能选择四个产品！');
+      $(this).prop('checked', false);
+      return;
     }
-  } else {
-    console.log('ID为 ' + productId + ' 的产品取消选择进行比较。');
-    // 这里可以触发其他逻辑，例如将产品信息从比较列表中移除
+
+    if (isChecked) {
+      console.log('ID为 ' + productId + ' 的 ' + productTitle + ' 被选中。');
+
+      // 查找已存在的 .sa_ca_icontainer 元素
+      var $saCaIcontainer = $saCaContent.find('.sa_ca_icontainer');
+
+      // 创建新的 .sa_ca_item 元素
+      var newProductItem = $('<div class="sa_ca_item"><a class="sa_ca_pimg" href="' + productPath + '"><img alt="" src="' + productImg + '"><span class="sa_ca_idelete" spcmp_pid="' + productId + '" dtype="sticky">✕</span></a>\
+        <div class="sa_ca_summary"><a href="' + productPath + '" class="sa_ca_ptitle">' + productTitle + '</a><a class="money">' + productId + '</a></div></div>');
+
+      // 将新的 .sa_ca_item 元素添加到 .sa_ca_icontainer 中
+      $saCaIcontainer.append(newProductItem);
+
+      // 根据选中的产品数量更新 ca_flap 的显示状态
+      updateCaFlapDisplay(selectedProductCount);
+    } else {
+      console.log('ID为 ' + productId + ' 的产品取消选择进行比较。');
+      // 在这里添加移除产品逻辑
+      updateCaFlapDisplay(selectedProductCount - 1);
+    }
+  });
+
+  // 更新 ca_flap 显示状态的函数
+  function updateCaFlapDisplay(count) {
+    if (count > 1 && count <= 4) {
+      $caFlap.css('display', 'block');
+    } else {
+      $caFlap.css('display', 'none');
+    }
   }
-});
 
-
+  // 处理关闭和打开操作
   $('.sa_ca_content .close .SP_triangle').click(function() {
-    $saCaContent.removeClass('sa_ca_open');
-    $saCaContent.addClass('sa_ca_close');
+    $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
     $caFlap.css('display', 'block');
   });
 
   $('.ca_flap .SP_triangle').click(function() {
-    $saCaContent.addClass('sa_ca_open');
-    $saCaContent.removeClass('sa_ca_close');
+    $saCaContent.addClass('sa_ca_open').removeClass('sa_ca_close');
     $caFlap.css('display', 'none');
   });
 });
