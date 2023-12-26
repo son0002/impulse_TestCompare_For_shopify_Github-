@@ -13,7 +13,7 @@ var productMetafields = {};
 $(document).ready(function() {
     var params = new URLSearchParams(window.location.search);
     var productHandles = params.get('handles');
-    // console.log(productHandles);
+    console.log(productHandles);
 
     if (productHandles) {
         productHandles.split(',').forEach(function(handle) {
@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 function fetchProductInfoByHandle(handle) {
     $.get('/products/' + handle + '.js', function(product) {
-        console.log(product);
+        // console.log(product);
         // 使用product.id获取对应的Metafields
         var metafields = productMetafields[product.id];
         if (metafields) {
