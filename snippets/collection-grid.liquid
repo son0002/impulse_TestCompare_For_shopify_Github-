@@ -357,13 +357,22 @@ $(document).ready(function () {
     $saCaContent.addClass('sa_ca_open').removeClass('sa_ca_close');
     $caFlap.css('display', 'none');
   });
+
+  resetCheckBoxes()
 });
 
 $(window).on("pageshow", function(event) {
   if (event.originalEvent.persisted) {
-    $('.SPCMP_Add').prop('checked', false);
-    $('.sa_ca_icontainer').empty();
-  
+    // 使用setTimeout确保此逻辑在页面状态完全恢复后执行
+    setTimeout(function() {
+      resetCheckBoxes();
+    }, 0);
   }
 });
+
+function resetCheckBoxes() {
+  $('.SPCMP_Add').prop('checked', false);
+  $('.sa_ca_icontainer').empty();
+  // 可以添加更多重置页面状态的逻辑
+}
 </script>
