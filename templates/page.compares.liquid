@@ -13,7 +13,7 @@ var productMetafields = {};
 $(document).ready(function() {
     var params = new URLSearchParams(window.location.search);
     var productHandles = params.get('handles');
-    console.log(productHandles);
+    // console.log(productHandles);
 
     if (productHandles) {
         productHandles.split(',').forEach(function(handle) {
