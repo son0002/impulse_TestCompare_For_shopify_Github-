@@ -1,13 +1,14 @@
-{% assign product_handles = request.querystring.handles | split: ',' %}
-{{product_handles}}
+{% assign product_handle = request.querystring.handle %}
+
 <script>
 var productMetafields = {};
 
-{% for handle in product_handles %}
-    {% assign product = all_products[handle] %}
-    productMetafields["{{ product.id }}"] = {{ product.metafields.global.comparison_parameters.value | json }};
-{% endfor %}
+{% if product_handle %}
+    {% assign product = all_products[product_handle] %}
+    productMetafields["{{ product_handle }}"] = {{ product.metafields.global.comparison_parameters.value | json }};
+{% endif %}
 </script>
+
 
 <script>
 $(document).ready(function() {
