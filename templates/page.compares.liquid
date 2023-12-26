@@ -1,24 +1,20 @@
 <script>
   $(document).ready(function() {
-  var params = new URLSearchParams(window.location.search);
-  var productIds = params.get('ids'); // 假设URL参数是这种形式：?ids=123,456
-  console.log(productIds)
-  if (productIds) {
-    productIds = productIds.split(',');
-
-    // 对每个产品ID进行操作
-    productIds.forEach(function(productId) {
-      // 使用Shopify Ajax API获取产品信息
-      $.get('/products/' + productId + '.js', function(product) {
-        // 在这里处理获取到的产品信息
-        // product 参数是一个包含产品详细信息的JSON对象
-        console.log(product); // 示例：在控制台打印产品信息
-        // 您可以在这里更新页面，显示产品信息
-      });
-    });
-  }else{
-    console.log('没找到产品')
-  }
+    var params = new URLSearchParams(window.location.search);
+    var productHandles = params.get('handles');
+    console.log(productHandles)
+    if (productHandles) {
+        productHandles.split(',').forEach(function(handle) {
+            fetchProductInfoByHandle(handle);
+        });
+    }
 });
+
+function fetchProductInfoByHandle(handle) {
+    $.get('/products/' + handle + '.js', function(product) {
+        // 在这里处理获取到的产品信息
+        console.log(product);
+    });
+}
 
 </script>
