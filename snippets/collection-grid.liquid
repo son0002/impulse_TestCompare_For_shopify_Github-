@@ -361,7 +361,9 @@ $(document).ready(function () {
   // 更新比较按钮链接的函数
   function updateCompareButtonLink() {
     var selectedProductsHandles = $('.SPCMP_Add:checked').map(function() {
-        return $(this).attr('spcmp_handle');
+        var fullHandle = $(this).attr('spcmp_handle');
+        var handle = fullHandle.replace('/products/', ''); // 移除 '/products/' 部分
+        return handle;
     }).get();
 
     if (selectedProductsHandles.length > 0) {
@@ -371,6 +373,7 @@ $(document).ready(function () {
         $compareButton.removeAttr('href');
     }
 }
+
 
 
 
