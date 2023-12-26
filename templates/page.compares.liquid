@@ -6,7 +6,7 @@ var productMetafields = {};
 
 {% if product_handle %}
     {% assign product = all_products[product_handle] %}
-    productMetafields["{{ product_handle }}"] = {{ product.metafields.global.sadsad.value}};
+    productMetafields["{{ product_handle }}"] = {{ product.metafields.global.sadsad.value | json }};
 {% endif %}
 </script>
 
