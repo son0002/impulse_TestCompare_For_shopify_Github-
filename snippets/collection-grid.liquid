@@ -306,6 +306,11 @@ $('.sa_ca_content').on('click', '.sa_ca_idelete', function(event) {
   event.preventDefault();  // 阻止链接默认行为
   event.stopPropagation(); // 阻止事件冒泡
 
+  var productId = $(this).attr('spcmp_pid'); // 假设spcmp_pid属性可以用来关联复选框
+
+  // 找到对应的复选框并更新其状态
+  $('.SPCMP_Add[spcmp_pid="' + productId + '"]').prop('checked', false);
+
   $(this).closest('.sa_ca_item').remove();
 
   // 更新产品计数和ca_flap的显示
@@ -319,6 +324,7 @@ $('.sa_ca_content').on('click', '.sa_ca_idelete', function(event) {
     $caFlap.css('display', 'none');
   }
 });
+
 
 
   // 更新 ca_flap 显示状态的函数
