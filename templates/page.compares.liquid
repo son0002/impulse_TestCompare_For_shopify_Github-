@@ -1,68 +1,22 @@
-{% assign collection = collections['wood-pellet-grills'] %}
-
-{% assign products = collection.products %}
-{% assign productComparisonData = product.metafields.data.product_comparison %}
-<p>{{productComparisonData}}</p>
-{% if collection.products.size > 0 %}
-  <table class="compare-table">
-    <thead>
-      <tr>
-        <th>Product Name</th>
-        {% for product in collection.products %}
-          <th>{{ product.title }}</th>
-        {% endfor %}
-        {% for field in productComparisonData.compare_fields %}
-          <th>{{ field.title }}</th>
-        {% endfor %}
-      </tr>
-    </thead>
-    <tbody>
-      {% for field in productComparisonData.compare_fields %}
-        <tr>
-          <td>{{ field.title }}</td>
-          {% for product in collection.products %}
-            <td>{{ product[field.handle] }}</td>
-          {% endfor %}
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-{% endif %}
-
-<style>
-.compare-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.compare-table th,
-.compare-table td {
-  padding: 8px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-
-.compare-table th {
-  background-color: #f0f0f0;
-  font-weight: bold;
-}
-
-.compare-table td:first-child {
-  text-align: left;
-}
-</style>
 <script>
-  window.onload = function() {
-    const table = document.querySelector('.compare-table');
-    if (table) {
-      const cells = table.querySelectorAll('td');
-      cells.forEach(cell => {
-        cell.addEventListener('click', () => {
-          const content = cell.textContent;
-          alert(content);
-        });
+  $(document).ready(function() {
+  var params = new URLSearchParams(window.location.search);
+  var productIds = params.get('ids'); // 假设URL参数是这种形式：?ids=123,456
+
+  if (productIds) {
+    productIds = productIds.split(',');
+
+    // 对每个产品ID进行操作
+    productIds.forEach(function(productId) {
+      // 使用Shopify Ajax API获取产品信息
+      $.get('/products/' + productId + '.js', function(product) {
+        // 在这里处理获取到的产品信息
+        // product 参数是一个包含产品详细信息的JSON对象
+        console.log(product); // 示例：在控制台打印产品信息
+        // 您可以在这里更新页面，显示产品信息
       });
-    }
+    });
   }
+});
+
 </script>
