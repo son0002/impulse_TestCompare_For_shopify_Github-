@@ -1,8 +1,20 @@
+{% assign product_handles = request.querystring.handles | split: ',' %}
+
 <script>
-  $(document).ready(function() {
+var productMetafields = {};
+
+{% for handle in product_handles %}
+    {% assign product = all_products[handle] %}
+    productMetafields["{{ product.id }}"] = {{ product.metafields.global.comparison_parameters.value | json }};
+{% endfor %}
+</script>
+
+<script>
+$(document).ready(function() {
     var params = new URLSearchParams(window.location.search);
     var productHandles = params.get('handles');
-    console.log(productHandles)
+    console.log(productHandles);
+
     if (productHandles) {
         productHandles.split(',').forEach(function(handle) {
             fetchProductInfoByHandle(handle);
@@ -12,8 +24,16 @@
 
 function fetchProductInfoByHandle(handle) {
     $.get('/products/' + handle + '.js', function(product) {
-        // 在这里处理获取到的产品信息
         console.log(product);
+        // 使用product.id获取对应的Metafields
+        var metafields = productMetafields[product.id];
+        if (metafields) {
+            // 在这里处理Metafields数据
+            metafields.parameters.forEach(function(param) {
+                console.log(param.name + ": " + param.value);
+                // 您也可以在页面上动态地展示这些Metafields信息
+            });
+        }
     });
 }
 
