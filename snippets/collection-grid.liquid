@@ -258,6 +258,7 @@ html[dir="rtl"] .collection-filter__item--count {
 $(document).ready(function () {
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
+  var $saCaIcontainer = $saCaContent.find('.sa_ca_icontainer'); // 缓存sa_ca_icontainer的jQuery对象
 
   // 页面加载时从本地存储恢复复选框状态
   restoreCheckBoxState();
@@ -266,9 +267,6 @@ $(document).ready(function () {
   $('.SPCMP_Add').change(function () {
     var isChecked = $(this).prop('checked');
     var productId = $(this).attr('spcmp_pid');
-
-    // 保存复选框状态到本地存储
-    localStorage.setItem(productId, isChecked);
 
     if (isChecked) {
       addProductItem(productId, $(this)); // 添加产品项
@@ -279,6 +277,9 @@ $(document).ready(function () {
     // 更新 ca_flap 显示状态
     var selectedProductCount = $('.SPCMP_Add:checked').length;
     updateCaFlapDisplay(selectedProductCount);
+
+    // 保存复选框状态到本地存储
+    localStorage.setItem(productId, isChecked);
   });
 
   // 删除产品项
@@ -360,7 +361,6 @@ $(document).ready(function () {
       }
     });
 
-    // 在状态恢复后更新ca_flap的显示状态
     updateCaFlapDisplay(selectedProductCount);
   }
 
