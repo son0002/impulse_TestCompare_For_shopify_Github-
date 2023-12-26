@@ -257,12 +257,15 @@ html[dir="rtl"] .collection-filter__item--count {
 <script>
 
 $(document).ready(function () {
- 
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
 
   // 页面加载时检查每个复选框的状态
   $('.SPCMP_Add').each(function () {
+    if (!$(this).data('loaded')) {
+      // 如果没有标记，重置复选框并设置标记
+      $(this).prop('checked', false).data('loaded', true);
+    }
     var isChecked = $(this).prop('checked');
     var productId = $(this).attr('spcmp_pid');
     var productTitle = $(this).attr('spcmp_ptitle');
@@ -275,6 +278,7 @@ $(document).ready(function () {
         <div class="sa_ca_summary"><a href="' + productPath + '" class="sa_ca_ptitle">' + productTitle + '</a><a class="money">' + productId + '</a></div></div>');
       $saCaIcontainer.append(newProductItem);
     }
+    
   });
 
   // 处理产品选择更改
