@@ -2,7 +2,7 @@
   $(document).ready(function() {
   var params = new URLSearchParams(window.location.search);
   var productIds = params.get('ids'); // 假设URL参数是这种形式：?ids=123,456
-
+  console.log(productIds)
   if (productIds) {
     productIds = productIds.split(',');
 
