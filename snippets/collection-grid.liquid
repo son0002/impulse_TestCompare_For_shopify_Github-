@@ -268,6 +268,17 @@ $(document).ready(function () {
     var isChecked = $(this).prop('checked');
     var productId = $(this).attr('spcmp_pid');
 
+    // 获取选中的产品数量
+    var selectedProductCount = $('.SPCMP_Add:checked').length;
+
+    // 检查选中的产品数量
+    if (selectedProductCount > 4 && isChecked) {
+      console.log('最多只能选择四个产品！');
+      alert('最多只能选择四个产品！');
+      $(this).prop('checked', false);
+      return;
+    }
+
     if (isChecked) {
       addProductItem(productId, $(this)); // 添加产品项
     } else {
@@ -275,14 +286,10 @@ $(document).ready(function () {
     }
 
     // 更新 ca_flap 显示状态
-    var selectedProductCount = $('.SPCMP_Add:checked').length;
-    if (selectedProductCount > 4 && isChecked) {
-      console.log('最多只能选择四个产品！');
-      alert('最多只能选择四个产品！');
-      $(this).prop('checked', false);
-      return;
-    }
+    // 这里需要重新计算选中的产品数量，因为上面可能有变化
+    selectedProductCount = $('.SPCMP_Add:checked').length;
     updateCaFlapDisplay(selectedProductCount);
+
     // 保存复选框状态到本地存储
     localStorage.setItem(productId, isChecked);
   });
