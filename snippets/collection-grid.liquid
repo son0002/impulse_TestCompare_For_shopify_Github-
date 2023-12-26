@@ -255,7 +255,9 @@ html[dir="rtl"] .collection-filter__item--count {
 
 
 <script>
-$(window).on("pageshow", function () {
+
+$(document).ready(function () {
+  $('.SPCMP_Add').prop('checked', false);
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
 
