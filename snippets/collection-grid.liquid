@@ -301,6 +301,15 @@ $(document).ready(function () {
     updateCaFlapDisplay(selectedProductCount);
   });
 
+  // 删除产品项
+  $('.sa_ca_content').on('click', '.sa_ca_idelete', function() {
+    $(this).closest('.sa_ca_item').remove();
+
+    // 更新产品计数和ca_flap的显示
+    var selectedProductCount = $('.SPCMP_Add:checked').length;
+    updateCaFlapDisplay(selectedProductCount);
+  });
+
   // 更新 ca_flap 显示状态的函数
   function updateCaFlapDisplay(count) {
     if (!$saCaContent.hasClass('sa_ca_open')) {
