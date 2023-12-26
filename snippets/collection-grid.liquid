@@ -240,7 +240,7 @@ html[dir="rtl"] .collection-filter__item--count {
 
       </div>
       <div class="compare-controls "><a class="compare-button com-page-btn btn" title="Compare Product"
-          href="/pages/product-compare/?NzcxMTQ0ODg5MTU0OTo0MzQ0MjE3ODM1OTQ1Mw==,NzgwMjc4NjM4MTk4MTo0MzkzNjgwNDM3MjYzNw==,NzgwMjc4NjIxODE0MTo0MzkzNjgwNDIwODc5Nw==,Njk5NzI4NDc4MjIzNzo0MDk2MDI2NzUxODEwOQ==">Compare
+          href="">Compare
           Now</a><a href="javascript:void(0);" title="Remove All Product" class="ca_Rmvall">REMOVE
           ALL</a>
         <p class="ca_com_text">Select up to 4 items to compare.</p>
@@ -259,7 +259,7 @@ $(document).ready(function () {
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
   var $saCaIcontainer = $saCaContent.find('.sa_ca_icontainer'); // 缓存sa_ca_icontainer的jQuery对象
-
+  var $compareButton = $('.compare-button')
   // 页面加载时从本地存储恢复复选框状态
   restoreCheckBoxState();
 
@@ -357,6 +357,20 @@ $(document).ready(function () {
       $caFlap.css('display', 'none');
     }
   }
+
+  $compareButton.click(function() {
+    var selectedProducts = [];
+    $('.SPCMP_Add:checked').each(function() {
+      selectedProducts.push($(this).attr('spcmp_pid'));
+    });
+
+    if (selectedProducts.length > 0) {
+      var compareUrl = "https://www.zgrills.com/pages/compare?" + selectedProducts.join(',');
+      window.location.href = compareUrl;
+    } else {
+      alert("请选择要比较的产品。");
+    }
+  });
 
   // 从本地存储恢复复选框状态的函数
   function restoreCheckBoxState() {
