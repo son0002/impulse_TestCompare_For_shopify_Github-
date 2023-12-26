@@ -255,77 +255,48 @@ html[dir="rtl"] .collection-filter__item--count {
 
 
 <script>
-
-// jQuery
 $(document).ready(function () {
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
+
+  // 页面加载时根据复选框状态恢复产品项
+  $('.SPCMP_Add').each(function() {
+    var isChecked = $(this).prop('checked');
+    var productId = $(this).attr('spcmp_pid');
+    if (isChecked) {
+      addProductItem(productId, $(this)); // 添加产品项
+    }
+  });
 
   // 处理产品选择更改
   $('.SPCMP_Add').change(function () {
     var isChecked = $(this).prop('checked');
     var productId = $(this).attr('spcmp_pid');
-    var productTitle = $(this).attr('spcmp_ptitle');
-    var productPath =  $(this).attr('spcmp_handle');
-    var productImg = $(this).attr('spcmp_img');
-
-    // 获取选中的产品数量
-    var selectedProductCount = $('.SPCMP_Add:checked').length;
-
-    // 检查选中的产品数量
-    if (selectedProductCount > 4 && isChecked) {
-      console.log('最多只能选择四个产品！');
-      alert('最多只能选择四个产品！');
-      $(this).prop('checked', false);
-      return;
-    }
 
     if (isChecked) {
-      console.log('ID为 ' + productId + ' 的 ' + productTitle + ' 被选中。');
-
-      // 查找已存在的 .sa_ca_icontainer 元素
-      var $saCaIcontainer = $saCaContent.find('.sa_ca_icontainer');
-
-      // 创建新的 .sa_ca_item 元素
-      var newProductItem = $('<div class="sa_ca_item"><a class="sa_ca_pimg" href="' + productPath + '"><img alt="" src="' + productImg + '"><span class="sa_ca_idelete" spcmp_pid="' + productId + '" dtype="sticky">✕</span></a>\
-        <div class="sa_ca_summary"><a href="' + productPath + '" class="sa_ca_ptitle">' + productTitle + '</a><a class="money">' + productId + '</a></div></div>');
-
-      // 将新的 .sa_ca_item 元素添加到 .sa_ca_icontainer 中
-      $saCaIcontainer.append(newProductItem);
+      addProductItem(productId, $(this)); // 添加产品项
     } else {
-      console.log('ID为 ' + productId + ' 的产品取消选择进行比较。');
-      // 在这里添加移除产品逻辑
+      removeProductItem(productId); // 移除产品项
     }
 
     // 更新 ca_flap 显示状态
+    var selectedProductCount = $('.SPCMP_Add:checked').length;
     updateCaFlapDisplay(selectedProductCount);
   });
 
-// 删除产品项
-$('.sa_ca_content').on('click', '.sa_ca_idelete', function(event) {
-  event.preventDefault();  // 阻止链接默认行为
-  event.stopPropagation(); // 阻止事件冒泡
+  // 删除产品项
+  $('.sa_ca_content').on('click', '.sa_ca_idelete', function(event) {
+    event.preventDefault();  // 阻止链接默认行为
+    event.stopPropagation(); // 阻止事件冒泡
 
-  var productId = $(this).attr('spcmp_pid'); // 假设spcmp_pid属性可以用来关联复选框
+    var productId = $(this).attr('spcmp_pid');
+    removeProductItem(productId);
+    $('.SPCMP_Add[spcmp_pid="' + productId + '"]').prop('checked', false);
 
-  // 找到对应的复选框并更新其状态
-  $('.SPCMP_Add[spcmp_pid="' + productId + '"]').prop('checked', false);
-
-  $(this).closest('.sa_ca_item').remove();
-
-  // 更新产品计数和ca_flap的显示
-  var selectedProductCount = $('.SPCMP_Add:checked').length;
-  updateCaFlapDisplay(selectedProductCount);
-
-  // 检查是否还有剩余的sa_ca_item
-  if ($('.sa_ca_icontainer .sa_ca_item').length === 0) {
-    // 如果没有，更改sa_ca_content的类
-    $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
-    $caFlap.css('display', 'none');
-  }
-});
-
-
+    // 更新产品计数和ca_flap的显示
+    var selectedProductCount = $('.SPCMP_Add:checked').length;
+    updateCaFlapDisplay(selectedProductCount);
+  });
 
   // 更新 ca_flap 显示状态的函数
   function updateCaFlapDisplay(count) {
@@ -348,6 +319,31 @@ $('.sa_ca_content').on('click', '.sa_ca_idelete', function(event) {
     $saCaContent.addClass('sa_ca_open').removeClass('sa_ca_close');
     $caFlap.css('display', 'none');
   });
+
+  // 添加产品项的函数
+  function addProductItem(productId, $checkbox) {
+    var productTitle = $checkbox.attr('spcmp_ptitle');
+    var productPath = $checkbox.attr('spcmp_handle');
+    var productImg = $checkbox.attr('spcmp_img');
+
+    var $saCaIcontainer = $saCaContent.find('.sa_ca_icontainer');
+    var newProductItem = $('<div class="sa_ca_item" spcmp_pid="' + productId + '"><a class="sa_ca_pimg" href="' + productPath + '"><img alt="" src="' + productImg + '"><span class="sa_ca_idelete" spcmp_pid="' + productId + '" dtype="sticky">✕</span></a>\
+      <div class="sa_ca_summary"><a href="' + productPath + '" class="sa_ca_ptitle">' + productTitle + '</a><a class="money">' + productId + '</a></div></div>');
+
+    $saCaIcontainer.append(newProductItem);
+  }
+
+  // 移除产品项的函数
+  function removeProductItem(productId) {
+    $('.sa_ca_icontainer .sa_ca_item[spcmp_pid="' + productId + '"]').remove();
+
+    // 检查是否还有剩余的sa_ca_item
+    if ($('.sa_ca_icontainer .sa_ca_item').length === 0) {
+      $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
+      $caFlap.css('display', 'none');
+    }
+  }
 });
+
 
 </script>
