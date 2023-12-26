@@ -2,7 +2,7 @@
 {% assign product_handle = request.querystring.handle %}
 {{product_handle}}
 <script>
-  console.log('{{product_handle}}')
+  console.log({{product_handle}})
 var productMetafields = {};
 
 {% if product_handle %}
