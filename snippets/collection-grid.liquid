@@ -259,11 +259,16 @@ $(document).ready(function () {
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
 
+  // 页面加载时从本地存储恢复复选框状态
+  restoreCheckBoxState();
 
   // 处理产品选择更改
   $('.SPCMP_Add').change(function () {
     var isChecked = $(this).prop('checked');
     var productId = $(this).attr('spcmp_pid');
+
+    // 保存复选框状态到本地存储
+    localStorage.setItem(productId, isChecked);
 
     if (isChecked) {
       addProductItem(productId, $(this)); // 添加产品项
@@ -284,6 +289,9 @@ $(document).ready(function () {
     var productId = $(this).attr('spcmp_pid');
     removeProductItem(productId);
     $('.SPCMP_Add[spcmp_pid="' + productId + '"]').prop('checked', false);
+
+    // 更新本地存储状态
+    localStorage.setItem(productId, false);
 
     // 更新产品计数和ca_flap的显示
     var selectedProductCount = $('.SPCMP_Add:checked').length;
@@ -312,6 +320,7 @@ $(document).ready(function () {
     $caFlap.css('display', 'none');
   });
 
+
   // 添加产品项的函数
   function addProductItem(productId, $checkbox) {
     var productTitle = $checkbox.attr('spcmp_ptitle');
@@ -334,6 +343,18 @@ $(document).ready(function () {
       $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
       $caFlap.css('display', 'none');
     }
+  }
+
+  function restoreCheckBoxState() {
+    $('.SPCMP_Add').each(function() {
+      var productId = $(this).attr('spcmp_pid');
+      var isChecked = localStorage.getItem(productId) === 'true';
+      $(this).prop('checked', isChecked);
+
+      if (isChecked) {
+        addProductItem(productId, $(this));
+      }
+    });
   }
 });
 
