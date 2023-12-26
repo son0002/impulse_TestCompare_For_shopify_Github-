@@ -361,16 +361,16 @@ $(document).ready(function () {
   // 更新比较按钮链接的函数
   function updateCompareButtonLink() {
     var selectedProducts = $('.SPCMP_Add:checked').map(function() {
-      return $(this).attr('spcmp_pid');
+        return $(this).attr('spcmp_pid');
     }).get();
 
     if (selectedProducts.length > 0) {
-      var compareUrl = "https://www.zgrills.com/pages/test-compare?" + selectedProducts.join(',');
-      $compareButton.attr('href', compareUrl);
+        var compareUrl = "https://www.zgrills.com/pages/test-compare?ids=" + selectedProducts.join(',');
+        $compareButton.attr('href', compareUrl);
     } else {
-      $compareButton.removeAttr('href');
+        $compareButton.removeAttr('href');
     }
-  }
+}
 
 
   // 从本地存储恢复复选框状态的函数
