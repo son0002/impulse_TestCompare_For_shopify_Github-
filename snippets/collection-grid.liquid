@@ -284,12 +284,12 @@ $(document).ready(function () {
     } else {
       removeProductItem(productId); // 移除产品项
     }
-
+    updateCompareButtonLink();
     // 更新 ca_flap 显示状态
     // 这里需要重新计算选中的产品数量，因为上面可能有变化
     selectedProductCount = $('.SPCMP_Add:checked').length;
     updateCaFlapDisplay(selectedProductCount);
-
+    
     // 保存复选框状态到本地存储
     localStorage.setItem(productId, isChecked);
   });
@@ -358,19 +358,20 @@ $(document).ready(function () {
     }
   }
 
-  $compareButton.click(function() {
-    var selectedProducts = [];
-    $('.SPCMP_Add:checked').each(function() {
-      selectedProducts.push($(this).attr('spcmp_pid'));
-    });
+  // 更新比较按钮链接的函数
+  function updateCompareButtonLink() {
+    var selectedProducts = $('.SPCMP_Add:checked').map(function() {
+      return $(this).attr('spcmp_pid');
+    }).get();
 
     if (selectedProducts.length > 0) {
       var compareUrl = "https://www.zgrills.com/pages/compare?" + selectedProducts.join(',');
-      window.location.href = compareUrl;
+      $compareButton.attr('href', compareUrl);
     } else {
-      alert("请选择要比较的产品。");
+      $compareButton.removeAttr('href');
     }
-  });
+  }
+
 
   // 从本地存储恢复复选框状态的函数
   function restoreCheckBoxState() {
