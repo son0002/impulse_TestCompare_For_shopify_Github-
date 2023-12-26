@@ -258,11 +258,9 @@ html[dir="rtl"] .collection-filter__item--count {
 $(document).ready(function () {
   var $saCaContent = $('.sa_ca_content');
   var $caFlap = $('.ca_flap');
-  var $close =  $('.sa_ca_content .close')
 
   $('.SPCMP_Add').change(function () {
     var isChecked = $(this).prop('checked');
-    
     var productId = $(this).attr('spcmp_pid');
     var productTitle = $(this).attr('spcmp_ptitle');
     var productPath =  $(this).attr('spcmp_handle');
@@ -295,8 +293,11 @@ $(document).ready(function () {
       return;
     }
 
+    // 在 sa_ca_open 状态下也执行相应逻辑
+    $saCaContent.toggleClass('sa_ca_open sa_ca_close');
+    $caFlap.css('display', $saCaContent.hasClass('sa_ca_open') ? 'none' : 'block');
+
     if (!$saCaContent.hasClass('sa_ca_open')) {
-      // 在 sa_ca_open 状态下也执行相应逻辑
       if (selectedProductCount > 1 && selectedProductCount <= 4) {
         console.log('已选择产品数量在2到4之间。');
         $caFlap.css('display', 'block');
@@ -305,16 +306,6 @@ $(document).ready(function () {
         $caFlap.css('display', 'none');
       }
     }
-  });
-
-  $('.sa_ca_content .close .SP_triangle').click(function() {
-    $saCaContent.toggleClass('sa_ca_open sa_ca_close');
-    $caFlap.css('display', $saCaContent.hasClass('sa_ca_open') ? 'none' : 'block');
-  });
-
-  $('.ca_flap .SP_triangle').click(function() {
-    $saCaContent.toggleClass('sa_ca_open sa_ca_close');
-    $caFlap.css('display', $saCaContent.hasClass('sa_ca_open') ? 'none' : 'block');
   });
 });
 
