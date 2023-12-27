@@ -115,19 +115,29 @@
     }
 
 
-    $.get('/collections/wood-pellet-grills/products.json', function(data) {
-    var products = data.products;
-    var selectHtml = '<select id="productSelect">';
+    $.get('/collections/wood-pellet-grills/products.json', function (data) {
+        var products = data.products;
+        var selectHtml = '<select id="productSelect">';
 
-    products.forEach(function(product) {
-        selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
+        products.forEach(function (product) {
+            selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
+        });
+
+        selectHtml += '</select>';
+        $('#whereToPlaceSelect').html(selectHtml);
+    }).fail(function () {
+        console.error("Error fetching products from the collection");
     });
 
-    selectHtml += '</select>';
-    $('#whereToPlaceSelect').html(selectHtml);
-}).fail(function() {
-    console.error("Error fetching products from the collection");
+    $('#productSelect').on('change', function() {
+    var selectedHandle = $(this).val();
+    if (allProductInfo[selectedHandle]) {
+        var productData = allProductInfo[selectedHandle];
+        // 在这里处理和展示选中产品的数据
+        console.log(productData);
+    }
 });
+
 
 
 </script>
