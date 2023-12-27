@@ -131,6 +131,8 @@
 
     $('#productSelect').on('change', function() {
     var selectedHandle = $(this).val();
+    console.log(selectedHandle)
+    console.log(allProductInfo)
     if (allProductInfo[selectedHandle]) {
         var productData = allProductInfo[selectedHandle];
         // 在这里处理和展示选中产品的数据
