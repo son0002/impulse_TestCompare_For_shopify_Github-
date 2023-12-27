@@ -23,16 +23,16 @@
 
 
 <script>
-var productMetafields = {};
+// var productMetafields = {};
 
-$(document).ready(function() {
-    var params = new URLSearchParams(window.location.search);
-    var productHandle = params.get('handle');
-    console.log(productHandle)
-    if (productHandle) {
-        fetchProductInfoByHandle(productHandle);
-    }
-});
+// $(document).ready(function() {
+//     var params = new URLSearchParams(window.location.search);
+//     var productHandle = params.get('handle');
+//     console.log(productHandle)
+//     if (productHandle) {
+//         fetchProductInfoByHandle(productHandle);
+//     }
+// });
 
 function fetchProductInfoByHandle(handle) {
     $.get('/products/' + handle + '.js', function(product) {
