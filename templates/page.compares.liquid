@@ -125,20 +125,20 @@
 
         selectHtml += '</select>';
         $('#whereToPlaceSelect').html(selectHtml);
+        $('#productSelect').on('change', function() {
+            console.log(selectedHandle)
+    console.log(allProductInfo)
+        var selectedHandle = $(this).val();
+        if (allProductInfo[selectedHandle]) {
+            var productData = allProductInfo[selectedHandle];
+            console.log(productData); // 处理和展示数据
+        }
+    });
     }).fail(function () {
         console.error("Error fetching products from the collection");
     });
 
-    $('#productSelect').on('change', function() {
-    var selectedHandle = $(this).val();
-    console.log(selectedHandle)
-    console.log(allProductInfo)
-    if (allProductInfo[selectedHandle]) {
-        var productData = allProductInfo[selectedHandle];
-        // 在这里处理和展示选中产品的数据
-        console.log(productData);
-    }
-});
+  
 
 
 
