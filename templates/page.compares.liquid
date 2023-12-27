@@ -33,7 +33,7 @@
 //         fetchProductInfoByHandle(productHandle);
 //     }
 // });
-
+ 
 function fetchProductInfoByHandle(handle) {
     $.get('/products/' + handle + '.js', function(product) {
         console.log("Product data:", product);
