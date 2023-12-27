@@ -1,60 +1,29 @@
 {{ page.content }}
 {% assign product_info_json = page.metafields.global.comparison_parameters.value %}
 <script>
-  var allProductInfo = {{ product_info_json | json }}; 
-  document.addEventListener('DOMContentLoaded', function() {
-    var params = new URLSearchParams(window.location.search);
-    var productHandles = params.get('handles');
-
-    if (productHandles) {
-      var handlesArray = productHandles.split(',');
-      handlesArray.forEach(function(handle) {
-        if (allProductInfo[handle]) {
-          var productData = allProductInfo[handle];
-          console.log("Product Title: " + productData.title);
-          // Additional logic to display product data
-        } else {
-          console.log("No data available for handle:", handle);
-        }
-      });
-    } else {
-      console.log("No product handles found in the URL.");
-    }
-  });
-</script>
-
-
-
-<script>
-// var productMetafields = {};
-
-// $(document).ready(function() {
-//     var params = new URLSearchParams(window.location.search);
-//     var productHandle = params.get('handle');
-//     console.log(productHandle)
-//     if (productHandle) {
-//         fetchProductInfoByHandle(productHandle);
-//     }
-// });
- 
-function fetchProductInfoByHandle(handle) {
+ function fetchProductInfoByHandles(handlesArray) {
+  handlesArray.forEach(function(handle) {
     $.get('/products/' + handle + '.js', function(product) {
-        console.log("Product data:", product);
-
-        if (product.metafields && product.metafields.global && product.metafields.global.comparison_parameters) {
-            try {
-                var metafieldsData = JSON.parse(product.metafields.global.comparison_parameters.value);
-                productMetafields[handle] = metafieldsData;
-                console.log("Metafields data:", metafieldsData);
-            } catch (e) {
-                console.error("Error parsing Metafields JSON:", e);
-            }
-        } else {
-            console.log("No Metafields data found for handle:", handle);
-        }
+      console.log("Product data for handle " + handle + ":", product);
+      // 您可以在这里添加逻辑来展示或处理这些产品数据
     }).fail(function() {
-        console.error("Error fetching product information for handle:", handle);
+      console.error("Error fetching product information for handle:", handle);
     });
+  });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  var params = new URLSearchParams(window.location.search);
+  var productHandles = params.get('handles');
+
+  if (productHandles) {
+    var handlesArray = productHandles.split(',');
+    fetchProductInfoByHandles(handlesArray);
+  } else {
+    console.log("No product handles found in the URL.");
+  }
+});
+
 </script>
+
+
