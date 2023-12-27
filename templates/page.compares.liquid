@@ -115,18 +115,19 @@
     }
 
 
-    $.get('/products.json', function (data) {
-        var products = data.products;
-        var selectHtml = '<select id="productSelect">';
+    $.get('/collections/{wood-pellet-grills}/products.json', function(data) {
+    var products = data.products;
+    var selectHtml = '<select id="productSelect">';
 
-        products.forEach(function (product) {
-            selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
-        });
-
-        selectHtml += '</select>';
-        $('#whereToPlaceSelect').html(selectHtml); // 假设您想把它放在ID为'whereToPlaceSelect'的元素中
-    }).fail(function () {
-        console.error("Error fetching products");
+    products.forEach(function(product) {
+        selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
     });
+
+    selectHtml += '</select>';
+    $('#whereToPlaceSelect').html(selectHtml);
+}).fail(function() {
+    console.error("Error fetching products from the collection");
+});
+
 
 </script>
