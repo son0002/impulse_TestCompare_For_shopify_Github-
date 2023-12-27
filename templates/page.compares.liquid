@@ -1,37 +1,104 @@
 {{ page.content }}
+<style>
+    .product-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .product {
+        border: 1px solid #ddd;
+        margin: 10px;
+        flex: 0 0 calc(25% - 20px); /* 每个产品宽度为 25% - margin */
+        box-sizing: border-box; /* 包括边框在内的宽度计算 */
+    }
+    
+    .product-header {
+        text-align: center;
+    }
+    
+    .product-header img {
+        max-width: 100%; /* 图片最大宽度为 100% */
+        height: auto;
+    }
+    
+    .product-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .product-params span {
+        display: block;
+        text-align: center;
+        margin: 3px 0;
+    }
+    
+    @media (max-width: 1200px) {
+        .product {
+            flex: 0 0 calc(33.33% - 20px); /* 在屏幕较小的情况下，每个产品宽度为 33.33% - margin */
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .product {
+            flex: 0 0 calc(50% - 20px); /* 在屏幕更小的情况下，每个产品宽度为 50% - margin */
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .product {
+            flex: 0 0 calc(100% - 20px); /* 在屏幕非常小的情况下，每个产品宽度为 100% - margin */
+        }
+    }
+
+
+</style>
+<ul class="product-list">
+
+</ul>
 {% assign product_info_json = page.metafields.global.comparison_parameters.value %}
 <script>
-  var allProductInfo = {{ product_info_json | json }};
-  
-  document.addEventListener('DOMContentLoaded', function() {
-      var params = new URLSearchParams(window.location.search);
-      var productHandles = params.get('handles');
-  
-      if (productHandles) {
-          var handlesArray = productHandles.split(',');
-          handlesArray.forEach(function(handle) {
-              // 检查预加载的产品信息
-              if (allProductInfo[handle]) {
-                  var productData = allProductInfo[handle];
-                  console.log("Preloaded Product Title: " + productData.title);
-                  // 在这里展示预加载的产品数据
-              } 
-  
-              // Ajax请求获取产品详细信息
-              fetchProductInfoByHandle(handle);
-          });
-      } else {
-          console.log("No product handles found in the URL.");
-      }
-  });
-  
-  function fetchProductInfoByHandle(handle) {
-      $.get('/products/' + handle + '.js', function(product) {
-          console.log("Ajax Product Data:", product);
-          // 在这里展示Ajax获取的产品数据
-      }).fail(function() {
-          console.error("Error fetching product information for handle:", handle);
-      });
-  }
-  </script>
+    var allProductInfo = {{ product_info_json | json }};
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var params = new URLSearchParams(window.location.search);
+        var productHandles = params.get('handles');
+    
+        if (productHandles) {
+            var handlesArray = productHandles.split(',');
+            handlesArray.forEach(function(handle) {
+                fetchProductInfoByHandle(handle);
+            });
+        } else {
+            console.log("No product handles found in the URL.");
+        }
+    });
+    
+    function fetchProductInfoByHandle(handle) {
+        $.get('/products/' + handle + '.js', function(product) {
+            var productHtml = '<li class="product">' +
+                '<div class="product-header">' +
+                '<img src="' + product.images[0].src + '" alt="' + product.title + '">' +
+                '<div class="product-title">' + product.title + '</div>' +
+                '</div>';
+    
+            if (allProductInfo[handle]) {
+                var productParamsHtml = '<div class="product-params">';
+                Object.keys(allProductInfo[handle]).forEach(function(key) {
+                    productParamsHtml += '<span>' + key + ': ' + allProductInfo[handle][key] + '</span>';
+                });
+                productParamsHtml += '</div>';
+                productHtml += productParamsHtml;
+            }
+    
+            productHtml += '</li>';
+            $('.product-list').append(productHtml);
+        }).fail(function() {
+            console.error("Error fetching product information for handle:", handle);
+        });
+    });
+    </script>
+    
   
