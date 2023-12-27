@@ -1,24 +1,27 @@
 {{ page.content }}
 {% assign product_info_json = page.metafields.global.comparison_parameters.value %}
 <script>
-  var allProductInfo = {{ product_info_json | json }}; 
-  console.log(allProductInfo)
   document.addEventListener('DOMContentLoaded', function() {
     var params = new URLSearchParams(window.location.search);
-    var productHandle = params.get('handles');
-    console.log('Product handle from URL:', productHandle);
-    if (productHandle && allProductInfo[productHandle]) {
-      var productData = allProductInfo[productHandle];
-      // 展示产品信息
-      console.log("Product Title: " + productData.title);
-      console.log("Description: " + productData.description);
-      console.log("Price: " + productData.price);
-      // 你可以在这里添加更多的逻辑来在页面上显示这些信息
+    var productHandles = params.get('handles');
+
+    if (productHandles) {
+      var handlesArray = productHandles.split(',');
+      handlesArray.forEach(function(handle) {
+        if (allProductInfo[handle]) {
+          var productData = allProductInfo[handle];
+          console.log("Product Title: " + productData.title);
+          // Additional logic to display product data
+        } else {
+          console.log("No data available for handle:", handle);
+        }
+      });
     } else {
-      console.log("Product handle not found or no data available for this handle.");
+      console.log("No product handles found in the URL.");
     }
   });
 </script>
+
 
 
 
