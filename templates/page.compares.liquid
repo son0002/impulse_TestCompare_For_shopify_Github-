@@ -15,7 +15,7 @@ $(document).ready(function() {
 function fetchProductInfoByHandle(handle) {
     $.get('/products/' + handle + '.js', function(product) {
         // 处理产品信息
-        console.log(product);
+        // console.log(product);
 
         // 假设Metafields数据以JSON字符串格式存储在某个特定字段
         if (product.metafields && product.metafields.global && product.metafields.global.comparison_parameters) {
