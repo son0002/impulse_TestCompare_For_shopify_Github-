@@ -126,8 +126,6 @@
         selectHtml += '</select>';
         $('#whereToPlaceSelect').html(selectHtml);
         $('#productSelect').on('change', function() {
-            console.log(selectedHandle)
-    console.log(allProductInfo)
         var selectedHandle = $(this).val();
         if (allProductInfo[selectedHandle]) {
             var productData = allProductInfo[selectedHandle];
