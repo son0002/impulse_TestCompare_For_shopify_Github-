@@ -1,39 +1,37 @@
 {{ page.content }}
 {% assign product_info_json = page.metafields.global.comparison_parameters.value %}
 <script>
-var allProductInfo = {{ product_info_json | json }}; 
-
-document.addEventListener('DOMContentLoaded', function() {
-    var params = new URLSearchParams(window.location.search);
-    var productHandles = params.get('handles');
-
-    if (productHandles) {
-        var handlesArray = productHandles.split(',');
-        handlesArray.forEach(function(handle) {
-            // 检查预加载的产品信息
-            if (allProductInfo[handle]) {
-                var productData = allProductInfo[handle];
-                console.log("Preloaded Product Title: " + productData.title);
-                // 展示预加载的产品数据
-            } 
-
-            // Ajax请求获取产品详细信息
-            fetchProductInfoByHandle(handle);
-        });
-    } else {
-        console.log("No product handles found in the URL.");
-    }
-});
-
-function fetchProductInfoByHandle(handle) {
-    $.get('/products/' + handle + '.js', function(product) {
-        console.log("Ajax Product Data:", product);
-        // 展示Ajax获取的产品数据
-    }).fail(function() {
-        console.error("Error fetching product information for handle:", handle);
-    });
-}
-
-</script>
-
-
+  var allProductInfo = {{ product_info_json | json }};
+  
+  document.addEventListener('DOMContentLoaded', function() {
+      var params = new URLSearchParams(window.location.search);
+      var productHandles = params.get('handles');
+  
+      if (productHandles) {
+          var handlesArray = productHandles.split(',');
+          handlesArray.forEach(function(handle) {
+              // 检查预加载的产品信息
+              if (allProductInfo[handle]) {
+                  var productData = allProductInfo[handle];
+                  console.log("Preloaded Product Title: " + productData.title);
+                  // 在这里展示预加载的产品数据
+              } 
+  
+              // Ajax请求获取产品详细信息
+              fetchProductInfoByHandle(handle);
+          });
+      } else {
+          console.log("No product handles found in the URL.");
+      }
+  });
+  
+  function fetchProductInfoByHandle(handle) {
+      $.get('/products/' + handle + '.js', function(product) {
+          console.log("Ajax Product Data:", product);
+          // 在这里展示Ajax获取的产品数据
+      }).fail(function() {
+          console.error("Error fetching product information for handle:", handle);
+      });
+  }
+  </script>
+  
