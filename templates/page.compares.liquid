@@ -6,7 +6,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     var params = new URLSearchParams(window.location.search);
     var productHandle = params.get('handle');
-
+    console.log('Product handle from URL:', productHandle);
     if (productHandle && allProductInfo[productHandle]) {
       var productData = allProductInfo[productHandle];
       // 展示产品信息
