@@ -77,8 +77,9 @@
     });
     
     function fetchProductInfoByHandle(handle) {
-        $.get('/products/' + handle + '.js', function(product) {
+        $.get('/products/' + handle + '.js', function(response) {
             // console.log(product)
+            var product = JSON.parse(response);
             console.log(product.title)
             var productHtml = '<li class="product">' +
                 '<div class="product-header">' +
