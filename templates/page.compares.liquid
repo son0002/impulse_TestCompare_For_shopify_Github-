@@ -56,9 +56,11 @@
 
 
 </style>
-<ul class="product-list">
+<div class="page-width">
+    <ul class="product-list">
 
-</ul>
+    </ul>
+</div>
 {% assign product_info_json = page.metafields.global.comparison_parameters.value %}
 <script>
     var allProductInfo = {{ product_info_json | json }};
