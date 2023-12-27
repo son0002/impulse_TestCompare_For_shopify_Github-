@@ -3,9 +3,6 @@
 <script>
   var allProductInfo = {{ product_info_json | json }}; 
   console.log(allProductInfo)
-</script>
-
-<script>
   document.addEventListener('DOMContentLoaded', function() {
     var params = new URLSearchParams(window.location.search);
     var productHandle = params.get('handle');
@@ -22,6 +19,7 @@
     }
   });
 </script>
+
 
 
 <script>
