@@ -12,14 +12,17 @@
 
     if (productHandle && allProductInfo[productHandle]) {
       var productData = allProductInfo[productHandle];
-      // 在这里处理和显示产品信息
+      // 展示产品信息
       console.log("Product Title: " + productData.title);
-      // 更多代码来展示产品信息...
+      console.log("Description: " + productData.description);
+      console.log("Price: " + productData.price);
+      // 你可以在这里添加更多的逻辑来在页面上显示这些信息
     } else {
       console.log("Product handle not found or no data available for this handle.");
     }
   });
 </script>
+
 
 <script>
 var productMetafields = {};
