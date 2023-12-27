@@ -1,15 +1,24 @@
 {{ page.content }}
-{% assign handle = request.querystring.handle %}
-{% assign product_info = pages.your_page_handle.metafields.namespace.key %}
-{% assign product_data = product_info | parse_json %}
+{% assign product_info_json = page.metafields.global.comparison_parameters.value %}
+<script>
+  var allProductInfo = {{ product_info_json | json }};
+</script>
 
-{% if handle and product_data[handle] %}
-  <h2>{{ product_data[handle].title }}</h2>
-  <p>{{ product_data[handle].description }}</p>
-  <p>{{ product_data[handle].price }}</p>
-{% else %}
-  <p>产品信息未找到。</p>
-{% endif %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var params = new URLSearchParams(window.location.search);
+    var productHandle = params.get('handle');
+
+    if (productHandle && allProductInfo[productHandle]) {
+      var productData = allProductInfo[productHandle];
+      // 在这里处理和显示产品信息
+      console.log("Product Title: " + productData.title);
+      // 更多代码来展示产品信息...
+    } else {
+      console.log("Product handle not found or no data available for this handle.");
+    }
+  });
+</script>
 
 <script>
 var productMetafields = {};
