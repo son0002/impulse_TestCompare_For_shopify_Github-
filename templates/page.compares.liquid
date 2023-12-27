@@ -1,44 +1,28 @@
-{{page.content}}
-{% assign product_handle = request.querystring.handle %}
+{{ page.content }}
 
-Handle: {{ product_handle }}
 <script>
-  console.log({{product_handle}})
 var productMetafields = {};
 
-{% if product_handle %}
-    {% assign product = all_products[product_handle] %}
-    productMetafields["{{ product_handle }}"] = {{ product.metafields.global.comparison_parameters.value | json }};
-{% endif %}
-</script>
-
-
-<script>
 $(document).ready(function() {
     var params = new URLSearchParams(window.location.search);
-    var productHandles = params.get('handles');
-    console.log(productHandles);
-
-    if (productHandles) {
-        productHandles.split(',').forEach(function(handle) {
-            fetchProductInfoByHandle(handle);
-        });
+    var productHandle = params.get('handle');
+    
+    if (productHandle) {
+        fetchProductInfoByHandle(productHandle);
     }
 });
 
 function fetchProductInfoByHandle(handle) {
     $.get('/products/' + handle + '.js', function(product) {
-        // console.log(product);
-        // 使用product.id获取对应的Metafields
-        var metafields = productMetafields[product.id];
-        if (metafields) {
-            // 在这里处理Metafields数据
-            metafields.parameters.forEach(function(param) {
-                console.log(param.name + ": " + param.value);
-                // 您也可以在页面上动态地展示这些Metafields信息
-            });
+        // 处理产品信息
+        console.log(product);
+
+        // 假设Metafields数据以JSON字符串格式存储在某个特定字段
+        if (product.metafields && product.metafields.global && product.metafields.global.comparison_parameters) {
+            var metafieldsData = JSON.parse(product.metafields.global.comparison_parameters.value);
+            productMetafields[handle] = metafieldsData;
+            console.log(metafieldsData); // 在这里展示Metafields信息
         }
     });
 }
-
 </script>
