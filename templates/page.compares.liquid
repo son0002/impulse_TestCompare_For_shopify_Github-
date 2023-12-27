@@ -79,7 +79,7 @@
     function fetchProductInfoByHandle(handle) {
         $.get('/products/' + handle + '.js', function(product) {
             // console.log(product)
-            console.log(product.featured_image,product.title)
+            console.log(product.title)
             var productHtml = '<li class="product">' +
                 '<div class="product-header">' +
                 '<img src="' + product.images[0].src + '" alt="' + product.title + '">' +
