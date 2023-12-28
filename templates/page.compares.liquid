@@ -76,21 +76,26 @@
     document.addEventListener('DOMContentLoaded', function () {
         var params = new URLSearchParams(window.location.search);
         var productHandles = params.get('handles');
+        var numberOfSelects = 4; // 默认生成4个select
 
+        // 如果有handles参数
         if (productHandles) {
             var handlesArray = productHandles.split(',');
+            var handlesCount = handlesArray.length;
 
-            // 检查 handlesArray 的长度是否在2到4之间
-            if (handlesArray.length >= 2 && handlesArray.length <= 4) {
-                handlesArray.forEach(function (handle) {
-                    fetchProductInfoByHandle(handle);
-                });
+            // 确保handles数量在2到4之间
+            if (handlesCount >= 2 && handlesCount <= 4) {
+                numberOfSelects -= handlesCount; // 减去handles的数量
             } else {
-                // 如果不在这个区间，可以在这里处理错误，比如显示一条消息
+                // 如果handles数量不在2到4之间，可以在这里处理
                 console.log("The number of product handles must be between 2 and 4.");
+                return; // 终止执行
             }
-        } else {
-            console.log("No product handles found in the URL.");
+        }
+
+        // 根据numberOfSelects的值生成select
+        for (var i = 0; i < numberOfSelects; i++) {
+            fetchAndCreateSelect(i);
         }
     });
 
@@ -121,27 +126,53 @@
         });
     }
 
+    function fetchAndCreateSelect(index) {
+        $.get('/collections/wood-pellet-grills/products.json', function (data) {
+            var products = data.products;
+            var selectHtml = '<select id="productSelect' + index + '">';
 
-    $.get('/collections/wood-pellet-grills/products.json', function (data) {
-        var products = data.products;
-        var selectHtml = '<select id="productSelect">';
+            products.forEach(function (product) {
+                selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
+            });
 
-        products.forEach(function (product) {
-            selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
+            selectHtml += '</select>';
+            $('#whereToPlaceSelect').append(selectHtml); // 添加下拉框到页面
+
+            // 为新生成的下拉框添加change事件监听器
+            $('#productSelect' + index).on('change', function () {
+                var selectedHandle = $(this).val();
+                if (allProductInfo[selectedHandle]) {
+                    var productData = allProductInfo[selectedHandle];
+                    console.log(productData); // 处理和展示数据
+                }
+            });
+        }).fail(function () {
+            console.error("Error fetching products from the collection");
         });
+    }
 
-        selectHtml += '</select>';
-        $('#whereToPlaceSelect').html(selectHtml);
-        $('#productSelect').on('change', function () {
-            var selectedHandle = $(this).val();
-            if (allProductInfo[selectedHandle]) {
-                var productData = allProductInfo[selectedHandle];
-                console.log(productData); // 处理和展示数据
-            }
-        });
-    }).fail(function () {
-        console.error("Error fetching products from the collection");
-    });
+
+
+    // $.get('/collections/wood-pellet-grills/products.json', function (data) {
+    //     var products = data.products;
+    //     var selectHtml = '<select id="productSelect">';
+
+    //     products.forEach(function (product) {
+    //         selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
+    //     });
+
+    //     selectHtml += '</select>';
+    //     $('#whereToPlaceSelect').html(selectHtml);
+    //     $('#productSelect').on('change', function () {
+    //         var selectedHandle = $(this).val();
+    //         if (allProductInfo[selectedHandle]) {
+    //             var productData = allProductInfo[selectedHandle];
+    //             console.log(productData); // 处理和展示数据
+    //         }
+    //     });
+    // }).fail(function () {
+    //     console.error("Error fetching products from the collection");
+    // });
 
 
 
