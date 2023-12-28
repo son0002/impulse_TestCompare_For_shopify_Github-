@@ -360,15 +360,21 @@ $(document).ready(function () {
         $compareButton.removeAttr('href').prop('disabled', true);
     }
 }
-  // 移除产品项的函数
+
 function removeProductItem(productId) {
+    // 移除产品项
     $('.sa_ca_icontainer .sa_ca_item[spcmp_pid="' + productId + '"]').remove();
+
+    // 取消对应复选框的选中状态
+    $('.SPCMP_Add[spcmp_pid="' + productId + '"]').prop('checked', false);
     if ($('.sa_ca_icontainer .sa_ca_item').length === 0) {
         $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
         $caFlap.css('display', 'none');
     }
-    updateCompareButtonLink(); // 调用更新函数
+    // 更新链接
+    updateCompareButtonLink();
 }
+
 
 // 比较按钮点击事件
 $compareButton.on('click', function(e) {
