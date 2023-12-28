@@ -361,18 +361,19 @@ $(document).ready(function () {
   // 更新比较按钮链接的函数
   function updateCompareButtonLink() {
     var selectedProductsHandles = $('.SPCMP_Add:checked').map(function() {
-        var fullHandle = $(this).attr('spcmp_handle');
-        var handle = fullHandle.replace('/products/', ''); // 移除 '/products/' 部分
-        return handle;
+        return $(this).attr('spcmp_handle').replace('/products/', ''); 
     }).get();
 
     if (selectedProductsHandles.length > 1) {
         var compareUrl = "https://www.zgrills.com/pages/test-compare?handles=" + selectedProductsHandles.join(',');
         $compareButton.attr('href', compareUrl);
+        $compareButton.prop('disabled', false);
     } else {
-        $compareButton.removeAttr('href');
+        $compareButton.prop('disabled', true);
+        alert('最少选择两个产品');
     }
 }
+
 
   // 从本地存储恢复复选框状态的函数
   // 从本地存储恢复复选框状态的函数
