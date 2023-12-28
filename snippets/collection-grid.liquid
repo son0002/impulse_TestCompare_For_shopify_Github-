@@ -359,7 +359,8 @@ $(document).ready(function () {
   }
 
   // 更新比较按钮链接的函数
-  function updateCompareButtonLink() {
+  // 更新比较按钮链接和状态的函数
+function updateCompareButtonLink() {
     var selectedProductsHandles = $('.SPCMP_Add:checked').map(function() {
         return $(this).attr('spcmp_handle').replace('/products/', ''); 
     }).get();
@@ -369,10 +370,19 @@ $(document).ready(function () {
         $compareButton.attr('href', compareUrl);
         $compareButton.prop('disabled', false);
     } else {
+        $compareButton.removeAttr('href');
         $compareButton.prop('disabled', true);
-        alert('最少选择两个产品');
     }
 }
+
+// 比较按钮点击事件
+$compareButton.on('click', function(e) {
+    if ($(this).prop('disabled')) {
+        e.preventDefault();
+        alert('最少选择两个产品');
+    }
+});
+
 
 
   // 从本地存储恢复复选框状态的函数
