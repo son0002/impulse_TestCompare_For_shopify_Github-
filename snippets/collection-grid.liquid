@@ -353,10 +353,13 @@ $(document).ready(function () {
 
     // 检查是否还有剩余的sa_ca_item
     if ($('.sa_ca_icontainer .sa_ca_item').length === 0) {
-      $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
-      $caFlap.css('display', 'none');
+        $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
+        $caFlap.css('display', 'none');
     }
-  }
+    // 更新比较按钮链接
+    updateCompareButtonLink();
+}
+
 
   // 更新比较按钮链接的函数
   // 更新比较按钮链接和状态的函数
