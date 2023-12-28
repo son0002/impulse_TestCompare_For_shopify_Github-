@@ -79,9 +79,16 @@
 
         if (productHandles) {
             var handlesArray = productHandles.split(',');
-            handlesArray.forEach(function (handle) {
-                fetchProductInfoByHandle(handle);
-            });
+
+            // 检查 handlesArray 的长度是否在2到4之间
+            if (handlesArray.length >= 2 && handlesArray.length <= 4) {
+                handlesArray.forEach(function (handle) {
+                    fetchProductInfoByHandle(handle);
+                });
+            } else {
+                // 如果不在这个区间，可以在这里处理错误，比如显示一条消息
+                console.log("The number of product handles must be between 2 and 4.");
+            }
         } else {
             console.log("No product handles found in the URL.");
         }
@@ -125,18 +132,18 @@
 
         selectHtml += '</select>';
         $('#whereToPlaceSelect').html(selectHtml);
-        $('#productSelect').on('change', function() {
-        var selectedHandle = $(this).val();
-        if (allProductInfo[selectedHandle]) {
-            var productData = allProductInfo[selectedHandle];
-            console.log(productData); // 处理和展示数据
-        }
-    });
+        $('#productSelect').on('change', function () {
+            var selectedHandle = $(this).val();
+            if (allProductInfo[selectedHandle]) {
+                var productData = allProductInfo[selectedHandle];
+                console.log(productData); // 处理和展示数据
+            }
+        });
     }).fail(function () {
         console.error("Error fetching products from the collection");
     });
 
-  
+
 
 
 
