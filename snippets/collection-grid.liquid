@@ -347,35 +347,27 @@ $(document).ready(function () {
     $saCaIcontainer.append(newProductItem);
   }
 
-  // 移除产品项的函数
-  function removeProductItem(productId) {
-    $('.sa_ca_icontainer .sa_ca_item[spcmp_pid="' + productId + '"]').remove();
 
-    // 检查是否还有剩余的sa_ca_item
-    if ($('.sa_ca_icontainer .sa_ca_item').length === 0) {
-        $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
-        $caFlap.css('display', 'none');
-    }
-    // 更新比较按钮链接
-    updateCompareButtonLink();
-}
-
-
-  // 更新比较按钮链接的函数
-  // 更新比较按钮链接和状态的函数
-function updateCompareButtonLink() {
+  function updateCompareButtonLink() {
     var selectedProductsHandles = $('.SPCMP_Add:checked').map(function() {
         return $(this).attr('spcmp_handle').replace('/products/', ''); 
     }).get();
 
     if (selectedProductsHandles.length > 1) {
         var compareUrl = "https://www.zgrills.com/pages/test-compare?handles=" + selectedProductsHandles.join(',');
-        $compareButton.attr('href', compareUrl);
-        $compareButton.prop('disabled', false);
+        $compareButton.attr('href', compareUrl).prop('disabled', false);
     } else {
-        $compareButton.removeAttr('href');
-        $compareButton.prop('disabled', true);
+        $compareButton.removeAttr('href').prop('disabled', true);
     }
+}
+  // 移除产品项的函数
+function removeProductItem(productId) {
+    $('.sa_ca_icontainer .sa_ca_item[spcmp_pid="' + productId + '"]').remove();
+    if ($('.sa_ca_icontainer .sa_ca_item').length === 0) {
+        $saCaContent.removeClass('sa_ca_open').addClass('sa_ca_close');
+        $caFlap.css('display', 'none');
+    }
+    updateCompareButtonLink(); // 调用更新函数
 }
 
 // 比较按钮点击事件
