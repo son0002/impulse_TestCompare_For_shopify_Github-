@@ -366,7 +366,7 @@ $(document).ready(function () {
         return handle;
     }).get();
 
-    if (selectedProductsHandles.length > 0) {
+    if (selectedProductsHandles.length > 1) {
         var compareUrl = "https://www.zgrills.com/pages/test-compare?handles=" + selectedProductsHandles.join(',');
         $compareButton.attr('href', compareUrl);
     } else {
