@@ -362,41 +362,35 @@
     }
 });
 
-// fetchProductInfoByHandle 和 fetchAndCreateSelect 函数保持不变
 
-
-
-    function fetchProductInfoByHandle(handle, index) {
+function fetchProductInfoByHandle(handle, index) {
     $.get('/products/' + handle + '.js', function (response) {
         var product = JSON.parse(response);
-        var productHtml = '<div class="product-info">' +
-            '<button class="close-btn">X</button>' +
-            '<img src="' + product.featured_image + '" alt="' + product.title + '">' +
-            '<div class="product-title">' + product.title + '</div>';
+        var $spProductCon = $('.sp_product').eq(index).find('.sp_product_con');
 
-        // 检查是否有额外的产品信息
+        // 填充产品图片、标题、价格等
+        $spProductCon.find('.sp_image').html('<img src="' + product.featured_image + '" alt="' + product.title + '">');
+        $spProductCon.find('.sp_title').text(product.title);
+        $spProductCon.find('.sp_price').text(product.price);
+
+        // 如果存在额外信息，填充到对应的元素中
         if (allProductInfo[handle]) {
-            var productParamsHtml = '<div class="product-params">';
             Object.keys(allProductInfo[handle]).forEach(function (key) {
-                productParamsHtml += '<span>' + key + ': ' + allProductInfo[handle][key] + '</span>';
+                $spProductCon.find('.' + key).text(allProductInfo[handle][key]);
             });
-            productParamsHtml += '</div>';
-            productHtml += productParamsHtml;
         }
 
-        productHtml += '</div>';
-
-        var $spImage = $('.sp_product').find('.sp_image').eq(index);
-        $spImage.empty().append(productHtml); // 替换下拉框为产品信息
-
-        $spImage.find('.close-btn').on('click', function() {
-            $spImage.empty(); // 移除产品信息
-            fetchAndCreateSelect(index); // 重新添加下拉框
+        // 添加关闭按钮逻辑
+        var closeButtonHtml = '<button class="close-btn">X</button>';
+        $spProductCon.find('.sp_image').prepend(closeButtonHtml);
+        $spProductCon.find('.close-btn').on('click', function() {
+            fetchAndCreateSelect(index);
         });
     }).fail(function () {
         console.error("Error fetching product information for handle:", handle);
     });
 }
+
 
 
 function fetchAndCreateSelect(index) {
