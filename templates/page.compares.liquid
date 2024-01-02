@@ -387,6 +387,7 @@
                 $spProductCon.find('li').empty();
                 // 重新生成下拉选择框
                 fetchAndCreateSelect(index);
+                removeHandleFromURL(handle);
             });
         }).fail(function () {
             console.error("Error fetching product information for handle:", handle);
@@ -426,7 +427,21 @@
     }
 
 
+    function removeHandleFromURL(handle) {
+        var url = new URL(window.location.href);
+        var params = url.searchParams;
+        var handles = params.get('handles') ? params.get('handles').split(',') : [];
+        var updatedHandles = handles.filter(h => h !== handle);
 
+        if (updatedHandles.length > 0) {
+            params.set('handles', updatedHandles.join(','));
+        } else {
+            params.delete('handles');
+        }
+
+        // 更新页面地址栏
+        window.history.replaceState({}, '', url.toString());
+    }
 
 
 </script>
