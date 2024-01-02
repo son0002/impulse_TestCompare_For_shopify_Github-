@@ -380,49 +380,28 @@
     }
 
     function fetchAndCreateSelect(index) {
-        $.get('/collections/wood-pellet-grills/products.json', function (data) {
-            var products = data.products;
-            var selectHtml = '<select id="productSelect' + index + '">';
+    $.get('/collections/wood-pellet-grills/products.json', function (data) {
+        var products = data.products;
+        var selectHtml = '<select id="productSelect' + index + '">';
 
-            products.forEach(function (product) {
-                selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
-            });
-
-            selectHtml += '</select>';
-            $('#whereToPlaceSelect').append(selectHtml); // 添加下拉框到页面
-
-            $('#productSelect' + index).on('change', function () {
-                var selectedHandle = $(this).val();
-                fetchProductInfoByHandle(selectedHandle); // 使用fetchProductInfoByHandle获取选中的产品信息
-            });
-        }).fail(function () {
-            console.error("Error fetching products from the collection");
+        products.forEach(function (product) {
+            selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
         });
-    }
 
+        selectHtml += '</select>';
 
+        // 找到 .sp_product 下的第 index 个 .sp_image 元素并将下拉框添加到其中
+        var $spImage = $('.sp_product').find('.sp_image').eq(index);
+        $spImage.append(selectHtml);
 
-    // $.get('/collections/wood-pellet-grills/products.json', function (data) {
-    //     var products = data.products;
-    //     var selectHtml = '<select id="productSelect">';
-
-    //     products.forEach(function (product) {
-    //         selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
-    //     });
-
-    //     selectHtml += '</select>';
-    //     $('#whereToPlaceSelect').html(selectHtml);
-    //     $('#productSelect').on('change', function () {
-    //         var selectedHandle = $(this).val();
-    //         if (allProductInfo[selectedHandle]) {
-    //             var productData = allProductInfo[selectedHandle];
-    //             console.log(productData); // 处理和展示数据
-    //         }
-    //     });
-    // }).fail(function () {
-    //     console.error("Error fetching products from the collection");
-    // });
-
+        $('#productSelect' + index).on('change', function () {
+            var selectedHandle = $(this).val();
+            fetchProductInfoByHandle(selectedHandle); // 使用fetchProductInfoByHandle获取选中的产品信息
+        });
+    }).fail(function () {
+            console.error("Error fetching products from the collection");
+    });
+}
 
 
 
