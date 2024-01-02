@@ -146,21 +146,25 @@
         $('#whereToPlaceSelect').append(selectHtml);
 
         $('#productSelect' + index).on('change', function () {
-            var currentProductCount = $('.product-list .product').length;
-            var remainingSelects = numberOfSelects - $('.product-list .product').length;
+            // 计算当前已经展示的产品数量
+            var displayedProductCount = $('.product-list .product').length;
 
-            if (currentProductCount + remainingSelects <= 4) {
+            // 检查是否还有空间添加新产品
+            if (displayedProductCount < numberOfSelects) {
                 var selectedHandle = $(this).val();
                 fetchProductInfoByHandle(selectedHandle);
+                // 更新numberOfSelects以反映新添加的产品
+                numberOfSelects--;
             } else {
                 // 超出最大产品数量时的处理逻辑
-                alert("You cannot select more than 4 products in total.");
+                alert("You cannot select more than " + numberOfSelects + " products.");
             }
         });
     }).fail(function () {
         console.error("Error fetching products from the collection");
     });
 }
+
 
 
 
