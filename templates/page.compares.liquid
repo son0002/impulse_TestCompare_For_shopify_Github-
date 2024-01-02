@@ -340,16 +340,23 @@
         var productHandles = params.get('handles');
         var numberOfSelects = 4; // 总共需要展示的产品数量
 
+        // 是否有提供 handles 参数
         if (productHandles) {
             var handlesArray = productHandles.split(',');
             var handlesCount = handlesArray.length;
 
+            // 为每个 handles 参数加载产品信息
             handlesArray.forEach(function (handle, index) {
                 fetchProductInfoByHandle(handle, index);
             });
 
             // 生成剩余的下拉选择框
             for (var i = handlesCount; i < numberOfSelects; i++) {
+                fetchAndCreateSelect(i);
+            }
+        } else {
+            // 没有 handles 参数时，为所有列生成下拉选择框
+            for (var i = 0; i < numberOfSelects; i++) {
                 fetchAndCreateSelect(i);
             }
         }
