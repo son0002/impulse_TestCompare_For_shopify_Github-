@@ -384,8 +384,7 @@
             $spProductCon.find('.sp_image').prepend(closeButtonHtml);
             $spProductCon.find('.close-btn').on('click', function () {
                 // 清除当前列的内容
-                $spProductCon.empty();
-
+                $spProductCon.find('li').empty();
                 // 重新生成下拉选择框
                 fetchAndCreateSelect(index);
             });
