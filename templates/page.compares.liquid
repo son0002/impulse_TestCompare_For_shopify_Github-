@@ -62,14 +62,13 @@
     }
 </style>
 <div class="page-width">
-   <div class="main-compares">
-    <div id="whereToPlaceSelect">
+    <div class="main-compares">
+        <ul class="product-list">
+            <div id="whereToPlaceSelect">
 
+            </div>
+        </ul>
     </div>
-    <ul class="product-list">
-
-    </ul>
-   </div>
 </div>
 {% assign product_info_json = page.metafields.global.comparison_parameters.value %}
 <script>
@@ -94,7 +93,7 @@
                 numberOfSelects -= handlesCount; // 减去handles的数量
             } else {
                 // 如果handles数量不在2到4之间，可以在这里处理
-              alert("The number of product handles must be between 2 and 4.");
+                alert("The number of product handles must be between 2 and 4.");
                 return; // 终止执行
             }
         }
