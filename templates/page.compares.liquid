@@ -361,19 +361,23 @@ function fetchProductInfoByHandle(handle, index) {
         var product = JSON.parse(response);
         console.log("Received product data:", product);
 
-        var $spProductCon = $('.sp_product').eq(index).find('.sp_product_con');
+        // 定位到正确的列 (sp_product_con)
+        var $spProductCon = $('.sp_product .sp_product_con').eq(index);
 
-        // 使用 Shopify API 返回的信息更新产品信息
+        // 更新产品信息
         $spProductCon.find('.sp_image').html('<img src="' + product.featured_image + '" alt="' + product.title + '">');
         $spProductCon.find('.sp_title').text(product.title);
         $spProductCon.find('.sp_price').text(product.price);
 
-        // 使用 allProductInfo 中的额外信息更新产品信息
+        // 如果存在额外信息，填充到对应的元素中
         if (allProductInfo[handle]) {
             console.log("Extra product info found:", allProductInfo[handle]);
-            $spProductCon.find('.sp_desc').text(allProductInfo[handle].description);
+            Object.keys(allProductInfo[handle]).forEach(function (key) {
+                $spProductCon.find('.' + key).text(allProductInfo[handle][key]);
+            });
         }
 
+        // 添加关闭按钮逻辑
         var closeButtonHtml = '<button class="close-btn">X</button>';
         $spProductCon.find('.sp_image').prepend(closeButtonHtml);
         $spProductCon.find('.close-btn').on('click', function() {
