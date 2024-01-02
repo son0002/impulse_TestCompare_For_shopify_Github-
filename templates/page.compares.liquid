@@ -362,18 +362,16 @@ function fetchProductInfoByHandle(handle, index) {
         console.log("Received product data:", product);
 
         var $spProductCon = $('.sp_product').eq(index).find('.sp_product_con');
-        console.log("$spProductCon:", $spProductCon);
 
-        // 确保选择器准确地选择了正确的元素
+        // 使用 Shopify API 返回的信息更新产品信息
         $spProductCon.find('.sp_image').html('<img src="' + product.featured_image + '" alt="' + product.title + '">');
         $spProductCon.find('.sp_title').text(product.title);
         $spProductCon.find('.sp_price').text(product.price);
 
+        // 使用 allProductInfo 中的额外信息更新产品信息
         if (allProductInfo[handle]) {
             console.log("Extra product info found:", allProductInfo[handle]);
-            Object.keys(allProductInfo[handle]).forEach(function (key) {
-                $spProductCon.find('.' + key).text(allProductInfo[handle][key]);
-            });
+            $spProductCon.find('.sp_desc').text(allProductInfo[handle].description);
         }
 
         var closeButtonHtml = '<button class="close-btn">X</button>';
@@ -385,6 +383,7 @@ function fetchProductInfoByHandle(handle, index) {
         console.error("Error fetching product information for handle:", handle);
     });
 }
+
 
 
 
