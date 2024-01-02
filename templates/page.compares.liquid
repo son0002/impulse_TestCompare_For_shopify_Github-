@@ -1,6 +1,18 @@
 {{ page.content }}
 <h2 style="text-align: center;">{{page.title}}</h2>
 <style>
+    .main-compares {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    #whereToPlaceSelect, .product-list {
+        flex: 1;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+    
     .product-list {
         list-style: none;
         padding: 0;
