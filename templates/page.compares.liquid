@@ -71,6 +71,95 @@
         }
     }
 </style>
+<style>
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .sp_compare_tbl {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .sp_compare_tbl .sa_border {
+        display: inline-block;
+        width: 100%;
+        border-left: 1px solid #cccccc !important;
+        position: relative;
+    }
+
+    .sp_compare_tbl ul.sp_product_heading,
+    .sp_compare_tbl ul.sp_product_con {
+        padding: 0 !important;
+        margin: 0 !important;
+        border-top: 1px solid #cccccc;
+    }
+
+    .sp_compare_tbl .sp_product_heading {
+        width: 10%;
+        float: left;
+    }
+
+    .sp_compare_tbl .sp_product {
+        display: table;
+        width: 90%;
+        table-layout: fixed;
+    }
+
+    .sp_compare_tbl .sp_product_con {
+        display: table-cell;
+        width: 25%;
+        word-break: break-all;
+    }
+
+    .sp_compare_tbl ul.sp_product_heading>li {
+        font-weight: bold;
+        background: #f5f5f5 !important;
+    }
+
+    .sp_compare_tbl ul.sp_product_heading>li,
+    .sp_compare_tbl ul.sp_product_con>li {
+        word-wrap: break-word;
+        float: left;
+        padding: 12px;
+        margin: 0 !important;
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #cccccc !important;
+        border-right: 1px solid #cccccc !important;
+        position: relative;
+        word-break: initial;
+    }
+
+    .sp_product_con .sp_image {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .sp_product_con p.sp_add_title {
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ccc;
+        margin: 0px;
+        line-height: 20px;
+        color: #333;
+    }
+    
+    .sp_compare_tbl * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 13px;
+        color: #333;
+    }
+</style>
 <div class="page-widths">
     <div class="main-compares">
         
@@ -81,6 +170,152 @@
 
         </ul>
     </div>
+</div>
+<div class="sp_compare_tbl">
+    <div class="sa_border">
+        <ul class="sp_product_heading">
+            <li class="sp_image" style="height: 158px;">Image</li>
+            <li class="sp_title" style="height: 46px;">Title</li>
+            <li class="sp_price" style="height: 46px;">Price</li>
+            <li class="sp_ptype" style="height: 46px;">Type</li>
+            <li class="sp_desc" style="height: 46px;">Description</li>
+            <li data="sp_id_capital" class="sp_wifienabledpidcontroller" style="height: 69px;">
+                wifi-enabled-pid-controller</li>
+            <li data="sp_id_capital" class="sp_temperatureprobes" style="height: 69px;">temperature-probes</li>
+            <li data="sp_id_capital" class="sp_grillgratematerial" style="height: 69px;">grill-grate-material
+            </li>
+            <li data="sp_id_capital" class="sp_stainlesssteelffs" style="height: 69px;">stainless-steel-ffs</li>
+            <li data="sp_id_capital" class="sp_stainlesssteelbarrel" style="height: 69px;">
+                stainless-steel-barrel
+            </li>
+            <li data="sp_id_capital" class="sp_directflamegrilling" style="height: 69px;">direct-flame-grilling
+            </li>
+            <li data="sp_id_capital" class="sp_warranty" style="height: 46px;">warranty</li>
+            <li data="sp_id_capital" class="sp_interiorlighting" style="height: 46px;">interior-lighting</li>
+            <li data="sp_id_capital" class="sp_castirondeflector" style="height: 69px;">cast-iron-deflector</li>
+            <li data="sp_id_capital" class="sp_totalcookingspace" style="height: 69px;">total-cooking-space</li>
+            <li data="sp_id_capital" class="sp_totalspacewithsecondshelf" style="height: 91px;">
+                total-space-with-second-shelf</li>
+            <li data="sp_id_capital" class="sp_numberofgrillgrates" style="height: 69px;">number-of-grill-grates
+            </li>
+            <li data="sp_id_capital" class="sp_minimumtemp" style="height: 46px;">minimum-temp</li>
+            <li data="sp_id_capital" class="sp_maximumtemp" style="height: 46px;">maximum-temp</li>
+            <li data="sp_id_capital" class="sp_riotmode" style="height: 46px;">riot-mode</li>
+            <li data="sp_id_capital" class="sp_assemblytime" style="height: 46px;">assembly-time</li>
+            <li data="sp_id_capital" class="sp_hoppercapacity" style="height: 46px;">hopper-capacity</li>
+        </ul>
+        <div class="sp_product" id="sp_product">
+            <ul class="sp_product_con fill_cmp">
+                <li class="sp_image" style="height: 158px;">
+                    <p class="sp_add_title">Add a Product</p>
+
+                </li>
+                <li class="sp_title" style="height: 46px;"></li>
+                <li class="sp_price" style="height: 46px;"></li>
+                <li class="sp_ptype" style="height: 46px;"></li>
+                <li class="sp_desc" style="height: 46px;"></li>
+                <li class="sp_wifienabledpidcontroller same_cl" style="height: 69px;"></li>
+                <li class="sp_temperatureprobes same_cl" style="height: 69px;"></li>
+                <li class="sp_grillgratematerial same_cl" style="height: 69px;"></li>
+                <li class="sp_stainlesssteelffs same_cl" style="height: 69px;"></li>
+                <li class="sp_stainlesssteelbarrel same_cl" style="height: 69px;"></li>
+                <li class="sp_directflamegrilling same_cl" style="height: 69px;"></li>
+                <li class="sp_warranty same_cl" style="height: 46px;"></li>
+                <li class="sp_interiorlighting same_cl" style="height: 46px;"></li>
+                <li class="sp_castirondeflector same_cl" style="height: 69px;"></li>
+                <li class="sp_totalcookingspace same_cl" style="height: 69px;"></li>
+                <li class="sp_totalspacewithsecondshelf same_cl" style="height: 91px;"></li>
+                <li class="sp_numberofgrillgrates same_cl" style="height: 69px;"></li>
+                <li class="sp_minimumtemp same_cl" style="height: 46px;"></li>
+                <li class="sp_maximumtemp same_cl" style="height: 46px;"></li>
+                <li class="sp_riotmode same_cl" style="height: 46px;"></li>
+                <li class="sp_assemblytime same_cl" style="height: 46px;"></li>
+                <li class="sp_hoppercapacity same_cl" style="height: 46px;"></li>
+            </ul>
+            <ul class="sp_product_con fill_cmp">
+                <li class="sp_image" style="height: 158px;">
+                    <p class="sp_add_title">Add a Product</p>
+                    
+                </li>
+                <li class="sp_title" style="height: 46px;"></li>
+                <li class="sp_price" style="height: 46px;"></li>
+                <li class="sp_ptype" style="height: 46px;"></li>
+                <li class="sp_desc" style="height: 46px;"></li>
+                <li class="sp_wifienabledpidcontroller same_cl" style="height: 69px;"></li>
+                <li class="sp_temperatureprobes same_cl" style="height: 69px;"></li>
+                <li class="sp_grillgratematerial same_cl" style="height: 69px;"></li>
+                <li class="sp_stainlesssteelffs same_cl" style="height: 69px;"></li>
+                <li class="sp_stainlesssteelbarrel same_cl" style="height: 69px;"></li>
+                <li class="sp_directflamegrilling same_cl" style="height: 69px;"></li>
+                <li class="sp_warranty same_cl" style="height: 46px;"></li>
+                <li class="sp_interiorlighting same_cl" style="height: 46px;"></li>
+                <li class="sp_castirondeflector same_cl" style="height: 69px;"></li>
+                <li class="sp_totalcookingspace same_cl" style="height: 69px;"></li>
+                <li class="sp_totalspacewithsecondshelf same_cl" style="height: 91px;"></li>
+                <li class="sp_numberofgrillgrates same_cl" style="height: 69px;"></li>
+                <li class="sp_minimumtemp same_cl" style="height: 46px;"></li>
+                <li class="sp_maximumtemp same_cl" style="height: 46px;"></li>
+                <li class="sp_riotmode same_cl" style="height: 46px;"></li>
+                <li class="sp_assemblytime same_cl" style="height: 46px;"></li>
+                <li class="sp_hoppercapacity same_cl" style="height: 46px;"></li>
+            </ul>
+            <ul class="sp_product_con fill_cmp">
+                <li class="sp_image" style="height: 158px;">
+                    <p class="sp_add_title">Add a Product</p>
+                    
+                </li>
+                <li class="sp_title" style="height: 46px;"></li>
+                <li class="sp_price" style="height: 46px;"></li>
+                <li class="sp_ptype" style="height: 46px;"></li>
+                <li class="sp_desc" style="height: 46px;"></li>
+                <li class="sp_wifienabledpidcontroller same_cl" style="height: 69px;"></li>
+                <li class="sp_temperatureprobes same_cl" style="height: 69px;"></li>
+                <li class="sp_grillgratematerial same_cl" style="height: 69px;"></li>
+                <li class="sp_stainlesssteelffs same_cl" style="height: 69px;"></li>
+                <li class="sp_stainlesssteelbarrel same_cl" style="height: 69px;"></li>
+                <li class="sp_directflamegrilling same_cl" style="height: 69px;"></li>
+                <li class="sp_warranty same_cl" style="height: 46px;"></li>
+                <li class="sp_interiorlighting same_cl" style="height: 46px;"></li>
+                <li class="sp_castirondeflector same_cl" style="height: 69px;"></li>
+                <li class="sp_totalcookingspace same_cl" style="height: 69px;"></li>
+                <li class="sp_totalspacewithsecondshelf same_cl" style="height: 91px;"></li>
+                <li class="sp_numberofgrillgrates same_cl" style="height: 69px;"></li>
+                <li class="sp_minimumtemp same_cl" style="height: 46px;"></li>
+                <li class="sp_maximumtemp same_cl" style="height: 46px;"></li>
+                <li class="sp_riotmode same_cl" style="height: 46px;"></li>
+                <li class="sp_assemblytime same_cl" style="height: 46px;"></li>
+                <li class="sp_hoppercapacity same_cl" style="height: 46px;"></li>
+            </ul>
+            <ul class="sp_product_con fill_cmp">
+                <li class="sp_image" style="height: 158px;">
+                    <p class="sp_add_title">Add a Product</p>
+                    
+                </li>
+                <li class="sp_title" style="height: 46px;"></li>
+                <li class="sp_price" style="height: 46px;"></li>
+                <li class="sp_ptype" style="height: 46px;"></li>
+                <li class="sp_desc" style="height: 46px;"></li>
+                <li class="sp_wifienabledpidcontroller same_cl" style="height: 69px;"></li>
+                <li class="sp_temperatureprobes same_cl" style="height: 69px;"></li>
+                <li class="sp_grillgratematerial same_cl" style="height: 69px;"></li>
+                <li class="sp_stainlesssteelffs same_cl" style="height: 69px;"></li>
+                <li class="sp_stainlesssteelbarrel same_cl" style="height: 69px;"></li>
+                <li class="sp_directflamegrilling same_cl" style="height: 69px;"></li>
+                <li class="sp_warranty same_cl" style="height: 46px;"></li>
+                <li class="sp_interiorlighting same_cl" style="height: 46px;"></li>
+                <li class="sp_castirondeflector same_cl" style="height: 69px;"></li>
+                <li class="sp_totalcookingspace same_cl" style="height: 69px;"></li>
+                <li class="sp_totalspacewithsecondshelf same_cl" style="height: 91px;"></li>
+                <li class="sp_numberofgrillgrates same_cl" style="height: 69px;"></li>
+                <li class="sp_minimumtemp same_cl" style="height: 46px;"></li>
+                <li class="sp_maximumtemp same_cl" style="height: 46px;"></li>
+                <li class="sp_riotmode same_cl" style="height: 46px;"></li>
+                <li class="sp_assemblytime same_cl" style="height: 46px;"></li>
+                <li class="sp_hoppercapacity same_cl" style="height: 46px;"></li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 {% assign product_info_json = page.metafields.global.comparison_parameters.value %}
 <script>
