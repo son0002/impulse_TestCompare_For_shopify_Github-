@@ -2,31 +2,31 @@
 <h2 style="text-align: center;">{{page.title}}</h2>
 <style>
     .main-compares {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* 创建四列，每列等宽 */
+        gap: 10px;
     }
 
-    #whereToPlaceSelect, .product-list {
-        flex: 1;
-        margin: 10px;
-        box-sizing: border-box;
+    #whereToPlaceSelect {
+        grid-column: 1;
+        /* whereToPlaceSelect 占据第一列 */
     }
-    
+
     .product-list {
-        list-style: none;
-        padding: 0;
+        grid-column: 2 / 5;
+        /* product-list 占据第二列到第四列 */
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
     }
 
     .product {
-        margin: 10px;
-        flex: 0 0 calc(25% - 20px);
-        /* 每个产品宽度为 25% - margin */
+        flex: 0 0 calc(100% - 10px);
+        /* 每个产品占据全部宽度，减去间隙 */
         box-sizing: border-box;
-        /* 包括边框在内的宽度计算 */
     }
 
     .product-header {
@@ -52,34 +52,31 @@
         padding: 7px 0;
     }
 
-    @media (max-width: 1200px) {
-        .product {
-            flex: 0 0 calc(33.33% - 20px);
-            /* 在屏幕较小的情况下，每个产品宽度为 33.33% - margin */
-        }
-    }
-
     @media (max-width: 800px) {
-        .product {
-            flex: 0 0 calc(50% - 20px);
-            /* 在屏幕更小的情况下，每个产品宽度为 50% - margin */
+        .main-compares {
+            grid-template-columns: 1fr;
+            /* 在较小屏幕上，切换到单列布局 */
         }
-    }
 
-    @media (max-width: 600px) {
+        #whereToPlaceSelect,
+        .product-list {
+            grid-column: 1;
+            /* 所有元素占据整个宽度 */
+        }
+
         .product {
-            flex: 0 0 calc(100% - 20px);
-            /* 在屏幕非常小的情况下，每个产品宽度为 100% - margin */
+            flex: 0 0 calc(100% - 10px);
+            /* 同样占据全部宽度 */
         }
     }
 </style>
 <div class="page-width">
     <div class="main-compares">
-         <div id="whereToPlaceSelect">
+        <div id="whereToPlaceSelect">
 
-            </div>
+        </div>
         <ul class="product-list">
-           
+
         </ul>
     </div>
 </div>
