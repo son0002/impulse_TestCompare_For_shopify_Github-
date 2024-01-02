@@ -342,25 +342,17 @@
         var handlesArray = productHandles.split(',');
         var handlesCount = handlesArray.length;
 
-        // 检查handles数量是否在2到4之间
-        if (handlesCount >= 2 && handlesCount <= 4) {
-            handlesArray.forEach(function (handle, index) {
-                fetchProductInfoByHandle(handle, index);
-            });
+        handlesArray.forEach(function (handle, index) {
+            fetchProductInfoByHandle(handle, index);
+        });
 
-            numberOfSelects -= handlesCount; // 减去handles的数量
-        } else {
-            // 如果handles数量不在2到4之间，可以在这里处理
-            alert("The number of product handles must be between 2 and 4.");
-            return; // 终止执行
+        // 生成剩余的下拉选择框
+        for (var i = handlesCount; i < numberOfSelects; i++) {
+            fetchAndCreateSelect(i);
         }
     }
-
-    // 生成剩余的下拉选择框
-    for (var i = handlesCount; i < numberOfSelects + handlesCount; i++) {
-        fetchAndCreateSelect(i);
-    }
 });
+
 
 
 function fetchProductInfoByHandle(handle, index) {
