@@ -75,36 +75,31 @@
 <script>
     var allProductInfo = {{ product_info_json | json }};
     var numberOfSelects = 4; // 总共需要展示的产品数量
-    var productHandles
+    var handlesCount = 0
     document.addEventListener('DOMContentLoaded', function () {
-        var params = new URLSearchParams(window.location.search);
-        productHandles = params.get('handles');
-       
+    var params = new URLSearchParams(window.location.search);
+    var productHandles = params.get('handles');
 
-        if (productHandles) {
-            var handlesArray = productHandles.split(',');
-            var handlesCount = handlesArray.length;
+    if (productHandles) {
+        var handlesArray = productHandles.split(',');
+        handlesCount = handlesArray.length;
 
-            // 检查handles数量是否在2到4之间
-            if (handlesCount >= 2 && handlesCount <= 4) {
-                // 根据handles生成对应的产品信息
-                handlesArray.forEach(function (handle) {
-                    fetchProductInfoByHandle(handle);
-                });
+        if (handlesCount >= 2 && handlesCount <= 4) {
+            handlesArray.forEach(function (handle) {
+                fetchProductInfoByHandle(handle);
+            });
 
-                numberOfSelects -= handlesCount; // 减去handles的数量
-            } else {
-                // 如果handles数量不在2到4之间，可以在这里处理
-                alert("The number of product handles must be between 2 and 4.");
-                return; // 终止执行
-            }
+            numberOfSelects -= handlesCount;
+        } else {
+            alert("The number of product handles must be between 2 and 4.");
+            return;
         }
+    }
 
-        // 生成剩余的下拉选择框
-        for (var i = 0; i < numberOfSelects; i++) {
-            fetchAndCreateSelect(i);
-        }
-    });
+    for (var i = 0; i < numberOfSelects; i++) {
+        fetchAndCreateSelect(i);
+    }
+});
 
 
     function fetchProductInfoByHandle(handle) {
