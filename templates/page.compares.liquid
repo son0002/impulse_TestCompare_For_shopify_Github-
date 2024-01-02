@@ -107,10 +107,11 @@
 
 
     function fetchProductInfoByHandle(handle) {
-        $.get('/products/' + handle + '.js', function (response) {
-            // console.log(product)
-            var product = JSON.parse(response);
-            console.log(product.title)
+    $.get('/products/' + handle + '.js', function (response) {
+        var product = JSON.parse(response);
+        console.log(product.title);
+
+        if ($('.product-list .product').length < 4) { // 检查产品数量是否小于4
             var productHtml = '<li class="product">' +
                 '<div class="product-header">' +
                 '<img src="' + product.featured_image + '" alt="' + product.title + '">' +
@@ -128,10 +129,15 @@
 
             productHtml += '</li>';
             $('.product-list').append(productHtml);
-        }).fail(function () {
-            console.error("Error fetching product information for handle:", handle);
-        });
-    }
+        } else {
+            // 可以在这里处理超过四个产品的情况，比如显示一个警告
+            console.warn("Maximum of 4 products are already displayed.");
+        }
+    }).fail(function () {
+        console.error("Error fetching product information for handle:", handle);
+    });
+}
+
 
     function fetchAndCreateSelect(index) {
         $.get('/collections/wood-pellet-grills/products.json', function (data) {
