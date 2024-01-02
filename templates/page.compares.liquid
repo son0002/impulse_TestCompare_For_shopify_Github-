@@ -333,34 +333,36 @@
     var allProductInfo = {{ product_info_json | json }};
 
     document.addEventListener('DOMContentLoaded', function () {
-        var params = new URLSearchParams(window.location.search);
-        var productHandles = params.get('handles');
-        var numberOfSelects = 4; // 总共需要展示的产品数量
+    var params = new URLSearchParams(window.location.search);
+    var productHandles = params.get('handles');
+    var numberOfSelects = 4; // 总共需要展示的产品数量
 
-        if (productHandles) {
-            var handlesArray = productHandles.split(',');
-            var handlesCount = handlesArray.length;
+    if (productHandles) {
+        var handlesArray = productHandles.split(',');
+        var handlesCount = handlesArray.length;
 
-            // 检查handles数量是否在2到4之间
-            if (handlesCount >= 2 && handlesCount <= 4) {
-                // 根据handles生成对应的产品信息
-                handlesArray.forEach(function (handle) {
-                    fetchProductInfoByHandle(handle);
-                });
+        // 检查handles数量是否在2到4之间
+        if (handlesCount >= 2 && handlesCount <= 4) {
+            handlesArray.forEach(function (handle, index) {
+                fetchProductInfoByHandle(handle, index);
+            });
 
-                numberOfSelects -= handlesCount; // 减去handles的数量
-            } else {
-                // 如果handles数量不在2到4之间，可以在这里处理
-                alert("The number of product handles must be between 2 and 4.");
-                return; // 终止执行
-            }
+            numberOfSelects -= handlesCount; // 减去handles的数量
+        } else {
+            // 如果handles数量不在2到4之间，可以在这里处理
+            alert("The number of product handles must be between 2 and 4.");
+            return; // 终止执行
         }
+    }
 
-        // 生成剩余的下拉选择框
-        for (var i = 0; i < numberOfSelects; i++) {
-            fetchAndCreateSelect(i);
-        }
-    });
+    // 生成剩余的下拉选择框
+    for (var i = handlesCount; i < numberOfSelects + handlesCount; i++) {
+        fetchAndCreateSelect(i);
+    }
+});
+
+// fetchProductInfoByHandle 和 fetchAndCreateSelect 函数保持不变
+
 
 
     function fetchProductInfoByHandle(handle, index) {
