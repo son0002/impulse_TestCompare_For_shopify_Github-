@@ -352,32 +352,37 @@
     });
 
 
-    function fetchProductInfoByHandle(handle) {
-        $.get('/products/' + handle + '.js', function (response) {
-            // console.log(product)
-            var product = JSON.parse(response);
-            console.log(product.title)
-            var productHtml = '<li class="product">' +
-                '<div class="product-header">' +
-                '<img src="' + product.featured_image + '" alt="' + product.title + '">' +
-                '<div class="product-title">' + product.title + '</div>' +
-                '</div>';
+    function fetchProductInfoByHandle(handle, index) {
+    $.get('/products/' + handle + '.js', function (response) {
+        var product = JSON.parse(response);
+        var productHtml = '<div class="product-info">' +
+            '<button class="close-btn">X</button>' +
+            '<img src="' + product.featured_image + '" alt="' + product.title + '">' +
+            '<div class="product-title">' + product.title + '</div>';
 
-            if (allProductInfo[handle]) {
-                var productParamsHtml = '<div class="product-params">';
-                Object.keys(allProductInfo[handle]).forEach(function (key) {
-                    productParamsHtml += '<span>' + key + ': ' + allProductInfo[handle][key] + '</span>';
-                });
-                productParamsHtml += '</div>';
-                productHtml += productParamsHtml;
-            }
+        // 检查是否有额外的产品信息
+        if (allProductInfo[handle]) {
+            var productParamsHtml = '<div class="product-params">';
+            Object.keys(allProductInfo[handle]).forEach(function (key) {
+                productParamsHtml += '<span>' + key + ': ' + allProductInfo[handle][key] + '</span>';
+            });
+            productParamsHtml += '</div>';
+            productHtml += productParamsHtml;
+        }
 
-            productHtml += '</li>';
-            $('.product-list').append(productHtml);
-        }).fail(function () {
-            console.error("Error fetching product information for handle:", handle);
+        productHtml += '</div>';
+
+        var $spImage = $('.sp_product').find('.sp_image').eq(index);
+        $spImage.empty().append(productHtml); // 替换下拉框为产品信息
+
+        $spImage.find('.close-btn').on('click', function() {
+            fetchAndCreateSelect(index); // 重新添加下拉框
         });
-    }
+    }).fail(function () {
+        console.error("Error fetching product information for handle:", handle);
+    });
+}
+
 
     function fetchAndCreateSelect(index) {
     $.get('/collections/wood-pellet-grills/products.json', function (data) {
@@ -395,9 +400,10 @@
         $spImage.append(selectHtml);
 
         $('#productSelect' + index).on('change', function () {
-            var selectedHandle = $(this).val();
-            fetchProductInfoByHandle(selectedHandle); // 使用fetchProductInfoByHandle获取选中的产品信息
+        var selectedHandle = $(this).val();
+        fetchProductInfoByHandle(selectedHandle, index); // 传递 index 参数
         });
+
     }).fail(function () {
             console.error("Error fetching products from the collection");
     });
