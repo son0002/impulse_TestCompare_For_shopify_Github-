@@ -74,11 +74,11 @@
 {% assign product_info_json = page.metafields.global.comparison_parameters.value %}
 <script>
     var allProductInfo = {{ product_info_json | json }};
+    var numberOfSelects = 4; // 总共需要展示的产品数量
 
     document.addEventListener('DOMContentLoaded', function () {
         var params = new URLSearchParams(window.location.search);
         var productHandles = params.get('handles');
-        var numberOfSelects = 4; // 总共需要展示的产品数量
 
         if (productHandles) {
             var handlesArray = productHandles.split(',');
@@ -146,15 +146,15 @@
         $('#whereToPlaceSelect').append(selectHtml);
 
         $('#productSelect' + index).on('change', function () {
+            var selectedHandle = $(this).val();
+
             // 计算当前已经展示的产品数量
             var displayedProductCount = $('.product-list .product').length;
+            var handlesCount = productHandles ? productHandles.split(',').length : 0;
 
             // 检查是否还有空间添加新产品
-            if (displayedProductCount < numberOfSelects) {
-                var selectedHandle = $(this).val();
+            if (displayedProductCount + handlesCount < numberOfSelects) {
                 fetchProductInfoByHandle(selectedHandle);
-                // 更新numberOfSelects以反映新添加的产品
-                numberOfSelects--;
             } else {
                 // 超出最大产品数量时的处理逻辑
                 alert("You cannot select more than " + numberOfSelects + " products.");
@@ -164,6 +164,7 @@
         console.error("Error fetching products from the collection");
     });
 }
+
 
 
 
