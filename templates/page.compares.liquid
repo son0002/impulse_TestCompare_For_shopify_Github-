@@ -376,6 +376,7 @@
         $spImage.empty().append(productHtml); // 替换下拉框为产品信息
 
         $spImage.find('.close-btn').on('click', function() {
+            $spImage.empty(); // 移除产品信息
             fetchAndCreateSelect(index); // 重新添加下拉框
         });
     }).fail(function () {
@@ -384,7 +385,13 @@
 }
 
 
-    function fetchAndCreateSelect(index) {
+function fetchAndCreateSelect(index) {
+    // 检查下拉框是否已经存在
+    var existingSelect = $('#productSelect' + index);
+    if (existingSelect.length > 0) {
+        return; // 如果下拉框已存在，不再创建新的
+    }
+
     $.get('/collections/wood-pellet-grills/products.json', function (data) {
         var products = data.products;
         var selectHtml = '<select id="productSelect' + index + '">';
@@ -395,19 +402,18 @@
 
         selectHtml += '</select>';
 
-        // 找到 .sp_product 下的第 index 个 .sp_image 元素并将下拉框添加到其中
         var $spImage = $('.sp_product').find('.sp_image').eq(index);
-        $spImage.append(selectHtml);
+        $spImage.empty().append(selectHtml); // 确保先清空已有内容
 
         $('#productSelect' + index).on('change', function () {
-        var selectedHandle = $(this).val();
-        fetchProductInfoByHandle(selectedHandle, index); // 传递 index 参数
+            var selectedHandle = $(this).val();
+            fetchProductInfoByHandle(selectedHandle, index);
         });
-
     }).fail(function () {
-            console.error("Error fetching products from the collection");
+        console.error("Error fetching products from the collection");
     });
 }
+
 
 
 
