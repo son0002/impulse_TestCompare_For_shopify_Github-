@@ -364,23 +364,26 @@
 
 
 function fetchProductInfoByHandle(handle, index) {
+    console.log("Fetching product info for handle:", handle, "at index:", index);
     $.get('/products/' + handle + '.js', function (response) {
         var product = JSON.parse(response);
-        var $spProductCon = $('.sp_product').eq(index).find('.sp_product_con');
+        console.log("Received product data:", product);
 
-        // 填充产品图片、标题、价格等
+        var $spProductCon = $('.sp_product').eq(index).find('.sp_product_con');
+        console.log("$spProductCon:", $spProductCon);
+
+        // 确保选择器准确地选择了正确的元素
         $spProductCon.find('.sp_image').html('<img src="' + product.featured_image + '" alt="' + product.title + '">');
         $spProductCon.find('.sp_title').text(product.title);
         $spProductCon.find('.sp_price').text(product.price);
 
-        // 如果存在额外信息，填充到对应的元素中
         if (allProductInfo[handle]) {
+            console.log("Extra product info found:", allProductInfo[handle]);
             Object.keys(allProductInfo[handle]).forEach(function (key) {
                 $spProductCon.find('.' + key).text(allProductInfo[handle][key]);
             });
         }
 
-        // 添加关闭按钮逻辑
         var closeButtonHtml = '<button class="close-btn">X</button>';
         $spProductCon.find('.sp_image').prepend(closeButtonHtml);
         $spProductCon.find('.close-btn').on('click', function() {
