@@ -75,26 +75,29 @@
 {% assign product_info_json = page.metafields.global.comparison_parameters.value %}
 <script>
     var allProductInfo = {{ product_info_json | json }};
-    var numberOfSelects = 4; // 总共需要展示的产品数量
-    var productHandles;
 
     document.addEventListener('DOMContentLoaded', function () {
         var params = new URLSearchParams(window.location.search);
-        productHandles = params.get('handles') ? params.get('handles').split(',') : [];
+        var productHandles = params.get('handles');
+        var numberOfSelects = 4; // 总共需要展示的产品数量
 
-        var handlesCount = productHandles.length;
+        if (productHandles) {
+            var handlesArray = productHandles.split(',');
+            var handlesCount = handlesArray.length;
 
-        // 检查handles数量是否在2到4之间
-        if (handlesCount >= 2 && handlesCount <= 4) {
-            productHandles.forEach(function (handle) {
-                fetchProductInfoByHandle(handle);
-            });
+            // 检查handles数量是否在2到4之间
+            if (handlesCount >= 2 && handlesCount <= 4) {
+                // 根据handles生成对应的产品信息
+                handlesArray.forEach(function (handle) {
+                    fetchProductInfoByHandle(handle);
+                });
 
-            numberOfSelects -= handlesCount; // 减去handles的数量
-        } else if (handlesCount > 0) {
-            // 如果handles数量不在2到4之间，可以在这里处理
-            alert("The number of product handles must be between 2 and 4.");
-            return; // 终止执行
+                numberOfSelects -= handlesCount; // 减去handles的数量
+            } else {
+                // 如果handles数量不在2到4之间，可以在这里处理
+                alert("The number of product handles must be between 2 and 4.");
+                return; // 终止执行
+            }
         }
 
         // 生成剩余的下拉选择框
@@ -102,7 +105,6 @@
             fetchAndCreateSelect(i);
         }
     });
-
 
 
     function fetchProductInfoByHandle(handle) {
@@ -142,30 +144,16 @@
             });
 
             selectHtml += '</select>';
-            $('#whereToPlaceSelect').append(selectHtml);
+            $('#whereToPlaceSelect').append(selectHtml); // 添加下拉框到页面
 
             $('#productSelect' + index).on('change', function () {
                 var selectedHandle = $(this).val();
-
-                // 计算当前已经展示的产品数量
-                var displayedProductCount = $('.product-list .product').length;
-                var handlesCount = productHandles ? productHandles.split(',').length : 0;
-
-                // 检查是否还有空间添加新产品
-                if (displayedProductCount + handlesCount < numberOfSelects) {
-                    fetchProductInfoByHandle(selectedHandle);
-                } else {
-                    // 超出最大产品数量时的处理逻辑
-                    alert("You cannot select more than " + numberOfSelects + " products.");
-                }
+                fetchProductInfoByHandle(selectedHandle); // 使用fetchProductInfoByHandle获取选中的产品信息
             });
         }).fail(function () {
             console.error("Error fetching products from the collection");
         });
     }
-
-
-
 
 
 
