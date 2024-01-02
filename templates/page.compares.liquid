@@ -1,12 +1,21 @@
 {{ page.content }}
 <h2 style="text-align: center;">{{page.title}}</h2>
 <style>
+    .page-widths {
+        max-width: 1800px;
+        width: 100%;
+        margin: 0 auto;
+    }
     .product-list {
         list-style: none;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+    }
+
+    select{
+        font-size: 12px;
     }
 
     .product {
@@ -61,7 +70,7 @@
         }
     }
 </style>
-<div class="page-width">
+<div class="page-widths">
     <div class="main-compares">
         
         <ul class="product-list">
