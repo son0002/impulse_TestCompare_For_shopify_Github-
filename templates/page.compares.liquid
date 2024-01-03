@@ -466,7 +466,7 @@
             $spProductCon.find('.sp_image').prepend(closeButtonHtml);
             $spProductCon.find('.close-btn').on('click', function () {
                 // 清除当前列的内容
-                $spProductCon.find('.sp_image').empty();
+                $spProductCon.find('li').empty();
 
                 // 重新添加 "Add a Product" 文字
                 var addProductHtml = '<p class="sp_add_title">Add a Product</p>';
