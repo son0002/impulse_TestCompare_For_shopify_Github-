@@ -382,29 +382,41 @@
 
 
     function productImg(Dom, Class) {
-        // 创建Swiper的整体结构
-        var swiperHtml = '<div class="swiper-container"><div class="swiper-wrapper">';
+    // 创建Swiper的整体结构
+    var swiperHtml = '<div class="swiper-container">';
+    swiperHtml += '<div class="swiper-wrapper">';
 
-        // 为每个图片URL创建一个slide
-        Dom.forEach((imgUrl) => {
-            swiperHtml += "<div class='swiper-slide'><img class='img lazyload' data-src='" + imgUrl + "'></div>";
-        });
+    // 为每个图片URL创建一个slide
+    Dom.forEach((imgUrl) => {
+        swiperHtml += "<div class='swiper-slide'><img class='img lazyload' data-src='" + imgUrl + "'></div>";
+    });
 
-        swiperHtml += '</div></div>'; // 关闭swiper-wrapper和swiper-container
+    swiperHtml += '</div>'; // 关闭swiper-wrapper
 
-        // 将Swiper结构添加到指定的容器中
-        Class.html(swiperHtml);
+    // 添加Swiper的导航按钮
+    swiperHtml += '<div class="swiper-button-prev nextprev"></div>';
+    swiperHtml += '<div class="swiper-button-next custnext"></div>';
 
-        // 初始化Swiper
-        new Swiper('.swiper-container', {
-            // Swiper选项
-            loop: true,
-            lazy: {
-                loadPrevNext: true,
-            },
-            // 其他选项...
-        });
-    }
+    swiperHtml += '</div>'; // 关闭swiper-container
+
+    // 将Swiper结构添加到指定的容器中
+    Class.html(swiperHtml);
+
+    // 初始化Swiper
+    new Swiper('.swiper-container', {
+        // Swiper选项
+        loop: true,
+        lazy: {
+            loadPrevNext: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        // 其他选项...
+    });
+}
+
 
 
 
