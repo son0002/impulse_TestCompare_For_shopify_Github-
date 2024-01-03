@@ -19,7 +19,7 @@
 
     select {
         margin: 10px 0;
-    } 
+    }
 
     .product {
         margin: 10px;
@@ -52,12 +52,13 @@
         padding: 7px 0;
     }
 
-    .sp_product .sp_image a {
+    .swiper-container {
         width: 100%;
         flex: 0 0 auto;
         position: relative;
         height: 100%;
     }
+
 
     .product-info img,
     .sp_product img {
@@ -381,29 +382,29 @@
 
 
     function productImg(Dom, Class) {
-    // 创建Swiper的整体结构
-    var swiperHtml = '<div class="swiper-container"><div class="swiper-wrapper">';
+        // 创建Swiper的整体结构
+        var swiperHtml = '<div class="swiper-container"><div class="swiper-wrapper">';
 
-    // 为每个图片URL创建一个slide
-    Dom.forEach((imgUrl) => {
-        swiperHtml += "<div class='swiper-slide'><img class='img lazyload' data-src='" + imgUrl + "'></div>";
-    });
+        // 为每个图片URL创建一个slide
+        Dom.forEach((imgUrl) => {
+            swiperHtml += "<div class='swiper-slide'><img class='img lazyload' data-src='" + imgUrl + "'></div>";
+        });
 
-    swiperHtml += '</div></div>'; // 关闭swiper-wrapper和swiper-container
+        swiperHtml += '</div></div>'; // 关闭swiper-wrapper和swiper-container
 
-    // 将Swiper结构添加到指定的容器中
-    Class.html(swiperHtml);
+        // 将Swiper结构添加到指定的容器中
+        Class.html(swiperHtml);
 
-    // 初始化Swiper
-    new Swiper('.swiper-container', {
-        // Swiper选项
-        loop: true,
-        lazy: {
-            loadPrevNext: true,
-        },
-        // 其他选项...
-    });
-}
+        // 初始化Swiper
+        new Swiper('.swiper-container', {
+            // Swiper选项
+            loop: true,
+            lazy: {
+                loadPrevNext: true,
+            },
+            // 其他选项...
+        });
+    }
 
 
 
@@ -419,7 +420,7 @@
             // 定位到正确的列 (sp_product_con)
             var $spProductCon = $('.sp_product .sp_product_con').eq(index);
 
-             // 清空之前的图片并调用productImg函数生成轮播图
+            // 清空之前的图片并调用productImg函数生成轮播图
             var $imageContainer = $spProductCon.find('.sp_image');
             $imageContainer.empty();
             productImg(productImages, $imageContainer);  // 使用productImages变量
