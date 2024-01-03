@@ -395,18 +395,16 @@
         $.get('/products/' + handle + '.js', function (response) {
             var product = JSON.parse(response);
             var productImages = product.images;  // 这里定义了productImages
-            
+            console.log(productImages)
             console.log("Received product data:", product);
 
             // 定位到正确的列 (sp_product_con)
             var $spProductCon = $('.sp_product .sp_product_con').eq(index);
 
              // 清空之前的图片并调用productImg函数生成轮播图
-        var $imageContainer = $spProductCon.find('.sp_image');
-        $imageContainer.empty();
-        productImg(productImages, $imageContainer);  // 使用productImages变量
-
-
+            var $imageContainer = $spProductCon.find('.sp_image');
+            $imageContainer.empty();
+            productImg(productImages, $imageContainer);  // 使用productImages变量
 
             // 更新产品信息
             $spProductCon.find('.sp_image').html('<a href="javascript:void(0)"><img src="' + product.featured_image + '" alt="' + product.title + '"></a>');
