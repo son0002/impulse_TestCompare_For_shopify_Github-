@@ -440,7 +440,7 @@
             selectHtml += '</select>';
 
             var $spImage = $('.sp_product').find('.sp_image').eq(index);
-            $spImage.empty().append(selectHtml); // 确保先清空已有内容
+            $spImage.append(selectHtml); // 确保先清空已有内容
 
             $('#productSelect' + index).on('change', function () {
                 var selectedHandle = $(this).val();
