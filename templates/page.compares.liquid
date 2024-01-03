@@ -376,7 +376,7 @@
             var $spProductCon = $('.sp_product .sp_product_con').eq(index);
 
             // 更新产品信息
-            $spProductCon.find('.sp_image').html('<img src="' + product.featured_image + '" alt="' + product.title + '">');
+            $spProductCon.find('.sp_image').html('<a href="javascript:void(0)"><img src="' + product.featured_image + '" alt="' + product.title + '"></a>');
             $spProductCon.find('.sp_title').text(product.title);
             $spProductCon.find('.sp_price').text(product.price);
             // 如果存在额外信息，填充到对应的元素中
