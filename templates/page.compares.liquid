@@ -1,3 +1,5 @@
+{{ 'swiper.css' | asset_url | stylesheet_tag }}
+{{ 'swiper.js' | asset_url | script_tag }}
 {{ page.content }}
 <h2 style="text-align: center;">{{page.title}}</h2>
 <style>
@@ -378,17 +380,33 @@
     });
 
 
+    function productImg(Dom, Class) {
+        Dom.forEach((a, e) => {
+            var haner = ''
+            haner = "<div class='swiper-slide'><img class='img lazyload' src='' data-src='" + a + "'></div>"
+            Class.append(haner)
+        });
+    }
+
+
 
     function fetchProductInfoByHandle(handle, index) {
         console.log("Fetching product info for handle:", handle, "at index:", index);
         $.get('/products/' + handle + '.js', function (response) {
             var product = JSON.parse(response);
             var product_image = product.images
+            
             console.log(product_image)
             console.log("Received product data:", product);
 
             // 定位到正确的列 (sp_product_con)
             var $spProductCon = $('.sp_product .sp_product_con').eq(index);
+
+            // 清空之前的图片并调用productImg函数生成轮播图
+            var $imageContainer = $spProductCon.find('.sp_image');
+            $imageContainer.empty();
+            productImg(productImages, $imageContainer);
+
 
             // 更新产品信息
             $spProductCon.find('.sp_image').html('<a href="javascript:void(0)"><img src="' + product.featured_image + '" alt="' + product.title + '"></a>');
