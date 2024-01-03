@@ -383,6 +383,8 @@
         console.log("Fetching product info for handle:", handle, "at index:", index);
         $.get('/products/' + handle + '.js', function (response) {
             var product = JSON.parse(response);
+            var product_image = product.images
+            console.log(product_image)
             console.log("Received product data:", product);
 
             // 定位到正确的列 (sp_product_con)
