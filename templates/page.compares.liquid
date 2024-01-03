@@ -51,9 +51,23 @@
         padding: 7px 0;
     }
 
+    .sp_product .sp_image a {
+        width: 100%;
+        flex: 0 0 auto;
+        position: relative;
+        height: 100%;
+    }
+
     .product-info img,
     .sp_product img {
-        max-width: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 10;
+        padding: 10px 0 20px 0;
         margin: 0 auto;
     }
 
@@ -192,142 +206,142 @@
     <div class="sa_border">
         <ul class="sp_product_heading">
             <li class="sp_image" style="height: 158px;">Image</li>
-            <li class="sp_title"  >Title</li>
-            <li class="sp_price"  >Price</li>
-            <li class="sp_ptype"  >Type</li>
-            <li class="sp_desc"  >Description</li>
-            <li data="sp_id_capital" class="sp_wifienabledpidcontroller"  >
+            <li class="sp_title">Title</li>
+            <li class="sp_price">Price</li>
+            <li class="sp_ptype">Type</li>
+            <li class="sp_desc">Description</li>
+            <li data="sp_id_capital" class="sp_wifienabledpidcontroller">
                 wifi-enabled-pid-controller</li>
-            <li data="sp_id_capital" class="sp_temperatureprobes"  >temperature-probes</li>
-            <li data="sp_id_capital" class="sp_grillgratematerial"  >grill-grate-material
+            <li data="sp_id_capital" class="sp_temperatureprobes">temperature-probes</li>
+            <li data="sp_id_capital" class="sp_grillgratematerial">grill-grate-material
             </li>
-            <li data="sp_id_capital" class="sp_stainlesssteelffs"  >stainless-steel-ffs</li>
-            <li data="sp_id_capital" class="sp_stainlesssteelbarrel"  >
+            <li data="sp_id_capital" class="sp_stainlesssteelffs">stainless-steel-ffs</li>
+            <li data="sp_id_capital" class="sp_stainlesssteelbarrel">
                 stainless-steel-barrel
             </li>
-            <li data="sp_id_capital" class="sp_directflamegrilling"  >direct-flame-grilling
+            <li data="sp_id_capital" class="sp_directflamegrilling">direct-flame-grilling
             </li>
-            <li data="sp_id_capital" class="sp_warranty"  >warranty</li>
-            <li data="sp_id_capital" class="sp_interiorlighting"  >interior-lighting</li>
-            <li data="sp_id_capital" class="sp_castirondeflector"  >cast-iron-deflector</li>
-            <li data="sp_id_capital" class="sp_totalcookingspace"  >total-cooking-space</li>
-            <li data="sp_id_capital" class="sp_totalspacewithsecondshelf"  >
+            <li data="sp_id_capital" class="sp_warranty">warranty</li>
+            <li data="sp_id_capital" class="sp_interiorlighting">interior-lighting</li>
+            <li data="sp_id_capital" class="sp_castirondeflector">cast-iron-deflector</li>
+            <li data="sp_id_capital" class="sp_totalcookingspace">total-cooking-space</li>
+            <li data="sp_id_capital" class="sp_totalspacewithsecondshelf">
                 total-space-with-second-shelf</li>
-            <li data="sp_id_capital" class="sp_numberofgrillgrates"  >number-of-grill-grates
+            <li data="sp_id_capital" class="sp_numberofgrillgrates">number-of-grill-grates
             </li>
-            <li data="sp_id_capital" class="sp_minimumtemp"  >minimum-temp</li>
-            <li data="sp_id_capital" class="sp_maximumtemp"  >maximum-temp</li>
-            <li data="sp_id_capital" class="sp_riotmode"  >riot-mode</li>
-            <li data="sp_id_capital" class="sp_assemblytime"  >assembly-time</li>
-            <li data="sp_id_capital" class="sp_hoppercapacity"  >hopper-capacity</li>
+            <li data="sp_id_capital" class="sp_minimumtemp">minimum-temp</li>
+            <li data="sp_id_capital" class="sp_maximumtemp">maximum-temp</li>
+            <li data="sp_id_capital" class="sp_riotmode">riot-mode</li>
+            <li data="sp_id_capital" class="sp_assemblytime">assembly-time</li>
+            <li data="sp_id_capital" class="sp_hoppercapacity">hopper-capacity</li>
         </ul>
         <div class="sp_product" id="sp_product">
             <ul class="sp_product_con fill_cmp">
                 <li class="sp_image" style="height: 158px;">
                     <p class="sp_add_title">Add a Product</p>
                 </li>
-                <li class="sp_title" ></li>
-                <li class="sp_price"  ></li>
-                <li class="sp_ptype"  ></li>
-                <li class="description"  ></li>
-                <li class="sp_wifienabledpidcontroller same_cl"  ></li>
-                <li class="sp_temperatureprobes same_cl"  ></li>
-                <li class="sp_grillgratematerial same_cl"  ></li>
-                <li class="sp_stainlesssteelffs same_cl"  ></li>
-                <li class="sp_stainlesssteelbarrel same_cl"  ></li>
-                <li class="sp_directflamegrilling same_cl"  ></li>
-                <li class="sp_warranty same_cl"  ></li>
-                <li class="sp_interiorlighting same_cl"  ></li>
-                <li class="sp_castirondeflector same_cl"  ></li>
-                <li class="sp_totalcookingspace same_cl"  ></li>
-                <li class="sp_totalspacewithsecondshelf same_cl"  ></li>
-                <li class="sp_numberofgrillgrates same_cl"  ></li>
-                <li class="sp_minimumtemp same_cl"  ></li>
-                <li class="sp_maximumtemp same_cl"  ></li>
-                <li class="sp_riotmode same_cl"  ></li>
-                <li class="sp_assemblytime same_cl"  ></li>
-                <li class="sp_hoppercapacity same_cl"  ></li>
+                <li class="sp_title"></li>
+                <li class="sp_price"></li>
+                <li class="sp_ptype"></li>
+                <li class="description"></li>
+                <li class="sp_wifienabledpidcontroller same_cl"></li>
+                <li class="sp_temperatureprobes same_cl"></li>
+                <li class="sp_grillgratematerial same_cl"></li>
+                <li class="sp_stainlesssteelffs same_cl"></li>
+                <li class="sp_stainlesssteelbarrel same_cl"></li>
+                <li class="sp_directflamegrilling same_cl"></li>
+                <li class="sp_warranty same_cl"></li>
+                <li class="sp_interiorlighting same_cl"></li>
+                <li class="sp_castirondeflector same_cl"></li>
+                <li class="sp_totalcookingspace same_cl"></li>
+                <li class="sp_totalspacewithsecondshelf same_cl"></li>
+                <li class="sp_numberofgrillgrates same_cl"></li>
+                <li class="sp_minimumtemp same_cl"></li>
+                <li class="sp_maximumtemp same_cl"></li>
+                <li class="sp_riotmode same_cl"></li>
+                <li class="sp_assemblytime same_cl"></li>
+                <li class="sp_hoppercapacity same_cl"></li>
             </ul>
             <ul class="sp_product_con fill_cmp">
                 <li class="sp_image" style="height: 158px;">
                     <p class="sp_add_title">Add a Product</p>
 
                 </li>
-                <li class="sp_title"  ></li>
-                <li class="sp_price"  ></li>
-                <li class="sp_ptype"  ></li>
-                <li class="description"  ></li>
-                <li class="sp_wifienabledpidcontroller same_cl"  ></li>
-                <li class="sp_temperatureprobes same_cl"  ></li>
-                <li class="sp_grillgratematerial same_cl"  ></li>
-                <li class="sp_stainlesssteelffs same_cl"  ></li>
-                <li class="sp_stainlesssteelbarrel same_cl"  ></li>
-                <li class="sp_directflamegrilling same_cl"  ></li>
-                <li class="sp_warranty same_cl"  ></li>
-                <li class="sp_interiorlighting same_cl"  ></li>
-                <li class="sp_castirondeflector same_cl"  ></li>
-                <li class="sp_totalcookingspace same_cl"  ></li>
-                <li class="sp_totalspacewithsecondshelf same_cl"  ></li>
-                <li class="sp_numberofgrillgrates same_cl"  ></li>
-                <li class="sp_minimumtemp same_cl"  ></li>
-                <li class="sp_maximumtemp same_cl"  ></li>
-                <li class="sp_riotmode same_cl"  ></li>
-                <li class="sp_assemblytime same_cl"  ></li>
-                <li class="sp_hoppercapacity same_cl"  ></li>
+                <li class="sp_title"></li>
+                <li class="sp_price"></li>
+                <li class="sp_ptype"></li>
+                <li class="description"></li>
+                <li class="sp_wifienabledpidcontroller same_cl"></li>
+                <li class="sp_temperatureprobes same_cl"></li>
+                <li class="sp_grillgratematerial same_cl"></li>
+                <li class="sp_stainlesssteelffs same_cl"></li>
+                <li class="sp_stainlesssteelbarrel same_cl"></li>
+                <li class="sp_directflamegrilling same_cl"></li>
+                <li class="sp_warranty same_cl"></li>
+                <li class="sp_interiorlighting same_cl"></li>
+                <li class="sp_castirondeflector same_cl"></li>
+                <li class="sp_totalcookingspace same_cl"></li>
+                <li class="sp_totalspacewithsecondshelf same_cl"></li>
+                <li class="sp_numberofgrillgrates same_cl"></li>
+                <li class="sp_minimumtemp same_cl"></li>
+                <li class="sp_maximumtemp same_cl"></li>
+                <li class="sp_riotmode same_cl"></li>
+                <li class="sp_assemblytime same_cl"></li>
+                <li class="sp_hoppercapacity same_cl"></li>
             </ul>
             <ul class="sp_product_con fill_cmp">
                 <li class="sp_image" style="height: 158px;">
                     <p class="sp_add_title">Add a Product</p>
 
                 </li>
-                <li class="sp_title"  ></li>
-                <li class="sp_price"  ></li>
-                <li class="sp_ptype"  ></li>
-                <li class="description"  ></li>
-                <li class="sp_wifienabledpidcontroller same_cl"  ></li>
-                <li class="sp_temperatureprobes same_cl"  ></li>
-                <li class="sp_grillgratematerial same_cl"  ></li>
-                <li class="sp_stainlesssteelffs same_cl"  ></li>
-                <li class="sp_stainlesssteelbarrel same_cl"  ></li>
-                <li class="sp_directflamegrilling same_cl"  ></li>
-                <li class="sp_warranty same_cl"  ></li>
-                <li class="sp_interiorlighting same_cl"  ></li>
-                <li class="sp_castirondeflector same_cl"  ></li>
-                <li class="sp_totalcookingspace same_cl"  ></li>
-                <li class="sp_totalspacewithsecondshelf same_cl"  ></li>
-                <li class="sp_numberofgrillgrates same_cl"  ></li>
-                <li class="sp_minimumtemp same_cl"  ></li>
-                <li class="sp_maximumtemp same_cl"  ></li>
-                <li class="sp_riotmode same_cl"  ></li>
-                <li class="sp_assemblytime same_cl"  ></li>
-                <li class="sp_hoppercapacity same_cl"  ></li>
+                <li class="sp_title"></li>
+                <li class="sp_price"></li>
+                <li class="sp_ptype"></li>
+                <li class="description"></li>
+                <li class="sp_wifienabledpidcontroller same_cl"></li>
+                <li class="sp_temperatureprobes same_cl"></li>
+                <li class="sp_grillgratematerial same_cl"></li>
+                <li class="sp_stainlesssteelffs same_cl"></li>
+                <li class="sp_stainlesssteelbarrel same_cl"></li>
+                <li class="sp_directflamegrilling same_cl"></li>
+                <li class="sp_warranty same_cl"></li>
+                <li class="sp_interiorlighting same_cl"></li>
+                <li class="sp_castirondeflector same_cl"></li>
+                <li class="sp_totalcookingspace same_cl"></li>
+                <li class="sp_totalspacewithsecondshelf same_cl"></li>
+                <li class="sp_numberofgrillgrates same_cl"></li>
+                <li class="sp_minimumtemp same_cl"></li>
+                <li class="sp_maximumtemp same_cl"></li>
+                <li class="sp_riotmode same_cl"></li>
+                <li class="sp_assemblytime same_cl"></li>
+                <li class="sp_hoppercapacity same_cl"></li>
             </ul>
             <ul class="sp_product_con fill_cmp">
                 <li class="sp_image" style="height: 158px;">
                     <p class="sp_add_title">Add a Product</p>
 
                 </li>
-                <li class="sp_title"  ></li>
-                <li class="sp_price"  ></li>
-                <li class="sp_ptype"  ></li>
-                <li class="description"  ></li>
-                <li class="sp_wifienabledpidcontroller same_cl"  ></li>
-                <li class="sp_temperatureprobes same_cl"  ></li>
-                <li class="sp_grillgratematerial same_cl"  ></li>
-                <li class="sp_stainlesssteelffs same_cl"  ></li>
-                <li class="sp_stainlesssteelbarrel same_cl"  ></li>
-                <li class="sp_directflamegrilling same_cl"  ></li>
-                <li class="sp_warranty same_cl"  ></li>
-                <li class="sp_interiorlighting same_cl"  ></li>
-                <li class="sp_castirondeflector same_cl"  ></li>
-                <li class="sp_totalcookingspace same_cl"  ></li>
-                <li class="sp_totalspacewithsecondshelf same_cl"  ></li>
-                <li class="sp_numberofgrillgrates same_cl"  ></li>
-                <li class="sp_minimumtemp same_cl"  ></li>
-                <li class="sp_maximumtemp same_cl"  ></li>
-                <li class="sp_riotmode same_cl"  ></li>
-                <li class="sp_assemblytime same_cl"  ></li>
-                <li class="sp_hoppercapacity same_cl"  ></li>
+                <li class="sp_title"></li>
+                <li class="sp_price"></li>
+                <li class="sp_ptype"></li>
+                <li class="description"></li>
+                <li class="sp_wifienabledpidcontroller same_cl"></li>
+                <li class="sp_temperatureprobes same_cl"></li>
+                <li class="sp_grillgratematerial same_cl"></li>
+                <li class="sp_stainlesssteelffs same_cl"></li>
+                <li class="sp_stainlesssteelbarrel same_cl"></li>
+                <li class="sp_directflamegrilling same_cl"></li>
+                <li class="sp_warranty same_cl"></li>
+                <li class="sp_interiorlighting same_cl"></li>
+                <li class="sp_castirondeflector same_cl"></li>
+                <li class="sp_totalcookingspace same_cl"></li>
+                <li class="sp_totalspacewithsecondshelf same_cl"></li>
+                <li class="sp_numberofgrillgrates same_cl"></li>
+                <li class="sp_minimumtemp same_cl"></li>
+                <li class="sp_maximumtemp same_cl"></li>
+                <li class="sp_riotmode same_cl"></li>
+                <li class="sp_assemblytime same_cl"></li>
+                <li class="sp_hoppercapacity same_cl"></li>
             </ul>
         </div>
     </div>
@@ -406,38 +420,38 @@
 
 
     function fetchAndCreateSelect(index) {
-    // 检查下拉框是否已经存在
-    var existingSelect = $('#productSelect' + index);
-    if (existingSelect.length > 0) {
-        return; // 如果下拉框已存在，不再创建新的
+        // 检查下拉框是否已经存在
+        var existingSelect = $('#productSelect' + index);
+        if (existingSelect.length > 0) {
+            return; // 如果下拉框已存在，不再创建新的
+        }
+
+        $.get('/collections/wood-pellet-grills/products.json', function (data) {
+            var products = data.products;
+            var selectHtml = '<select id="productSelect' + index + '">';
+
+            // 添加默认选项
+            selectHtml += '<option value="">Add a Product</option>';
+
+            products.forEach(function (product) {
+                selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
+            });
+
+            selectHtml += '</select>';
+
+            var $spImage = $('.sp_product').find('.sp_image').eq(index);
+            $spImage.empty().append(selectHtml); // 确保先清空已有内容
+
+            $('#productSelect' + index).on('change', function () {
+                var selectedHandle = $(this).val();
+                if (selectedHandle) {
+                    fetchProductInfoByHandle(selectedHandle, index);
+                }
+            });
+        }).fail(function () {
+            console.error("Error fetching products from the collection");
+        });
     }
-
-    $.get('/collections/wood-pellet-grills/products.json', function (data) {
-        var products = data.products;
-        var selectHtml = '<select id="productSelect' + index + '">';
-        
-        // 添加默认选项
-        selectHtml += '<option value="">Add a Product</option>';
-
-        products.forEach(function (product) {
-            selectHtml += '<option value="' + product.handle + '">' + product.title + '</option>';
-        });
-
-        selectHtml += '</select>';
-
-        var $spImage = $('.sp_product').find('.sp_image').eq(index);
-        $spImage.empty().append(selectHtml); // 确保先清空已有内容
-
-        $('#productSelect' + index).on('change', function () {
-            var selectedHandle = $(this).val();
-            if (selectedHandle) {
-                fetchProductInfoByHandle(selectedHandle, index);
-            }
-        });
-    }).fail(function () {
-        console.error("Error fetching products from the collection");
-    });
-}
 
 
 
