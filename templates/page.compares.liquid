@@ -431,8 +431,6 @@
         $.get('/products/' + handle + '.js', function (response) {
             var product = JSON.parse(response);
             var productImages = product.images;  // 这里定义了productImages
-            console.log(productImages)
-            console.log("Received product data:", product);
 
             // 定位到正确的列 (sp_product_con)
             var $spProductCon = $('.sp_product .sp_product_con').eq(index);
