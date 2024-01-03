@@ -381,12 +381,30 @@
 
 
     function productImg(Dom, Class) {
-        Dom.forEach((a, e) => {
-            var haner = ''
-            haner = "<div class='swiper-slide'><img class='img lazyload' src='' data-src='" + a + "'></div>"
-            Class.append(haner)
-        });
-    }
+    // 创建Swiper的整体结构
+    var swiperHtml = '<div class="swiper-container"><div class="swiper-wrapper">';
+
+    // 为每个图片URL创建一个slide
+    Dom.forEach((imgUrl) => {
+        swiperHtml += "<div class='swiper-slide'><img class='img lazyload' data-src='" + imgUrl + "'></div>";
+    });
+
+    swiperHtml += '</div></div>'; // 关闭swiper-wrapper和swiper-container
+
+    // 将Swiper结构添加到指定的容器中
+    Class.html(swiperHtml);
+
+    // 初始化Swiper
+    new Swiper('.swiper-container', {
+        // Swiper选项
+        loop: true,
+        lazy: {
+            loadPrevNext: true,
+        },
+        // 其他选项...
+    });
+}
+
 
 
 
