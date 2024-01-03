@@ -225,7 +225,6 @@
             <ul class="sp_product_con fill_cmp">
                 <li class="sp_image" style="height: 158px;">
                     <p class="sp_add_title">Add a Product</p>
-                    <a href="javascript:void(0)"></a>
                 </li>
                 <li class="sp_title" ></li>
                 <li class="sp_price"  ></li>
@@ -252,7 +251,7 @@
             <ul class="sp_product_con fill_cmp">
                 <li class="sp_image" style="height: 158px;">
                     <p class="sp_add_title">Add a Product</p>
-                    <a href="javascript:void(0)"></a>
+
                 </li>
                 <li class="sp_title"  ></li>
                 <li class="sp_price"  ></li>
@@ -279,7 +278,7 @@
             <ul class="sp_product_con fill_cmp">
                 <li class="sp_image" style="height: 158px;">
                     <p class="sp_add_title">Add a Product</p>
-                    <a href="javascript:void(0)"></a>
+
                 </li>
                 <li class="sp_title"  ></li>
                 <li class="sp_price"  ></li>
@@ -306,7 +305,7 @@
             <ul class="sp_product_con fill_cmp">
                 <li class="sp_image" style="height: 158px;">
                     <p class="sp_add_title">Add a Product</p>
-                    <a href="javascript:void(0)"></a>
+
                 </li>
                 <li class="sp_title"  ></li>
                 <li class="sp_price"  ></li>
@@ -377,7 +376,7 @@
             var $spProductCon = $('.sp_product .sp_product_con').eq(index);
 
             // 更新产品信息
-            $spProductCon.find('.sp_image a').html('<img src="' + product.featured_image + '" alt="' + product.title + '">');
+            $spProductCon.find('.sp_image').html('<img src="' + product.featured_image + '" alt="' + product.title + '">');
             $spProductCon.find('.sp_title').text(product.title);
             $spProductCon.find('.sp_price').text(product.price);
             // 如果存在额外信息，填充到对应的元素中
@@ -390,7 +389,7 @@
 
             // 添加关闭按钮逻辑
             var closeButtonHtml = '<button class="close-btn">X</button>';
-            $spProductCon.find('.sp_image a').prepend(closeButtonHtml);
+            $spProductCon.find('.sp_image').prepend(closeButtonHtml);
             $spProductCon.find('.close-btn').on('click', function () {
                 // 清除当前列的内容
                 $spProductCon.find('li').empty();
@@ -426,7 +425,7 @@
 
         selectHtml += '</select>';
 
-        var $spImage = $('.sp_product').find('.sp_image a').eq(index);
+        var $spImage = $('.sp_product').find('.sp_image').eq(index);
         $spImage.empty().append(selectHtml); // 确保先清空已有内容
 
         $('#productSelect' + index).on('change', function () {
