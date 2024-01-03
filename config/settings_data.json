@@ -148,7 +148,7 @@
         "settings": {
           "main_menu_link_list": "main-menu",
           "mega_menu_images": false,
-          "enable_timer": true,
+          "enable_timer": false,
           "timer_duration": "2023\/12\/22 15:59:59",
           "announcement_slide_id": "AnnouncementSlide-3cabfa1d-193d-44f1-85e2-6b644b4ac693",
           "main_menu_alignment": "center-split",
