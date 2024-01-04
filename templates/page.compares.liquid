@@ -425,6 +425,27 @@
                 fetchAndCreateSelect(i);
             }
         }
+
+
+        const rows = document.querySelectorAll('.cxht');
+        const numItemsPerRow = rows[0].children.length;
+
+        for (let i = 0; i < numItemsPerRow; i++) {
+            let maxHeight = 0;
+
+            // 查找同一行的最大高度
+            rows.forEach(row => {
+                const item = row.children[i];
+                if (item.offsetHeight > maxHeight) {
+                    maxHeight = item.offsetHeight;
+                }
+            });
+
+            // 设置同一行的所有元素的高度
+            rows.forEach(row => {
+                row.children[i].style.height = maxHeight + 'px';
+            });
+        }
     });
 
 
@@ -568,26 +589,5 @@
         window.history.replaceState({}, '', url.toString());
     }
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const rows = document.querySelectorAll('.cxht');
-        const numItemsPerRow = rows[0].children.length;
-
-        for (let i = 0; i < numItemsPerRow; i++) {
-            let maxHeight = 0;
-
-            // 查找同一行的最大高度
-            rows.forEach(row => {
-                const item = row.children[i];
-                if (item.offsetHeight > maxHeight) {
-                    maxHeight = item.offsetHeight;
-                }
-            });
-
-            // 设置同一行的所有元素的高度
-            rows.forEach(row => {
-                row.children[i].style.height = maxHeight + 'px';
-            });
-        }
-    });
 
 </script>
