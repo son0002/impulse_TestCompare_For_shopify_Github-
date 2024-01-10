@@ -207,8 +207,9 @@
         flex-direction: column;
         justify-content: center;
     }
+
     .same_cl {
-        display: flex ;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
@@ -313,7 +314,7 @@
                 </li>
                 <li class="Porcelain_coated_steel_Grills_grate same_cl">
                 </li>
-               
+
             </ul>
             <ul class="sp_product_con fill_cmp cxht">
                 <li style="height: 158px;" class="sp_image">
@@ -373,7 +374,7 @@
                 </li>
                 <li class="Porcelain_coated_steel_Grills_grate same_cl">
                 </li>
-               
+
             </ul>
             <ul class="sp_product_con fill_cmp cxht">
                 <li style="height: 158px;" class="sp_image">
@@ -433,7 +434,7 @@
                 </li>
                 <li class="Porcelain_coated_steel_Grills_grate same_cl">
                 </li>
-               
+
             </ul>
             <ul class="sp_product_con fill_cmp cxht">
                 <li style="height: 158px;" class="sp_image">
@@ -493,7 +494,7 @@
                 </li>
                 <li class="Porcelain_coated_steel_Grills_grate same_cl">
                 </li>
-               
+
             </ul>
         </div>
     </div>
@@ -668,11 +669,26 @@
                 var selectedHandle = $(this).val();
                 if (selectedHandle) {
                     fetchProductInfoByHandle(selectedHandle, index);
+                    addHandleToURL(selectedHandle); // 新添加的函数调用
                 }
             });
         }).fail(function () {
             console.error("Error fetching products from the collection");
         });
+    }
+
+
+    function addHandleToURL(handle) {
+        var url = new URL(window.location.href);
+        var params = url.searchParams;
+        var handles = params.get('handles') ? params.get('handles').split(',') : [];
+
+        // 检查handle是否已经存在于URL中
+        if (!handles.includes(handle)) {
+            handles.push(handle);
+            params.set('handles', handles.join(','));
+            window.history.replaceState({}, '', url.toString());
+        }
     }
 
 
