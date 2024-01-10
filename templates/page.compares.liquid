@@ -107,7 +107,7 @@
             display: flex !important;
         }
 
-        .sp_compare_tbl .sp_product_con {
+        .sp_compare_tbl .sp_product_con{
             width: 50% !important;
         }
     }
@@ -225,17 +225,14 @@
     }
 
     @media (max-width: 800px) {
-
-        .sp_compare_tbl ul.sp_product_heading>li,
-        .sp_compare_tbl ul.sp_product_con>li {
+        .sp_compare_tbl ul.sp_product_heading>li, .sp_compare_tbl ul.sp_product_con>li {
             padding: 2px;
         }
 
-        .sp_compare_tbl .sp_product_heading {
+        .sp_compare_tbl .sp_product_heading{
             width: 20%;
         }
-
-        .sp_compare_tbl .sp_product {
+        .sp_compare_tbl .sp_product{
             width: 80%;
         }
     }
@@ -559,22 +556,24 @@
 
 
         const rows = document.querySelectorAll('.cxht');
+        const numItemsPerRow = rows[0].children.length;
 
-        rows.forEach(row => {
+        for (let i = 0; i < numItemsPerRow; i++) {
             let maxHeight = 0;
 
-            // 查找该行中的最大高度
-            Array.from(row.children).forEach(item => {
+            // 查找同一行的最大高度
+            rows.forEach(row => {
+                const item = row.children[i];
                 if (item.offsetHeight > maxHeight) {
                     maxHeight = item.offsetHeight;
                 }
             });
 
-            // 设置该行所有元素的高度为该行的最大高度
-            Array.from(row.children).forEach(item => {
-                item.style.height = maxHeight + 'px';
+            // 设置同一行的所有元素的高度
+            rows.forEach(row => {
+                row.children[i].style.height = maxHeight + 'px';
             });
-        });
+        }
     });
 
 
