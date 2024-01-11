@@ -25,6 +25,7 @@
         <div class="cart__item--variants">
           {%- for option in product.options_with_values -%}
             <div><span>{{ option.name }}:</span> {{ option.value }}</div>
+            1
           {%- endfor -%}
         </div>
       {%- endunless -%}
