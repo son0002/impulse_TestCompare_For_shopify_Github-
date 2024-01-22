@@ -41,7 +41,7 @@
         "custom_ppUdzf": {
           "type": "custom",
           "settings": {
-            "code": "{{ variant.metafields.global.bundle | raw }}"
+            "code": "{{ variant.metafields.global.bundle.value }}"
           }
         },
         "a3d4b1eb-3297-4ab1-bc91-c10239f8d65a": {
