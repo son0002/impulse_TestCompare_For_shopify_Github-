@@ -88,7 +88,7 @@
           assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
           assign zoom_img_url = media.preview_image | img_url: product_zoom_size
         -%}
-        <img src="{{ testsrc }}" alt="...">
+        <img src="https://cdn.shopify.com/s/files/1/0103/1923/3081/files/3_6234508d-103b-4592-b47b-2946eb32ee22.png?v=1647601153" alt="...">
         <img class="{% if product_zoom_enable %}photoswipe__image{% endif %} lazyload"
           data-photoswipe-src="{{ zoom_img_url }}"
           data-photoswipe-width="{{ media_width }}"
