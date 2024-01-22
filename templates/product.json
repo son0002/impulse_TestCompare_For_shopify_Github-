@@ -38,12 +38,6 @@
             "code": "<!-- 自定义信息 促销 -->\n                            \n                          \n              {% unless product.metafields.global.Promotional_Information.value == blank %}\n              <div  class=\"Promotional_Information\">\n                <div style='margin:0;'>\n              {{ product.metafields.global.Promotional_Information.value }}\n                <\/div>\n              <\/div>\n              {% endunless %}"
           }
         },
-        "custom_ppUdzf": {
-          "type": "custom",
-          "settings": {
-            "code": "<script>\nconsole.log('{{ variant.metafields.global.bundle }}\n')\n<\/script>"
-          }
-        },
         "a3d4b1eb-3297-4ab1-bc91-c10239f8d65a": {
           "type": "custom",
           "settings": {
@@ -93,13 +87,18 @@
           "type": "share",
           "settings": {
           }
+        },
+        "custom_NrNEiM": {
+          "type": "custom",
+          "settings": {
+            "code": ""
+          }
         }
       },
       "block_order": [
         "price",
         "20996023-b6b2-45f7-9c1c-af04107e9129",
         "46b0e796-3957-4a9a-a3ab-c3f3df6c2492",
-        "custom_ppUdzf",
         "a3d4b1eb-3297-4ab1-bc91-c10239f8d65a",
         "separator",
         "variant_picker",
@@ -107,7 +106,8 @@
         "buy_buttons",
         "description",
         "0667025f-6f46-43ab-a11c-7caec0aefc7d",
-        "share"
+        "share",
+        "custom_NrNEiM"
       ],
       "settings": {
         "sku_enable": false,
