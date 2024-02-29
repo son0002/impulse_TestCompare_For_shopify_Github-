@@ -678,7 +678,7 @@
         "liquid_hGq39L"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "space_around": true,
         "space_Padding": true,
         "switch_button": false
