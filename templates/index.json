@@ -1,1 +1,704 @@
-{"sections":{"75665efd-f654-4655-a60a-1d541d1bd5be":{"type":"hero-video","disabled":true,"settings":{"title":"FOURTH OF JULY SALE","title_size":80,"subheading":"20% OFF TOP SELLING GRILLS+FREE GIFTS","link_text":"SHOP SALE","link":"https:\/\/www.zgrills.com\/pages\/special-offers","color_accent":"#bc3d1d","text_align":"vertical-center horizontal-center","video_url":"https:\/\/www.youtube.com\/watch?v=8baLvdJtPSg","overlay_opacity":0,"section_height":"750px","mobile_height":"auto"}},"1655367270159ef7a9":{"type":"custom_block_1","blocks":{"2a61aecb-a438-45b5-b672-a64cac507714":{"type":"zhang","settings":{"testi_img":"shopify:\/\/shop_images\/2023.12.08.jpg","image_mobile":"shopify:\/\/shop_images\/2023.12.8r.jpg","block_heading":"EARLY BIRD SALE","block_text":"SAVE UP TO $378 OFF!","img_link":"\/pages\/special-offers","button_text":"TODAY ONLY","btn_link":"https:\/\/www.zgrills.com\/pages\/special-offers"}},"9b4894a7-5f3d-45cb-a48f-a1d8bbdd352b":{"type":"zhang","settings":{"testi_img":"shopify:\/\/shop_images\/20231123-_Banner_3f6dcfd2-f66c-453b-821b-fc221d70c915.jpg","image_mobile":"shopify:\/\/shop_images\/20231123-_Banner.jpg","block_heading":"","block_text":"","img_link":"https:\/\/www.zgrills.com\/pages\/pellet-grill-blind-box","button_text":"","btn_link":"https:\/\/www.zgrills.com\/pages\/pellet-grill-blind-box"}},"7e664913-6fa7-4e64-ae44-287b6acee9ad":{"type":"zhang","settings":{"testi_img":"shopify:\/\/shop_images\/20231103.jpg","image_mobile":"shopify:\/\/shop_images\/20231103_a81bec1e-5043-4623-a475-b58451c5aa4d.jpg","block_heading":"Grill Worry-Free All winter long","block_text":"Up to 42% off!","img_link":"","button_text":"SHOP NOW","btn_link":"https:\/\/www.zgrills.com\/collections\/all-grill-covers"}},"e333ecb7-c752-490d-8c62-cf3150efc6d7":{"type":"zhang","settings":{"testi_img":"shopify:\/\/shop_images\/700D4E_WIFI_cc4b838a-56ff-4f63-a612-d79648201794.jpg","image_mobile":"shopify:\/\/shop_images\/700D4E_WIFI.jpg","block_heading":"NEW 700D4E WIFI IS HERE","block_text":"WIFI, Stainless Steel, Dual wall insulation & more!","img_link":"","button_text":"SHOP EARLY BIRD PRICE","btn_link":"https:\/\/www.zgrills.com\/products\/zpg-700d4e-pellet-grill"}},"386d2459-b15d-4eb3-8c37-aa836ef32926":{"type":"zhang","disabled":true,"settings":{"testi_img":"shopify:\/\/shop_images\/700D4E-1018.jpg","image_mobile":"shopify:\/\/shop_images\/700D4E-_1018.jpg","block_heading":"BACK IN STOCK","block_text":"Stainless Steel, Dual-wall Construction, PID & More","img_link":"","button_text":"SHOP NOW","btn_link":""}}},"block_order":["2a61aecb-a438-45b5-b672-a64cac507714","9b4894a7-5f3d-45cb-a48f-a1d8bbdd352b","7e664913-6fa7-4e64-ae44-287b6acee9ad","e333ecb7-c752-490d-8c62-cf3150efc6d7","386d2459-b15d-4eb3-8c37-aa836ef32926"],"custom_css":[],"settings":{"heading":"","width":"100%","max_height":"auto","test_number":"7000","bgColors":"#000000"}},"1645434756440994ef":{"type":"advanced-content","blocks":{"164543475669a79252-1":{"type":"liquid","settings":{"code":"{{ 'swiper.css' | asset_url | stylesheet_tag }} \n  {{ 'swiper.js' | asset_url | script_tag }}\n<div class=\"page-width\">\n\t<div class=\"homeiconswiper mySwiper\">\n\t\t<div class=\"swiper-wrapper\">\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div class=\"aos-animate\">\n\t\t\t\t\t<img class='lazyload'\n\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/98681f217e39838144025f608527463a.png?v=1679654134\"\n\t\t\t\t\t\talt=\"\">\n\t\t\t\t\t<h4 class=\"homeh4\">FAST, FREE SHIPPING<\/h4>\n\n\t\t\t\t\t<p><span> Free shipping sitewide & fast delivery.<\/span><\/p>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div class=\"aos-animate\">\n\t\t\t\t\t<img class='lazyload'\n\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/ICON_e2c90575-24b2-456a-a12d-4c68db48c460.png?v=1679654134\"\n\t\t\t\t\t\talt=\"\">\n\t\t\t\t\t<h4 class=\"homeh4\">Flexible Payments<\/h4>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span>Flexible buy now, pay later options available.<\/span>\n\t\t\t\t\t<\/p>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div class=\"aos-animate\">\n\t\t\t\t\t<img class='lazyload' data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/b78c39d5eabbde51946a49e28fefc57e.png?v=1679654134\" alt=\"\">\n\t\t\t\t\t<h4 class=\"homeh4\">3-Year Warranty\n\n\n\t\t\t\t\t<\/h4>\n\t\t\t\t\t<p> <span>We proudly stand behind our products.<\/span><\/p>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div class=\"aos-animate\">\n\t\t\t\t\t<img class='lazyload' data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/fcbaa87dd3f9f241f42250cd0b2e8c43.png?v=1679654133\" alt=\"\">\n\t\t\t\t\t<h4 class=\"homeh4\">Best Value<\/h4>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span>Direct from the factory pricing.<\/span>\n\t\t\t\t\t<\/p>\n\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t<div class=\"swiper-pagination homeiconswiper-kzq\"><\/div>\n\t<\/div>\n<\/div>\n<script>\n\tvar swiper = new Swiper(\".homeiconswiper\", {\n\t\tslidesPerView: 2,\n\t\tpagination: {\n\t\t\tel: \".homeiconswiper-kzq\",\n\t\t\tclickable: true,\n\t\t},\n\t\tbreakpoints: {\n\t\t\t640: {\n\t\t\t\tslidesPerView: 3,\n\t\t\t\tspaceBetween: 10,\n\t\t\t},\n\t\t\t1100: {\n\t\t\t\tslidesPerView: 4,\n\t\t\t\tspaceBetween: 10,\n\t\t\t}\n\t\t},\n\n\t});\n<\/script>","width":"100%","alignment":"center"}}},"block_order":["164543475669a79252-1"],"custom_css":[".custom__item {background-color: #f1f2f4; padding: 20px 0 0 0;}"],"settings":{"full_width":true,"space_around":false,"space_Padding":true,"switch_button":false}},"aa35e87e-dd43-4ced-93ea-02b32556a1cd":{"type":"custom-product","blocks":{"befa2fc9-4086-4b77-bdd9-cddcbed23c26":{"type":"zhang","settings":{"product":"zpg-1000e-pellet-grill","textarea":"<ul><li>1056 sq. in. cooking space<\/li><li>PID technology<\/li><li>Convection cooking system<\/li><li>Side shelf & bottom storage cabinet<\/li><li>Ash cleanout system<\/li><\/ul>","enable_price":true,"product_label":"","width":"25"}},"e1238c3a-5952-43b1-97dc-c9d2464f1052":{"type":"zhang","settings":{"product":"zpg-10502b-pellet-grill","textarea":"<ul><li>1080 sq. in. cooking space<\/li><li>Advanced PID digital LCD control board<\/li><li>Easy hopper dump<\/li><li>Effortless ash cleanout<\/li><li>Fits 46 burgers, 12 rib racks, or 9 chickens<\/li><\/ul>","enable_price":true,"product_label":"","width":"25"}},"d9f12277-7359-4429-a12a-4f5cb58ce3c0":{"type":"zhang","settings":{"product":"zpg-700d3-pellet-grill","textarea":"<ul><li>697 sq. in. cooking space<\/li><li>Z-Ultra™ PID V2.1 technology<\/li><li>Hopper cleanout<\/li><li>Manual feed feature<\/li><li>Fits 30 burgers, 6 rib racks, or 5 chickens<\/li><\/ul>","enable_price":true,"product_label":"","width":"25"}},"5f27a124-468d-452b-9bad-dfcabbd28708":{"type":"zhang","settings":{"product":"zpg-700d4e-pellet-grill","textarea":"<ul><li>Wi-Fi and Bluetooth capability<\/li><li>697 sq. in. cooking space<\/li><li>PID controller<\/li><li>Hopper cleanout<\/li><li>Fits 30 burgers, 6 rib racks, or 5 chickens<\/li><\/ul>","enable_price":true,"product_label":"","width":"25"}}},"block_order":["befa2fc9-4086-4b77-bdd9-cddcbed23c26","e1238c3a-5952-43b1-97dc-c9d2464f1052","d9f12277-7359-4429-a12a-4f5cb58ce3c0","5f27a124-468d-452b-9bad-dfcabbd28708"],"custom_css":["h2 {font-size: 3.1rem; font-family: Impact; color: #000;}"],"settings":{"heading":"GRILLER TOP PICKS","space_around":true,"space_above":false,"space_below":false}},"16445590870b9687da":{"type":"promo-grid","blocks":{"164455908746a5f2d1-0":{"type":"advanced","settings":{"subheading":"","heading":"2023 Upgrade 7052B WIFI","textarea":"Smoke function, Wifi, PID, Pellet Cleanout, built like a tank,& more","cta_text1":"SAVE UP TO $336 OFF!","cta_link1":"https:\/\/www.zgrills.com\/products\/multitasker-7052b-with-wi-fi","cta_text2":"","cta_link2":"","image":"shopify:\/\/shop_images\/banner_a859fff3-a618-468a-9479-3aa676c446aa.jpg","video_url":"","width":"50","height":500,"text_size":100,"text_align":"vertical-center horizontal-left","focal_point":"center","color_accent":"#bc3d1d","boxed":false,"framed":false}},"164455908746a5f2d1-1":{"type":"advanced","settings":{"subheading":"","heading":"NEW ARRIVAL","textarea":"The next evolution of grilling is here!","cta_text1":"SHOP NEW GRILLS","cta_link1":"https:\/\/www.zgrills.com\/pages\/new-arrival","cta_text2":"","cta_link2":"","image":"shopify:\/\/shop_images\/600D3E_d6998f9a-dd0e-4b6b-8735-4d3d071badfe.jpg","video_url":"","width":"50","height":500,"text_size":75,"text_align":"vertical-center horizontal-left","focal_point":"center","color_accent":"#bc3d1d","boxed":false,"framed":false}},"66e04fa1-34e0-46af-950f-547cc3c6dff3":{"type":"advanced","settings":{"subheading":"","heading":"Holiday Gift Guide","textarea":"Surprise your loved ones with the perfect gift!","cta_text1":"LEARN MORE","cta_link1":"https:\/\/www.zgrills.com\/pages\/gift-of-zgrills","cta_text2":"","cta_link2":"","image":"shopify:\/\/shop_images\/e75366ad71f7b302a1bf253977affd6d.jpg","video_url":"","width":"100","height":500,"text_size":75,"text_align":"vertical-center horizontal-left","focal_point":"center","color_accent":"#bc3d1d","boxed":false,"framed":false}}},"block_order":["164455908746a5f2d1-0","164455908746a5f2d1-1","66e04fa1-34e0-46af-950f-547cc3c6dff3"],"custom_css":["h2 {font-size: 3.1rem; font-family: Impact; color: #000;}"],"settings":{"full_width":false,"gutter_size":20,"space_above":false,"space_below":false,"custom_mode":true,"heading":"THE HOTTEST DEALS OF THE SEASON ARE HERE"}},"16461243423cce65c9":{"type":"advanced-content","blocks":{"16461243425a86b6b9-1":{"type":"liquid","settings":{"code":"<style>\n\t .homeiconswipersasd {\n\t        width: 100%;\n\t        height: 100%;\n\t\t\toverflow: hidden;\n\t\t\tmax-width: 1430px;\n\t\t\tmargin: 0 auto;\n\t\t\tposition: relative;\n\t\t\tpadding: 0 0 30px 0;\n\t\t\tbackground-color: #f1f2f4;\n\t      }\n\t\n\t     .homeiconswipersasd .swiper-slide {\n\t         text-align: center;\n\t                 font-size: 18px;\n\t                 \/* background: #fff; *\/\n\t         \n\t                 \/* Center slide text vertically *\/\n\t                 display: -webkit-box;\n\t                 display: -ms-flexbox;\n\t                 display: -webkit-flex;\n\t                 display: flex;\n\t                 -webkit-box-pack: center;\n\t                 -ms-flex-pack: center;\n\t                 -webkit-justify-content: center;\n\t                 justify-content: center;\n\t                 -webkit-box-align: center;\n\t                 -ms-flex-align: center;\n\t                 -webkit-align-items: center;\n\t                 align-items: center;\n\t\t\t\t\t width: auto !important;\n\t      }\n\t\t .homeiconswipersasd img{\n\t\t\t  width: 85%;\n\t\t\t  \/* height: 83px; *\/\n\t\t\t  max-width: 100%;\n\t\t  }\n\t\t  \n\t\t .homeiconswipersasd .swiper-slide:nth-child(1) {\n\t\t          width: 83px !important;\n\t\t        }\n\t\t.homeiconswipersasd .swiper-pagination-progressbar.swiper-pagination-horizontal{\n\t\t\t  bottom: 0;\n\t\t\t  top: auto !important;\n\t\t  }\n\t\t  \n\t\t .homeiconswipersasd .swiper-pagination-progressbar-fill{background-color: #999 !important;}\n@media screen and (max-width: 768px) {\n.homeiconswipersasd img{\n\t\t\t  width: 60%;\n\t\t\t  \/* height: 83px; *\/\n\t\t\t  max-width: 100%;\n\t\t  }}\n<\/style>\n\n<div class=\"text-center page-width page-width--narrow\">\n\t\t    <h2>“ Z Grills provides heavy-duty and meant to last pellet grills.”<\/h2>\n\t\t  <\/div>\n\t<div class=\"homeiconswipersasd mySwiper\">\n\t\t<div class=\"swiper-wrapper\">\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_218100b2-3697-4363-962d-1e8f2e925a96.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_42a142ee-fcec-4e6f-8ca4-f87a19fdcbec.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_a8da94c7-0be0-44a7-bdef-40f9d2f63e07.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/04_84d73164-dd41-4ed9-9d33-398ca31d8137.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/06_28ddffbd-937e-4eb6-ad54-716daf197df6.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/05_6a2f46f2-3acc-4c84-ba86-cfb46b2113b8.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<!--  -->\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/05_f9f3248e-8ac1-4651-a47e-e8980556f932.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/004_d48a10de-5a65-4434-996b-97c6b78a6217.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_afc2001a-0d67-457b-a9e4-631d9f6d169f.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_a6a7a45e-5e50-4557-b957-12c4928f210f.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_3b0d5f29-c424-4bcc-a3e4-42c758d78042.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/06_6e4f8f5e-1828-449a-93a3-35599847b0b7.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<!--  -->\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/nbc-news-logo.png?v=1678356778\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/12_05b5a6b9-290c-4392-a149-8665124f890b.png?v=1678357022\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/09.png?v=1678356779\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/07_e14be5cc-6c2b-433c-ac46-e6231e256acb.png?v=1678356778\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/11_3039c7b4-a976-4417-8db4-756b53a4152d.png?v=1678356779\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/10_a2fa1aea-8eae-4467-8d7e-e5a827a7b6b1.png?v=1678356779\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t <div class=\"swiper-paginationsss\"><\/div>\n\t<\/div>\n\t\n\t\n\t<script>\n\t\t\n\tvar swiper = new Swiper(\".homeiconswipersasd\", {\n\t\t\tfreeMode: true,\n\t\t\t  slidesPerView: 2.1, \/\/ 禁用 slidesPerView\n\t\t\t  spaceBetween: 10, \/\/ 禁用 spaceBetween\n\t\t\t  \/\/ loop:1,\n\t\t\t  pagination: {\n\t\t\t            el: \".swiper-paginationsss\",\n\t\t\t            type: \"progressbar\",\n\t\t\t          },breakpoints: {\n\t\t\t\t\n\t\t\t\t1100: {\n\t\t\t\t\tslidesPerView: 6,\n\t\t\t\t\tspaceBetween: 30,\n\t\t\t\t}\n\t\t\t},\n\t\t\t\n\t\t});\n\t<\/script>","width":"100%","alignment":"center"}}},"block_order":["16461243425a86b6b9-1"],"custom_css":["h2 {font-size: 30px; font-family: Impact;}",".index-padding {background-color: #f1f2f4; padding: 60px 0;}"],"settings":{"full_width":false,"space_around":false,"space_Padding":true,"switch_button":false}},"164507794401119a07":{"type":"promo-grid","blocks":{"16450779443107dc52-0":{"type":"advanced","settings":{"subheading":"","heading":"Pellet Grills","textarea":"Start your wood-fired adventure","cta_text1":"FIRE IT UP","cta_link1":"https:\/\/www.zgrills.com\/collections\/wood-pellet-grills","cta_text2":"","cta_link2":"","image":"shopify:\/\/shop_images\/001_c563de01-20fc-420f-a38d-f6339763bc1b.png","video_url":"","width":"33","height":300,"text_size":40,"text_align":"vertical-center horizontal-left","focal_point":"center","color_accent":"#bc3d1d","boxed":false,"framed":false}},"16450779443107dc52-1":{"type":"advanced","settings":{"subheading":"","heading":"100% All Natural Pellet Fuel","textarea":"Real hardwood smoke, real wood-fired flavor","cta_text1":"FUEL UP","cta_link1":"https:\/\/www.zgrills.com\/collections\/wood-pellets","cta_text2":"","cta_link2":"","image":"shopify:\/\/shop_images\/002_77f77108-b2d0-40af-b6d5-376c237e310d.png","video_url":"","width":"33","height":300,"text_size":100,"text_align":"vertical-center horizontal-left","focal_point":"center","color_accent":"#bc3d1d","boxed":false,"framed":false}},"564d2877-d2f8-4940-b162-001f42534b44":{"type":"advanced","settings":{"subheading":"","heading":"Accessories","textarea":"Made for the grill master experience","cta_text1":"ACCESSORIZE NOW","cta_link1":"https:\/\/www.zgrills.com\/collections\/accessories","cta_text2":"","cta_link2":"","image":"shopify:\/\/shop_images\/003_fa2755a6-20cb-473f-b52f-047563e74e01.png","video_url":"","width":"33","height":300,"text_size":40,"text_align":"vertical-center horizontal-left","focal_point":"20% 50%","color_accent":"#bc3d1d","boxed":false,"framed":false}}},"block_order":["16450779443107dc52-0","16450779443107dc52-1","564d2877-d2f8-4940-b162-001f42534b44"],"custom_css":[".rte--block {font-size: 1.1rem;}",".rte--strong {font-size: 1.8rem; letter-spacing: 0;}",".btn--inverse {background-color: #bd3d1d; border: 0; letter-spacing: 0; border-radius: 5px;}",".promo-grid__container {border-radius: 5px;}","h2 {font-size: 3.1rem; font-family: Impact; color: #000;}"],"settings":{"full_width":false,"gutter_size":20,"space_above":true,"space_below":true,"custom_mode":false,"heading":"EXPLORE OUR MOST POPULAR CATEGORIES"}},"16458529940ff914d0":{"type":"advanced-content","blocks":{"164585299411a7ecd0-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/2_a1a55e35-e7d2-4c18-92af-957af3faf332.jpg","link":"https:\/\/www.youtube.com\/watch?v=CAi8TCG2Aa8","width":"50%","alignment":"center"}},"f9f8079d-8e76-44e5-9450-b305f78c16fe":{"type":"liquid","settings":{"code":"<h2>About Z Grills<\/h2><p>The best pellet grills in the market, awarded by top media websites like CNET, Forbes, GoodHousekeeping, and ConsumerReports. With 30+ years of experience manufacturing grills for top brands, we founded Z Grills in 2016, quickly becoming one of the most respected names in the industry. <\/p>\n<p>Our mission? Democratizing high-end, professional outdoor cookers to bring unforgettable flavors to every backyard and beyond. Join us and experience epic meals outdoors like never before.<\/p>\n<button><a class='btn' href='\/pages\/about-us'>OUR STORY<\/a><\/button>","width":"50%","alignment":"center"}}},"block_order":["164585299411a7ecd0-0","f9f8079d-8e76-44e5-9450-b305f78c16fe"],"custom_css":[".btn {margin: 0; background: #202020; border-radius: 3px;}","button {padding: 0;}"],"settings":{"full_width":false,"space_around":true,"space_Padding":true,"switch_button":false}},"164543774739613c31":{"type":"advanced-content","blocks":{"16454377471645924a-1":{"type":"liquid","settings":{"code":"<style>\n\t\t\t\n\n.AMBASSADORS-swiper .swiper-slide a{\nposition: initial !important ;\n}\n\t\t\t.AMBASSADORS-swiper {\n\t\t\t\twidth: 100%;\n\t\t\t\theight: 100%;\n\t\t\t\tposition: relative;\n\t\t\t\tpadding: 10px 0 30px 0;\n\t\t\t\toverflow: hidden;\nmargin: 0 0 30px 0;\n\t\t\t}\n\n\t\t\t.AMBASSADORS-swiper .swiper-slide {\n\t\t\t\ttext-align: left;\n\t\t\t\tfont-size: 16px;\n\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t\tposition: relative;\n\t\t\t\theight: 430px;\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tcursor: pointer;\n\t\t\t\toverflow-y: hidden;\n\t\t\t}\n\n\t\t\t.AMBASSADORS-swiper .swiper-slide img {\n\t\t\t\tdisplay: block;\n\t\t\t\twidth: 100%;\n\t\t\t\theight: 100%;\n\t\t\t\tobject-fit: cover;\n\t\t\t\tborder-radius: 5px;\n\t\t\t}\n\n\t\t\t.item-content {\n\t\t\t\tpadding: 7px 15px 0 15px;\n\t\t\t\toverflow-y: hidden;\n\t\t\t\ttransition: top .3s ease-in-out, height .3s ease-in-out;\n\t\t\t\tposition: absolute;\n\t\t\t\ttop: 235px;\n\t\t\t\tleft: 0;\n\t\t\t\tright: 0;\n\t\t\t\tz-index: 20;\n\t\t\t\theight: 147px;\n\t\t\t\ttext-align: left;\n\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t}\n\n\t\t\t.reviews-tile__footer {\n\t\t\t\theight: 10px;\n\t\t\t}\n\t\t\t\n\t\t\t.reviews-tile__footer::before {\n\t\t\t\tbackground: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .5) 55%, #F1F2F4);\n\t\t\t\tcontent: \"\";\n\t\t\t\tdisplay: block;\n\t\t\t\theight: 40px;\n\t\t\t\tleft: 0;\n\t\t\t\topacity: 1;\n\t\t\t\tposition: absolute;\n\t\t\t\tbottom: -5px;\n\t\t\t\t\n\t\t\t\ttransition: opacity .2ms ease-out;\n\t\t\t\twidth: 100%;\n\t\t\t}\n\t\t\t\n\t\t\t\n\n\t\t\t.ambassadors-title {\n\t\t\t\tfont-size: 16px;\n\t\t\t\tmargin: 5px 0 0 0;\n\t\t\t}\n\n\t\t\t.ambassadors-title span {\n\t\t\t\tfont-size: 14px;\n\t\t\t\tcolor: #bc3d1d;\n\t\t\t}\n\n\t\t\t.item-text {\n\t\t\t\tfont-size: 14px;\n\t\t\t}\n\n\t\t\t.testimonial-stars {\n\t\t\t\tcolor: #fea801;\n\t\t\t\tdisplay: block;\n\t\t\t\tfont-size: 18px;\n\t\t\t\tletter-spacing: .2em;\n\t\t\t}\n\t\t\t@media only screen and (min-width: 769px) {\n\t\t\t\t.AMBASSADORS-swiper .swiper-slide:hover .item-content {\n\t\t\t\t\ttop: 106px;\n\t\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t\t\t\/* overflow-y: auto; *\/\n\t\t\t\t\theight: 90%;\n\t\t\t\t\ttransition: top .3s ease-in-out, height .3s ease-in-out;\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t@media only screen and (max-width: 769px) {\n\t\t\t\t.AMBASSADORS-swiper .swiper-slide {\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tfont-size: 16px;\n\t\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\theight: 344px;\n\t\t\t\t\tborder-radius: 5px;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.item-content {\n\t\t\t\t\tpadding: 7px 15px 0 15px;\n\t\t\t\t\toverflow-y: hidden;\n\t\t\t\t\ttransition: top .3s ease-in-out, height .3s ease-in-out;\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\ttop: 125px;\n\t\t\t\t\tleft: 0;\n\t\t\t\t\tright: 0;\n\t\t\t\t\tz-index: 20;\n\t\t\t\t\theight: 196px;\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\twidth: auto;\n\t\t\t\t\t\/* background-color: #F1F2F4; *\/\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.mcclicks{\n\t\t\t\t\tpadding: 7px 15px 0 15px;\n\t\t\t\t\toverflow-y: hidden;\n\t\t\t\t\ttransition: top .3s ease-in-out, height .3s ease-in-out;\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\ttop: 20% !important;\n\t\t\t\t\tleft: 0;\n\t\t\t\t\tright: 0;\n\t\t\t\t\tz-index: 20;\n\t\t\t\t\theight: 126px;\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t\t\t overflow: scroll; \n\t\t\t\t\theight: 80%;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t\n\t\t\t}\n\t\t\t@media only screen and (max-width: 1100px) {\n\t\t\t\t.AMBASSADORS-swiper  .swiper-pagination-bullets.swiper-pagination-horizontal{\n\t\t\t\t\tbottom: 0;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.AMBASSADORS-swiper .swiper-pagination-bullet{\n\t\t\t\t\tbackground-color: #202020;\n\t\t\t\t}\n\t\t\t}\n\t\t<\/style>\n\t<div class=\"text-center page-width page-width--narrow\">\n\t\t    <h2>MEET OUR AMBASSADORS<\/h2>\n\t\t  <\/div>\n\t\t\t\t<div class=\"\">\n\t\t\t\t\t<div class=\"swiper mySwiper AMBASSADORS-swiper\">\n\t\t\t\t\t\t<div class=\"swiper-wrapper\">\n\t\t\t\t\t\t\t<div class=\"swiper-slide clissa\">\n\t\t\t\t\t\t\t\t<div class=\"ambassadors-items\">\n\t\t\t\t\t\t\t\t\t<picture class=\"w-full\">\n\t\t\t\t\t\t\t\t\t\t<source type=\"image\/jpeg\"\n\t\t\t\t\t\t\t\t\t\t\tsrcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_48ea1724-cad6-4380-9758-669a78cd1a8a.jpg?v=1678329316 1x,\n\t\t\t\t\t\t\t\t\t\t\t https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_48ea1724-cad6-4380-9758-669a78cd1a8a.jpg?v=1678329316 2x\">\n\t\t\t\t\t\t\t\t\t\t<img  \n\t\t\t\t\t\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_48ea1724-cad6-4380-9758-669a78cd1a8a.jpg?v=1678329316\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"w-full lazyload\">\n\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<a href=\"\/pages\/ambassador-jl-garcia\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"item-content\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"testimonial-stars\">★★★★★<\/span>\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"ambassadors-title\"><b>NIJIA GARCIA<\/b><br>\n\t\t\t\t\t\t\t\t\t\t\t\t<span>Software Engineer & BBQ'er<\/span>\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"item-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\t\tIn 2015 I purchased a Z-Grill and it was my first love affair with pellet grills and since that I try it all on it. The convenience and easy usage of this grill is abode any other and a blessing in disguise. Reliable, easy to learn and maintain and tough as hell is how I would describe this grill and there is nothing that may change my mind on it.\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"reviews-tile__footer \">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"flex items-center normal-12 text-black\">\n\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/a>\n\t\t\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<div class=\"swiper-slide clissa\">\n\t\t\t\t\t\t\t\t<div class=\"ambassadors-items\">\n\t\t\t\t\t\t\t\t\t<picture class=\"w-full\">\n\t\t\t\t\t\t\t\t\t\t<source type=\"image\/jpeg\"\n\t\t\t\t\t\t\t\t\t\t\tsrcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_966ef1e8-e491-49be-b885-209e83fc633f.jpg?v=1678329316 1x,\n\t\t\t\t\t\t\t\t\t\t\t https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_966ef1e8-e491-49be-b885-209e83fc633f.jpg?v=1678329316 2x\">\n\t\t\t\t\t\t\t\t\t\t<img \n\t\t\t\t\t\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_966ef1e8-e491-49be-b885-209e83fc633f.jpg?v=1678329316\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"w-full lazyload\">\n\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<a href=\"\/pages\/ambassador-nick-dompierre\">\n\t\t\t\t\t\t\t\t\t<div class=\"item-content\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"testimonial-stars\">★★★★★<\/span>\n\t\t\t\t\t\t\t\t\t\t<p class=\"ambassadors-title\"><b>NICK DOMPIERRE<\/b><br>\n\t\t\t\t\t\t\t\t\t\t\t<span>BBQ Pit Master<\/span>\n\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<div class=\"item-text\">\n\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\tMy experience with Z Grills is a 10\/10! I have the Backyard Warrior 7002c2e model. I received the grill in a box shipped to my door. I assembled it with their easy-to-follow instructions. Cooking with the grill was really awesome. It's amazing how the heat evenly distributes so well. I love how it has the option for high heat grilling or slow smoking. I really wish I discovered Z Grills sooner.\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"reviews-tile__footer \">\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"flex items-center normal-12 text-black\">\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/a>\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<div class=\"swiper-slide clissa\">\n\t\t\t\t\t\t\t\t<div class=\"ambassadors-items\">\n\t\t\t\t\t\t\t\t\t<picture class=\"w-full\">\n\t\t\t\t\t\t\t\t\t\t<source type=\"image\/jpeg\"\n\t\t\t\t\t\t\t\t\t\t\tsrcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/04_b91a4e5c-b6d3-4da9-8857-f5e770016579.jpg?v=1678329316 1x,\n\t\t\t\t\t\t\t\t\t\t\t https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/04_b91a4e5c-b6d3-4da9-8857-f5e770016579.jpg?v=1678329316 2x\">\n\t\t\t\t\t\t\t\t\t\t<img \n\t\t\t\t\t\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/04_b91a4e5c-b6d3-4da9-8857-f5e770016579.jpg?v=1678329316\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"w-full lazyload\">\n\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<a href=\"\/pages\/ambassador-thomas-scarano\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"item-content\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"testimonial-stars\">★★★★★<\/span>\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"ambassadors-title\"><b>THOMAS SCARANO<\/b><br>\n\t\t\t\t\t\t\t\t\t\t\t\t<span>Pitmaster<\/span>\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"item-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\t\tI own both the Z Grills 700D4E and 450B, both of which are equipped with a state-of-the-art PID controller. This advanced technology ensures that the temperature stays precisely at your desired set point, resulting in consistently great cooking results every single time.\n\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"reviews-tile__footer \">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"flex items-center normal-12 text-black\">\n\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/a>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div class=\"swiper-slide clissa\">\n\t\t\t\t\t\t\t\t<div class=\"ambassadors-items\">\n\t\t\t\t\t\t\t\t\t<picture class=\"w-full\">\n\t\t\t\t\t\t\t\t\t\t<source type=\"image\/jpeg\"\n\t\t\t\t\t\t\t\t\t\t\tsrcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_00214585-9fa9-4082-af44-a0b99379b598.jpg?v=1678329316 1x,\n\t\t\t\t\t\t\t\t\t\t\t https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_00214585-9fa9-4082-af44-a0b99379b598.jpg?v=1678329316 2x\">\n\t\t\t\t\t\t\t\t\t\t<img \n\t\t\t\t\t\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_00214585-9fa9-4082-af44-a0b99379b598.jpg?v=1678329316\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"w-full lazyload\">\n\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<a href=\"\/pages\/ambassador-chuck-m\">\n\t\t\t\t\t\t\t\t\t<div class=\"item-content\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"testimonial-stars\">★★★★★<\/span>\n\t\t\t\t\t\t\t\t\t\t<p class=\"ambassadors-title\"><b>CHUCK M<\/b><br>\n\t\t\t\t\t\t\t\t\t\t\t<span>Pitmaster<\/span>\n\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<div class=\"item-text\">\n\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\tI've cooked on a lot of different pellet grills over the years, but what really caught my attention about the Z Grills was how consistent and flavorful the results were, all at an amazing price point. Don't get me wrong, I have respect for all the other grill manufacturers out there, but for me, the Z Grills stands out for its reliability and consistency. With my Z Grills, I've made everything from brisket to cheesecakes, and it has never let me down. There's nothing it can't do.\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"reviews-tile__footer \">\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"flex items-center normal-12 text-black\">\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t<\/a>\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<div class=\"swiper-pagination\"><\/div>\n\t\t\t\t\t<\/div>\n\t\t<div class='text-center'>\n\t\t<a class=' btn' href='\/pages\/ambassadors'>MORE AMBASSADORS<\/a>\t<\/div>\n\t\t\t<\/div>\n\t\t\t\t<script>\n\t\t\t\t\tvar swiper = new Swiper(\".AMBASSADORS-swiper\", {\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tslidesPerView: 2,\n\t\t\t\t\t\t\t\tspaceBetween: 10,\n\t\t\t\t\t\t\t\tpagination: {\n\t\t\t\t\t\t\t\t\tel: \".swiper-pagination\",\n\t\t\t\t\t\t\t\t\tclickable: true,\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\tbreakpoints: {\n\t\t\t\t\t\t\t\t\t640: {\n\t\t\t\t\t\t\t\t\t\tslidesPerView: 3,\n\t\t\t\t\t\t\t\t\t\tspaceBetween: 10,\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t1100: {\n\t\t\t\t\t\t\t\t\t\tslidesPerView: 4,\n\t\t\t\t\t\t\t\t\t\tspaceBetween: 10,\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tvar widthpage = $(window).width()\n\t\t\t\t\t\t\tif(widthpage<768){\n\t\t\t\t\t\t\t\t$('.clissa').click(function(){\n\t\t\t\t\t\t\t\t\tvar This = $(this)\n\t\t\t\t\t\t\t\t\t$(this).find('.item-content').addClass('mcclicks')\n\t\t\t\t\t\t\t\t\t$(this).siblings().find('.item-content').removeClass('mcclicks')\n\t\t\t\t\t\t\t\t\t$(this).find('.reviews-tile__footer').css('display','none')\n\t\t$(this).siblings().find('.reviews-tile__footer').css('display','block')\t\t\t\t\t\t})\n\t\t\t\t\t\t\t}\n\t\t\t\t<\/script>","width":"100%","alignment":"center"}}},"block_order":["16454377471645924a-1"],"custom_css":["h2 {font-size: 3.1rem; font-family: Impact; color: #000; margin: 0;}",".btn {margin: 0; background: #202020; border-radius: 3px;}"],"settings":{"full_width":false,"space_around":true,"space_Padding":true,"switch_button":false}},"f2306b3e-091a-4425-ab5d-73de6ee8f602":{"type":"advanced-content","blocks":{"bcb388bc-c336-4585-a933-0bfc1641d084":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/banner_7afd8591-314c-4b21-bcee-633846a20348.jpg","link":"https:\/\/www.zgrills.com\/pages\/community","image_mc":"shopify:\/\/shop_images\/banner_c94855c3-24fa-48a0-8611-52680bb653bc.jpg","width":"100%","alignment":"center"}}},"block_order":["bcb388bc-c336-4585-a933-0bfc1641d084"],"settings":{"full_width":true,"space_around":true,"space_Padding":true,"switch_button":false}},"16456831010c51823b":{"type":"testimonials","blocks":{"1645683101aaeefb04-0":{"type":"testimonial","settings":{"icon":"5-stars","testimonial":"<p>Outstanding smoke flavor and even cooking. I chose the Zgrills pellet grill because I trust the product. The grill offered more than I expected. There are no hidden factors. The pid controls are user friendly. Disassemble the easy parts. Use a brush on the wasted material. Put the parts back in place. That's it. Sweet! I recommend this product.<\/p>","author":"Breck O.","author_info":""}},"1645683101aaeefb04-1":{"type":"testimonial","settings":{"icon":"5-stars","testimonial":"<p>Very good. I have cooked on Mak grills, Camp Chef, Green Mountain and Pit Boss and of course Traeger. This is my favorite grill. Easy to clean. Works perfectly. The PID controller with smoke mode is a winner. Fit and finish is excellent. I will only own a Z Grill from now on. You just can't beat the price with the quality of the grill.<\/p>","author":"scott e.","author_info":""}},"1645683101aaeefb04-2":{"type":"testimonial","settings":{"icon":"5-stars","testimonial":"<p>ZG used to build the Traeger. Some products are interchangeable. Traeger is too high priced. They cook the same.<\/p>","author":"Don Ferron","author_info":""}},"1645683101aaeefb04-3":{"type":"testimonial","settings":{"icon":"5-stars","testimonial":"<p>I had a Treager and it was great but my Z is just as great & bigger hopper and not nearly as expensive.<\/p>","author":"Frank Huber","author_info":""}},"1645683101aaeefb04-4":{"type":"testimonial","settings":{"icon":"5-stars","testimonial":"<p>So far I love this smoker. I wanted one with a PID controller to help better control my temperature. I’ve only smoked pork belly burnt ends and ribs so far. I’m actually in the process of smoking a brisket for Super Bowl. Smelling so good. It’s easy to clean and easy to use. Very happy with it so far.<\/p>","author":"Thomas G.","author_info":""}},"d7e13de5-8165-483d-9ae0-04c55778cae2":{"type":"testimonial","settings":{"icon":"5-stars","testimonial":"<p><em>Wifi feature works well. The first time I connected to Wi-Fi, I needed to use the network and turn on Bluetooth to connect to the app. The first time was very successful, and every subsequent use even if I don't have a network, I can use the Wi-Fi function normally, but remember to turn on the Bluetooth to connect to the app. This thing is the awesome product for smoking meat! Absolutely phenomenal product, great customer service, keeps heat beautifully, smokes like no other....so glad I ordered it wihout regret. The wifi and bt work perfectly, no issues and the probes are dead nuts accurate. I love this guy!<\/em><\/p>","author":"Phillip D.","author_info":""}},"fa7d7c1c-f51f-4b90-b3dd-c89159ce85ee":{"type":"testimonial","settings":{"icon":"5-stars","testimonial":"<p>After researching pellet smokers for almost 3 weeks, I finally pulled the Zgrills on the 700D4E. It has blown my expectations away, from the durable build quality, ease of use, and flawless operation. If you are on the fence as I was, save yourself some wasted time, rip off the band-aid, and buy one! Honest review, from a genuinely satisfied customer.<\/p>","author":"Breck O.","author_info":""}},"b7cda7b2-2edf-4467-b6ee-29111aef8d4b":{"type":"testimonial","settings":{"icon":"5-stars","testimonial":"<p>Z-GRILLS PORTABLE PELLET GRILL CRUISER 200A, HONEST REVIEW<\/p><p>Tried out the Cruiser on a Cold January Wisconsin Day!  I was impressed! The burn in went great, set to 375 and it got to 380 for an hour. Then reduced temp to 250 and prepared some homemade Meatloaf!  Meatloaf on for about 3 hours, temps held very nicely!  Sauced it up and increased temp to 325 for about 15 minutes!  <br\/><br\/>I was very impressed! The Z-Grills Cruiser portable pellet grill performed well and the Smoked Meat Loaf had an Awesome Smoke Ring!<br\/><br\/>Nicely done by Z-Grills!<\/p>","author":"Tom H.","author_info":""}},"67d5253f-e3a6-4466-8794-87e43db32844":{"type":"testimonial","settings":{"icon":"5-stars","testimonial":"<p>Bought my dad the same model Z Grill as myself for an early Father’s Day gift and now we can trade recipes and bond over this new hobby despite the distance apart. These grills have been an excellent addition to our grilling fleet and really well built for our adverse Montana weather. They are simple to understand and operate. Definitely enjoying the 450 pros!<\/p>","author":"Dustin G.","author_info":""}}},"block_order":["1645683101aaeefb04-0","1645683101aaeefb04-1","1645683101aaeefb04-2","1645683101aaeefb04-3","1645683101aaeefb04-4","d7e13de5-8165-483d-9ae0-04c55778cae2","fa7d7c1c-f51f-4b90-b3dd-c89159ce85ee","b7cda7b2-2edf-4467-b6ee-29111aef8d4b","67d5253f-e3a6-4466-8794-87e43db32844"],"custom_css":[".slideshow-wrapper {max-width: 1430px; margin: 0 auto;}","h2 {font-size: 3.1rem; font-family: Impact; color: #000;}",".btn {margin: 0; background: #202020; border-radius: 3px; margin-top: 30px;}"],"settings":{"title":"OVER 85 MILLION COOKS WITH Z GRILLS","align_text":"center","round_images":true,"color_background":"#f1f2f4","color_text":"#1c1d1d"}},"5c76e87a-4040-423a-b47f-afd321491fdf":{"type":"custom_recipes","blocks":{"e2088349-2543-4492-963b-f1655366554f":{"type":"zhang","settings":{"image":"shopify:\/\/shop_images\/01_7db7a2ad-15b7-428b-a730-ac5032c05b5b.jpg","textarea":"All Recipes","texts":"Get inspired for your next meal.","cta_link1":"https:\/\/blog.zgrills.com\/"}},"b91a6f19-bde9-4863-8597-6d8b1e2a5df5":{"type":"zhang","settings":{"image":"shopify:\/\/shop_images\/03_e831a01a-1bda-459b-9400-903dcce88fc0.jpg","textarea":"Getting Started","texts":"Start wood-fired grilling with our tutorial collection.","cta_link1":"https:\/\/blog.zgrills.com\/buyers-guides\/"}},"37cdd474-1ee0-4c03-92a5-66d13607e7f2":{"type":"zhang","settings":{"image":"shopify:\/\/shop_images\/02_b8647f58-1c9c-4139-a221-7543ba0bb009.jpg","textarea":"Grilling Techniques","texts":"Upgrade your grill game with our best tips and tricks.","cta_link1":"https:\/\/blog.zgrills.com\/pro-tips\/"}}},"block_order":["e2088349-2543-4492-963b-f1655366554f","b91a6f19-bde9-4863-8597-6d8b1e2a5df5","37cdd474-1ee0-4c03-92a5-66d13607e7f2"],"custom_css":["h2 {font-size: 3.1rem; font-family: Impact; color: #000; font-weight: 400;}",".index-section {margin: 0;}"],"settings":{"heading":"FROM OUR BACKYARD TO YOURS"}},"164431125102df099b":{"type":"newsletter","blocks":{"16443112509e7127b1-0":{"type":"title","settings":{"title":"KEEP UP WITH WHAT'S HOT"}},"16443112509e7127b1-1":{"type":"text","settings":{"text":"<p>Get recipes, smoking tips and tricks, and exclusive offers delivered straight to your inbox.<\/p>"}},"16443112509e7127b1-2":{"type":"form","settings":{}}},"block_order":["16443112509e7127b1-0","16443112509e7127b1-1","16443112509e7127b1-2"],"custom_css":[".h3 {font-size: 3.1rem; font-family: Impact; font-weight: 400;}"],"settings":{"color_background":"#f9f9f9","color_text":"#ffffff"}}},"order":["75665efd-f654-4655-a60a-1d541d1bd5be","1655367270159ef7a9","1645434756440994ef","aa35e87e-dd43-4ced-93ea-02b32556a1cd","16445590870b9687da","16461243423cce65c9","164507794401119a07","16458529940ff914d0","164543774739613c31","f2306b3e-091a-4425-ab5d-73de6ee8f602","16456831010c51823b","5c76e87a-4040-423a-b47f-afd321491fdf","164431125102df099b"]}
+{
+  "sections": {
+    "75665efd-f654-4655-a60a-1d541d1bd5be": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "FOURTH OF JULY SALE",
+        "title_size": 80,
+        "subheading": "20% OFF TOP SELLING GRILLS+FREE GIFTS",
+        "link_text": "SHOP SALE",
+        "link": "https:\/\/www.zgrills.com\/pages\/special-offers",
+        "color_accent": "#bc3d1d",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=8baLvdJtPSg",
+        "overlay_opacity": 0,
+        "section_height": "750px",
+        "mobile_height": "auto"
+      }
+    },
+    "1655367270159ef7a9": {
+      "type": "custom_block_1",
+      "blocks": {
+        "2a61aecb-a438-45b5-b672-a64cac507714": {
+          "type": "zhang",
+          "settings": {
+            "testi_img": "shopify:\/\/shop_images\/2023.12.08.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/2023.12.8r.jpg",
+            "block_heading": "EARLY BIRD SALE",
+            "block_text": "SAVE UP TO $378 OFF!",
+            "img_link": "\/pages\/special-offers",
+            "button_text": "TODAY ONLY",
+            "btn_link": "https:\/\/www.zgrills.com\/pages\/special-offers"
+          }
+        },
+        "9b4894a7-5f3d-45cb-a48f-a1d8bbdd352b": {
+          "type": "zhang",
+          "settings": {
+            "testi_img": "shopify:\/\/shop_images\/20231123-_Banner_3f6dcfd2-f66c-453b-821b-fc221d70c915.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/20231123-_Banner.jpg",
+            "block_heading": "",
+            "block_text": "",
+            "img_link": "https:\/\/www.zgrills.com\/pages\/pellet-grill-blind-box",
+            "button_text": "",
+            "btn_link": "https:\/\/www.zgrills.com\/pages\/pellet-grill-blind-box"
+          }
+        },
+        "7e664913-6fa7-4e64-ae44-287b6acee9ad": {
+          "type": "zhang",
+          "settings": {
+            "testi_img": "shopify:\/\/shop_images\/20231103.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/20231103_a81bec1e-5043-4623-a475-b58451c5aa4d.jpg",
+            "block_heading": "Grill Worry-Free All winter long",
+            "block_text": "Up to 42% off!",
+            "img_link": "",
+            "button_text": "SHOP NOW",
+            "btn_link": "https:\/\/www.zgrills.com\/collections\/all-grill-covers"
+          }
+        },
+        "e333ecb7-c752-490d-8c62-cf3150efc6d7": {
+          "type": "zhang",
+          "settings": {
+            "testi_img": "shopify:\/\/shop_images\/700D4E_WIFI_cc4b838a-56ff-4f63-a612-d79648201794.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/700D4E_WIFI.jpg",
+            "block_heading": "NEW 700D4E WIFI IS HERE",
+            "block_text": "WIFI, Stainless Steel, Dual wall insulation & more!",
+            "img_link": "",
+            "button_text": "SHOP EARLY BIRD PRICE",
+            "btn_link": "https:\/\/www.zgrills.com\/products\/zpg-700d4e-pellet-grill"
+          }
+        },
+        "386d2459-b15d-4eb3-8c37-aa836ef32926": {
+          "type": "zhang",
+          "disabled": true,
+          "settings": {
+            "testi_img": "shopify:\/\/shop_images\/700D4E-1018.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/700D4E-_1018.jpg",
+            "block_heading": "BACK IN STOCK",
+            "block_text": "Stainless Steel, Dual-wall Construction, PID & More",
+            "img_link": "",
+            "button_text": "SHOP NOW",
+            "btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2a61aecb-a438-45b5-b672-a64cac507714",
+        "9b4894a7-5f3d-45cb-a48f-a1d8bbdd352b",
+        "7e664913-6fa7-4e64-ae44-287b6acee9ad",
+        "e333ecb7-c752-490d-8c62-cf3150efc6d7",
+        "386d2459-b15d-4eb3-8c37-aa836ef32926"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "",
+        "width": "100%",
+        "max_height": "auto",
+        "test_number": "7000",
+        "bgColors": "#000000"
+      }
+    },
+    "1645434756440994ef": {
+      "type": "advanced-content",
+      "blocks": {
+        "164543475669a79252-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "{{ 'swiper.css' | asset_url | stylesheet_tag }} \n  {{ 'swiper.js' | asset_url | script_tag }}\n<div class=\"page-width\">\n\t<div class=\"homeiconswiper mySwiper\">\n\t\t<div class=\"swiper-wrapper\">\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div class=\"aos-animate\">\n\t\t\t\t\t<img class='lazyload'\n\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/98681f217e39838144025f608527463a.png?v=1679654134\"\n\t\t\t\t\t\talt=\"\">\n\t\t\t\t\t<h4 class=\"homeh4\">FAST, FREE SHIPPING<\/h4>\n\n\t\t\t\t\t<p><span> Free shipping sitewide & fast delivery.<\/span><\/p>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div class=\"aos-animate\">\n\t\t\t\t\t<img class='lazyload'\n\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/ICON_e2c90575-24b2-456a-a12d-4c68db48c460.png?v=1679654134\"\n\t\t\t\t\t\talt=\"\">\n\t\t\t\t\t<h4 class=\"homeh4\">Flexible Payments<\/h4>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span>Flexible buy now, pay later options available.<\/span>\n\t\t\t\t\t<\/p>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div class=\"aos-animate\">\n\t\t\t\t\t<img class='lazyload' data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/b78c39d5eabbde51946a49e28fefc57e.png?v=1679654134\" alt=\"\">\n\t\t\t\t\t<h4 class=\"homeh4\">3-Year Warranty\n\n\n\t\t\t\t\t<\/h4>\n\t\t\t\t\t<p> <span>We proudly stand behind our products.<\/span><\/p>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div class=\"aos-animate\">\n\t\t\t\t\t<img class='lazyload' data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/fcbaa87dd3f9f241f42250cd0b2e8c43.png?v=1679654133\" alt=\"\">\n\t\t\t\t\t<h4 class=\"homeh4\">Best Value<\/h4>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span>Direct from the factory pricing.<\/span>\n\t\t\t\t\t<\/p>\n\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t<div class=\"swiper-pagination homeiconswiper-kzq\"><\/div>\n\t<\/div>\n<\/div>\n<script>\n\tvar swiper = new Swiper(\".homeiconswiper\", {\n\t\tslidesPerView: 2,\n\t\tpagination: {\n\t\t\tel: \".homeiconswiper-kzq\",\n\t\t\tclickable: true,\n\t\t},\n\t\tbreakpoints: {\n\t\t\t640: {\n\t\t\t\tslidesPerView: 3,\n\t\t\t\tspaceBetween: 10,\n\t\t\t},\n\t\t\t1100: {\n\t\t\t\tslidesPerView: 4,\n\t\t\t\tspaceBetween: 10,\n\t\t\t}\n\t\t},\n\n\t});\n<\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164543475669a79252-1"
+      ],
+      "custom_css": [
+        ".custom__item {background-color: #f1f2f4; padding: 20px 0 0 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "space_Padding": true,
+        "switch_button": false
+      }
+    },
+    "aa35e87e-dd43-4ced-93ea-02b32556a1cd": {
+      "type": "custom-product",
+      "blocks": {
+        "befa2fc9-4086-4b77-bdd9-cddcbed23c26": {
+          "type": "zhang",
+          "settings": {
+            "product": "zpg-1000e-pellet-grill",
+            "textarea": "<ul><li>1056 sq. in. cooking space<\/li><li>PID technology<\/li><li>Convection cooking system<\/li><li>Side shelf & bottom storage cabinet<\/li><li>Ash cleanout system<\/li><\/ul>",
+            "enable_price": true,
+            "product_label": "",
+            "width": "25"
+          }
+        },
+        "e1238c3a-5952-43b1-97dc-c9d2464f1052": {
+          "type": "zhang",
+          "settings": {
+            "product": "zpg-10502b-pellet-grill",
+            "textarea": "<ul><li>1080 sq. in. cooking space<\/li><li>Advanced PID digital LCD control board<\/li><li>Easy hopper dump<\/li><li>Effortless ash cleanout<\/li><li>Fits 46 burgers, 12 rib racks, or 9 chickens<\/li><\/ul>",
+            "enable_price": true,
+            "product_label": "",
+            "width": "25"
+          }
+        },
+        "d9f12277-7359-4429-a12a-4f5cb58ce3c0": {
+          "type": "zhang",
+          "settings": {
+            "product": "zpg-700d3-pellet-grill",
+            "textarea": "<ul><li>697 sq. in. cooking space<\/li><li>Z-Ultra™ PID V2.1 technology<\/li><li>Hopper cleanout<\/li><li>Manual feed feature<\/li><li>Fits 30 burgers, 6 rib racks, or 5 chickens<\/li><\/ul>",
+            "enable_price": true,
+            "product_label": "",
+            "width": "25"
+          }
+        },
+        "5f27a124-468d-452b-9bad-dfcabbd28708": {
+          "type": "zhang",
+          "settings": {
+            "product": "zpg-700d4e-pellet-grill",
+            "textarea": "<ul><li>Wi-Fi and Bluetooth capability<\/li><li>697 sq. in. cooking space<\/li><li>PID controller<\/li><li>Hopper cleanout<\/li><li>Fits 30 burgers, 6 rib racks, or 5 chickens<\/li><\/ul>",
+            "enable_price": true,
+            "product_label": "",
+            "width": "25"
+          }
+        }
+      },
+      "block_order": [
+        "befa2fc9-4086-4b77-bdd9-cddcbed23c26",
+        "e1238c3a-5952-43b1-97dc-c9d2464f1052",
+        "d9f12277-7359-4429-a12a-4f5cb58ce3c0",
+        "5f27a124-468d-452b-9bad-dfcabbd28708"
+      ],
+      "custom_css": [
+        "h2 {font-size: 3.1rem; font-family: Impact; color: #000;}"
+      ],
+      "settings": {
+        "heading": "GRILLER TOP PICKS",
+        "space_around": true,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "16445590870b9687da": {
+      "type": "promo-grid",
+      "blocks": {
+        "164455908746a5f2d1-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "2023 Upgrade 7052B WIFI",
+            "textarea": "Smoke function, Wifi, PID, Pellet Cleanout, built like a tank,& more",
+            "cta_text1": "SAVE UP TO $336 OFF!",
+            "cta_link1": "https:\/\/www.zgrills.com\/products\/multitasker-7052b-with-wi-fi",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/banner_a859fff3-a618-468a-9479-3aa676c446aa.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-left",
+            "focal_point": "center",
+            "color_accent": "#bc3d1d",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "164455908746a5f2d1-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "NEW ARRIVAL",
+            "textarea": "The next evolution of grilling is here!",
+            "cta_text1": "SHOP NEW GRILLS",
+            "cta_link1": "https:\/\/www.zgrills.com\/pages\/new-arrival",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/600D3E_d6998f9a-dd0e-4b6b-8735-4d3d071badfe.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 75,
+            "text_align": "vertical-center horizontal-left",
+            "focal_point": "center",
+            "color_accent": "#bc3d1d",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "66e04fa1-34e0-46af-950f-547cc3c6dff3": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Holiday Gift Guide",
+            "textarea": "Surprise your loved ones with the perfect gift!",
+            "cta_text1": "LEARN MORE",
+            "cta_link1": "https:\/\/www.zgrills.com\/pages\/gift-of-zgrills",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/e75366ad71f7b302a1bf253977affd6d.jpg",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_size": 75,
+            "text_align": "vertical-center horizontal-left",
+            "focal_point": "center",
+            "color_accent": "#bc3d1d",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "164455908746a5f2d1-0",
+        "164455908746a5f2d1-1",
+        "66e04fa1-34e0-46af-950f-547cc3c6dff3"
+      ],
+      "custom_css": [
+        "h2 {font-size: 3.1rem; font-family: Impact; color: #000;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false,
+        "custom_mode": true,
+        "heading": "THE HOTTEST DEALS OF THE SEASON ARE HERE"
+      }
+    },
+    "16461243423cce65c9": {
+      "type": "advanced-content",
+      "blocks": {
+        "16461243425a86b6b9-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n\t .homeiconswipersasd {\n\t        width: 100%;\n\t        height: 100%;\n\t\t\toverflow: hidden;\n\t\t\tmax-width: 1430px;\n\t\t\tmargin: 0 auto;\n\t\t\tposition: relative;\n\t\t\tpadding: 0 0 30px 0;\n\t\t\tbackground-color: #f1f2f4;\n\t      }\n\t\n\t     .homeiconswipersasd .swiper-slide {\n\t         text-align: center;\n\t                 font-size: 18px;\n\t                 \/* background: #fff; *\/\n\t         \n\t                 \/* Center slide text vertically *\/\n\t                 display: -webkit-box;\n\t                 display: -ms-flexbox;\n\t                 display: -webkit-flex;\n\t                 display: flex;\n\t                 -webkit-box-pack: center;\n\t                 -ms-flex-pack: center;\n\t                 -webkit-justify-content: center;\n\t                 justify-content: center;\n\t                 -webkit-box-align: center;\n\t                 -ms-flex-align: center;\n\t                 -webkit-align-items: center;\n\t                 align-items: center;\n\t\t\t\t\t width: auto !important;\n\t      }\n\t\t .homeiconswipersasd img{\n\t\t\t  width: 85%;\n\t\t\t  \/* height: 83px; *\/\n\t\t\t  max-width: 100%;\n\t\t  }\n\t\t  \n\t\t .homeiconswipersasd .swiper-slide:nth-child(1) {\n\t\t          width: 83px !important;\n\t\t        }\n\t\t.homeiconswipersasd .swiper-pagination-progressbar.swiper-pagination-horizontal{\n\t\t\t  bottom: 0;\n\t\t\t  top: auto !important;\n\t\t  }\n\t\t  \n\t\t .homeiconswipersasd .swiper-pagination-progressbar-fill{background-color: #999 !important;}\n@media screen and (max-width: 768px) {\n.homeiconswipersasd img{\n\t\t\t  width: 60%;\n\t\t\t  \/* height: 83px; *\/\n\t\t\t  max-width: 100%;\n\t\t  }}\n<\/style>\n\n<div class=\"text-center page-width page-width--narrow\">\n\t\t    <h2>“ Z Grills provides heavy-duty and meant to last pellet grills.”<\/h2>\n\t\t  <\/div>\n\t<div class=\"homeiconswipersasd mySwiper\">\n\t\t<div class=\"swiper-wrapper\">\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_218100b2-3697-4363-962d-1e8f2e925a96.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_42a142ee-fcec-4e6f-8ca4-f87a19fdcbec.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_a8da94c7-0be0-44a7-bdef-40f9d2f63e07.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/04_84d73164-dd41-4ed9-9d33-398ca31d8137.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/06_28ddffbd-937e-4eb6-ad54-716daf197df6.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/05_6a2f46f2-3acc-4c84-ba86-cfb46b2113b8.png?v=1678350299\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<!--  -->\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/05_f9f3248e-8ac1-4651-a47e-e8980556f932.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/004_d48a10de-5a65-4434-996b-97c6b78a6217.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_afc2001a-0d67-457b-a9e4-631d9f6d169f.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_a6a7a45e-5e50-4557-b957-12c4928f210f.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_3b0d5f29-c424-4bcc-a3e4-42c758d78042.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/06_6e4f8f5e-1828-449a-93a3-35599847b0b7.png?v=1678356661\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<!--  -->\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/nbc-news-logo.png?v=1678356778\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/12_05b5a6b9-290c-4392-a149-8665124f890b.png?v=1678357022\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/09.png?v=1678356779\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/07_e14be5cc-6c2b-433c-ac46-e6231e256acb.png?v=1678356778\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/11_3039c7b4-a976-4417-8db4-756b53a4152d.png?v=1678356779\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"swiper-slide\">\n\t\t\t\t<div>\n\t\t\t\t\t<img class=\"lazyload\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/10_a2fa1aea-8eae-4467-8d7e-e5a827a7b6b1.png?v=1678356779\" alt=\"\">\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t <div class=\"swiper-paginationsss\"><\/div>\n\t<\/div>\n\t\n\t\n\t<script>\n\t\t\n\tvar swiper = new Swiper(\".homeiconswipersasd\", {\n\t\t\tfreeMode: true,\n\t\t\t  slidesPerView: 2.1, \/\/ 禁用 slidesPerView\n\t\t\t  spaceBetween: 10, \/\/ 禁用 spaceBetween\n\t\t\t  \/\/ loop:1,\n\t\t\t  pagination: {\n\t\t\t            el: \".swiper-paginationsss\",\n\t\t\t            type: \"progressbar\",\n\t\t\t          },breakpoints: {\n\t\t\t\t\n\t\t\t\t1100: {\n\t\t\t\t\tslidesPerView: 6,\n\t\t\t\t\tspaceBetween: 30,\n\t\t\t\t}\n\t\t\t},\n\t\t\t\n\t\t});\n\t<\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16461243425a86b6b9-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 30px; font-family: Impact;}",
+        ".index-padding {background-color: #f1f2f4; padding: 60px 0;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "space_Padding": true,
+        "switch_button": false
+      }
+    },
+    "164507794401119a07": {
+      "type": "promo-grid",
+      "blocks": {
+        "16450779443107dc52-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Pellet Grills",
+            "textarea": "Start your wood-fired adventure",
+            "cta_text1": "FIRE IT UP",
+            "cta_link1": "https:\/\/www.zgrills.com\/collections\/wood-pellet-grills",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/001_c563de01-20fc-420f-a38d-f6339763bc1b.png",
+            "video_url": "",
+            "width": "33",
+            "height": 300,
+            "text_size": 40,
+            "text_align": "vertical-center horizontal-left",
+            "focal_point": "center",
+            "color_accent": "#bc3d1d",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "16450779443107dc52-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "100% All Natural Pellet Fuel",
+            "textarea": "Real hardwood smoke, real wood-fired flavor",
+            "cta_text1": "FUEL UP",
+            "cta_link1": "https:\/\/www.zgrills.com\/collections\/wood-pellets",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/002_77f77108-b2d0-40af-b6d5-376c237e310d.png",
+            "video_url": "",
+            "width": "33",
+            "height": 300,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-left",
+            "focal_point": "center",
+            "color_accent": "#bc3d1d",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "564d2877-d2f8-4940-b162-001f42534b44": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Accessories",
+            "textarea": "Made for the grill master experience",
+            "cta_text1": "ACCESSORIZE NOW",
+            "cta_link1": "https:\/\/www.zgrills.com\/collections\/accessories",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/003_fa2755a6-20cb-473f-b52f-047563e74e01.png",
+            "video_url": "",
+            "width": "33",
+            "height": 300,
+            "text_size": 40,
+            "text_align": "vertical-center horizontal-left",
+            "focal_point": "20% 50%",
+            "color_accent": "#bc3d1d",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "16450779443107dc52-0",
+        "16450779443107dc52-1",
+        "564d2877-d2f8-4940-b162-001f42534b44"
+      ],
+      "custom_css": [
+        ".rte--block {font-size: 1.1rem;}",
+        ".rte--strong {font-size: 1.8rem; letter-spacing: 0;}",
+        ".btn--inverse {background-color: #bd3d1d; border: 0; letter-spacing: 0; border-radius: 5px;}",
+        ".promo-grid__container {border-radius: 5px;}",
+        "h2 {font-size: 3.1rem; font-family: Impact; color: #000;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true,
+        "custom_mode": false,
+        "heading": "EXPLORE OUR MOST POPULAR CATEGORIES"
+      }
+    },
+    "16458529940ff914d0": {
+      "type": "advanced-content",
+      "blocks": {
+        "164585299411a7ecd0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_a1a55e35-e7d2-4c18-92af-957af3faf332.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=CAi8TCG2Aa8",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "f9f8079d-8e76-44e5-9450-b305f78c16fe": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>About Z Grills<\/h2><p>The best pellet grills in the market, awarded by top media websites like CNET, Forbes, GoodHousekeeping, and ConsumerReports. With 30+ years of experience manufacturing grills for top brands, we founded Z Grills in 2016, quickly becoming one of the most respected names in the industry. <\/p>\n<p>Our mission? Democratizing high-end, professional outdoor cookers to bring unforgettable flavors to every backyard and beyond. Join us and experience epic meals outdoors like never before.<\/p>\n<button><a class='btn' href='\/pages\/about-us'>OUR STORY<\/a><\/button>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164585299411a7ecd0-0",
+        "f9f8079d-8e76-44e5-9450-b305f78c16fe"
+      ],
+      "custom_css": [
+        ".btn {margin: 0; background: #202020; border-radius: 3px;}",
+        "button {padding: 0;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "space_Padding": true,
+        "switch_button": false
+      }
+    },
+    "164543774739613c31": {
+      "type": "advanced-content",
+      "blocks": {
+        "16454377471645924a-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n\t\t\t\n\n.AMBASSADORS-swiper .swiper-slide a{\nposition: initial !important ;\n}\n\t\t\t.AMBASSADORS-swiper {\n\t\t\t\twidth: 100%;\n\t\t\t\theight: 100%;\n\t\t\t\tposition: relative;\n\t\t\t\tpadding: 10px 0 30px 0;\n\t\t\t\toverflow: hidden;\nmargin: 0 0 30px 0;\n\t\t\t}\n\n\t\t\t.AMBASSADORS-swiper .swiper-slide {\n\t\t\t\ttext-align: left;\n\t\t\t\tfont-size: 16px;\n\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t\tposition: relative;\n\t\t\t\theight: 430px;\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tcursor: pointer;\n\t\t\t\toverflow-y: hidden;\n\t\t\t}\n\n\t\t\t.AMBASSADORS-swiper .swiper-slide img {\n\t\t\t\tdisplay: block;\n\t\t\t\twidth: 100%;\n\t\t\t\theight: 100%;\n\t\t\t\tobject-fit: cover;\n\t\t\t\tborder-radius: 5px;\n\t\t\t}\n\n\t\t\t.item-content {\n\t\t\t\tpadding: 7px 15px 0 15px;\n\t\t\t\toverflow-y: hidden;\n\t\t\t\ttransition: top .3s ease-in-out, height .3s ease-in-out;\n\t\t\t\tposition: absolute;\n\t\t\t\ttop: 235px;\n\t\t\t\tleft: 0;\n\t\t\t\tright: 0;\n\t\t\t\tz-index: 20;\n\t\t\t\theight: 147px;\n\t\t\t\ttext-align: left;\n\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t}\n\n\t\t\t.reviews-tile__footer {\n\t\t\t\theight: 10px;\n\t\t\t}\n\t\t\t\n\t\t\t.reviews-tile__footer::before {\n\t\t\t\tbackground: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .5) 55%, #F1F2F4);\n\t\t\t\tcontent: \"\";\n\t\t\t\tdisplay: block;\n\t\t\t\theight: 40px;\n\t\t\t\tleft: 0;\n\t\t\t\topacity: 1;\n\t\t\t\tposition: absolute;\n\t\t\t\tbottom: -5px;\n\t\t\t\t\n\t\t\t\ttransition: opacity .2ms ease-out;\n\t\t\t\twidth: 100%;\n\t\t\t}\n\t\t\t\n\t\t\t\n\n\t\t\t.ambassadors-title {\n\t\t\t\tfont-size: 16px;\n\t\t\t\tmargin: 5px 0 0 0;\n\t\t\t}\n\n\t\t\t.ambassadors-title span {\n\t\t\t\tfont-size: 14px;\n\t\t\t\tcolor: #bc3d1d;\n\t\t\t}\n\n\t\t\t.item-text {\n\t\t\t\tfont-size: 14px;\n\t\t\t}\n\n\t\t\t.testimonial-stars {\n\t\t\t\tcolor: #fea801;\n\t\t\t\tdisplay: block;\n\t\t\t\tfont-size: 18px;\n\t\t\t\tletter-spacing: .2em;\n\t\t\t}\n\t\t\t@media only screen and (min-width: 769px) {\n\t\t\t\t.AMBASSADORS-swiper .swiper-slide:hover .item-content {\n\t\t\t\t\ttop: 106px;\n\t\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t\t\t\/* overflow-y: auto; *\/\n\t\t\t\t\theight: 90%;\n\t\t\t\t\ttransition: top .3s ease-in-out, height .3s ease-in-out;\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t@media only screen and (max-width: 769px) {\n\t\t\t\t.AMBASSADORS-swiper .swiper-slide {\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tfont-size: 16px;\n\t\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\theight: 344px;\n\t\t\t\t\tborder-radius: 5px;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.item-content {\n\t\t\t\t\tpadding: 7px 15px 0 15px;\n\t\t\t\t\toverflow-y: hidden;\n\t\t\t\t\ttransition: top .3s ease-in-out, height .3s ease-in-out;\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\ttop: 125px;\n\t\t\t\t\tleft: 0;\n\t\t\t\t\tright: 0;\n\t\t\t\t\tz-index: 20;\n\t\t\t\t\theight: 196px;\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\twidth: auto;\n\t\t\t\t\t\/* background-color: #F1F2F4; *\/\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.mcclicks{\n\t\t\t\t\tpadding: 7px 15px 0 15px;\n\t\t\t\t\toverflow-y: hidden;\n\t\t\t\t\ttransition: top .3s ease-in-out, height .3s ease-in-out;\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\ttop: 20% !important;\n\t\t\t\t\tleft: 0;\n\t\t\t\t\tright: 0;\n\t\t\t\t\tz-index: 20;\n\t\t\t\t\theight: 126px;\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tbackground-color: #F1F2F4;\n\t\t\t\t\t overflow: scroll; \n\t\t\t\t\theight: 80%;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t\n\t\t\t}\n\t\t\t@media only screen and (max-width: 1100px) {\n\t\t\t\t.AMBASSADORS-swiper  .swiper-pagination-bullets.swiper-pagination-horizontal{\n\t\t\t\t\tbottom: 0;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.AMBASSADORS-swiper .swiper-pagination-bullet{\n\t\t\t\t\tbackground-color: #202020;\n\t\t\t\t}\n\t\t\t}\n\t\t<\/style>\n\t<div class=\"text-center page-width page-width--narrow\">\n\t\t    <h2>MEET OUR AMBASSADORS<\/h2>\n\t\t  <\/div>\n\t\t\t\t<div class=\"\">\n\t\t\t\t\t<div class=\"swiper mySwiper AMBASSADORS-swiper\">\n\t\t\t\t\t\t<div class=\"swiper-wrapper\">\n\t\t\t\t\t\t\t<div class=\"swiper-slide clissa\">\n\t\t\t\t\t\t\t\t<div class=\"ambassadors-items\">\n\t\t\t\t\t\t\t\t\t<picture class=\"w-full\">\n\t\t\t\t\t\t\t\t\t\t<source type=\"image\/jpeg\"\n\t\t\t\t\t\t\t\t\t\t\tsrcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_48ea1724-cad6-4380-9758-669a78cd1a8a.jpg?v=1678329316 1x,\n\t\t\t\t\t\t\t\t\t\t\t https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_48ea1724-cad6-4380-9758-669a78cd1a8a.jpg?v=1678329316 2x\">\n\t\t\t\t\t\t\t\t\t\t<img  \n\t\t\t\t\t\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/01_48ea1724-cad6-4380-9758-669a78cd1a8a.jpg?v=1678329316\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"w-full lazyload\">\n\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<a href=\"\/pages\/ambassador-jl-garcia\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"item-content\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"testimonial-stars\">★★★★★<\/span>\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"ambassadors-title\"><b>NIJIA GARCIA<\/b><br>\n\t\t\t\t\t\t\t\t\t\t\t\t<span>Software Engineer & BBQ'er<\/span>\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"item-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\t\tIn 2015 I purchased a Z-Grill and it was my first love affair with pellet grills and since that I try it all on it. The convenience and easy usage of this grill is abode any other and a blessing in disguise. Reliable, easy to learn and maintain and tough as hell is how I would describe this grill and there is nothing that may change my mind on it.\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"reviews-tile__footer \">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"flex items-center normal-12 text-black\">\n\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/a>\n\t\t\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<div class=\"swiper-slide clissa\">\n\t\t\t\t\t\t\t\t<div class=\"ambassadors-items\">\n\t\t\t\t\t\t\t\t\t<picture class=\"w-full\">\n\t\t\t\t\t\t\t\t\t\t<source type=\"image\/jpeg\"\n\t\t\t\t\t\t\t\t\t\t\tsrcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_966ef1e8-e491-49be-b885-209e83fc633f.jpg?v=1678329316 1x,\n\t\t\t\t\t\t\t\t\t\t\t https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_966ef1e8-e491-49be-b885-209e83fc633f.jpg?v=1678329316 2x\">\n\t\t\t\t\t\t\t\t\t\t<img \n\t\t\t\t\t\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/02_966ef1e8-e491-49be-b885-209e83fc633f.jpg?v=1678329316\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"w-full lazyload\">\n\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<a href=\"\/pages\/ambassador-nick-dompierre\">\n\t\t\t\t\t\t\t\t\t<div class=\"item-content\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"testimonial-stars\">★★★★★<\/span>\n\t\t\t\t\t\t\t\t\t\t<p class=\"ambassadors-title\"><b>NICK DOMPIERRE<\/b><br>\n\t\t\t\t\t\t\t\t\t\t\t<span>BBQ Pit Master<\/span>\n\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<div class=\"item-text\">\n\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\tMy experience with Z Grills is a 10\/10! I have the Backyard Warrior 7002c2e model. I received the grill in a box shipped to my door. I assembled it with their easy-to-follow instructions. Cooking with the grill was really awesome. It's amazing how the heat evenly distributes so well. I love how it has the option for high heat grilling or slow smoking. I really wish I discovered Z Grills sooner.\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"reviews-tile__footer \">\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"flex items-center normal-12 text-black\">\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/a>\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<div class=\"swiper-slide clissa\">\n\t\t\t\t\t\t\t\t<div class=\"ambassadors-items\">\n\t\t\t\t\t\t\t\t\t<picture class=\"w-full\">\n\t\t\t\t\t\t\t\t\t\t<source type=\"image\/jpeg\"\n\t\t\t\t\t\t\t\t\t\t\tsrcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/04_b91a4e5c-b6d3-4da9-8857-f5e770016579.jpg?v=1678329316 1x,\n\t\t\t\t\t\t\t\t\t\t\t https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/04_b91a4e5c-b6d3-4da9-8857-f5e770016579.jpg?v=1678329316 2x\">\n\t\t\t\t\t\t\t\t\t\t<img \n\t\t\t\t\t\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/04_b91a4e5c-b6d3-4da9-8857-f5e770016579.jpg?v=1678329316\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"w-full lazyload\">\n\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<a href=\"\/pages\/ambassador-thomas-scarano\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"item-content\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"testimonial-stars\">★★★★★<\/span>\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"ambassadors-title\"><b>THOMAS SCARANO<\/b><br>\n\t\t\t\t\t\t\t\t\t\t\t\t<span>Pitmaster<\/span>\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"item-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\t\tI own both the Z Grills 700D4E and 450B, both of which are equipped with a state-of-the-art PID controller. This advanced technology ensures that the temperature stays precisely at your desired set point, resulting in consistently great cooking results every single time.\n\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"reviews-tile__footer \">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"flex items-center normal-12 text-black\">\n\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/a>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div class=\"swiper-slide clissa\">\n\t\t\t\t\t\t\t\t<div class=\"ambassadors-items\">\n\t\t\t\t\t\t\t\t\t<picture class=\"w-full\">\n\t\t\t\t\t\t\t\t\t\t<source type=\"image\/jpeg\"\n\t\t\t\t\t\t\t\t\t\t\tsrcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_00214585-9fa9-4082-af44-a0b99379b598.jpg?v=1678329316 1x,\n\t\t\t\t\t\t\t\t\t\t\t https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_00214585-9fa9-4082-af44-a0b99379b598.jpg?v=1678329316 2x\">\n\t\t\t\t\t\t\t\t\t\t<img \n\t\t\t\t\t\t\t\t\t\t\tdata-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/1923\/3081\/files\/03_00214585-9fa9-4082-af44-a0b99379b598.jpg?v=1678329316\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"w-full lazyload\">\n\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<a href=\"\/pages\/ambassador-chuck-m\">\n\t\t\t\t\t\t\t\t\t<div class=\"item-content\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"testimonial-stars\">★★★★★<\/span>\n\t\t\t\t\t\t\t\t\t\t<p class=\"ambassadors-title\"><b>CHUCK M<\/b><br>\n\t\t\t\t\t\t\t\t\t\t\t<span>Pitmaster<\/span>\n\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<div class=\"item-text\">\n\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\tI've cooked on a lot of different pellet grills over the years, but what really caught my attention about the Z Grills was how consistent and flavorful the results were, all at an amazing price point. Don't get me wrong, I have respect for all the other grill manufacturers out there, but for me, the Z Grills stands out for its reliability and consistency. With my Z Grills, I've made everything from brisket to cheesecakes, and it has never let me down. There's nothing it can't do.\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"reviews-tile__footer \">\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"flex items-center normal-12 text-black\">\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t<\/a>\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<div class=\"swiper-pagination\"><\/div>\n\t\t\t\t\t<\/div>\n\t\t<div class='text-center'>\n\t\t<a class=' btn' href='\/pages\/ambassadors'>MORE AMBASSADORS<\/a>\t<\/div>\n\t\t\t<\/div>\n\t\t\t\t<script>\n\t\t\t\t\tvar swiper = new Swiper(\".AMBASSADORS-swiper\", {\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tslidesPerView: 2,\n\t\t\t\t\t\t\t\tspaceBetween: 10,\n\t\t\t\t\t\t\t\tpagination: {\n\t\t\t\t\t\t\t\t\tel: \".swiper-pagination\",\n\t\t\t\t\t\t\t\t\tclickable: true,\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\tbreakpoints: {\n\t\t\t\t\t\t\t\t\t640: {\n\t\t\t\t\t\t\t\t\t\tslidesPerView: 3,\n\t\t\t\t\t\t\t\t\t\tspaceBetween: 10,\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t1100: {\n\t\t\t\t\t\t\t\t\t\tslidesPerView: 4,\n\t\t\t\t\t\t\t\t\t\tspaceBetween: 10,\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tvar widthpage = $(window).width()\n\t\t\t\t\t\t\tif(widthpage<768){\n\t\t\t\t\t\t\t\t$('.clissa').click(function(){\n\t\t\t\t\t\t\t\t\tvar This = $(this)\n\t\t\t\t\t\t\t\t\t$(this).find('.item-content').addClass('mcclicks')\n\t\t\t\t\t\t\t\t\t$(this).siblings().find('.item-content').removeClass('mcclicks')\n\t\t\t\t\t\t\t\t\t$(this).find('.reviews-tile__footer').css('display','none')\n\t\t$(this).siblings().find('.reviews-tile__footer').css('display','block')\t\t\t\t\t\t})\n\t\t\t\t\t\t\t}\n\t\t\t\t<\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16454377471645924a-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 3.1rem; font-family: Impact; color: #000; margin: 0;}",
+        ".btn {margin: 0; background: #202020; border-radius: 3px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "space_Padding": true,
+        "switch_button": false
+      }
+    },
+    "f2306b3e-091a-4425-ab5d-73de6ee8f602": {
+      "type": "advanced-content",
+      "blocks": {
+        "bcb388bc-c336-4585-a933-0bfc1641d084": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_7afd8591-314c-4b21-bcee-633846a20348.jpg",
+            "link": "https:\/\/www.zgrills.com\/pages\/community",
+            "image_mc": "shopify:\/\/shop_images\/banner_c94855c3-24fa-48a0-8611-52680bb653bc.jpg",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "bcb388bc-c336-4585-a933-0bfc1641d084"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "space_Padding": true,
+        "switch_button": false
+      }
+    },
+    "16456831010c51823b": {
+      "type": "testimonials",
+      "blocks": {
+        "1645683101aaeefb04-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Outstanding smoke flavor and even cooking. I chose the Zgrills pellet grill because I trust the product. The grill offered more than I expected. There are no hidden factors. The pid controls are user friendly. Disassemble the easy parts. Use a brush on the wasted material. Put the parts back in place. That's it. Sweet! I recommend this product.<\/p>",
+            "author": "Breck O.",
+            "author_info": ""
+          }
+        },
+        "1645683101aaeefb04-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Very good. I have cooked on Mak grills, Camp Chef, Green Mountain and Pit Boss and of course Traeger. This is my favorite grill. Easy to clean. Works perfectly. The PID controller with smoke mode is a winner. Fit and finish is excellent. I will only own a Z Grill from now on. You just can't beat the price with the quality of the grill.<\/p>",
+            "author": "scott e.",
+            "author_info": ""
+          }
+        },
+        "1645683101aaeefb04-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>ZG used to build the Traeger. Some products are interchangeable. Traeger is too high priced. They cook the same.<\/p>",
+            "author": "Don Ferron",
+            "author_info": ""
+          }
+        },
+        "1645683101aaeefb04-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I had a Treager and it was great but my Z is just as great & bigger hopper and not nearly as expensive.<\/p>",
+            "author": "Frank Huber",
+            "author_info": ""
+          }
+        },
+        "1645683101aaeefb04-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>So far I love this smoker. I wanted one with a PID controller to help better control my temperature. I’ve only smoked pork belly burnt ends and ribs so far. I’m actually in the process of smoking a brisket for Super Bowl. Smelling so good. It’s easy to clean and easy to use. Very happy with it so far.<\/p>",
+            "author": "Thomas G.",
+            "author_info": ""
+          }
+        },
+        "d7e13de5-8165-483d-9ae0-04c55778cae2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p><em>Wifi feature works well. The first time I connected to Wi-Fi, I needed to use the network and turn on Bluetooth to connect to the app. The first time was very successful, and every subsequent use even if I don't have a network, I can use the Wi-Fi function normally, but remember to turn on the Bluetooth to connect to the app. This thing is the awesome product for smoking meat! Absolutely phenomenal product, great customer service, keeps heat beautifully, smokes like no other....so glad I ordered it wihout regret. The wifi and bt work perfectly, no issues and the probes are dead nuts accurate. I love this guy!<\/em><\/p>",
+            "author": "Phillip D.",
+            "author_info": ""
+          }
+        },
+        "fa7d7c1c-f51f-4b90-b3dd-c89159ce85ee": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>After researching pellet smokers for almost 3 weeks, I finally pulled the Zgrills on the 700D4E. It has blown my expectations away, from the durable build quality, ease of use, and flawless operation. If you are on the fence as I was, save yourself some wasted time, rip off the band-aid, and buy one! Honest review, from a genuinely satisfied customer.<\/p>",
+            "author": "Breck O.",
+            "author_info": ""
+          }
+        },
+        "b7cda7b2-2edf-4467-b6ee-29111aef8d4b": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Z-GRILLS PORTABLE PELLET GRILL CRUISER 200A, HONEST REVIEW<\/p><p>Tried out the Cruiser on a Cold January Wisconsin Day!  I was impressed! The burn in went great, set to 375 and it got to 380 for an hour. Then reduced temp to 250 and prepared some homemade Meatloaf!  Meatloaf on for about 3 hours, temps held very nicely!  Sauced it up and increased temp to 325 for about 15 minutes!  <br\/><br\/>I was very impressed! The Z-Grills Cruiser portable pellet grill performed well and the Smoked Meat Loaf had an Awesome Smoke Ring!<br\/><br\/>Nicely done by Z-Grills!<\/p>",
+            "author": "Tom H.",
+            "author_info": ""
+          }
+        },
+        "67d5253f-e3a6-4466-8794-87e43db32844": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Bought my dad the same model Z Grill as myself for an early Father’s Day gift and now we can trade recipes and bond over this new hobby despite the distance apart. These grills have been an excellent addition to our grilling fleet and really well built for our adverse Montana weather. They are simple to understand and operate. Definitely enjoying the 450 pros!<\/p>",
+            "author": "Dustin G.",
+            "author_info": ""
+          }
+        }
+      },
+      "block_order": [
+        "1645683101aaeefb04-0",
+        "1645683101aaeefb04-1",
+        "1645683101aaeefb04-2",
+        "1645683101aaeefb04-3",
+        "1645683101aaeefb04-4",
+        "d7e13de5-8165-483d-9ae0-04c55778cae2",
+        "fa7d7c1c-f51f-4b90-b3dd-c89159ce85ee",
+        "b7cda7b2-2edf-4467-b6ee-29111aef8d4b",
+        "67d5253f-e3a6-4466-8794-87e43db32844"
+      ],
+      "custom_css": [
+        ".slideshow-wrapper {max-width: 1430px; margin: 0 auto;}",
+        "h2 {font-size: 3.1rem; font-family: Impact; color: #000;}",
+        ".btn {margin: 0; background: #202020; border-radius: 3px; margin-top: 30px;}"
+      ],
+      "settings": {
+        "title": "OVER 85 MILLION COOKS WITH Z GRILLS",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f1f2f4",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "5c76e87a-4040-423a-b47f-afd321491fdf": {
+      "type": "custom_recipes",
+      "blocks": {
+        "e2088349-2543-4492-963b-f1655366554f": {
+          "type": "zhang",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01_7db7a2ad-15b7-428b-a730-ac5032c05b5b.jpg",
+            "textarea": "All Recipes",
+            "texts": "Get inspired for your next meal.",
+            "cta_link1": "https:\/\/blog.zgrills.com\/"
+          }
+        },
+        "b91a6f19-bde9-4863-8597-6d8b1e2a5df5": {
+          "type": "zhang",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/03_e831a01a-1bda-459b-9400-903dcce88fc0.jpg",
+            "textarea": "Getting Started",
+            "texts": "Start wood-fired grilling with our tutorial collection.",
+            "cta_link1": "https:\/\/blog.zgrills.com\/buyers-guides\/"
+          }
+        },
+        "37cdd474-1ee0-4c03-92a5-66d13607e7f2": {
+          "type": "zhang",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/02_b8647f58-1c9c-4139-a221-7543ba0bb009.jpg",
+            "textarea": "Grilling Techniques",
+            "texts": "Upgrade your grill game with our best tips and tricks.",
+            "cta_link1": "https:\/\/blog.zgrills.com\/pro-tips\/"
+          }
+        }
+      },
+      "block_order": [
+        "e2088349-2543-4492-963b-f1655366554f",
+        "b91a6f19-bde9-4863-8597-6d8b1e2a5df5",
+        "37cdd474-1ee0-4c03-92a5-66d13607e7f2"
+      ],
+      "custom_css": [
+        "h2 {font-size: 3.1rem; font-family: Impact; color: #000; font-weight: 400;}",
+        ".index-section {margin: 0;}"
+      ],
+      "settings": {
+        "heading": "FROM OUR BACKYARD TO YOURS"
+      }
+    },
+    "164431125102df099b": {
+      "type": "newsletter",
+      "blocks": {
+        "16443112509e7127b1-0": {
+          "type": "title",
+          "settings": {
+            "title": "KEEP UP WITH WHAT'S HOT"
+          }
+        },
+        "16443112509e7127b1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get recipes, smoking tips and tricks, and exclusive offers delivered straight to your inbox.<\/p>"
+          }
+        },
+        "16443112509e7127b1-2": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16443112509e7127b1-0",
+        "16443112509e7127b1-1",
+        "16443112509e7127b1-2"
+      ],
+      "custom_css": [
+        ".h3 {font-size: 3.1rem; font-family: Impact; font-weight: 400;}"
+      ],
+      "settings": {
+        "color_background": "#f9f9f9",
+        "color_text": "#ffffff"
+      }
+    },
+    "advanced_content_gtUwNr": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_hGq39L": {
+          "type": "liquid",
+          "settings": {
+            "code": "<link rel=\"stylesheet\" href=\"https:\/\/unpkg.com\/swiper@8\/swiper-bundle.min.css\">\n\t\t\t\t<script src=\"https:\/\/unpkg.com\/swiper@8\/swiper-bundle.min.js\"> <\/script>\t\n<div id=\"products-list\">\n\t\t\t\t\t<div\n\t\t\t\t\t\tclass=\"w-full lg:j-h-800 overflow-hidden relative after:block after:content-[''] after:absolute after:left-0 after:top-0 after:right-0 after:bottom-0 after:bg-black\/60 after:z-0\">\n\t\t\t\t\t\t<!-- 无缝滚动 -->\n\t\t\n\t\t\t\t\t\t<div class=\"flex gap-6 lg:j-gap-8 scale-[1.2] lg:scale-[1.12] -rotate-12\">\n\t\t\t\t\t\t\t<div\n\t\t\t\t\t\t\t\tclass=\"flex-1 swiper swiper-infinite-scroll-1 h-645 lg:j-h-1273 lg:-j-mt-170 swiper-initialized swiper-vertical swiper-pointer-events swiper-free-mode swiper-backface-hidden\">\n\t\t\t\t\t\t\t\t<div class=\"swiper-wrapper swiper-infinite-scroll-wrapper\" id=\"swiper-wrapper-d6c6f5e2442577aa\"\n\t\t\t\t\t\t\t\t\taria-live=\"off\"\n\t\t\t\t\t\t\t\t\tstyle=\"transform: translate3d(0px, -2562px, 0px); transition-duration: 30000ms;\">\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-1_512x.png?v=1683714946\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-1_512x.png?v=1683714946\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-1_512x.png?v=1683714946\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-1_512x.png?v=1683714946\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-1_512x.png?v=1683714946\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-1_512x.png?v=1683714946\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-prev\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-1_512x.png?v=1683714946\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-1_512x.png?v=1683714946\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-1_512x.png?v=1683714946\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t<span class=\"swiper-notification\" aria-live=\"assertive\" aria-atomic=\"true\"><\/span>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<div\n\t\t\t\t\t\t\t\tclass=\"flex-1 swiper swiper-infinite-scroll-2 h-645 lg:j-h-1273 lg:-j-mt-70 swiper-initialized swiper-vertical swiper-pointer-events swiper-free-mode swiper-backface-hidden\">\n\t\t\t\t\t\t\t\t<div class=\"swiper-wrapper swiper-infinite-scroll-wrapper\" id=\"swiper-wrapper-661c7b275f6bda0e\"\n\t\t\t\t\t\t\t\t\taria-live=\"off\"\n\t\t\t\t\t\t\t\t\tstyle=\"transform: translate3d(0px, 0px, 0px); transition-duration: 30000ms;\">\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-next\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-2_512x.png?v=1683714963\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-2_512x.png?v=1683714963\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-2_512x.png?v=1683714963\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active swiper-slide-next swiper-slide-duplicate-prev\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-2_512x.png?v=1683714963\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-2_512x.png?v=1683714963\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-2_512x.png?v=1683714963\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-2_512x.png?v=1683714963\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-2_512x.png?v=1683714963\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-2_512x.png?v=1683714963\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t<span class=\"swiper-notification\" aria-live=\"assertive\" aria-atomic=\"true\"><\/span>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<div\n\t\t\t\t\t\t\t\tclass=\"flex-1 swiper swiper-infinite-scroll-1 h-645 lg:j-h-1273 lg:j-mt-30 swiper-initialized swiper-vertical swiper-pointer-events swiper-free-mode swiper-backface-hidden\">\n\t\t\t\t\t\t\t\t<div class=\"swiper-wrapper swiper-infinite-scroll-wrapper\" id=\"swiper-wrapper-10ed2cb39c4f87393\"\n\t\t\t\t\t\t\t\t\taria-live=\"off\"\n\t\t\t\t\t\t\t\t\tstyle=\"transform: translate3d(0px, -2562px, 0px); transition-duration: 30000ms;\">\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-3_512x.png?v=1683714981\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-3_512x.png?v=1683714981\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-3_512x.png?v=1683714981\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-3_512x.png?v=1683714981\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-3_512x.png?v=1683714981\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-3_512x.png?v=1683714981\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-prev\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-3_512x.png?v=1683714981\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-3_512x.png?v=1683714981\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-3_512x.png?v=1683714981\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t<span class=\"swiper-notification\" aria-live=\"assertive\" aria-atomic=\"true\"><\/span>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t<div\n\t\t\t\t\t\t\t\tclass=\"flex-1 swiper swiper-infinite-scroll-2 h-645 lg:j-h-1273 lg:j-mt-80 swiper-initialized swiper-vertical swiper-pointer-events swiper-free-mode swiper-backface-hidden\">\n\t\t\t\t\t\t\t\t<div class=\"swiper-wrapper swiper-infinite-scroll-wrapper\" id=\"swiper-wrapper-f37e33c29b1943df\"\n\t\t\t\t\t\t\t\t\taria-live=\"off\"\n\t\t\t\t\t\t\t\t\tstyle=\"transform: translate3d(0px, 0px, 0px); transition-duration: 30000ms;\">\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-next\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-4_512x.png?v=1683714997\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-4_512x.png?v=1683714997\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-4_512x.png?v=1683714997\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active swiper-slide-next swiper-slide-duplicate-prev\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-4_512x.png?v=1683714997\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-4_512x.png?v=1683714997\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-4_512x.png?v=1683714997\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next\"\n\t\t\t\t\t\t\t\t\t\tdata-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 \/ 1\" style=\"margin-bottom: 8px;\">\n\t\t\t\t\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t\t\t\t\t<source media=\"(min-width:1024px)\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrcset=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-4_512x.png?v=1683714997\">\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"w-full h-auto lazyloaded\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-src=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-4_512x.png?v=1683714997\"\n\t\t\t\t\t\t\t\t\t\t\t\talt=\"\" loading=\"lazy\"\n\t\t\t\t\t\t\t\t\t\t\t\tsrc=\"\/\/cdn.shopifycdn.net\/s\/files\/1\/0970\/9262\/files\/Solar_Generator_Pro_Banner_2-4_512x.png?v=1683714997\">\n\t\t\t\t\t\t\t\t\t\t<\/picture>\n\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t<span class=\"swiper-notification\" aria-live=\"assertive\" aria-atomic=\"true\"><\/span>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<\/div>\n\t\t\n\t\t\t\t\t\t<div\n\t\t\t\t\t\t\tclass=\"w-full lg:j-w-1200 flex-center flex-col absolute left-1\/2 top-0 -translate-x-1\/2 text-white z-10\">\n\t\t\t\t\t\t\t<h2 class=\"mt-150 lg:j-mt-240 text-45 leading-66 lg:j-text-40 lg:j-leading-48 Gilroy-Semibold\">\n\t\t\t\t\t\t\t\tJackery Solar Generator<\/h2>\n\t\t\t\t\t\t\t<h4 class=\"mt-15 lg:j-mt-20 text-28 leading-36 lg:j-text-24 lg:j-leading-36 Gilroy-Bold\">1000 | 500\n\t\t\t\t\t\t\t\t| 300 | 240<\/h4>\n\t\t\t\t\t\t\t<p\n\t\t\t\t\t\t\t\tclass=\"px-60 lg:j-px-0 text-20 leading-30 lg:j-text-24 lg:j-leading-36 Gilroy-Normal mt-20 lg:j-mt-10 text-center\">\n\t\t\t\t\t\t\t\tJackery Solar Generators are the ideal, lightweight, and safe power solution for camping,\n\t\t\t\t\t\t\t\thiking, and fishing. The large and small solar generators provide a range of capacity options to\n\t\t\t\t\t\t\t\tcharge different appliances, like a CPAP machine, laptop, refrigerator, and sump pump. They are\n\t\t\t\t\t\t\t\ton-the-go power generators, compact enough to carry when enjoying your outdoor activities.<\/p>\n\t\t\t\t\t\t<\/div>\n\t\t\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/div>\n\t\t<script>\n\t\t\t\t(() => {\n\t\t\t\t\t\"use strict\";\n\t\t\t\t\tvar t = function(t, e) {\n\t\t\t\t\t\tthis.el = t || {}, this.multiple = e || !1, t.find(\".submenuItems\").first().slideToggle(), t.find(\n\t\t\t\t\t\t\t\".submenuItems\").first().parent().addClass(\"open\"), this.el.find(\".dropdownlink\").on(\n\t\t\t\t\t\t\"click\", {\n\t\t\t\t\t\t\tel: this.el,\n\t\t\t\t\t\t\tmultiple: this.multiple\n\t\t\t\t\t\t}, this.dropdown)\n\t\t\t\t\t};\n\t\t\t\t\tt.prototype.dropdown = function(t) {\n\t\t\t\t\t\tvar e = t.data.el,\n\t\t\t\t\t\t\tn = $(this),\n\t\t\t\t\t\t\ti = n.next();\n\t\t\t\t\t\ti.slideToggle(), n.parent().toggleClass(\"open\"), t.data.multiple || e.find(\".submenuItems\").not(i)\n\t\t\t\t\t\t\t.slideUp().parent().removeClass(\"open\")\n\t\t\t\t\t};\n\t\t\t\t\tconst e = t;\n\t\t\n\t\t\t\t\tfunction n(t) {\n\t\t\t\t\t\treturn n = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function(t) {\n\t\t\t\t\t\t\treturn typeof t\n\t\t\t\t\t\t} : function(t) {\n\t\t\t\t\t\t\treturn t && \"function\" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ?\n\t\t\t\t\t\t\t\t\"symbol\" : typeof t\n\t\t\t\t\t\t}, n(t)\n\t\t\t\t\t}\n\t\t\n\t\t\t\t\tfunction i(t, e) {\n\t\t\t\t\t\tfor (var i = 0; i < e.length; i++) {\n\t\t\t\t\t\t\tvar o = e[i];\n\t\t\t\t\t\t\to.enumerable = o.enumerable || !1, o.configurable = !0, \"value\" in o && (o.writable = !0), Object\n\t\t\t\t\t\t\t\t.defineProperty(t, (void 0, r = function(t, e) {\n\t\t\t\t\t\t\t\t\tif (\"object\" !== n(t) || null === t) return t;\n\t\t\t\t\t\t\t\t\tvar i = t[Symbol.toPrimitive];\n\t\t\t\t\t\t\t\t\tif (void 0 !== i) {\n\t\t\t\t\t\t\t\t\t\tvar o = i.call(t, \"string\");\n\t\t\t\t\t\t\t\t\t\tif (\"object\" !== n(o)) return o;\n\t\t\t\t\t\t\t\t\t\tthrow new TypeError(\"@@toPrimitive must return a primitive value.\")\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\treturn String(t)\n\t\t\t\t\t\t\t\t}(o.key), \"symbol\" === n(r) ? r : String(r)), o)\n\t\t\t\t\t\t}\n\t\t\t\t\t\tvar r\n\t\t\t\t\t}\n\t\t\t\t\tconst o = function() {\n\t\t\t\t\t\tfunction t() {\n\t\t\t\t\t\t\t! function(t, e) {\n\t\t\t\t\t\t\t\tif (!(t instanceof e)) throw new TypeError(\"Cannot call a class as a function\")\n\t\t\t\t\t\t\t}(this, t), this.tabs = document.querySelectorAll(\"[data-tab-id]\"), this.index = 0, this\n\t\t\t\t\t\t\t\t.lockScroll = !1, this.scrollTop = 0, this.timer = null, this._init(), window\n\t\t\t\t\t\t\t\t.addEventListener(\"scroll\", this.watchScrollEvent.bind(this), !1), window.onbeforeunload =\n\t\t\t\t\t\t\t\tfunction() {\n\t\t\t\t\t\t\t\t\twindow.removeEventListener(\"scroll\", this.watchScrollEvent.bind(this)), this.timer = null\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tvar e, n;\n\t\t\t\t\t\treturn e = t, n = [{\n\t\t\t\t\t\t\tkey: \"_init\",\n\t\t\t\t\t\t\tvalue: function() {\n\t\t\t\t\t\t\t\tvar t = this;\n\t\t\t\t\t\t\t\tthis.tabs.forEach((function(e) {\n\t\t\t\t\t\t\t\t\treturn e.onclick = function() {\n\t\t\t\t\t\t\t\t\t\treturn t.handleTabClick(e)\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t})), document.querySelectorAll(\"[data-blur-btn]\").forEach((function(e) {\n\t\t\t\t\t\t\t\t\treturn e.onclick = function(n) {\n\t\t\t\t\t\t\t\t\t\te.classList.contains(\"active\") ? e.classList.remove(\n\t\t\t\t\t\t\t\t\t\t\t\t\"active\") : e.classList.add(\"active\"), t\n\t\t\t\t\t\t\t\t\t\t\t.blurImageBlock(n)\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}))\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\tkey: \"handleTabClick\",\n\t\t\t\t\t\t\tvalue: function(t) {\n\t\t\t\t\t\t\t\tvar e = this;\n\t\t\t\t\t\t\t\tthis.tabs.forEach((function(t) {\n\t\t\t\t\t\t\t\t\treturn t.classList.remove(\"active\")\n\t\t\t\t\t\t\t\t})), t.classList.add(\"active\"), this.lockScroll = !0;\n\t\t\t\t\t\t\t\tvar n = this.scrollToBlock(t);\n\t\t\t\t\t\t\t\tthis.timer = setInterval((function() {\n\t\t\t\t\t\t\t\t\te.scrollTop.toFixed() === n.toFixed() && (e.lockScroll = !1,\n\t\t\t\t\t\t\t\t\t\tclearInterval(e.timer))\n\t\t\t\t\t\t\t\t}), 50)\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\tkey: \"scrollToBlock\",\n\t\t\t\t\t\t\tvalue: function(t) {\n\t\t\t\t\t\t\t\tvar e, n = t.parentNode.offsetHeight,\n\t\t\t\t\t\t\t\t\ti = t.dataset.tabId,\n\t\t\t\t\t\t\t\t\to = i && (null === (e = document.querySelector(\"#\".concat(i))) || void 0 ===\n\t\t\t\t\t\t\t\t\t\te ? void 0 : e.offsetTop);\n\t\t\t\t\t\t\t\treturn window.scrollTo({\n\t\t\t\t\t\t\t\t\ttop: o - n,\n\t\t\t\t\t\t\t\t\tbehavior: \"smooth\"\n\t\t\t\t\t\t\t\t}), o - n\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\tkey: \"watchScrollEvent\",\n\t\t\t\t\t\t\tvalue: function() {\n\t\t\t\t\t\t\t\tthis.scrollTop = document.documentElement.scrollTop || document.body.scrollTop;\n\t\t\t\t\t\t\t\tvar t = [];\n\t\t\t\t\t\t\t\tthis.tabs.forEach((function(e) {\n\t\t\t\t\t\t\t\t\tvar n, i = e.parentNode.offsetHeight,\n\t\t\t\t\t\t\t\t\t\to = e.dataset.tabId,\n\t\t\t\t\t\t\t\t\t\tr = o && (null === (n = document.querySelector(\"#\".concat(\n\t\t\t\t\t\t\t\t\t\t\to))) || void 0 === n ? void 0 : n.offsetTop);\n\t\t\t\t\t\t\t\t\tt.push(r - i)\n\t\t\t\t\t\t\t\t})), !this.lockScroll && this.highlightTab(t)\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\tkey: \"highlightTab\",\n\t\t\t\t\t\t\tvalue: function() {\n\t\t\t\t\t\t\t\tvar t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];\n\t\t\t\t\t\t\t\tthis.scrollTop >= t[this.index + 1] && (this.index += 1), this.scrollTop < t[this\n\t\t\t\t\t\t\t\t\t\t.index] && (this.index = 0 === this.index ? 0 : this.index - 1), this.tabs\n\t\t\t\t\t\t\t\t\t.forEach((function(t) {\n\t\t\t\t\t\t\t\t\t\treturn t.classList.remove(\"active\")\n\t\t\t\t\t\t\t\t\t})), this.tabs[this.index].classList.add(\"active\")\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\tkey: \"blurImageBlock\",\n\t\t\t\t\t\t\tvalue: function(t) {\n\t\t\t\t\t\t\t\tvar e = null;\n\t\t\t\t\t\t\t\t(e = \"I\" === t.target.tagName.toUpperCase() ? t.target.parentNode.parentNode : t\n\t\t\t\t\t\t\t\t\t.target.parentNode).classList.contains(\"active\") ? e.classList.remove(\n\t\t\t\t\t\t\t\t\t\"active\") : e.classList.add(\"active\")\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}], n && i(e.prototype, n), Object.defineProperty(e, \"prototype\", {\n\t\t\t\t\t\t\twritable: !1\n\t\t\t\t\t\t}), t\n\t\t\t\t\t}();\n\t\t\t\t\tvar r = [\"infiniteScrollContainer1\", \"infiniteScrollContainer2\", \"swiperProductContainer\",\n\t\t\t\t\t\t\"swiperProductsPagination\"\n\t\t\t\t\t];\n\t\t\n\t\t\t\t\tfunction l(t, e) {\n\t\t\t\t\t\tvar n = Object.keys(t);\n\t\t\t\t\t\tif (Object.getOwnPropertySymbols) {\n\t\t\t\t\t\t\tvar i = Object.getOwnPropertySymbols(t);\n\t\t\t\t\t\t\te && (i = i.filter((function(e) {\n\t\t\t\t\t\t\t\treturn Object.getOwnPropertyDescriptor(t, e).enumerable\n\t\t\t\t\t\t\t}))), n.push.apply(n, i)\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn n\n\t\t\t\t\t}\n\t\t\n\t\t\t\t\tfunction c(t, e, n) {\n\t\t\t\t\t\treturn (e = v(e)) in t ? Object.defineProperty(t, e, {\n\t\t\t\t\t\t\tvalue: n,\n\t\t\t\t\t\t\tenumerable: !0,\n\t\t\t\t\t\t\tconfigurable: !0,\n\t\t\t\t\t\t\twritable: !0\n\t\t\t\t\t\t}) : t[e] = n, t\n\t\t\t\t\t}\n\t\t\n\t\t\t\t\tfunction a(t, e) {\n\t\t\t\t\t\treturn a = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {\n\t\t\t\t\t\t\treturn t.__proto__ = e, t\n\t\t\t\t\t\t}, a(t, e)\n\t\t\t\t\t}\n\t\t\n\t\t\t\t\tfunction s(t) {\n\t\t\t\t\t\treturn s = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {\n\t\t\t\t\t\t\treturn t.__proto__ || Object.getPrototypeOf(t)\n\t\t\t\t\t\t}, s(t)\n\t\t\t\t\t}\n\t\t\n\t\t\t\t\tfunction u(t) {\n\t\t\t\t\t\treturn u = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function(t) {\n\t\t\t\t\t\t\treturn typeof t\n\t\t\t\t\t\t} : function(t) {\n\t\t\t\t\t\t\treturn t && \"function\" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ?\n\t\t\t\t\t\t\t\t\"symbol\" : typeof t\n\t\t\t\t\t\t}, u(t)\n\t\t\t\t\t}\n\t\t\n\t\t\t\t\tfunction p(t, e) {\n\t\t\t\t\t\tif (!(t instanceof e)) throw new TypeError(\"Cannot call a class as a function\")\n\t\t\t\t\t}\n\t\t\n\t\t\t\t\tfunction f(t, e) {\n\t\t\t\t\t\tfor (var n = 0; n < e.length; n++) {\n\t\t\t\t\t\t\tvar i = e[n];\n\t\t\t\t\t\t\ti.enumerable = i.enumerable || !1, i.configurable = !0, \"value\" in i && (i.writable = !0), Object\n\t\t\t\t\t\t\t\t.defineProperty(t, v(i.key), i)\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\n\t\t\t\t\tfunction d(t, e, n) {\n\t\t\t\t\t\treturn e && f(t.prototype, e), n && f(t, n), Object.defineProperty(t, \"prototype\", {\n\t\t\t\t\t\t\twritable: !1\n\t\t\t\t\t\t}), t\n\t\t\t\t\t}\n\t\t\n\t\t\t\t\tfunction v(t) {\n\t\t\t\t\t\tvar e = function(t, e) {\n\t\t\t\t\t\t\tif (\"object\" !== u(t) || null === t) return t;\n\t\t\t\t\t\t\tvar n = t[Symbol.toPrimitive];\n\t\t\t\t\t\t\tif (void 0 !== n) {\n\t\t\t\t\t\t\t\tvar i = n.call(t, \"string\");\n\t\t\t\t\t\t\t\tif (\"object\" !== u(i)) return i;\n\t\t\t\t\t\t\t\tthrow new TypeError(\"@@toPrimitive must return a primitive value.\")\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\treturn String(t)\n\t\t\t\t\t\t}(t);\n\t\t\t\t\t\treturn \"symbol\" === u(e) ? e : String(e)\n\t\t\t\t\t}\n\t\t\t\t\tvar b = function() {\n\t\t\t\t\t\t\tfunction t(e) {\n\t\t\t\t\t\t\t\tp(this, t), this.DOM = {\n\t\t\t\t\t\t\t\t\tel: e.el,\n\t\t\t\t\t\t\t\t\tswiperContainer: e.swiperContainer\n\t\t\t\t\t\t\t\t}, this.init()\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\treturn d(t, [{\n\t\t\t\t\t\t\t\tkey: \"init\",\n\t\t\t\t\t\t\t\tvalue: function() {\n\t\t\t\t\t\t\t\t\tthis.swiper = new Swiper(this.DOM.swiperContainer, {\n\t\t\t\t\t\t\t\t\t\tslidesPerView: \"auto\",\n\t\t\t\t\t\t\t\t\t\tspaceBetween: 0,\n\t\t\t\t\t\t\t\t\t\tcenteredSlides: !0,\n\t\t\t\t\t\t\t\t\t\tloop: !0,\n\t\t\t\t\t\t\t\t\t\tautoplay: !1,\n\t\t\t\t\t\t\t\t\t\tfollowFinger: !1,\n\t\t\t\t\t\t\t\t\t\tpagination: {\n\t\t\t\t\t\t\t\t\t\t\tel: \"\".concat(this.DOM.el, \" .slideshow-pagination\"),\n\t\t\t\t\t\t\t\t\t\t\tclickable: !0,\n\t\t\t\t\t\t\t\t\t\t\tbulletClass: \"slideshow-pagination-item\",\n\t\t\t\t\t\t\t\t\t\t\tbulletActiveClass: \"active pagination-active\",\n\t\t\t\t\t\t\t\t\t\t\tclickableClass: \"slideshow-pagination-clickable\",\n\t\t\t\t\t\t\t\t\t\t\tmodifierClass: \"slideshow-pagination-\",\n\t\t\t\t\t\t\t\t\t\t\trenderBullet: function(t, e) {\n\t\t\t\t\t\t\t\t\t\t\t\tvar n = '<span class=\"slideshow-pagination-item\">';\n\t\t\t\t\t\t\t\t\t\t\t\treturn (n = t <= 8 ? n +\n\t\t\t\t\t\t\t\t\t\t\t\t\t'<span class=\"pagination-separator\"><span class=\"pagination-separator-loader\"><\/span><\/span>' :\n\t\t\t\t\t\t\t\t\t\t\t\t\tn) + \"<\/span>\"\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\ton: {\n\t\t\t\t\t\t\t\t\t\t\tresize: function() {\n\t\t\t\t\t\t\t\t\t\t\t\tvar t = this;\n\t\t\t\t\t\t\t\t\t\t\t\tsetTimeout((function() {\n\t\t\t\t\t\t\t\t\t\t\t\t\tt.update()\n\t\t\t\t\t\t\t\t\t\t\t\t}), 600)\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\tnavigation: {\n\t\t\t\t\t\t\t\t\t\t\tnextEl: \"\".concat(this.DOM.el,\n\t\t\t\t\t\t\t\t\t\t\t\t\" .slideshow-navigation-button.next\"),\n\t\t\t\t\t\t\t\t\t\t\tprevEl: \"\".concat(this.DOM.el,\n\t\t\t\t\t\t\t\t\t\t\t\t\" .slideshow-navigation-button.prev\")\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t})\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}]), t\n\t\t\t\t\t\t}(),\n\t\t\t\t\t\th = function(t) {\n\t\t\t\t\t\t\t! function(t, e) {\n\t\t\t\t\t\t\t\tif (\"function\" != typeof e && null !== e) throw new TypeError(\n\t\t\t\t\t\t\t\t\t\"Super expression must either be null or a function\");\n\t\t\t\t\t\t\t\tt.prototype = Object.create(e && e.prototype, {\n\t\t\t\t\t\t\t\t\tconstructor: {\n\t\t\t\t\t\t\t\t\t\tvalue: t,\n\t\t\t\t\t\t\t\t\t\twritable: !0,\n\t\t\t\t\t\t\t\t\t\tconfigurable: !0\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}), Object.defineProperty(t, \"prototype\", {\n\t\t\t\t\t\t\t\t\twritable: !1\n\t\t\t\t\t\t\t\t}), e && a(t, e)\n\t\t\t\t\t\t\t}(o, t);\n\t\t\t\t\t\t\tvar e, n, i = (e = o, n = function() {\n\t\t\t\t\t\t\t\tif (\"undefined\" == typeof Reflect || !Reflect.construct) return !1;\n\t\t\t\t\t\t\t\tif (Reflect.construct.sham) return !1;\n\t\t\t\t\t\t\t\tif (\"function\" == typeof Proxy) return !0;\n\t\t\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t\t\treturn Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], (\n\t\t\t\t\t\t\t\t\tfunction() {}))), !0\n\t\t\t\t\t\t\t\t} catch (t) {\n\t\t\t\t\t\t\t\t\treturn !1\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}(), function() {\n\t\t\t\t\t\t\t\tvar t, i = s(e);\n\t\t\t\t\t\t\t\tif (n) {\n\t\t\t\t\t\t\t\t\tvar o = s(this).constructor;\n\t\t\t\t\t\t\t\t\tt = Reflect.construct(i, arguments, o)\n\t\t\t\t\t\t\t\t} else t = i.apply(this, arguments);\n\t\t\t\t\t\t\t\treturn function(t, e) {\n\t\t\t\t\t\t\t\t\tif (e && (\"object\" === u(e) || \"function\" == typeof e)) return e;\n\t\t\t\t\t\t\t\t\tif (void 0 !== e) throw new TypeError(\n\t\t\t\t\t\t\t\t\t\t\"Derived constructors may only return object or undefined\");\n\t\t\t\t\t\t\t\t\treturn function(t) {\n\t\t\t\t\t\t\t\t\t\tif (void 0 === t) throw new ReferenceError(\n\t\t\t\t\t\t\t\t\t\t\t\"this hasn't been initialised - super() hasn't been called\");\n\t\t\t\t\t\t\t\t\t\treturn t\n\t\t\t\t\t\t\t\t\t}(t)\n\t\t\t\t\t\t\t\t}(this, t)\n\t\t\t\t\t\t\t});\n\t\t\n\t\t\t\t\t\t\tfunction o(t) {\n\t\t\t\t\t\t\t\tvar e, n = t.infiniteScrollContainer1,\n\t\t\t\t\t\t\t\t\ta = t.infiniteScrollContainer2,\n\t\t\t\t\t\t\t\t\ts = t.swiperProductContainer,\n\t\t\t\t\t\t\t\t\tu = t.swiperProductsPagination,\n\t\t\t\t\t\t\t\t\tf = function(t, e) {\n\t\t\t\t\t\t\t\t\t\tif (null == t) return {};\n\t\t\t\t\t\t\t\t\t\tvar n, i, o = function(t, e) {\n\t\t\t\t\t\t\t\t\t\t\tif (null == t) return {};\n\t\t\t\t\t\t\t\t\t\t\tvar n, i, o = {},\n\t\t\t\t\t\t\t\t\t\t\t\tr = Object.keys(t);\n\t\t\t\t\t\t\t\t\t\t\tfor (i = 0; i < r.length; i++) n = r[i], e.indexOf(n) >= 0 || (o[n] = t[n]);\n\t\t\t\t\t\t\t\t\t\t\treturn o\n\t\t\t\t\t\t\t\t\t\t}(t, e);\n\t\t\t\t\t\t\t\t\t\tif (Object.getOwnPropertySymbols) {\n\t\t\t\t\t\t\t\t\t\t\tvar r = Object.getOwnPropertySymbols(t);\n\t\t\t\t\t\t\t\t\t\t\tfor (i = 0; i < r.length; i++) n = r[i], e.indexOf(n) >= 0 || Object.prototype\n\t\t\t\t\t\t\t\t\t\t\t\t.propertyIsEnumerable.call(t, n) && (o[n] = t[n])\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\treturn o\n\t\t\t\t\t\t\t\t\t}(t, r);\n\t\t\t\t\t\t\t\tp(this, o), e = i.call(this, function(t) {\n\t\t\t\t\t\t\t\t\t\tfor (var e = 1; e < arguments.length; e++) {\n\t\t\t\t\t\t\t\t\t\t\tvar n = null != arguments[e] ? arguments[e] : {};\n\t\t\t\t\t\t\t\t\t\t\te % 2 ? l(Object(n), !0).forEach((function(e) {\n\t\t\t\t\t\t\t\t\t\t\t\tc(t, e, n[e])\n\t\t\t\t\t\t\t\t\t\t\t})) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object\n\t\t\t\t\t\t\t\t\t\t\t\t.getOwnPropertyDescriptors(n)) : l(Object(n)).forEach((function(e) {\n\t\t\t\t\t\t\t\t\t\t\t\tObject.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))\n\t\t\t\t\t\t\t\t\t\t\t}))\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\treturn t\n\t\t\t\t\t\t\t\t\t}({}, f)), e.infiniteScrollContainer1 = n, e.infiniteScrollContainer2 = a, e\n\t\t\t\t\t\t\t\t\t.swiperProductContainer = s, e.swiperProductsPagination = u, e.isMobile = document.body\n\t\t\t\t\t\t\t\t\t.clientWidth < 1024;\n\t\t\t\t\t\t\t\tvar d = document.querySelector(\"[data-collection-products]\");\n\t\t\t\t\t\t\t\treturn d && (e.productsArray = d.dataset.collectionProducts.split(\",\"), e.initProductSwiper()), e\n\t\t\t\t\t\t\t\t\t.infiniteScrollContainer1 && e.initInfiniteScroll(), e\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\treturn d(o, [{\n\t\t\t\t\t\t\t\tkey: \"initInfiniteScroll\",\n\t\t\t\t\t\t\t\tvalue: function() {\n\t\t\t\t\t\t\t\t\tnew Swiper(this.infiniteScrollContainer1, {\n\t\t\t\t\t\t\t\t\t\tslidesPerView: \"auto\",\n\t\t\t\t\t\t\t\t\t\tspaceBetween: 8,\n\t\t\t\t\t\t\t\t\t\tspeed: 3e4,\n\t\t\t\t\t\t\t\t\t\tfreeMode: !0,\n\t\t\t\t\t\t\t\t\t\tloop: !0,\n\t\t\t\t\t\t\t\t\t\tdirection: \"vertical\",\n\t\t\t\t\t\t\t\t\t\tcenteredSlides: !0,\n\t\t\t\t\t\t\t\t\t\tautoplay: {\n\t\t\t\t\t\t\t\t\t\t\tdelay: 0,\n\t\t\t\t\t\t\t\t\t\t\tdisableOnInteraction: !1,\n\t\t\t\t\t\t\t\t\t\t\tloopPreventsSlide: !0\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}), new Swiper(this.infiniteScrollContainer2, {\n\t\t\t\t\t\t\t\t\t\tslidesPerView: \"auto\",\n\t\t\t\t\t\t\t\t\t\tspaceBetween: 8,\n\t\t\t\t\t\t\t\t\t\tspeed: 3e4,\n\t\t\t\t\t\t\t\t\t\tfreeMode: !0,\n\t\t\t\t\t\t\t\t\t\tcenteredSlides: !0,\n\t\t\t\t\t\t\t\t\t\tloop: !0,\n\t\t\t\t\t\t\t\t\t\tdirection: \"vertical\",\n\t\t\t\t\t\t\t\t\t\tautoplay: {\n\t\t\t\t\t\t\t\t\t\t\tdelay: 0,\n\t\t\t\t\t\t\t\t\t\t\tdisableOnInteraction: !1,\n\t\t\t\t\t\t\t\t\t\t\tloopPreventsSlide: !0,\n\t\t\t\t\t\t\t\t\t\t\treverseDirection: !0\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t})\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\tkey: \"initProductSwiper\",\n\t\t\t\t\t\t\t\tvalue: function() {\n\t\t\t\t\t\t\t\t\tvar t = this;\n\t\t\t\t\t\t\t\t\tnew Swiper(this.swiperProductContainer, {\n\t\t\t\t\t\t\t\t\t\tbreakpoints: {\n\t\t\t\t\t\t\t\t\t\t\t320: {\n\t\t\t\t\t\t\t\t\t\t\t\tslidesPerView: 1,\n\t\t\t\t\t\t\t\t\t\t\t\tspaceBetween: 0\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t1024: {\n\t\t\t\t\t\t\t\t\t\t\t\tslidesPerView: 3,\n\t\t\t\t\t\t\t\t\t\t\t\tspaceBetween: -30\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\tautoplay: this.isMobile,\n\t\t\t\t\t\t\t\t\t\tspeed: 500,\n\t\t\t\t\t\t\t\t\t\tcenteredSlides: !0,\n\t\t\t\t\t\t\t\t\t\tloop: this.isMobile || this.productsArray.length > 2,\n\t\t\t\t\t\t\t\t\t\ton: {\n\t\t\t\t\t\t\t\t\t\t\tresize: function() {\n\t\t\t\t\t\t\t\t\t\t\t\tvar e = this;\n\t\t\t\t\t\t\t\t\t\t\t\tsetTimeout((function() {\n\t\t\t\t\t\t\t\t\t\t\t\t\tt.isMobile = document.body\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t.clientWidth < 1024, e.update()\n\t\t\t\t\t\t\t\t\t\t\t\t}), 400)\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\n\t\t\t\t\t\t\t\t\t\tnavigation: {\n\t\t\t\t\t\t\t\t\t\t\tnextEl: \".section-collection-product-swiper .slideshow-navigation-button.next\",\n\t\t\t\t\t\t\t\t\t\t\tprevEl: \".section-collection-product-swiper .slideshow-navigation-button.prev\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t})\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}]), o\n\t\t\t\t\t\t}(o);\n\t\t\t\t\tdocument.addEventListener(\"DOMContentLoaded\", (function() {\n\t\t\t\t\t\tnew b({\n\t\t\t\t\t\t\tswiperContainer: \".image-text-swiper\",\n\t\t\t\t\t\t\tel: \".image-text-swiper\"\n\t\t\t\t\t\t}), new h({\n\t\t\t\t\t\t\tinfiniteScrollContainer1: \".swiper-infinite-scroll-1\",\n\t\t\t\t\t\t\tinfiniteScrollContainer2: \".swiper-infinite-scroll-2\",\n\t\t\t\t\t\t\tswiperProductContainer: \".swiper-collection-products\",\n\t\t\t\t\t\t\tswiperProductsPagination: \".swiper-collection-products-pagination\"\n\t\t\t\t\t\t}), new e($(\".accordion-menu\"), !1);\n\t\t\t\t\t\tvar t = $(\".section-collection-faq .z-button-fill-middle\"),\n\t\t\t\t\t\t\tn = t.data(),\n\t\t\t\t\t\t\ti = n.moreText,\n\t\t\t\t\t\t\to = n.lessText;\n\t\t\t\t\t\tt.click((function() {\n\t\t\t\t\t\t\tvar e = t.hasClass(\"active\"),\n\t\t\t\t\t\t\t\tn = t.find(\"span\").eq(0);\n\t\t\t\t\t\t\te ? ($(\".section-collection-faq .accordion-menu\").removeClass(\"active\"), t\n\t\t\t\t\t\t\t\t.removeClass(\"active\"), n.text(i)) : ($(\n\t\t\t\t\t\t\t\t\t\".section-collection-faq .accordion-menu\").addClass(\"active\"), t\n\t\t\t\t\t\t\t\t.addClass(\"active\"), n.text(o))\n\t\t\t\t\t\t}))\n\t\t\t\t\t}))\n\t\t\t\t})();\n\t\t\t<\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_hGq39L"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "space_Padding": true,
+        "switch_button": false
+      }
+    }
+  },
+  "order": [
+    "75665efd-f654-4655-a60a-1d541d1bd5be",
+    "1655367270159ef7a9",
+    "1645434756440994ef",
+    "aa35e87e-dd43-4ced-93ea-02b32556a1cd",
+    "16445590870b9687da",
+    "16461243423cce65c9",
+    "164507794401119a07",
+    "16458529940ff914d0",
+    "164543774739613c31",
+    "f2306b3e-091a-4425-ab5d-73de6ee8f602",
+    "16456831010c51823b",
+    "5c76e87a-4040-423a-b47f-afd321491fdf",
+    "164431125102df099b",
+    "advanced_content_gtUwNr"
+  ]
+}
