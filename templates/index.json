@@ -2,7 +2,6 @@
   "sections": {
     "75665efd-f654-4655-a60a-1d541d1bd5be": {
       "type": "hero-video",
-      "disabled": true,
       "settings": {
         "title": "FOURTH OF JULY SALE",
         "title_size": 80,
@@ -89,6 +88,7 @@
         "e333ecb7-c752-490d-8c62-cf3150efc6d7",
         "386d2459-b15d-4eb3-8c37-aa836ef32926"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
