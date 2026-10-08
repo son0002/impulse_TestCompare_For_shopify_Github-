@@ -22,7 +22,7 @@
   <h1 style="text-align: center;">{{page.title}}</h1>
   {{ page.content }}
   {% assign products = 'z-chefs-cooking-tool-set,z-grills-mystery-bag,multitasker-7052b-with-wi-fi' | split: ',' %}
-  {% assign selected_products = [] %}
+  {% assign selected_products = nil %}
 
   <div id="product-list">
     {% for handle in products %}
@@ -89,3 +89,13 @@ document.getElementById('addToCartButton').addEventListener('click', function() 
   });
 });
 </script>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% assign selected_products = [] %}"
+  to: "{% assign selected_products = nil %}"
+  position: 492..528
+{% endcomment %}

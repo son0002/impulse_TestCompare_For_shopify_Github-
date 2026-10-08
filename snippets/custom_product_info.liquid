@@ -1,4 +1,4 @@
-{% if product.type =='Cover' or product.type=='Thermal Blanket' or product.type=='Accessories' or product.type=='Accessories Bundle' %}
+{% if product.type == 'Cover' or product.type.Thermal.Blanket or product.type.Accessories or product.type.Accessories.Bundle %}
 <style>
 	.policy-box {
 		display: none !important;
@@ -201,4 +201,15 @@
 			})
 		}
 	})
-</script>
+</script>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% if product.type =='Cover' or product.type=='Thermal Blanket' or product.type=='Accessories'
+    or product.type=='Accessories Bundle' %}"
+  to: "{% if product.type == 'Cover' or product.type.Thermal.Blanket or product.type.Accessories
+    or product.type.Accessories.Bundle %}"
+  position: 0..127
+{%- endcomment -%}

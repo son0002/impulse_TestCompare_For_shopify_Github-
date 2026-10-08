@@ -87,11 +87,11 @@
         {% endfor %}
        
         <div class="page-width">
-        {% render 'product_detailspage-02' | quoted %}
-        {% render 'product_detailspage-03' | quoted %}
-        {% render 'product_detailspage-04' | quoted %}
-        {% render 'product_detailspage-05' | quoted %}
-        {% render 'product_detailspage-06' | quoted %}
+        {% render 'product_detailspage-02' %}
+        {% render 'product_detailspage-03' %}
+        {% render 'product_detailspage-04' %}
+        {% render 'product_detailspage-05' %}
+        {% render 'product_detailspage-06' %}
         </div>
       {% endunless %}
     {% endif %}
@@ -112,3 +112,25 @@
 </div>
 
 
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'product_detailspage-02' | quoted %}"
+  to: "{% render 'product_detailspage-02' %}"
+  position: 4077..4114
+- from: "{% render 'product_detailspage-03' | quoted %}"
+  to: "{% render 'product_detailspage-03' %}"
+  position: 4123..4160
+- from: "{% render 'product_detailspage-04' | quoted %}"
+  to: "{% render 'product_detailspage-04' %}"
+  position: 4169..4206
+- from: "{% render 'product_detailspage-05' | quoted %}"
+  to: "{% render 'product_detailspage-05' %}"
+  position: 4215..4252
+- from: "{% render 'product_detailspage-06' | quoted %}"
+  to: "{% render 'product_detailspage-06' %}"
+  position: 4261..4298
+{% endcomment %}
